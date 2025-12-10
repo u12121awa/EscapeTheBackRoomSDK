@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_Enums0To9_structs.hpp"
 #include "Engine_classes.hpp"
+#include "E_Enums0To9_structs.hpp"
 
 
 namespace SDK

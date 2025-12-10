@@ -37,6 +37,20 @@ void ABP_RollerPlayer_C::ExecuteUbergraph_BP_RollerPlayer(int32 EntryPoint)
 }
 
 
+// Function BP_RollerPlayer.BP_RollerPlayer_C.Switch Character Costume
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_RollerPlayer_C::Switch_Character_Costume()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RollerPlayer_C", "Switch Character Costume");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_RollerPlayer.BP_RollerPlayer_C.ControlPlayer
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -108,6 +122,20 @@ void ABP_RollerPlayer_C::InpAxisEvt_Turn_K2Node_InputAxisEvent_0(float AxisValue
 	Parms.AxisValue = AxisValue;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RollerPlayer.BP_RollerPlayer_C.OnRep_Assigned Costume
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_RollerPlayer_C::OnRep_Assigned_Costume()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RollerPlayer_C", "OnRep_Assigned Costume");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

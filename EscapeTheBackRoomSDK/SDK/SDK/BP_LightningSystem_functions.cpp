@@ -37,15 +37,15 @@ void ABP_LightningSystem_C::ExecuteUbergraph_BP_LightningSystem(int32 EntryPoint
 }
 
 
-// Function BP_LightningSystem.BP_LightningSystem_C.Setup
+// Function BP_LightningSystem.BP_LightningSystem_C.SetUp
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_LightningSystem_C::Setup()
+void ABP_LightningSystem_C::SetUp()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LightningSystem_C", "Setup");
+		Func = Class->GetFunction("BP_LightningSystem_C", "SetUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

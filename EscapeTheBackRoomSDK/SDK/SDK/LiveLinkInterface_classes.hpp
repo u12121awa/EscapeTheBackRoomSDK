@@ -18,18 +18,43 @@
 namespace SDK
 {
 
-// Class LiveLinkInterface.LiveLinkRole
-// 0x0000 (0x0028 - 0x0028)
-class ULiveLinkRole : public UObject
+// Class LiveLinkInterface.LiveLinkSourceSettings
+// 0x0078 (0x00A0 - 0x0028)
+class ULiveLinkSourceSettings : public UObject
 {
+public:
+	ELiveLinkSourceMode                           Mode;                                              // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FLiveLinkSourceBufferManagementSettings BufferSettings;                                   // 0x0030(0x0058)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 ConnectionString;                                  // 0x0088(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class ULiveLinkSourceFactory>     Factory;                                           // 0x0098(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveLinkRole">();
+		return StaticClassImpl<"LiveLinkSourceSettings">();
 	}
-	static class ULiveLinkRole* GetDefaultObj()
+	static class ULiveLinkSourceSettings* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ULiveLinkRole>();
+		return GetDefaultObjImpl<ULiveLinkSourceSettings>();
+	}
+};
+
+// Class LiveLinkInterface.LiveLinkCurveRemapSettings
+// 0x0050 (0x00F0 - 0x00A0)
+class ULiveLinkCurveRemapSettings final : public ULiveLinkSourceSettings
+{
+public:
+	struct FLiveLinkCurveConversionSettings       CurveConversionSettings;                           // 0x00A0(0x0050)(Edit, Config, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"LiveLinkCurveRemapSettings">();
+	}
+	static class ULiveLinkCurveRemapSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkCurveRemapSettings>();
 	}
 };
 
@@ -45,6 +70,21 @@ public:
 	static class ULiveLinkSourceFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkSourceFactory>();
+	}
+};
+
+// Class LiveLinkInterface.LiveLinkRole
+// 0x0000 (0x0028 - 0x0028)
+class ULiveLinkRole : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"LiveLinkRole">();
+	}
+	static class ULiveLinkRole* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkRole>();
 	}
 };
 
@@ -120,46 +160,6 @@ public:
 	static class ULiveLinkController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveLinkController>();
-	}
-};
-
-// Class LiveLinkInterface.LiveLinkSourceSettings
-// 0x0078 (0x00A0 - 0x0028)
-class ULiveLinkSourceSettings : public UObject
-{
-public:
-	ELiveLinkSourceMode                           Mode;                                              // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FLiveLinkSourceBufferManagementSettings BufferSettings;                                   // 0x0030(0x0058)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	class FString                                 ConnectionString;                                  // 0x0088(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class ULiveLinkSourceFactory>     Factory;                                           // 0x0098(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LiveLinkSourceSettings">();
-	}
-	static class ULiveLinkSourceSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkSourceSettings>();
-	}
-};
-
-// Class LiveLinkInterface.LiveLinkCurveRemapSettings
-// 0x0050 (0x00F0 - 0x00A0)
-class ULiveLinkCurveRemapSettings final : public ULiveLinkSourceSettings
-{
-public:
-	struct FLiveLinkCurveConversionSettings       CurveConversionSettings;                           // 0x00A0(0x0050)(Edit, Config, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LiveLinkCurveRemapSettings">();
-	}
-	static class ULiveLinkCurveRemapSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkCurveRemapSettings>();
 	}
 };
 

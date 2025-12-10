@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "Backrooms_structs.hpp"
 #include "UMG_structs.hpp"
-#include "InputCore_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -97,9 +97,9 @@ public:
 	class FText                                   SelectedOption_0;                                  // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 
-// Function WB_OptionSwitcher_Theme2.WB_OptionSwitcher_Theme2_C.Setup
+// Function WB_OptionSwitcher_Theme2.WB_OptionSwitcher_Theme2_C.SetUp
 // 0x0018 (0x0018 - 0x0000)
-struct WB_OptionSwitcher_Theme2_C_Setup final
+struct WB_OptionSwitcher_Theme2_C_SetUp final
 {
 public:
 	class FText                                   CallFunc_Array_Get_Item;                           // 0x0000(0x0018)()

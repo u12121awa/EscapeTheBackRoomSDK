@@ -17,17 +17,13 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Lamp.BP_Lamp_C
-// 0x0008 (0x0238 - 0x0230)
-class BP_Lamp_1::ABP_Lamp_C final : public AStaticMeshActor
+// 0x0018 (0x0238 - 0x0220)
+class BP_Lamp_1::ABP_Lamp_C final : public AActor
 {
 public:
-	class USpotLightComponent*                    SpotLight;                                         // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-
-public:
-	void TurnOFF();
-	void TurnON();
-	void CheckLight(float Value);
-	void SetPointLight(float Intensity);
+	class UPointLightComponent*                   PointLight;                                        // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_Lamp_01;                                        // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

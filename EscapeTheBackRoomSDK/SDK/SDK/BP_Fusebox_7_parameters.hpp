@@ -12,10 +12,10 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "S_TriWayData_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "Backrooms_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "S_TriWayData_structs.hpp"
 
 
 namespace SDK::Params

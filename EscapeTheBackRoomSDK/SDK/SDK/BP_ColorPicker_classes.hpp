@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 #include "E_GarageColor_structs.hpp"
 #include "BP_Interactable_classes.hpp"
-#include "SlateCore_structs.hpp"
 #include "Backrooms_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK

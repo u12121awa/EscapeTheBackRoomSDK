@@ -15,21 +15,31 @@ namespace SDK
 {
 
 // UserDefinedEnum E_Floors.E_Floors
-// NumValues: 0x000C
+// NumValues: 0x0016
 enum class E_Floors_1::E_Floors : uint8
 {
 	NewEnumerator19                          = 0,
-	NewEnumerator25                          = 1,
-	NewEnumerator43                          = 2,
-	NewEnumerator44                          = 3,
-	NewEnumerator45                          = 4,
-	NewEnumerator46                          = 5,
-	NewEnumerator47                          = 6,
-	NewEnumerator48                          = 7,
-	NewEnumerator49                          = 8,
-	NewEnumerator50                          = 9,
-	NewEnumerator51                          = 10,
-	E_2_MAX                                  = 11,
+	NewEnumerator5                           = 1,
+	NewEnumerator6                           = 2,
+	NewEnumerator36                          = 3,
+	NewEnumerator7                           = 4,
+	NewEnumerator8                           = 5,
+	NewEnumerator9                           = 6,
+	NewEnumerator24                          = 7,
+	NewEnumerator25                          = 8,
+	NewEnumerator32                          = 9,
+	NewEnumerator26                          = 10,
+	NewEnumerator27                          = 11,
+	NewEnumerator28                          = 12,
+	NewEnumerator37                          = 13,
+	NewEnumerator29                          = 14,
+	NewEnumerator30                          = 15,
+	NewEnumerator31                          = 16,
+	NewEnumerator38                          = 17,
+	NewEnumerator35                          = 18,
+	NewEnumerator34                          = 19,
+	NewEnumerator33                          = 20,
+	E_0_MAX                                  = 21,
 };
 
 }

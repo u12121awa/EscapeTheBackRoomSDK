@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 #include "E_Difficulty_structs.hpp"
 #include "S_LevelStats_structs.hpp"
-#include "S_Difficulty_structs.hpp"
 #include "S_Gamemode_structs.hpp"
+#include "S_Difficulty_structs.hpp"
 
 
 namespace SDK::Params

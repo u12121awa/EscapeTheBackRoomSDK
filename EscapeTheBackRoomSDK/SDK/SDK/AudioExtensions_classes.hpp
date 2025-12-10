@@ -16,6 +16,21 @@
 namespace SDK
 {
 
+// Class AudioExtensions.SoundModulatorBase
+// 0x0000 (0x0028 - 0x0028)
+class USoundModulatorBase final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"SoundModulatorBase">();
+	}
+	static class USoundModulatorBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<USoundModulatorBase>();
+	}
+};
+
 // Class AudioExtensions.SoundfieldEncodingSettingsBase
 // 0x0000 (0x0028 - 0x0028)
 class USoundfieldEncodingSettingsBase : public UObject
@@ -103,21 +118,6 @@ public:
 	static class UReverbPluginSourceSettingsBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReverbPluginSourceSettingsBase>();
-	}
-};
-
-// Class AudioExtensions.SoundModulatorBase
-// 0x0000 (0x0028 - 0x0028)
-class USoundModulatorBase final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"SoundModulatorBase">();
-	}
-	static class USoundModulatorBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<USoundModulatorBase>();
 	}
 };
 

@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "BP_Interactable_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Dark_Valve.BP_Dark_Valve_C
-// 0x0198 (0x04C0 - 0x0328)
+// 0x01A8 (0x04D0 - 0x0328)
 class ABP_Dark_Valve_C final : public ABP_Interactable_C
 {
 public:
@@ -53,9 +53,11 @@ public:
 	struct FTransform                             RightHandStartTransform;                           // 0x0430(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FTransform                             LeftCurrentTransform;                              // 0x0460(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FTransform                             RightCurrentTransform;                             // 0x0490(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UCostume*                               Assigned_Costume;                                  // 0x04C0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_Dark_Valve(int32 EntryPoint);
+	void Switch_Character_Costume();
 	void ForceUnpossess();
 	void SwapHands();
 	void ReceiveUnpossessed(class AController* OldController);
@@ -79,6 +81,7 @@ public:
 	void TurnValve__FinishedFunc();
 	void OnRep_IsRotating();
 	void OnRep_CanInteract();
+	void OnRep_Assigned_Costume();
 
 public:
 	static class UClass* StaticClass()

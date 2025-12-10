@@ -84,7 +84,7 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_LightningSystem(int32 EntryPoint);
-	void Setup();
+	void SetUp();
 	void ForceTick();
 	void StartLightning();
 	void ReceiveTick(float DeltaSeconds);

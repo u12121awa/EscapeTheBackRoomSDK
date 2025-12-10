@@ -6,12 +6,12 @@
 * https://github.com/NotTacs/Dumper-8
 */
 
-// Package: BP_DoubleDoor
+// Package: BP_DoubleDoor_0
 
 #include "Basic.hpp"
 
-#include "BP_DoubleDoor_classes.hpp"
-#include "BP_DoubleDoor_parameters.hpp"
+#include "BP_DoubleDoor_0_classes.hpp"
+#include "BP_DoubleDoor_0_parameters.hpp"
 
 
 namespace SDK
@@ -22,7 +22,7 @@ namespace SDK
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_DoubleDoor::ABP_DoubleDoor_C::ExecuteUbergraph_BP_DoubleDoor(int32 EntryPoint)
+void BP_DoubleDoor_0::ABP_DoubleDoor_C::ExecuteUbergraph_BP_DoubleDoor(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
@@ -40,7 +40,7 @@ void BP_DoubleDoor::ABP_DoubleDoor_C::ExecuteUbergraph_BP_DoubleDoor(int32 Entry
 // Function BP_DoubleDoor.BP_DoubleDoor_C.OnUsedNotify
 // (Event, Public, BlueprintEvent)
 
-void BP_DoubleDoor::ABP_DoubleDoor_C::OnUsedNotify()
+void BP_DoubleDoor_0::ABP_DoubleDoor_C::OnUsedNotify()
 {
 	static class UFunction* Func = nullptr;
 
@@ -56,7 +56,7 @@ void BP_DoubleDoor::ABP_DoubleDoor_C::OnUsedNotify()
 // Parameters:
 // class ACharacter*                       Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_DoubleDoor::ABP_DoubleDoor_C::OnActorUsed(class ACharacter* Character)
+void BP_DoubleDoor_0::ABP_DoubleDoor_C::OnActorUsed(class ACharacter* Character)
 {
 	static class UFunction* Func = nullptr;
 
@@ -74,7 +74,7 @@ void BP_DoubleDoor::ABP_DoubleDoor_C::OnActorUsed(class ACharacter* Character)
 // Function BP_DoubleDoor.BP_DoubleDoor_C.Door Rotate Open__UpdateFunc
 // (BlueprintEvent)
 
-void BP_DoubleDoor::ABP_DoubleDoor_C::Door_Rotate_Open__UpdateFunc()
+void BP_DoubleDoor_0::ABP_DoubleDoor_C::Door_Rotate_Open__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -88,7 +88,7 @@ void BP_DoubleDoor::ABP_DoubleDoor_C::Door_Rotate_Open__UpdateFunc()
 // Function BP_DoubleDoor.BP_DoubleDoor_C.Door Rotate Open__FinishedFunc
 // (BlueprintEvent)
 
-void BP_DoubleDoor::ABP_DoubleDoor_C::Door_Rotate_Open__FinishedFunc()
+void BP_DoubleDoor_0::ABP_DoubleDoor_C::Door_Rotate_Open__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -102,7 +102,7 @@ void BP_DoubleDoor::ABP_DoubleDoor_C::Door_Rotate_Open__FinishedFunc()
 // Function BP_DoubleDoor.BP_DoubleDoor_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void BP_DoubleDoor::ABP_DoubleDoor_C::UserConstructionScript()
+void BP_DoubleDoor_0::ABP_DoubleDoor_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 

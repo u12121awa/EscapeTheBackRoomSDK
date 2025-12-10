@@ -18,11 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SkinStealer_Cave.BP_SkinStealer_Cave_C
-// 0x0010 (0x0560 - 0x0550)
+// 0x0000 (0x0560 - 0x0560)
 class ABP_SkinStealer_Cave_C final : public ABP_SkinStealer_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SkinStealer_Cave_C;              // 0x0550(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SkinStealer_Cave_C;              // 0x0558(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_BP_SkinStealer_Cave(int32 EntryPoint);

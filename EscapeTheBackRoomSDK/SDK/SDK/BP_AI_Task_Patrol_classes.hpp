@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "AIModule_structs.hpp"
-#include "BP_AI_Task_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_AI_Task_classes.hpp"
 
 
 namespace SDK

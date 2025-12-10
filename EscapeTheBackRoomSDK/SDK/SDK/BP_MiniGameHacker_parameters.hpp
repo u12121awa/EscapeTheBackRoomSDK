@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "InputCore_structs.hpp"
-#include "F_MG_HackerSolver_structs.hpp"
 #include "Backrooms_structs.hpp"
+#include "F_MG_HackerSolver_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

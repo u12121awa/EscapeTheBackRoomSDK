@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "EN_ItemRarity_structs.hpp"
 #include "UMG_classes.hpp"
+#include "EN_ItemRarity_structs.hpp"
 
 
 namespace SDK

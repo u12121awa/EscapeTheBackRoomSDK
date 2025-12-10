@@ -36,7 +36,7 @@ public:
 	TArray<E_TVColor>                             CorrectBalloons;                                   // 0x0290(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         BalloonsPopped;                                    // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class BP_LockedDoor_1::ABP_LockedDoor_C*      ExitDoor;                                          // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class BP_LockedDoor_0::ABP_LockedDoor_C*      ExitDoor;                                          // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FS_PoppedBalloon>               PoppedList;                                        // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          IsEnabled;                                         // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2C1[0x7];                                      // 0x02C1(0x0007)(Fixing Size After Last Property [ Dumper-8 ])

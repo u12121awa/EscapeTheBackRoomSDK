@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "E_GarageColor_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_GarageColor_structs.hpp"
 #include "Engine_classes.hpp"
 
 

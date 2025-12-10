@@ -37,6 +37,20 @@ void ABP_SecurityCam_C::ExecuteUbergraph_BP_SecurityCam(int32 EntryPoint)
 }
 
 
+// Function BP_SecurityCam.BP_SecurityCam_C.Player Check Event
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_SecurityCam_C::Player_Check_Event()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SecurityCam_C", "Player Check Event");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_SecurityCam.BP_SecurityCam_C.ToggleLightFlashing
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:

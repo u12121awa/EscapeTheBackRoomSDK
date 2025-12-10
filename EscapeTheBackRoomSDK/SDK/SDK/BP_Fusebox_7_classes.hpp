@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "BP_Interactable_classes.hpp"
-#include "SlateCore_structs.hpp"
 #include "Backrooms_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK
@@ -53,7 +53,7 @@ public:
 	void SetDisabled();
 	void OnUnPossess();
 	void ToggleVoltageSound(bool ShouldPlay);
-	void SpawnMiniGame();
+	void SpawnMinigame();
 	void OnFinish();
 	void ToggleLight(bool IsOn);
 	void ReceivePossessed(class AController* NewController);

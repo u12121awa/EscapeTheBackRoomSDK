@@ -52,7 +52,7 @@ public:
 	void Refresh();
 	void Switch_Option(bool Decrease_);
 	void Set_SelectedOption(const class FString& SelectedOption_0);
-	void Setup();
+	void SetUp();
 	void Set_OptionButtons_Visibility(bool ShowOptionButtons_);
 	class FText GetTime(float Time);
 	void RoundedTime(float Time, class FString* RoundedTime_0);

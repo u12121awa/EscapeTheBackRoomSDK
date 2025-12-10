@@ -62,7 +62,7 @@ public:
 	void CanClose();
 	void PreConstruct(bool IsDesignTime);
 	void BndEvt__Lobby_MapSelection_Lobby_Level_Switcher_C_0_K2Node_ComponentBoundEvent_3_OnLevelSwitched__DelegateSignature(const class FString& SelectedOption);
-	void Setup();
+	void SetUp();
 	void Set_Selected_Map(const class FString& MapName, bool CallDelegate_);
 	void Set_OptionButtons_Visibility();
 	void Set_DifficultyButtons_Visibility();

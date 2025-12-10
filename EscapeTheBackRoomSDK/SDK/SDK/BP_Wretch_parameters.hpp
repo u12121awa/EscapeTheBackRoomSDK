@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "HE_LookAtLocation_structs.hpp"
 #include "AIModule_structs.hpp"
 #include "Engine_structs.hpp"
-#include "HE_SubtitleSeq_structs.hpp"
 #include "HE_LookAtLocationSeq_structs.hpp"
 #include "HE_Subtitle_structs.hpp"
+#include "HE_SubtitleSeq_structs.hpp"
+#include "HE_LookAtLocation_structs.hpp"
 
 
 namespace SDK::Params

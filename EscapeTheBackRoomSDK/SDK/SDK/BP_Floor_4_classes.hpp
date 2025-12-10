@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "ENUM_Floor_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -17,11 +18,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Floor.BP_Floor_C
-// 0x0008 (0x0228 - 0x0220)
+// 0x0020 (0x0240 - 0x0220)
 class BP_Floor_4::ABP_Floor_C final : public AActor
 {
 public:
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	ENUM_Floor                                    Module_Type;                                       // 0x0228(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_229[0x7];                                      // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<class UMaterialInterface*>             Materials_Override;                                // 0x0230(0x0010)(Edit, BlueprintVisible)
+
+public:
+	void UserConstructionScript();
+	void OverrideMeshMaterials(class UStaticMeshComponent* Mesh, TArray<class UMaterialInterface*>& Materials, TArray<class UMaterialInterface*>* InitMaterials);
 
 public:
 	static class UClass* StaticClass()

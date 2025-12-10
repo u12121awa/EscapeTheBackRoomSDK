@@ -10,20 +10,30 @@
 
 #include "Basic.hpp"
 
-#include "Backrooms_classes.hpp"
+#include "Engine_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_LockedDoor.BP_LockedDoor_C
-// 0x0018 (0x0260 - 0x0248)
-class BP_LockedDoor_0::ABP_LockedDoor_C final : public AInteractableActor
+// 0x0010 (0x02B8 - 0x02A8)
+class BP_LockedDoor_0::ABP_LockedDoor_C final : public ASkeletalMeshActor
 {
 public:
-	class UStaticMeshComponent*                   StaticMesh3;                                       // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh2;                                       // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          IsOpen;                                            // 0x02B0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+
+public:
+	void ExecuteUbergraph_BP_LockedDoor(int32 EntryPoint);
+	void OpenDoor();
+	void OnCompleted_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName);
+	void OnBlendOut_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName);
+	void OnInterrupted_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName);
+	void OnNotifyBegin_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName);
+	void OnNotifyEnd_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName);
+	void OnRep_IsOpen();
 
 public:
 	static class UClass* StaticClass()

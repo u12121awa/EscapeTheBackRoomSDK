@@ -66,9 +66,9 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
 };
 
-// Function Lobby_Save_Switcher.Lobby_Save_Switcher_C.Setup
+// Function Lobby_Save_Switcher.Lobby_Save_Switcher_C.SetUp
 // 0x0070 (0x0070 - 0x0000)
-struct Lobby_Save_Switcher_C_Setup final
+struct Lobby_Save_Switcher_C_SetUp final
 {
 public:
 	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0000(0x0058)(HasGetValueTypeHash)

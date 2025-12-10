@@ -51,15 +51,15 @@ void UBPC_MiniGameBase_2_C::MiniGame_Activate()
 }
 
 
-// Function BPC_MiniGameBase_2.BPC_MiniGameBase_2_C.SpawnMiniGame
+// Function BPC_MiniGameBase_2.BPC_MiniGameBase_2_C.SpawnMinigame
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UBPC_MiniGameBase_2_C::SpawnMiniGame()
+void UBPC_MiniGameBase_2_C::SpawnMinigame()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPC_MiniGameBase_2_C", "SpawnMiniGame");
+		Func = Class->GetFunction("BPC_MiniGameBase_2_C", "SpawnMinigame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

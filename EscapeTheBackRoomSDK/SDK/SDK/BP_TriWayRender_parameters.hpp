@@ -12,9 +12,9 @@
 
 #include "E_TriWayPinColor_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "S_FinderData_structs.hpp"
 #include "S_TriWayData_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params

@@ -49,9 +49,9 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_Fusebox_3(int32 EntryPoint);
+	void InitializeSwitchArray();
 	void ReceiveTick(float DeltaSeconds);
 	void UserConstructionScript();
-	void InitializeSwitchArray();
 	void OpenDoor(bool Open_0);
 
 public:

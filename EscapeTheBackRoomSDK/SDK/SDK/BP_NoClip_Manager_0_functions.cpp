@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function BP_NoClip_Manager.BP_NoClip_Manager_C.ExecuteUbergraph_BP_NoClip_Manager
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -37,29 +37,43 @@ void BP_NoClip_Manager_0::ABP_NoClip_Manager_C::ExecuteUbergraph_BP_NoClip_Manag
 }
 
 
-// Function BP_NoClip_Manager.BP_NoClip_Manager_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_NoClip_Manager.BP_NoClip_Manager_C.CheckPlayers
+// (BlueprintCallable, BlueprintEvent)
 
-void BP_NoClip_Manager_0::ABP_NoClip_Manager_C::ReceiveBeginPlay()
+void BP_NoClip_Manager_0::ABP_NoClip_Manager_C::CheckPlayers()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NoClip_Manager_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_NoClip_Manager_C", "CheckPlayers");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NoClip_Manager.BP_NoClip_Manager_C.OnRep_IndexChosen
-// (HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_NoClip_Manager.BP_NoClip_Manager_C.StartChecking
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 
-void BP_NoClip_Manager_0::ABP_NoClip_Manager_C::OnRep_IndexChosen()
+void BP_NoClip_Manager_0::ABP_NoClip_Manager_C::StartChecking()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NoClip_Manager_C", "OnRep_IndexChosen");
+		Func = Class->GetFunction("BP_NoClip_Manager_C", "StartChecking");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NoClip_Manager.BP_NoClip_Manager_C.AddPlayer
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+
+void BP_NoClip_Manager_0::ABP_NoClip_Manager_C::AddPlayer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NoClip_Manager_C", "AddPlayer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

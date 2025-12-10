@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "BP_Interactable_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "S_PasswordSymbols_structs.hpp"
-#include "BP_Interactable_classes.hpp"
 
 
 namespace SDK

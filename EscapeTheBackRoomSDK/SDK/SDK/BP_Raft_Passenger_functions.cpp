@@ -37,6 +37,20 @@ void ABP_Raft_Passenger_C::ExecuteUbergraph_BP_Raft_Passenger(int32 EntryPoint)
 }
 
 
+// Function BP_Raft_Passenger.BP_Raft_Passenger_C.Change Mesh Costume
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_Raft_Passenger_C::Change_Mesh_Costume()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Raft_Passenger_C", "Change Mesh Costume");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Raft_Passenger.BP_Raft_Passenger_C.LookUp
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -306,6 +320,20 @@ void ABP_Raft_Passenger_C::RemovePlague(class ABPCharacter_Demo_C* Player)
 	Parms.Player = Player;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Raft_Passenger.BP_Raft_Passenger_C.OnRep_ControlledPlayer
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Raft_Passenger_C::OnRep_ControlledPlayer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Raft_Passenger_C", "OnRep_ControlledPlayer");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Backrooms_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Backrooms_structs.hpp"
 
 
 namespace SDK::Params
@@ -35,9 +35,9 @@ public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// Function WB_Button_Confirmation_Theme2.WB_Button_Confirmation_Theme2_C.Setup
+// Function WB_Button_Confirmation_Theme2.WB_Button_Confirmation_Theme2_C.SetUp
 // 0x0001 (0x0001 - 0x0000)
-struct WB_Button_Confirmation_Theme2_C_Setup final
+struct WB_Button_Confirmation_Theme2_C_SetUp final
 {
 public:
 	EFancyInputDevice                             CallFunc_GetCurrentInputDevice_ReturnValue;        // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -223,55 +223,6 @@ void ABP_RollingDoor_C::MoveCollider__FinishedFunc()
 }
 
 
-// Function BP_RollingDoor.BP_RollingDoor_C.GetCloseSpeed
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// float*                                  Delay                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RollingDoor_C::GetCloseSpeed(float* Delay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RollingDoor_C", "GetCloseSpeed");
-
-	Params::BP_RollingDoor_C_GetCloseSpeed Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Delay != nullptr)
-		*Delay = Parms.Delay;
-}
-
-
-// Function BP_RollingDoor.BP_RollingDoor_C.OnRep_OpeningState
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_RollingDoor_C::OnRep_OpeningState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RollingDoor_C", "OnRep_OpeningState");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RollingDoor.BP_RollingDoor_C.OnRep_IsOpened
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_RollingDoor_C::OnRep_IsOpened()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RollingDoor_C", "OnRep_IsOpened");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_RollingDoor.BP_RollingDoor_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
@@ -319,6 +270,55 @@ void ABP_RollingDoor_C::UpdateDoorPosition()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_RollingDoor_C", "UpdateDoorPosition");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RollingDoor.BP_RollingDoor_C.GetCloseSpeed
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// float*                                  Delay                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RollingDoor_C::GetCloseSpeed(float* Delay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RollingDoor_C", "GetCloseSpeed");
+
+	Params::BP_RollingDoor_C_GetCloseSpeed Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Delay != nullptr)
+		*Delay = Parms.Delay;
+}
+
+
+// Function BP_RollingDoor.BP_RollingDoor_C.OnRep_OpeningState
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_RollingDoor_C::OnRep_OpeningState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RollingDoor_C", "OnRep_OpeningState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RollingDoor.BP_RollingDoor_C.OnRep_IsOpened
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_RollingDoor_C::OnRep_IsOpened()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RollingDoor_C", "OnRep_IsOpened");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

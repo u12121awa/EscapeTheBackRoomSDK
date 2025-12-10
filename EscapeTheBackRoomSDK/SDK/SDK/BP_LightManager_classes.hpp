@@ -28,7 +28,7 @@ public:
 	ETimelineDirection                            Flicker__Direction_FBE77882489BED785661BC9194C686D9; // 0x0234(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_235[0x3];                                      // 0x0235(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
 	class UTimelineComponent*                     Flicker;                                           // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class BP_Lamp_1::ABP_Lamp_C*>          Lights;                                            // 0x0240(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	TArray<class BP_Lamp_0::ABP_Lamp_C*>          Lights;                                            // 0x0240(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 	class AExponentialHeightFog*                  Fog;                                               // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          FirstFlicker;                                      // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          LightsOn;                                          // 0x0259(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -49,7 +49,7 @@ public:
 	void Flicker__FinishedFunc();
 	void GetTimerDelay(float* Delay);
 	void SetupExit(int32 CurrentExitIndex);
-	void GetExitLocation(class Pipe_Exit_0::APipe_Exit_C* Exit, struct FTransform* Location);
+	void GetExitLocation(class Pipe_Exit::APipe_Exit_C* Exit, struct FTransform* Location);
 	void SpawnEntities();
 	void GetTurnOffDelay(float* Delay);
 	void RemoveEntities();

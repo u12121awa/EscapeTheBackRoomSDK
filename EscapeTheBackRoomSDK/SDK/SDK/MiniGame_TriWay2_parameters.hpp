@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "E_TriWayDirection_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "S_TriWayData_structs.hpp"
 #include "S_TriWayLinks_structs.hpp"
-#include "E_TriWayDirection_structs.hpp"
 #include "E_TriWayPinColor_structs.hpp"
 #include "E_TriWayCount_structs.hpp"
 

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_FinalArcade_Player.BP_FinalArcade_Player_C
-// 0x0048 (0x02C8 - 0x0280)
+// 0x0050 (0x02D0 - 0x0280)
 class ABP_FinalArcade_Player_C final : public APawn
 {
 public:
@@ -33,13 +33,17 @@ public:
 	float                                         TurnMax;                                           // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Pitch;                                             // 0x02BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Yaw;                                               // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	class UCostume*                               Assigned_Costume;                                  // 0x02C8(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_FinalArcade_Player(int32 EntryPoint);
+	void Switch_Character_Costume();
 	void ControlPlayer(class ABPCharacter_Demo_C* Character);
 	void InpAxisEvt_LookUp_K2Node_InputAxisEvent_2(float AxisValue);
 	void InpAxisEvt_Turn_K2Node_InputAxisEvent_0(float AxisValue);
 	void RemovePlague(class ABPCharacter_Demo_C* Player);
+	void OnRep_Assigned_Costume();
 
 public:
 	static class UClass* StaticClass()

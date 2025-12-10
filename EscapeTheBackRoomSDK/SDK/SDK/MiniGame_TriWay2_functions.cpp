@@ -57,15 +57,15 @@ void UMiniGame_TriWay2_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function MiniGame_TriWay2.MiniGame_TriWay2_C.SpawnMiniGame
+// Function MiniGame_TriWay2.MiniGame_TriWay2_C.SpawnMinigame
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UMiniGame_TriWay2_C::SpawnMiniGame()
+void UMiniGame_TriWay2_C::SpawnMinigame()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MiniGame_TriWay2_C", "SpawnMiniGame");
+		Func = Class->GetFunction("MiniGame_TriWay2_C", "SpawnMinigame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

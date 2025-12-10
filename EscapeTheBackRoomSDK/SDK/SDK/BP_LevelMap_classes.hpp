@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "F_MG_HackerSolver_structs.hpp"
+#include "S_UploadStatus_structs.hpp"
 #include "Backrooms_structs.hpp"
 #include "Backrooms_classes.hpp"
-#include "S_UploadStatus_structs.hpp"
+#include "F_MG_HackerSolver_structs.hpp"
 
 
 namespace SDK

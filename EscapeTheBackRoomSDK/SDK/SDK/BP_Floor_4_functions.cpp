@@ -6,12 +6,12 @@
 * https://github.com/NotTacs/Dumper-8
 */
 
-// Package: BP_Floor_2
+// Package: BP_Floor_4
 
 #include "Basic.hpp"
 
-#include "BP_Floor_2_classes.hpp"
-#include "BP_Floor_2_parameters.hpp"
+#include "BP_Floor_4_classes.hpp"
+#include "BP_Floor_4_parameters.hpp"
 
 
 namespace SDK
@@ -20,7 +20,7 @@ namespace SDK
 // Function BP_Floor.BP_Floor_C.UserConstructionScript
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void BP_Floor_2::ABP_Floor_C::UserConstructionScript()
+void BP_Floor_4::ABP_Floor_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
@@ -38,7 +38,7 @@ void BP_Floor_2::ABP_Floor_C::UserConstructionScript()
 // TArray<class UMaterialInterface*>&      Materials                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // TArray<class UMaterialInterface*>*      InitMaterials                                          (Parm, OutParm)
 
-void BP_Floor_2::ABP_Floor_C::OverrideMeshMaterials(class UStaticMeshComponent* Mesh, TArray<class UMaterialInterface*>& Materials, TArray<class UMaterialInterface*>* InitMaterials)
+void BP_Floor_4::ABP_Floor_C::OverrideMeshMaterials(class UStaticMeshComponent* Mesh, TArray<class UMaterialInterface*>& Materials, TArray<class UMaterialInterface*>* InitMaterials)
 {
 	static class UFunction* Func = nullptr;
 

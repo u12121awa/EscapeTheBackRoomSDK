@@ -32,14 +32,14 @@ namespace UC
 		static void Free(void* Ptr)
 		{
 
-            static void (*FMemoryFree)(void* Ptr) = decltype(FMemoryFree)(uintptr_t(GetModuleHandle(0)) + 0x010F3740); 
+            static void (*FMemoryFree)(void* Ptr) = decltype(FMemoryFree)(uintptr_t(GetModuleHandle(0)) + 0x010FDEB0); 
 			return FMemoryFree(Ptr);
 		}
 
 		static void* Realloc(void* Ptr, uint64 Size, uint32 Alignment)
 		{
 
-            static void* (*FMemoryRealloc)(void* Ptr, uint64 Size, uint32 Alignment) = decltype(FMemoryRealloc)(uintptr_t(GetModuleHandle(0)) + 0x01034460); 		
+            static void* (*FMemoryRealloc)(void* Ptr, uint64 Size, uint32 Alignment) = decltype(FMemoryRealloc)(uintptr_t(GetModuleHandle(0)) + 0x0103EBD0); 		
             return FMemoryRealloc(Ptr, Size, Alignment);
 		}
 	};

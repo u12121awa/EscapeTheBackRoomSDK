@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_GlowstickColor_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_GlowstickColor_structs.hpp"
 #include "BP_Item_classes.hpp"
 
 

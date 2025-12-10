@@ -6,12 +6,12 @@
 * https://github.com/NotTacs/Dumper-8
 */
 
-// Package: BP_Lamp_1
+// Package: BP_Lamp_0
 
 #include "Basic.hpp"
 
-#include "BP_Lamp_1_classes.hpp"
-#include "BP_Lamp_1_parameters.hpp"
+#include "BP_Lamp_0_classes.hpp"
+#include "BP_Lamp_0_parameters.hpp"
 
 
 namespace SDK
@@ -20,7 +20,7 @@ namespace SDK
 // Function BP_Lamp.BP_Lamp_C.TurnOFF
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void BP_Lamp_1::ABP_Lamp_C::TurnOFF()
+void BP_Lamp_0::ABP_Lamp_C::TurnOFF()
 {
 	static class UFunction* Func = nullptr;
 
@@ -34,7 +34,7 @@ void BP_Lamp_1::ABP_Lamp_C::TurnOFF()
 // Function BP_Lamp.BP_Lamp_C.TurnON
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void BP_Lamp_1::ABP_Lamp_C::TurnON()
+void BP_Lamp_0::ABP_Lamp_C::TurnON()
 {
 	static class UFunction* Func = nullptr;
 
@@ -50,7 +50,7 @@ void BP_Lamp_1::ABP_Lamp_C::TurnON()
 // Parameters:
 // float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_Lamp_1::ABP_Lamp_C::CheckLight(float Value)
+void BP_Lamp_0::ABP_Lamp_C::CheckLight(float Value)
 {
 	static class UFunction* Func = nullptr;
 
@@ -70,7 +70,7 @@ void BP_Lamp_1::ABP_Lamp_C::CheckLight(float Value)
 // Parameters:
 // float                                   Intensity                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_Lamp_1::ABP_Lamp_C::SetPointLight(float Intensity)
+void BP_Lamp_0::ABP_Lamp_C::SetPointLight(float Intensity)
 {
 	static class UFunction* Func = nullptr;
 

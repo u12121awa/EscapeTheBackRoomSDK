@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "S_UploadStatus_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_UploadStatus_structs.hpp"
 
 
 namespace SDK::Params
@@ -47,7 +47,7 @@ public:
 struct BP_Upload_Manager_C_SelectComputers final
 {
 public:
-	bool                                          Setup;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          SetUp;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ShouldDelete;                                      // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
 	int32                                         CurrentIndex;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

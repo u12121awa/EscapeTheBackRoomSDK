@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ENUM_DoorState_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ENUM_DoorState_structs.hpp"
 #include "Backrooms_classes.hpp"
 
 

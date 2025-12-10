@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "sc_texure_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "sc_texure_structs.hpp"
 
 
 namespace SDK

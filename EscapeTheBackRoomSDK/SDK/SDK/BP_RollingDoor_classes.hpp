@@ -54,12 +54,12 @@ public:
 	void ToggleCollider(bool Open);
 	void MoveCollider__UpdateFunc();
 	void MoveCollider__FinishedFunc();
-	void GetCloseSpeed(float* Delay);
-	void OnRep_OpeningState();
-	void OnRep_IsOpened();
 	void UserConstructionScript();
 	void UpdateAnimation(float NewPosition, bool* Result);
 	void UpdateDoorPosition();
+	void GetCloseSpeed(float* Delay);
+	void OnRep_OpeningState();
+	void OnRep_IsOpened();
 
 public:
 	static class UClass* StaticClass()

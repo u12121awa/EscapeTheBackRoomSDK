@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SkinStealer_Hotel.BP_SkinStealer_Hotel_C
-// 0x0010 (0x0560 - 0x0550)
+// 0x0010 (0x0570 - 0x0560)
 class ABP_SkinStealer_Hotel_C final : public ABP_SkinStealer_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SkinStealer_Hotel_C;             // 0x0550(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class ABP_HotelDoor_C*                        Door;                                              // 0x0558(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SkinStealer_Hotel_C;             // 0x0558(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class ABP_HotelDoor_C*                        Door;                                              // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_SkinStealer_Hotel(int32 EntryPoint);

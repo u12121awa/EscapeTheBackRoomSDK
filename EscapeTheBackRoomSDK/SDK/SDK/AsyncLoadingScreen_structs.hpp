@@ -198,18 +198,6 @@ public:
 	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
-// ScriptStruct AsyncLoadingScreen.CircularThrobberSettings
-// 0x0098 (0x0098 - 0x0000)
-struct FCircularThrobberSettings final
-{
-public:
-	int32                                         NumberOfPieces;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Period;                                            // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Radius;                                            // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FSlateBrush                            Image;                                             // 0x0010(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-
 // ScriptStruct AsyncLoadingScreen.ThrobberSettings
 // 0x0090 (0x0090 - 0x0000)
 struct FThrobberSettings final
@@ -221,6 +209,18 @@ public:
 	bool                                          bAnimateOpacity;                                   // 0x0006(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-8 ])
 	struct FSlateBrush                            Image;                                             // 0x0008(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+};
+
+// ScriptStruct AsyncLoadingScreen.CircularThrobberSettings
+// 0x0098 (0x0098 - 0x0000)
+struct FCircularThrobberSettings final
+{
+public:
+	int32                                         NumberOfPieces;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Period;                                            // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Radius;                                            // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FSlateBrush                            Image;                                             // 0x0010(0x0088)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 
 // ScriptStruct AsyncLoadingScreen.ImageSequenceSettings

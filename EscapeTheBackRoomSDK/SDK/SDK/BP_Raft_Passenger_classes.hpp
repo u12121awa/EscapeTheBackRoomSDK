@@ -36,11 +36,12 @@ public:
 	float                                         Yaw;                                               // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2BC[0x4];                                      // 0x02BC(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
 	class ABP_Raft_Passengers_C*                  RaftPassengerManager;                              // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABPCharacter_Demo_C*                    ControlledPlayer;                                  // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABPCharacter_Demo_C*                    ControlledPlayer;                                  // 0x02C8(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                TeleportLoc;                                       // 0x02D0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_Raft_Passenger(int32 EntryPoint);
+	void Change_Mesh_Costume();
 	void LookUp(float A);
 	void Turn(float A);
 	void InpAxisEvt_LookUpRate_K2Node_InputAxisEvent_9(float AxisValue);
@@ -56,6 +57,7 @@ public:
 	void InpAxisEvt_Turn_K2Node_InputAxisEvent_0(float AxisValue);
 	void InpActEvt_Interact_K2Node_InputActionEvent_0(const struct FKey& Key);
 	void RemovePlague(class ABPCharacter_Demo_C* Player);
+	void OnRep_ControlledPlayer();
 
 public:
 	static class UClass* StaticClass()

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "UDS_Weather_Mask_Brush_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK

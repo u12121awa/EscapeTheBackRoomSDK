@@ -37,6 +37,20 @@ void ABP_FinalArcade_Player_C::ExecuteUbergraph_BP_FinalArcade_Player(int32 Entr
 }
 
 
+// Function BP_FinalArcade_Player.BP_FinalArcade_Player_C.Switch Character Costume
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_FinalArcade_Player_C::Switch_Character_Costume()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FinalArcade_Player_C", "Switch Character Costume");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_FinalArcade_Player.BP_FinalArcade_Player_C.ControlPlayer
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -114,6 +128,20 @@ void ABP_FinalArcade_Player_C::RemovePlague(class ABPCharacter_Demo_C* Player)
 	Parms.Player = Player;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_FinalArcade_Player.BP_FinalArcade_Player_C.OnRep_Assigned Costume
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_FinalArcade_Player_C::OnRep_Assigned_Costume()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FinalArcade_Player_C", "OnRep_Assigned Costume");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

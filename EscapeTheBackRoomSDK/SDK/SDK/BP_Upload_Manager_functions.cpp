@@ -110,9 +110,9 @@ void ABP_Upload_Manager_C::UpdateMap()
 // Function BP_Upload_Manager.BP_Upload_Manager_C.SelectComputers
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Setup                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    SetUp                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_Upload_Manager_C::SelectComputers(bool Setup)
+void ABP_Upload_Manager_C::SelectComputers(bool SetUp)
 {
 	static class UFunction* Func = nullptr;
 
@@ -121,7 +121,7 @@ void ABP_Upload_Manager_C::SelectComputers(bool Setup)
 
 	Params::BP_Upload_Manager_C_SelectComputers Parms{};
 
-	Parms.Setup = Setup;
+	Parms.SetUp = SetUp;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

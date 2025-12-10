@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SlidingPlayer.BP_SlidingPlayer_C
-// 0x0170 (0x0470 - 0x0300)
+// 0x0180 (0x0480 - 0x0300)
 class ABP_SlidingPlayer_C final : public AInteractablePawn
 {
 public:
@@ -58,6 +58,7 @@ public:
 	class ABP_DropCarriedNPCZone_C*               DropCarriedNPCZone;                                // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_DeathSlide_C*                       TrapDoor;                                          // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ACameraActor*                           Camera;                                            // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCostume*                               Costume;                                           // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_SlidingPlayer(int32 EntryPoint);

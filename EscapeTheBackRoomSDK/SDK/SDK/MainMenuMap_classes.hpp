@@ -32,12 +32,13 @@ public:
 	class UW_MainMenu_C*                          MainMenuRef;                                       // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void ContinueLoadWithIntro();
-	void ContinueLoadWithoutIntro();
-	void CreateMainMenuWidget();
-	void ShowMainMenu(class UW_MainMenu_C* MainMenuRef_0);
 	void ExecuteUbergraph_MainMenuMap(int32 EntryPoint);
+	void HandleOnStartCostumeSelect(class UUserWidget* CostumeWidget);
+	void ShowMainMenu(class UW_MainMenu_C* MainMenuRef_0);
+	void CreateMainMenuWidget();
+	void ContinueLoadWithoutIntro();
+	void ContinueLoadWithIntro();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

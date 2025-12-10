@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Backrooms_classes.hpp"
 #include "E_Soundscape_structs.hpp"
-#include "S_MorseChar_structs.hpp"
 #include "Engine_structs.hpp"
+#include "S_MorseChar_structs.hpp"
+#include "Backrooms_classes.hpp"
 
 
 namespace SDK

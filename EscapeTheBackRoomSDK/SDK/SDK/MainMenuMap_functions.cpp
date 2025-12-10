@@ -17,59 +17,43 @@
 namespace SDK
 {
 
-// Function MainMenuMap.MainMenuMap_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function MainMenuMap.MainMenuMap_C.ExecuteUbergraph_MainMenuMap
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AMainMenuMap_C::ReceiveBeginPlay()
+void AMainMenuMap_C::ExecuteUbergraph_MainMenuMap(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuMap_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("MainMenuMap_C", "ExecuteUbergraph_MainMenuMap");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::MainMenuMap_C_ExecuteUbergraph_MainMenuMap Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function MainMenuMap.MainMenuMap_C.ContinueLoadWithIntro
+// Function MainMenuMap.MainMenuMap_C.HandleOnStartCostumeSelect
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      CostumeWidget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AMainMenuMap_C::ContinueLoadWithIntro()
+void AMainMenuMap_C::HandleOnStartCostumeSelect(class UUserWidget* CostumeWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuMap_C", "ContinueLoadWithIntro");
+		Func = Class->GetFunction("MainMenuMap_C", "HandleOnStartCostumeSelect");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::MainMenuMap_C_HandleOnStartCostumeSelect Parms{};
 
+	Parms.CostumeWidget = CostumeWidget;
 
-// Function MainMenuMap.MainMenuMap_C.ContinueLoadWithoutIntro
-// (BlueprintCallable, BlueprintEvent)
-
-void AMainMenuMap_C::ContinueLoadWithoutIntro()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuMap_C", "ContinueLoadWithoutIntro");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenuMap.MainMenuMap_C.CreateMainMenuWidget
-// (BlueprintCallable, BlueprintEvent)
-
-void AMainMenuMap_C::CreateMainMenuWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuMap_C", "CreateMainMenuWidget");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -93,23 +77,59 @@ void AMainMenuMap_C::ShowMainMenu(class UW_MainMenu_C* MainMenuRef_0)
 }
 
 
-// Function MainMenuMap.MainMenuMap_C.ExecuteUbergraph_MainMenuMap
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function MainMenuMap.MainMenuMap_C.CreateMainMenuWidget
+// (BlueprintCallable, BlueprintEvent)
 
-void AMainMenuMap_C::ExecuteUbergraph_MainMenuMap(int32 EntryPoint)
+void AMainMenuMap_C::CreateMainMenuWidget()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenuMap_C", "ExecuteUbergraph_MainMenuMap");
+		Func = Class->GetFunction("MainMenuMap_C", "CreateMainMenuWidget");
 
-	Params::MainMenuMap_C_ExecuteUbergraph_MainMenuMap Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function MainMenuMap.MainMenuMap_C.ContinueLoadWithoutIntro
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainMenuMap_C::ContinueLoadWithoutIntro()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenuMap_C", "ContinueLoadWithoutIntro");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenuMap.MainMenuMap_C.ContinueLoadWithIntro
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainMenuMap_C::ContinueLoadWithIntro()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenuMap_C", "ContinueLoadWithIntro");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenuMap.MainMenuMap_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AMainMenuMap_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenuMap_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -117,6 +117,14 @@ enum class EBPLoginStatus : uint8
 	EBPLoginStatus_MAX                       = 3,
 };
 
+// ScriptStruct AdvancedSessions.SessionsSearchSetting
+// 0x0028 (0x0028 - 0x0000)
+struct alignas(0x08) FSessionsSearchSetting final
+{
+public:
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
 // ScriptStruct AdvancedSessions.BPUniqueNetId
 // 0x0028 (0x0028 - 0x0000)
 struct FBPUniqueNetId final
@@ -141,14 +149,6 @@ struct FBPOnlineRecentPlayer final : public FBPOnlineUser
 {
 public:
 	class FString                                 LastSeen;                                          // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// ScriptStruct AdvancedSessions.BPUserOnlineAccount
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FBPUserOnlineAccount final
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // ScriptStruct AdvancedSessions.BPFriendPresenceInfo
@@ -181,20 +181,20 @@ public:
 	struct FBPFriendPresenceInfo                  PresenceInfo;                                      // 0x0058(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 
-// ScriptStruct AdvancedSessions.SessionsSearchSetting
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x08) FSessionsSearchSetting final
-{
-public:
-	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
 // ScriptStruct AdvancedSessions.SessionPropertyKeyPair
 // 0x0020 (0x0020 - 0x0000)
 struct alignas(0x08) FSessionPropertyKeyPair final
 {
 public:
 	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// ScriptStruct AdvancedSessions.BPUserOnlineAccount
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FBPUserOnlineAccount final
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 }

@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "MD_KickPlate_Enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "MD_DoorTypes_Enum_structs.hpp"
-#include "MD_LatchTypes2_Enum_structs.hpp"
-#include "MD_KickPlate_Enum_structs.hpp"
 #include "MD_RollDoorStateEnum_structs.hpp"
+#include "MD_LatchTypes2_Enum_structs.hpp"
 #include "SwingDoorBase_BP_classes.hpp"
 
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Engine_classes.hpp"
 #include "SBookArray_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK

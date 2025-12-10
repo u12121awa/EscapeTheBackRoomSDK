@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Backrooms_structs.hpp"
-#include "F_MG_HackerSolver_structs.hpp"
 #include "BP_MiniGamesBase3_classes.hpp"
+#include "Engine_structs.hpp"
+#include "F_MG_HackerSolver_structs.hpp"
+#include "Backrooms_structs.hpp"
 
 
 namespace SDK

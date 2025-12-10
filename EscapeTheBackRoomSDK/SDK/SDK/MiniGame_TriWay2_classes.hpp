@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "E_TriWayDirection_structs.hpp"
 #include "Engine_structs.hpp"
-#include "S_TriWayData_structs.hpp"
 #include "E_TriWayState_structs.hpp"
+#include "S_TriWayData_structs.hpp"
+#include "S_TriWayLinks_structs.hpp"
+#include "E_TriWayDirection_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "E_TriWayCount_structs.hpp"
 #include "BPC_MiniGameBase_2_classes.hpp"
-#include "CoreUObject_structs.hpp"
-#include "S_TriWayLinks_structs.hpp"
 #include "E_TriWayPinColor_structs.hpp"
 
 
@@ -62,7 +62,7 @@ public:
 public:
 	void ExecuteUbergraph_MiniGame_TriWay2(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
-	void SpawnMiniGame();
+	void SpawnMinigame();
 	void CreateAndSpawnWheels(E_TriWayCount Count);
 	void AddWheel(const struct FVector& Location, int32 SolvedState, int32 CurrentState, E_TriWayPinColor Pin0, E_TriWayPinColor Pin1, E_TriWayPinColor Pin2);
 	void CreateSixWheels();

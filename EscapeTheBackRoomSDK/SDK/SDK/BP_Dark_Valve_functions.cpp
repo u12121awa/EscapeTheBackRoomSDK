@@ -37,6 +37,20 @@ void ABP_Dark_Valve_C::ExecuteUbergraph_BP_Dark_Valve(int32 EntryPoint)
 }
 
 
+// Function BP_Dark_Valve.BP_Dark_Valve_C.Switch Character Costume
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_Dark_Valve_C::Switch_Character_Costume()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Dark_Valve_C", "Switch Character Costume");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Dark_Valve.BP_Dark_Valve_C.ForceUnpossess
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 
@@ -390,6 +404,20 @@ void ABP_Dark_Valve_C::OnRep_CanInteract()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Dark_Valve_C", "OnRep_CanInteract");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Dark_Valve.BP_Dark_Valve_C.OnRep_Assigned Costume
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Dark_Valve_C::OnRep_Assigned_Costume()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Dark_Valve_C", "OnRep_Assigned Costume");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

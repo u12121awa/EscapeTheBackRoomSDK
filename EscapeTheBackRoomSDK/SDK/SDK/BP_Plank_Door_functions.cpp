@@ -99,20 +99,6 @@ void BP_Plank_Door::ABP_Plank_Door_C::Damage(class ACharacter* Character)
 }
 
 
-// Function BP_Plank_Door.BP_Plank_Door_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void BP_Plank_Door::ABP_Plank_Door_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Plank_Door_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Plank_Door.BP_Plank_Door_C.MC_Sound
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -239,7 +225,7 @@ void BP_Plank_Door::ABP_Plank_Door_C::SpawnDestructible(class USceneComponent* C
 	Params::BP_Plank_Door_C_SpawnDestructible Parms{};
 
 	Parms.Component = Component;
-	Parms.Mesh = reinterpret_cast<class SDK::UDestructibleMesh*>(Mesh);
+	Parms.Mesh = reinterpret_cast<class Params::UDestructibleMesh*>(Mesh);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

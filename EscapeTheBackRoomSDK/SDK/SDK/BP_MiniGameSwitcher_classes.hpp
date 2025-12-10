@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_MG_SwitcherCount_structs.hpp"
+#include "BP_MiniGamesBase3_classes.hpp"
 #include "Engine_structs.hpp"
 #include "F_MG_SwitcherPin_structs.hpp"
-#include "BP_MiniGamesBase3_classes.hpp"
+#include "E_MG_SwitcherCount_structs.hpp"
 
 
 namespace SDK

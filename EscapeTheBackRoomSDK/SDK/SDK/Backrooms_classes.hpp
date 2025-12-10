@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "XShip_structs.hpp"
-#include "InteractiveToolsFramework_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "InteractiveToolsFramework_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Backrooms_structs.hpp"
 #include "AIModule_structs.hpp"
@@ -28,65 +28,39 @@
 namespace SDK
 {
 
-// Class Backrooms.InteractableActor
-// 0x0028 (0x0248 - 0x0220)
-class AInteractableActor : public AActor
+// Class Backrooms.MapEditorCharacterMovement
+// 0x0020 (0x0B10 - 0x0AF0)
+class UMapEditorCharacterMovement final : public UCharacterMovementComponent
 {
 public:
-	uint8                                         Pad_220[0x8];                                      // 0x0220(0x0008)(Fixing Size After Last Property [ Dumper-8 ])
-	class USceneComponent*                        SceneComponent;                                    // 0x0228(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0230(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USoundBase*                             UsedSound;                                         // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          IsUsable;                                          // 0x0240(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          WasUsed;                                           // 0x0241(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bShouldAimAssist;                                  // 0x0242(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_243[0x5];                                      // 0x0243(0x0005)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	bool                                          bCenterMouseOnStopMovementMode;                    // 0x0AF0(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_AF1[0x13];                                     // 0x0AF1(0x0013)(Fixing Size After Last Property [ Dumper-8 ])
+	float                                         MaxSpeedMultiplier;                                // 0x0B04(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MinSpeedMultiplier;                                // 0x0B08(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_B0C[0x4];                                      // 0x0B0C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
 
 public:
-	void BlockUsage();
-	void OnBeginHighlight();
-	void OnEndHighlight();
-	void OnInteractStartedLocal();
-	void OnRep_IsUsable();
-	void OnRep_WasUsed();
-	void OnUsedAll();
-	void OnUsedMulticast();
-	void OnUsedNotify();
-	void OnUsedServer();
-	void ResetUsage();
+	void DecreaseSpeedMultiplier(float DecreaseAmount);
+	void EnterMovementMode(bool Enter);
+	void IncreaseSpeedMultiplier(float IncreaseAmount);
+	void Init();
+	void LookUp(float Value);
+	void MoveForward(float Value);
+	void MoveRight(float Value);
+	void MoveUp(float Value);
+	void Server_SetSpeedMultiplier(float SpeedMultiplier);
+	void Turn(float Value);
+
+	bool InMovementMode() const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"InteractableActor">();
+		return StaticClassImpl<"MapEditorCharacterMovement">();
 	}
-	static class AInteractableActor* GetDefaultObj()
+	static class UMapEditorCharacterMovement* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<AInteractableActor>();
-	}
-};
-
-// Class Backrooms.PushableActor
-// 0x0008 (0x0250 - 0x0248)
-class APushableActor : public AInteractableActor
-{
-public:
-	float                                         Density;                                           // 0x0248(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
-
-public:
-	struct FVector GetClosesPoint(class AActor* InActor);
-	TArray<struct FVector> GetForwardBoundingPoints(bool InInvert);
-	TArray<struct FVector> GetRightBoundingPoints(bool InInvert);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"PushableActor">();
-	}
-	static class APushableActor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<APushableActor>();
+		return GetDefaultObjImpl<UMapEditorCharacterMovement>();
 	}
 };
 
@@ -111,36 +85,35 @@ public:
 	}
 };
 
-// Class Backrooms.MissionData
-// 0x0040 (0x0068 - 0x0028)
-class UMissionData final : public UObject
+// Class Backrooms.ItemActor
+// 0x00A0 (0x02C0 - 0x0220)
+class AItemActor final : public AActor
 {
 public:
-	class FString                                 TargetEscapeLevel;                                 // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TimeCompleted;                                     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         PlayerDeaths;                                      // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         EntitySightings;                                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         LowSanityAmount;                                   // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         XPPenalty;                                         // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         LevelBaseXP;                                       // 0x004C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         LevelTimeLimit;                                    // 0x0050(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class FString                                 MissionDataRowName;                                // 0x0058(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FItemStructure                         Structure;                                         // 0x0220(0x0068)(BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
+	int32                                         Quantity;                                          // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsUseable;                                         // 0x028C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bPlayUseAnimation;                                 // 0x028D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_28E[0x2];                                      // 0x028E(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
+	class USceneComponent*                        SceneComponent;                                    // 0x0290(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMeshComponent*                   Mesh2;                                             // 0x0298(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        IdleAnimation;                                     // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        UseAnimation;                                      // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        EquipMontage;                                      // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAnimationAsset*                        UnEquipMontage;                                    // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
-	void AddEntitySighting();
-	void AddLowSanityAmount();
-	void AddPlayerDeath();
-	void SetTimeCompleted(float Time);
+	void CustomInventoryUse();
+	void Use();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MissionData">();
+		return StaticClassImpl<"ItemActor">();
 	}
-	static class UMissionData* GetDefaultObj()
+	static class AItemActor* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UMissionData>();
+		return GetDefaultObjImpl<AItemActor>();
 	}
 };
 
@@ -212,6 +185,7 @@ public:
 	static bool IsNoHMDMode();
 	static void K2_IsTearingDown(class UObject* caller, bool* isTearingDown);
 	static float LoadXP();
+	static void LogStringWithPlayerId(const class UObject* PawnOrComponent, const class FString& Text);
 	static void PatchMissingInputActions(const TArray<struct FInputActionKeyMapping>& NewActions);
 	static class UTimelineComponent* PlayRate(class UTimelineComponent* Timeline, float Sec);
 	static void ReloadBindings();
@@ -232,21 +206,18 @@ public:
 	}
 };
 
-// Class Backrooms.MapEditorCharacter
-// 0x0000 (0x04C0 - 0x04C0)
-class AMapEditorCharacter final : public ACharacter
+// Class Backrooms.InteractableCameraComponent
+// 0x0000 (0x07D0 - 0x07D0)
+class UInteractableCameraComponent final : public UCameraComponent
 {
-public:
-	class UCameraComponent*                       CameraComponent;                                   // 0x04B8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MapEditorCharacter">();
+		return StaticClassImpl<"InteractableCameraComponent">();
 	}
-	static class AMapEditorCharacter* GetDefaultObj()
+	static class UInteractableCameraComponent* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<AMapEditorCharacter>();
+		return GetDefaultObjImpl<UInteractableCameraComponent>();
 	}
 };
 
@@ -320,64 +291,6 @@ public:
 	}
 };
 
-// Class Backrooms.FancyCharacter
-// 0x0060 (0x0520 - 0x04C0)
-class AFancyCharacter : public ACharacter
-{
-public:
-	bool                                          CanMove;                                           // 0x04B8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4B9[0x3];                                      // 0x04B9(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         TraceLength;                                       // 0x04BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsDead;                                           // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsUsingItem;                                       // 0x04C1(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsLeaning;                                         // 0x04C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          CanCollide;                                        // 0x04C3(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsOverlapOnly;                                     // 0x04C4(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableCameraShake;                                // 0x04C5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableAimAssist;                                  // 0x04C6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4C7[0x1];                                      // 0x04C7(0x0001)(Fixing Size After Last Property [ Dumper-8 ])
-	class ADroppedItem*                           CurrentFocusedItem;                                // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AInteractablePawn*                      CurrentInteractingPawn;                            // 0x04D0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class APushableActor*                         CurrentPushableActor;                              // 0x04D8(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFancyCameraComponent*                  CameraComponent;                                   // 0x04E0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UFancySpringArmComponent*               SpringArm;                                         // 0x04E8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USkeletalMeshComponent*                 Arms;                                              // 0x04F0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UFancyCarrySystemCarrier*               CarrySystem;                                       // 0x04F8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class AActor*                                 CurrentInteractableActor;                          // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_508[0x18];                                     // 0x0508(0x0018)(Fixing Struct Size After Last Property [ Dumper-8 ])
-
-public:
-	void ChangeCrosshairVisibility(bool IsVisible);
-	void CheckPawn();
-	void CheckSpawnedItems();
-	void HideItem(bool IsVisible);
-	void Interact(class AActor* Actor);
-	void InteractCallBackVR(class AActor* Actor);
-	void KillPlayer(bool bResetInteractable);
-	void OnRep_CanCollide();
-	void OnRep_IsOverlapOnly();
-	void OnSanityUpdate(float Sanity);
-	void SetCanCollide(bool ShouldCollide);
-	void SetIsOverlapOnly(bool ShouldOverlapOnly);
-	void StopPushing();
-	void ToggleBlur(bool ShouldBlur);
-	void TogglePlayerLegs(bool IsHidden);
-	void TogglePlayerVisibility(bool IsHidden);
-	void TryPickup();
-
-	class AActor* GetCurrentInteractableActor() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"FancyCharacter">();
-	}
-	static class AFancyCharacter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AFancyCharacter>();
-	}
-};
-
 // Class Backrooms.InteractablePawn
 // 0x0080 (0x0300 - 0x0280)
 class AInteractablePawn : public APawn
@@ -438,21 +351,21 @@ public:
 	}
 };
 
-// Class Backrooms.PlayerStatsComponent
-// 0x0010 (0x00C0 - 0x00B0)
-class UPlayerStatsComponent final : public UActorComponent
+// Class Backrooms.MapEditorCharacter
+// 0x0000 (0x04C0 - 0x04C0)
+class AMapEditorCharacter final : public ACharacter
 {
 public:
-	TArray<struct FCollectible>                   Collectibles;                                      // 0x00B0(0x0010)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+	class UCameraComponent*                       CameraComponent;                                   // 0x04B8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlayerStatsComponent">();
+		return StaticClassImpl<"MapEditorCharacter">();
 	}
-	static class UPlayerStatsComponent* GetDefaultObj()
+	static class AMapEditorCharacter* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UPlayerStatsComponent>();
+		return GetDefaultObjImpl<AMapEditorCharacter>();
 	}
 };
 
@@ -484,18 +397,64 @@ public:
 	}
 };
 
-// Class Backrooms.DryLandVolume
-// 0x0000 (0x0258 - 0x0258)
-class ADryLandVolume final : public AVolume
+// Class Backrooms.CostumeLoaderSubsystem
+// 0x0060 (0x0090 - 0x0030)
+class UCostumeLoaderSubsystem final : public UWorldSubsystem
 {
+public:
+	TArray<class UObject*>                        ReferencedAssets;                                  // 0x0030(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_40[0x50];                                      // 0x0040(0x0050)(Fixing Struct Size After Last Property [ Dumper-8 ])
+
+public:
+	void LoadAndApplyCostumeBP(class UCostume* Costume, class AActor* Actor);
+	void LoadAndApplyCostumeBPWithCallback(class UCostume* Costume, class AActor* Actor, TDelegate<void(class AActor* Actor, class UCostume* Costume)> OnAppliedCostume);
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DryLandVolume">();
+		return StaticClassImpl<"CostumeLoaderSubsystem">();
 	}
-	static class ADryLandVolume* GetDefaultObj()
+	static class UCostumeLoaderSubsystem* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ADryLandVolume>();
+		return GetDefaultObjImpl<UCostumeLoaderSubsystem>();
+	}
+};
+
+// Class Backrooms.InteractableActor
+// 0x0028 (0x0248 - 0x0220)
+class AInteractableActor : public AActor
+{
+public:
+	uint8                                         Pad_220[0x8];                                      // 0x0220(0x0008)(Fixing Size After Last Property [ Dumper-8 ])
+	class USceneComponent*                        SceneComponent;                                    // 0x0228(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0230(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USoundBase*                             UsedSound;                                         // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          IsUsable;                                          // 0x0240(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          WasUsed;                                           // 0x0241(0x0001)(BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bShouldAimAssist;                                  // 0x0242(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_243[0x5];                                      // 0x0243(0x0005)(Fixing Struct Size After Last Property [ Dumper-8 ])
+
+public:
+	void BlockUsage();
+	void OnBeginHighlight();
+	void OnEndHighlight();
+	void OnInteractStartedLocal();
+	void OnRep_IsUsable();
+	void OnRep_WasUsed();
+	void OnUsedAll();
+	void OnUsedMulticast();
+	void OnUsedNotify();
+	void OnUsedServer();
+	void ResetUsage();
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"InteractableActor">();
+	}
+	static class AInteractableActor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AInteractableActor>();
 	}
 };
 
@@ -517,6 +476,21 @@ public:
 	}
 };
 
+// Class Backrooms.NoClipVolume
+// 0x0000 (0x0258 - 0x0258)
+class ANoClipVolume final : public AVolume
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"NoClipVolume">();
+	}
+	static class ANoClipVolume* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ANoClipVolume>();
+	}
+};
+
 // Class Backrooms.ClientInteractablePawn
 // 0x0000 (0x0300 - 0x0300)
 class AClientInteractablePawn final : public AInteractablePawn
@@ -535,35 +509,215 @@ public:
 	}
 };
 
-// Class Backrooms.FancyCarrySystemCarrier
-// 0x0030 (0x0230 - 0x0200)
-class UFancyCarrySystemCarrier final : public USceneComponent
+// Class Backrooms.Costume
+// 0x0028 (0x0058 - 0x0030)
+class UCostume final : public UPrimaryDataAsset
 {
 public:
-	class UFancyCarrySystemCarryable*             CurrentCarryable;                                  // 0x01F8(0x0008)(ExportObject, Net, ZeroConstructor, InstancedReference, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UFancyCarrySystemCarryable*             CurrentFocusedCarryable;                           // 0x0200(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMulticastInlineDelegate<void(class UFancyCarrySystemCarryable* Carryable)> OnCarryStarted;      // 0x0208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class UFancyCarrySystemCarryable* Carryable)> OnCarryStopped;      // 0x0218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_228[0x8];                                      // 0x0228(0x0008)(Fixing Struct Size After Last Property [ Dumper-8 ])
-
-public:
-	void ForceDropCarry();
-	void OnRep_CurrentCarryable(class UFancyCarrySystemCarryable* PreviousCarryable);
-	void StartCarry(class UFancyCarrySystemCarryable* Carryable);
-	void StopCarry();
-
-	class UFancyCarrySystemCarryable* GetCurrentCarryable() const;
-	class UFancyCarrySystemCarryable* GetCurrentFocusedCarryable() const;
-	bool IsCarrying() const;
+	class FText                                   CostumeDisplayName;                                // 0x0030(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<struct FCostumeVariant>                Variants;                                          // 0x0048(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FancyCarrySystemCarrier">();
+		return StaticClassImpl<"Costume">();
 	}
-	static class UFancyCarrySystemCarrier* GetDefaultObj()
+	static class UCostume* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UFancyCarrySystemCarrier>();
+		return GetDefaultObjImpl<UCostume>();
+	}
+};
+
+// Class Backrooms.LIDARBlueprintFunctionLibrary
+// 0x0000 (0x0028 - 0x0028)
+class ULIDARBlueprintFunctionLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static struct FLIDARDotStruct CreateLiDarDot(class UObject* caller, class UTextureRenderTarget2D* RenderTarget);
+	static bool FindCollisionUVSkeletalMesh(const struct FHitResult& Hit, struct FVector2D* UV);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"LIDARBlueprintFunctionLibrary">();
+	}
+	static class ULIDARBlueprintFunctionLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULIDARBlueprintFunctionLibrary>();
+	}
+};
+
+// Class Backrooms.CostumeCharacter
+// 0x0000 (0x0000 - 0x0000)
+class ICostumeCharacter final
+{
+public:
+	void ApplyCostume(class UCostume* Costume);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"CostumeCharacter">();
+	}
+	static class ICostumeCharacter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ICostumeCharacter>();
+	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
+};
+
+// Class Backrooms.CostumeCharacterFunctionLibrary
+// 0x0000 (0x0028 - 0x0028)
+class UCostumeCharacterFunctionLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static void ApplyCostumeToDismembermentMesh(class UStaticMeshComponent* MeshComponent, const class UCostume* Costume, ECostumeDismembermentPart DismembermentPart);
+	static void ApplyCostumeToFirstPersonArmsSkeletalMesh(class USkeletalMeshComponent* SkeletalMesh, class UCostume* Costume, bool bApplyAnimBP);
+	static void ApplyCostumeToFirstPersonArmsSkeletalMeshViaLevelSequenceBinding(class UMovieSceneSequencePlayer* Player, const struct FMovieSceneObjectBindingID& BindingID, class UCostume* Costume);
+	static void ApplyCostumeToFirstPersonLegsSkeletalMesh(class USkeletalMeshComponent* SkeletalMesh, class UCostume* Costume, bool bApplyAnimBP);
+	static void ApplyCostumeToFirstPersonLegsSkeletalMeshViaLevelSequenceBinding(class UMovieSceneSequencePlayer* Player, const struct FMovieSceneObjectBindingID& BindingID, class UCostume* Costume);
+	static void ApplyCostumeToThirdPersonSkeletalMesh(class USkeletalMeshComponent* SkeletalMesh, class UCostume* Costume, bool bApplyAnimBP);
+	static void ApplyCostumeToThirdPersonSkeletalMeshViaLevelSequenceBinding(class UMovieSceneSequencePlayer* Player, const struct FMovieSceneObjectBindingID& BindingID, class UCostume* Costume);
+	static void GetDismembermentPartMeshAndMaterialSet(const class UCostume* Costume, ECostumeDismembermentPart DismembermentPart, TSoftObjectPtr<class UStaticMesh>* Mesh, TMap<int32, TSoftObjectPtr<class UMaterialInterface>>* MaterialSet);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"CostumeCharacterFunctionLibrary">();
+	}
+	static class UCostumeCharacterFunctionLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCostumeCharacterFunctionLibrary>();
+	}
+};
+
+// Class Backrooms.CostumeSaveGame
+// 0x0010 (0x0038 - 0x0028)
+class UCostumeSaveGame final : public USaveGame
+{
+public:
+	class FString                                 CostumeName;                                       // 0x0028(0x0010)(ZeroConstructor, SaveGame, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"CostumeSaveGame">();
+	}
+	static class UCostumeSaveGame* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCostumeSaveGame>();
+	}
+};
+
+// Class Backrooms.CostumeSelector
+// 0x0100 (0x0320 - 0x0220)
+class alignas(0x10) ACostumeSelector : public AActor
+{
+public:
+	class UCameraComponent*                       CameraComponent;                                   // 0x0220(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        ActorOnStageLocation;                              // 0x0228(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class AActor>                     PlayerCostumeActorClass;                           // 0x0230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USceneComponent*                        ActorLoadingLocation;                              // 0x0238(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ACharacter*                             PlayerCostumeActor;                                // 0x0240(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	ECostumeSelectorFeedbackState                 FeedbackState;                                     // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	ECostumeSelectorFeedbackState                 TargetFeedbackState;                               // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UUserWidget*                            Widget;                                            // 0x0250(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class AActor*                                 PreviousViewTarget;                                // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UCostume*                               SelectedCostume;                                   // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<class UCostume*>                       LoadedCostumeDataAssets;                           // 0x0268(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	TArray<struct FCostumeWidgetData>             CostumeWidgetData;                                 // 0x0278(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	class ACharacter*                             PlayerCostumeActorLoading;                         // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_290[0x90];                                     // 0x0290(0x0090)(Fixing Struct Size After Last Property [ Dumper-8 ])
+
+public:
+	void ApplySelectedCostume();
+	void EndCostumeSelect();
+	void HandleFinishedLoadedFeedback();
+	void HandleFinishedLoadingFeedback();
+	void HandleTransitionFromCostumeSelectorComplete();
+	void OnExitCostumeSelect();
+	void OnStartedCostumeSelect();
+	void SelectCostume(class UCostume* Costume);
+	void ShowLoadedFeedback(const TDelegate<void()>& FeedbackCompleteCallback);
+	void ShowLoadingFeedback(const TDelegate<void()>& FeedbackCompleteCallback);
+	void StartCostumeSelect(class UUserWidget* CostumeSelectorWidget);
+	void TransitionFromCostumeSelector(class AActor* TransitionToViewTarget, const TDelegate<void()>& FeedbackCompleteCallback);
+	void TransitionToCostumeSelector();
+	void TryFireSafeLoadingStateCallback();
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"CostumeSelector">();
+	}
+	static class ACostumeSelector* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ACostumeSelector>();
+	}
+};
+
+// Class Backrooms.CostumeSelectorWidget
+// 0x0000 (0x0000 - 0x0000)
+class ICostumeSelectorWidget final
+{
+public:
+	void HideLoadingWheel();
+	void SetUp(class ACostumeSelector* CostumeSelectorActor, const TArray<struct FCostumeWidgetData>& CostumeList);
+	void ShowLoadingWheel();
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"CostumeSelectorWidget">();
+	}
+	static class ICostumeSelectorWidget* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ICostumeSelectorWidget>();
+	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
+};
+
+// Class Backrooms.CostumeSubsystem
+// 0x0090 (0x00C0 - 0x0030)
+class UCostumeSubsystem final : public UGameInstanceSubsystem
+{
+public:
+	TMulticastInlineDelegate<void(class UCostume* Costume)> OnLocalArmedCostumeChanged;              // 0x0030(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	class UCostumeSaveGame*                       CostumeSaveGame;                                   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCostume*                               ArmedCostume;                                      // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_50[0x10];                                      // 0x0050(0x0010)(Fixing Size After Last Property [ Dumper-8 ])
+	TMap<class FName, class UCostume*>            AllCostumes;                                       // 0x0060(0x0050)(NativeAccessSpecifierPrivate)
+	class FString                                 DefaultCostumeName;                                // 0x00B0(0x0010)(ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	class UCostume* GetLocalArmedCostume();
+	void SetLocalArmedCostume(class UCostume* Costume);
+	void SetLocalArmedCostumeByName(const class FName& CostumeName);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"CostumeSubsystem">();
+	}
+	static class UCostumeSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCostumeSubsystem>();
 	}
 };
 
@@ -579,34 +733,6 @@ public:
 	static class UCrosshairWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCrosshairWidget>();
-	}
-};
-
-// Class Backrooms.MotionScannerDirector
-// 0x0088 (0x02A8 - 0x0220)
-class AMotionScannerDirector : public AActor
-{
-public:
-	float                                         CheckMotionRate;                                   // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	TArray<class AActor*>                         IgnoredActorsArr;                                  // 0x0228(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TMap<class FString, struct FLIDARDotStruct>   NameToRTMap;                                       // 0x0238(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class UMotionScannerComponent*>        allMotionComponentsArr;                            // 0x0288(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
-	struct FTimerHandle                           checkMotion_Handle;                                // 0x0298(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsLocalController;                                // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
-
-public:
-	void CheckLIDARDots();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MotionScannerDirector">();
-	}
-	static class AMotionScannerDirector* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AMotionScannerDirector>();
 	}
 };
 
@@ -666,6 +792,21 @@ public:
 	}
 };
 
+// Class Backrooms.DryLandVolume
+// 0x0000 (0x0258 - 0x0258)
+class ADryLandVolume final : public AVolume
+{
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"DryLandVolume">();
+	}
+	static class ADryLandVolume* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ADryLandVolume>();
+	}
+};
+
 // Class Backrooms.EnvQueryTest_CheckVisibility
 // 0x0008 (0x0200 - 0x01F8)
 class UEnvQueryTest_CheckVisibility final : public UEnvQueryTest
@@ -705,6 +846,38 @@ public:
 	}
 };
 
+// Class Backrooms.FancyCarrySystemCarrier
+// 0x0030 (0x0230 - 0x0200)
+class UFancyCarrySystemCarrier final : public USceneComponent
+{
+public:
+	class UFancyCarrySystemCarryable*             CurrentCarryable;                                  // 0x01F8(0x0008)(ExportObject, Net, ZeroConstructor, InstancedReference, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UFancyCarrySystemCarryable*             CurrentFocusedCarryable;                           // 0x0200(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMulticastInlineDelegate<void(class UFancyCarrySystemCarryable* Carryable)> OnCarryStarted;      // 0x0208(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UFancyCarrySystemCarryable* Carryable)> OnCarryStopped;      // 0x0218(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_228[0x8];                                      // 0x0228(0x0008)(Fixing Struct Size After Last Property [ Dumper-8 ])
+
+public:
+	void ForceDropCarry();
+	void OnRep_CurrentCarryable(class UFancyCarrySystemCarryable* PreviousCarryable);
+	void StartCarry(class UFancyCarrySystemCarryable* Carryable);
+	void StopCarry();
+
+	class UFancyCarrySystemCarryable* GetCurrentCarryable() const;
+	class UFancyCarrySystemCarryable* GetCurrentFocusedCarryable() const;
+	bool IsCarrying() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"FancyCarrySystemCarrier">();
+	}
+	static class UFancyCarrySystemCarrier* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UFancyCarrySystemCarrier>();
+	}
+};
+
 // Class Backrooms.FancyCarrySystemCarryable
 // 0x0040 (0x0240 - 0x0200)
 class UFancyCarrySystemCarryable final : public USceneComponent
@@ -734,6 +907,64 @@ public:
 	static class UFancyCarrySystemCarryable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFancyCarrySystemCarryable>();
+	}
+};
+
+// Class Backrooms.FancyCharacter
+// 0x0060 (0x0520 - 0x04C0)
+class AFancyCharacter : public ACharacter
+{
+public:
+	bool                                          CanMove;                                           // 0x04B8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4B9[0x3];                                      // 0x04B9(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	float                                         TraceLength;                                       // 0x04BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsDead;                                           // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsUsingItem;                                       // 0x04C1(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsLeaning;                                         // 0x04C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          CanCollide;                                        // 0x04C3(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsOverlapOnly;                                     // 0x04C4(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableCameraShake;                                // 0x04C5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableAimAssist;                                  // 0x04C6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4C7[0x1];                                      // 0x04C7(0x0001)(Fixing Size After Last Property [ Dumper-8 ])
+	class ADroppedItem*                           CurrentFocusedItem;                                // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AInteractablePawn*                      CurrentInteractingPawn;                            // 0x04D0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APushableActor*                         CurrentPushableActor;                              // 0x04D8(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFancyCameraComponent*                  CameraComponent;                                   // 0x04E0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UFancySpringArmComponent*               SpringArm;                                         // 0x04E8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USkeletalMeshComponent*                 Arms;                                              // 0x04F0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UFancyCarrySystemCarrier*               CarrySystem;                                       // 0x04F8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class AActor*                                 CurrentInteractableActor;                          // 0x0500(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_508[0x18];                                     // 0x0508(0x0018)(Fixing Struct Size After Last Property [ Dumper-8 ])
+
+public:
+	void ChangeCrosshairVisibility(bool IsVisible);
+	void CheckPawn();
+	void CheckSpawnedItems();
+	void HideItem(bool IsVisible);
+	void Interact(class AActor* Actor);
+	void InteractCallBackVR(class AActor* Actor);
+	void KillPlayer(bool bResetInteractable);
+	void OnRep_CanCollide();
+	void OnRep_IsOverlapOnly();
+	void OnSanityUpdate(float Sanity);
+	void SetCanCollide(bool ShouldCollide);
+	void SetIsOverlapOnly(bool ShouldOverlapOnly);
+	void StopPushing();
+	void ToggleBlur(bool ShouldBlur);
+	void TogglePlayerLegs(bool IsHidden);
+	void TogglePlayerVisibility(bool IsHidden);
+	void TryPickup();
+
+	class AActor* GetCurrentInteractableActor() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"FancyCharacter">();
+	}
+	static class AFancyCharacter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AFancyCharacter>();
 	}
 };
 
@@ -977,6 +1208,8 @@ public:
 	void PrintLevelTimes();
 	void PrintLevelTimesToLog();
 
+	EInputMode GetInputMode() const;
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -985,6 +1218,29 @@ public:
 	static class AFancyPlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFancyPlayerController>();
+	}
+};
+
+// Class Backrooms.FancyPlayerCostumeComponent
+// 0x0008 (0x00B8 - 0x00B0)
+class UFancyPlayerCostumeComponent final : public UActorComponent
+{
+public:
+	class UCostume*                               AssignedCostume;                                   // 0x00B0(0x0008)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	void AssignCostumeRPC(class UCostume* Costume);
+	void HandleLocalCostumeChanged(class UCostume* Costume);
+	void OnRep_AssignedCostume();
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"FancyPlayerCostumeComponent">();
+	}
+	static class UFancyPlayerCostumeComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UFancyPlayerCostumeComponent>();
 	}
 };
 
@@ -1289,21 +1545,6 @@ public:
 	}
 };
 
-// Class Backrooms.InteractableCameraComponent
-// 0x0000 (0x07D0 - 0x07D0)
-class UInteractableCameraComponent final : public UCameraComponent
-{
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"InteractableCameraComponent">();
-	}
-	static class UInteractableCameraComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInteractableCameraComponent>();
-	}
-};
-
 // Class Backrooms.InteractableComponent
 // 0x0010 (0x04F0 - 0x04E0)
 class UInteractableComponent : public UStaticMeshComponent
@@ -1410,38 +1651,6 @@ public:
 	}
 };
 
-// Class Backrooms.ItemActor
-// 0x00A0 (0x02C0 - 0x0220)
-class AItemActor final : public AActor
-{
-public:
-	struct FItemStructure                         Structure;                                         // 0x0220(0x0068)(BlueprintVisible, ExposeOnSpawn, NativeAccessSpecifierPublic)
-	int32                                         Quantity;                                          // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IsUseable;                                         // 0x028C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bPlayUseAnimation;                                 // 0x028D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_28E[0x2];                                      // 0x028E(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
-	class USceneComponent*                        SceneComponent;                                    // 0x0290(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMeshComponent*                   Mesh2;                                             // 0x0298(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        IdleAnimation;                                     // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        UseAnimation;                                      // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        EquipMontage;                                      // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAnimationAsset*                        UnEquipMontage;                                    // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-public:
-	void CustomInventoryUse();
-	void Use();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ItemActor">();
-	}
-	static class AItemActor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AItemActor>();
-	}
-};
-
 // Class Backrooms.Level0Generator
 // 0x0018 (0x0238 - 0x0220)
 class ALevel0Generator final : public AActor
@@ -1462,25 +1671,6 @@ public:
 	static class ALevel0Generator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALevel0Generator>();
-	}
-};
-
-// Class Backrooms.LIDARBlueprintFunctionLibrary
-// 0x0000 (0x0028 - 0x0028)
-class ULIDARBlueprintFunctionLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static struct FLIDARDotStruct CreateLiDarDot(class UObject* caller, class UTextureRenderTarget2D* RenderTarget);
-	static bool FindCollisionUVSkeletalMesh(const struct FHitResult& Hit, struct FVector2D* UV);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"LIDARBlueprintFunctionLibrary">();
-	}
-	static class ULIDARBlueprintFunctionLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULIDARBlueprintFunctionLibrary>();
 	}
 };
 
@@ -1525,42 +1715,6 @@ public:
 	static class ULIDARComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULIDARComponent>();
-	}
-};
-
-// Class Backrooms.MapEditorCharacterMovement
-// 0x0020 (0x0B10 - 0x0AF0)
-class UMapEditorCharacterMovement final : public UCharacterMovementComponent
-{
-public:
-	bool                                          bCenterMouseOnStopMovementMode;                    // 0x0AF0(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_AF1[0x13];                                     // 0x0AF1(0x0013)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         MaxSpeedMultiplier;                                // 0x0B04(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MinSpeedMultiplier;                                // 0x0B08(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_B0C[0x4];                                      // 0x0B0C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
-
-public:
-	void DecreaseSpeedMultiplier(float DecreaseAmount);
-	void EnterMovementMode(bool Enter);
-	void IncreaseSpeedMultiplier(float IncreaseAmount);
-	void Init();
-	void LookUp(float Value);
-	void MoveForward(float Value);
-	void MoveRight(float Value);
-	void MoveUp(float Value);
-	void Server_SetSpeedMultiplier(float SpeedMultiplier);
-	void Turn(float Value);
-
-	bool InMovementMode() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"MapEditorCharacterMovement">();
-	}
-	static class UMapEditorCharacterMovement* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMapEditorCharacterMovement>();
 	}
 };
 
@@ -1711,6 +1865,39 @@ public:
 	}
 };
 
+// Class Backrooms.MissionData
+// 0x0040 (0x0068 - 0x0028)
+class UMissionData final : public UObject
+{
+public:
+	class FString                                 TargetEscapeLevel;                                 // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TimeCompleted;                                     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         PlayerDeaths;                                      // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         EntitySightings;                                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         LowSanityAmount;                                   // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         XPPenalty;                                         // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         LevelBaseXP;                                       // 0x004C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         LevelTimeLimit;                                    // 0x0050(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	class FString                                 MissionDataRowName;                                // 0x0058(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void AddEntitySighting();
+	void AddLowSanityAmount();
+	void AddPlayerDeath();
+	void SetTimeCompleted(float Time);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"MissionData">();
+	}
+	static class UMissionData* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMissionData>();
+	}
+};
+
 // Class Backrooms.MotionScannerComponent
 // 0x00B0 (0x0160 - 0x00B0)
 class UMotionScannerComponent : public UActorComponent
@@ -1751,18 +1938,73 @@ public:
 	}
 };
 
-// Class Backrooms.NoClipVolume
-// 0x0000 (0x0258 - 0x0258)
-class ANoClipVolume final : public AVolume
+// Class Backrooms.MotionScannerDirector
+// 0x0088 (0x02A8 - 0x0220)
+class AMotionScannerDirector : public AActor
 {
+public:
+	float                                         CheckMotionRate;                                   // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<class AActor*>                         IgnoredActorsArr;                                  // 0x0228(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TMap<class FString, struct FLIDARDotStruct>   NameToRTMap;                                       // 0x0238(0x0050)(BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<class UMotionScannerComponent*>        allMotionComponentsArr;                            // 0x0288(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	struct FTimerHandle                           checkMotion_Handle;                                // 0x0298(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsLocalController;                                // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+
+public:
+	void CheckLIDARDots();
+
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NoClipVolume">();
+		return StaticClassImpl<"MotionScannerDirector">();
 	}
-	static class ANoClipVolume* GetDefaultObj()
+	static class AMotionScannerDirector* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ANoClipVolume>();
+		return GetDefaultObjImpl<AMotionScannerDirector>();
+	}
+};
+
+// Class Backrooms.PlayerStatsComponent
+// 0x0010 (0x00C0 - 0x00B0)
+class UPlayerStatsComponent final : public UActorComponent
+{
+public:
+	TArray<struct FCollectible>                   Collectibles;                                      // 0x00B0(0x0010)(Edit, BlueprintVisible, Net, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"PlayerStatsComponent">();
+	}
+	static class UPlayerStatsComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPlayerStatsComponent>();
+	}
+};
+
+// Class Backrooms.PushableActor
+// 0x0008 (0x0250 - 0x0248)
+class APushableActor : public AInteractableActor
+{
+public:
+	float                                         Density;                                           // 0x0248(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_24C[0x4];                                      // 0x024C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+
+public:
+	struct FVector GetClosesPoint(class AActor* InActor);
+	TArray<struct FVector> GetForwardBoundingPoints(bool InInvert);
+	TArray<struct FVector> GetRightBoundingPoints(bool InInvert);
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"PushableActor">();
+	}
+	static class APushableActor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<APushableActor>();
 	}
 };
 

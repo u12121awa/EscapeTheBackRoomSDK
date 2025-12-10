@@ -38,7 +38,7 @@ public:
 	void CheckFinishedUploads();
 	void ReceiveBeginPlay();
 	void UpdateMap();
-	void SelectComputers(bool Setup);
+	void SelectComputers(bool SetUp);
 	void SetActive(int32 HouseNum);
 	void OnRep_ExitUnlocked();
 	void CheckUploads(bool* HasFinished);

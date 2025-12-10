@@ -99,6 +99,20 @@ void BP_Plank_Door_0::ABP_Plank_Door_C::Damage(class ACharacter* Character)
 }
 
 
+// Function BP_Plank_Door.BP_Plank_Door_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void BP_Plank_Door_0::ABP_Plank_Door_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Plank_Door_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Plank_Door.BP_Plank_Door_C.MC_Sound
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:

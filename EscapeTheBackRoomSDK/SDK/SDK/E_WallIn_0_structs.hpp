@@ -37,7 +37,7 @@ enum class E_WallIn_0::E_WallIn : uint8
 	NewEnumerator40                          = 16,
 	NewEnumerator41                          = 17,
 	NewEnumerator42                          = 18,
-	E_0_MAX                                  = 19,
+	E_MAX                                    = 19,
 };
 
 }
