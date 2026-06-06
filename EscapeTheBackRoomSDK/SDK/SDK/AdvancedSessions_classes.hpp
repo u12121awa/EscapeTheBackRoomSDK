@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "OnlineSubsystemUtils_structs.hpp"
 #include "AdvancedSessions_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "OnlineSubsystemUtils_structs.hpp"
 
 
 namespace SDK
@@ -126,12 +126,11 @@ public:
 	uint8                                         Pad_1AC[0x7C];                                     // 0x01AC(0x007C)(Fixing Struct Size After Last Property [ Dumper-8 ])
 
 public:
-	void OnFindInviteSessionFailure();
 	void OnPlayerLoginChanged(int32 PlayerNum);
 	void OnPlayerLoginStatusChanged(int32 PlayerNum, EBPLoginStatus PreviousStatus, EBPLoginStatus NewStatus, const struct FBPUniqueNetId& NewPlayerUniqueNetID);
 	void OnPlayerTalkingStateChanged(const struct FBPUniqueNetId& PlayerId, bool bIsTalking);
-	void OnSessionInviteAccepted(int32 LocalPlayerNum, const struct FBPUniqueNetId& PersonInvited, const struct FBlueprintSessionResult& SessionToJoin);
-	void OnSessionInviteReceived(int32 LocalPlayerNum, const struct FBPUniqueNetId& PersonInviting, const class FString& AppId, const struct FBlueprintSessionResult& SessionToJoin);
+	void OnSessionInviteAccepted(bool bWasSuccessful, int32 LocalPlayerNum, const struct FBPUniqueNetId& PersonInvited, const struct FBlueprintSessionResult& SessionToJoin);
+	void OnSessionInviteReceived(int32 LocalPlayerNum, const struct FBPUniqueNetId& PersonInviting, const class FString& AppID, const struct FBlueprintSessionResult& SessionToJoin);
 
 public:
 	static class UClass* StaticClass()

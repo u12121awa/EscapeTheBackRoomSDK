@@ -66,8 +66,8 @@ public:
 	void WindDirectionChanger__ChangeDirection__EventFunc();
 	void WindDirectionChanger__UpdateFunc();
 	void WindDirectionChanger__FinishedFunc();
-	void SpawnFoliage(bool spawnUnderCursor, const struct FVector& locationIfNotUnderCursor, const struct FVector& normalIfNotUnderCursor, const struct FVector& minScale, const struct FVector& MaxScale, const struct FFoliageToSpawn_Struct& foliageToSpawn, bool fromCluster, bool clusterLastIndex);
-	void SpawnFoliageCluster(const struct FVector& CenterLocation, float sizeX_, float sizeY_, float density_, float nonUniformDistribution, const struct FFoliageToSpawn_Struct& foliageToSpawn, const struct FVector& minScale, const struct FVector& MaxScale, bool useGrassSpawnAreas, class AGrassSpawnArea_BP_C* grassSpawnArea);
+	void SpawnFoliage(bool spawnUnderCursor, const struct FVector& locationIfNotUnderCursor, const struct FVector& normalIfNotUnderCursor, const struct FVector& minScale, const struct FVector& MaxScale, const struct FFoliageToSpawn_Struct& FoliageToSpawn, bool fromCluster, bool clusterLastIndex);
+	void SpawnFoliageCluster(const struct FVector& CenterLocation, float sizeX_, float sizeY_, float density_, float nonUniformDistribution, const struct FFoliageToSpawn_Struct& FoliageToSpawn, const struct FVector& minScale, const struct FVector& MaxScale, bool useGrassSpawnAreas, class AGrassSpawnArea_BP_C* grassSpawnArea);
 	void GetFreeMaterialInteractionChannel(bool* Found, int32* foundChannel);
 	void FreeUpMaterialInteractionChannel(int32 nrOfChannel);
 	void DistanceToViewTarget(const struct FVector& fromLocation, float* Distance);

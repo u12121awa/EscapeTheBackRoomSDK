@@ -479,5 +479,25 @@ void ABP_MiniGameHacker_C::GetSolverRandomX(int32* SolverIndex)
 		*SolverIndex = Parms.SolverIndex;
 }
 
+
+// Function BP_MiniGameHacker.BP_MiniGameHacker_C.GetPlatformHelpTexture
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UTexture2D*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UTexture2D* ABP_MiniGameHacker_C::GetPlatformHelpTexture()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MiniGameHacker_C", "GetPlatformHelpTexture");
+
+	Params::BP_MiniGameHacker_C_GetPlatformHelpTexture Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
 }
 

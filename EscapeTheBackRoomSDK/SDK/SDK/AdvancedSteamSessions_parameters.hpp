@@ -78,7 +78,7 @@ public:
 	struct FBPUniqueNetId                         UniqueNetId;                                       // 0x0000(0x0028)(ConstParm, Parm, NativeAccessSpecifierPublic)
 	EBlueprintResultSwitch                        Result;                                            // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	int32                                         AppId;                                             // 0x002C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AppID;                                             // 0x002C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function AdvancedSteamSessions.AdvancedSteamFriendsLibrary.GetSteamGroups

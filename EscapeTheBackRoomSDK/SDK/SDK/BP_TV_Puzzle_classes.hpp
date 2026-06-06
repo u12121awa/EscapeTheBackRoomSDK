@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "S_PoppedBalloon_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_TVColor_structs.hpp"
-#include "S_PoppedBalloon_structs.hpp"
 #include "Backrooms_classes.hpp"
 
 

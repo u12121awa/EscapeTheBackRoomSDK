@@ -32,7 +32,7 @@ enum class E_WallOut_0::E_WallOut : uint8
 	NewEnumerator36                          = 11,
 	NewEnumerator19                          = 12,
 	NewEnumerator37                          = 13,
-	E_0_MAX                                  = 14,
+	E_MAX                                    = 14,
 };
 
 }

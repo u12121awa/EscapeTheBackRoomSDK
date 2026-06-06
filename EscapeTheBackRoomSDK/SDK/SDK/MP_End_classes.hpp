@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "MP_GameMode_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MP_GameMode_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_End.MP_End_C
-// 0x0018 (0x03A0 - 0x0388)
+// 0x0018 (0x0398 - 0x0380)
 class AMP_End_C final : public AMP_GameMode_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_MP_End_C;                           // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	int32                                         TapesFound;                                        // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TapesNeeded;                                       // 0x0394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TapeCount;                                         // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TapesToSpawn;                                      // 0x039C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_MP_End_C;                           // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	int32                                         TapesFound;                                        // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TapesNeeded;                                       // 0x038C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TapeCount;                                         // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TapesToSpawn;                                      // 0x0394(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MP_End(int32 EntryPoint);

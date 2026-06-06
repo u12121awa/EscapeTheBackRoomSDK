@@ -10,39 +10,39 @@
 
 #include "Basic.hpp"
 
+#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "BP_Interactable_classes.hpp"
 #include "Backrooms_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Fusebox-7.BP_Fusebox-7_C
-// 0x0070 (0x0398 - 0x0328)
+// 0x0070 (0x03A0 - 0x0330)
 class ABP_Fusebox_7_C final : public ABP_Interactable_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Fusebox_7_C;                     // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAudioComponent*                        Audio;                                             // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   PointLight;                                        // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Elevator_Lamp;                                     // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_Lamp_01;                                        // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UMiniGame_TriWay2_C*                    MiniGame_TriWay2;                                  // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   sm_fusebox_6_door;                                 // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_Rotation_A36E087943AA69E3AE0B1A9D8E165B72; // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_A36E087943AA69E3AE0B1A9D8E165B72; // 0x0364(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_365[0x3];                                      // 0x0365(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABP_StationManager_C*                   StationManager;                                    // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         FuseboxIndex;                                      // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnabled;                                         // 0x037C(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	bool                                          TickEnabled;                                       // 0x037D(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	bool                                          DoorOpen;                                          // 0x037E(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                         Pad_37F[0x1];                                      // 0x037F(0x0001)(Fixing Size After Last Property [ Dumper-8 ])
-	TArray<class UStaticMeshComponent*>           WheelArray;                                        // 0x0380(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	int32                                         CurrentSelectionIndex;                             // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Fusebox_7_C;                     // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAudioComponent*                        Audio;                                             // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight;                                        // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Elevator_Lamp;                                     // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_Lamp_01;                                        // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UMiniGame_TriWay2_C*                    MiniGame_TriWay2;                                  // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   sm_fusebox_6_door;                                 // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_Rotation_A36E087943AA69E3AE0B1A9D8E165B72; // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_A36E087943AA69E3AE0B1A9D8E165B72; // 0x036C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_36D[0x3];                                      // 0x036D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_StationManager_C*                   StationManager;                                    // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         FuseboxIndex;                                      // 0x0380(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnabled;                                         // 0x0384(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	bool                                          TickEnabled;                                       // 0x0385(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	bool                                          DoorOpen;                                          // 0x0386(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	uint8                                         Pad_387[0x1];                                      // 0x0387(0x0001)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<class UStaticMeshComponent*>           WheelArray;                                        // 0x0388(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	int32                                         CurrentSelectionIndex;                             // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_Fusebox_7(int32 EntryPoint);
@@ -53,7 +53,7 @@ public:
 	void SetDisabled();
 	void OnUnPossess();
 	void ToggleVoltageSound(bool ShouldPlay);
-	void SpawnMinigame();
+	void SpawnMiniGame();
 	void OnFinish();
 	void ToggleLight(bool IsOn);
 	void ReceivePossessed(class AController* NewController);

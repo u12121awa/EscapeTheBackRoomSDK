@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ApexDestruction_classes.hpp"
 #include "Engine_structs.hpp"
+#include "ApexDestruction_classes.hpp"
 
 
 namespace SDK

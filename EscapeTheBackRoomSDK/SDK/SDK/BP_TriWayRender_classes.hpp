@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "S_TriWayData_structs.hpp"
-#include "BP_RenderBase_2_classes.hpp"
 #include "E_TriWayPinColor_structs.hpp"
+#include "Engine_structs.hpp"
+#include "BP_RenderBase_2_classes.hpp"
 
 
 namespace SDK
@@ -44,8 +44,8 @@ public:
 	void SpawnWheel(const struct FVector& Location, float Angle, E_TriWayPinColor Pin0, E_TriWayPinColor Pin1, E_TriWayPinColor Pin2, class UStaticMeshComponent** Component);
 	void SetCellParameters(int32 CellId, float RotZ, float Scale, bool Hide);
 	void SpawnPS(class UParticleSystem* ParticleSystem, const struct FVector& SourceLocation, const struct FVector& DestLocation);
-	void SetWheelYpos(int32 WheelId, const struct FVector& Location);
-	void SetWheelRotation(int32 WheelId, const struct FRotator& Rotator);
+	void SetWheelYpos(int32 Wheelid, const struct FVector& Location);
+	void SetWheelRotation(int32 Wheelid, const struct FRotator& Rotator);
 	void EnablePS(int32 PSIndex, bool Enable);
 	void GetPinMesh(E_TriWayPinColor PinColor, class UStaticMesh** Mesh);
 

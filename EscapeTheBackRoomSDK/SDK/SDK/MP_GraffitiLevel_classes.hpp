@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "MP_GameMode_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MP_GameMode_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_GraffitiLevel.MP_GraffitiLevel_C
-// 0x0008 (0x0390 - 0x0388)
+// 0x0008 (0x0388 - 0x0380)
 class AMP_GraffitiLevel_C final : public AMP_GameMode_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_MP_GraffitiLevel_C;                 // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_MP_GraffitiLevel_C;                 // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_MP_GraffitiLevel(int32 EntryPoint);

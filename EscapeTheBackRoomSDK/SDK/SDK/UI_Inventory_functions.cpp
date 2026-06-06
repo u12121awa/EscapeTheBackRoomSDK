@@ -243,20 +243,6 @@ bool UUI_Inventory_C::OnDrop(const struct FGeometry& MyGeometry, const struct FP
 }
 
 
-// Function UI_Inventory.UI_Inventory_C.CheckFont
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UUI_Inventory_C::CheckFont()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_Inventory_C", "CheckFont");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function UI_Inventory.UI_Inventory_C.InputDown
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:

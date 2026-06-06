@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -174,8 +174,8 @@ struct W_NewGame_C_CheckName final
 public:
 	bool                                          IsValid;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetCurrentCulture_ReturnValue;            // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_StrStr_ReturnValue;              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -186,27 +186,27 @@ public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	TArray<class FString>                         CallFunc_GetCharacterArrayFromString_ReturnValue;  // 0x0080(0x0010)(ReferenceParm)
-	bool                                          CallFunc_DoesSaveGameExist_ReturnValue;            // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class FString                                 CallFunc_Array_Get_Item;                           // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class FString                                 CallFunc_ToLower_ReturnValue;                      // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C2[0x2];                                       // 0x00C2(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FString                                 CallFunc_Array_Get_Item;                           // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00A6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A7[0x1];                                       // 0x00A7(0x0001)(Fixing Size After Last Property [ Dumper-8 ])
+	class FString                                 CallFunc_ToLower_ReturnValue;                      // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UFancySaveSubsystem*                    CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_DoesSaveGameExist_ReturnValue;            // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Len_ReturnValue;                          // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00E6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function W_NewGame.W_NewGame_C.OnKeyDown
-// 0x0200 (0x0200 - 0x0000)
+// 0x0208 (0x0208 - 0x0000)
 struct W_NewGame_C_OnKeyDown final
 {
 public:
@@ -214,10 +214,12 @@ public:
 	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0128(0x00B8)()
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x01E0(0x0018)(HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x01F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x01FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EUINavigationAction                           CallFunc_Key_GetNavigationActionFromKey_ReturnValue; // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E2[0x6];                                      // 0x01E2(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x01E8(0x0018)(HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0201(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

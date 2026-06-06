@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Slate_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -25,14 +25,14 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
 	class UInputSettings*                         CallFunc_GetInputSettings_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsEnabled;                            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsHovered;                            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
-	TArray<struct FInputActionKeyMapping>         CallFunc_GetActionMappingByName_OutMappings;       // 0x0018(0x0010)(ReferenceParm)
-	bool                                          K2Node_Event_IsFocused;                            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsEnabled;                            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsHovered;                            // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<struct FInputActionKeyMapping>         CallFunc_GetActionMappingByName_OutMappings;       // 0x0020(0x0010)(ReferenceParm)
+	bool                                          K2Node_Event_IsFocused;                            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
 	struct FInputChord                            K2Node_ComponentBoundEvent_SelectedKey;            // 0x0038(0x0020)(HasGetValueTypeHash)
 	struct FInputActionKeyMapping                 K2Node_MakeStruct_InputActionKeyMapping;           // 0x0058(0x0028)()
 };

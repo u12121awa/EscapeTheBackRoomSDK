@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass UI_Textpad.UI_Textpad_C
-// 0x0010 (0x0270 - 0x0260)
+// 0x0010 (0x0280 - 0x0270)
 class UUI_Textpad_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMultiLineEditableTextBox*              InputText;                                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMultiLineEditableTextBox*              InputText;                                         // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_UI_Textpad(int32 EntryPoint);

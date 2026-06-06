@@ -18,21 +18,21 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_StationsPanel.BP_StationsPanel_C
-// 0x0090 (0x0390 - 0x0300)
+// 0x0090 (0x0398 - 0x0308)
 class ABP_StationsPanel_C final : public AInteractablePawn
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Toggle_Z_3C7887444037FE7DEF0EFB9CD1496116;         // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Toggle__Direction_3C7887444037FE7DEF0EFB9CD1496116; // 0x0314(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_315[0x3];                                      // 0x0315(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     Toggle;                                            // 0x0318(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Widget;                                            // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<int32, int32>                            IndexMap;                                          // 0x0328(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsPanelOpen;                                       // 0x0378(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	TArray<bool>                                  ActivatedMap;                                      // 0x0380(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Toggle_Z_3C7887444037FE7DEF0EFB9CD1496116;         // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Toggle__Direction_3C7887444037FE7DEF0EFB9CD1496116; // 0x031C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31D[0x3];                                      // 0x031D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     Toggle;                                            // 0x0320(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Widget;                                            // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<int32, int32>                            IndexMap;                                          // 0x0330(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsPanelOpen;                                       // 0x0380(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<bool>                                  ActivatedMap;                                      // 0x0388(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
 
 public:
 	void ExecuteUbergraph_BP_StationsPanel(int32 EntryPoint);

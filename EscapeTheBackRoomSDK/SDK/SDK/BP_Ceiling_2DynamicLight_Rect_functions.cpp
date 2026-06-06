@@ -54,9 +54,9 @@ void ABP_Ceiling_2DynamicLight_Rect_C::ReceiveBeginPlay()
 // Function BP_Ceiling_2DynamicLight_Rect.BP_Ceiling_2DynamicLight_Rect_C.ToggleLight
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    isOff                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsOff                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_Ceiling_2DynamicLight_Rect_C::ToggleLight(bool isOff)
+void ABP_Ceiling_2DynamicLight_Rect_C::ToggleLight(bool IsOff)
 {
 	static class UFunction* Func = nullptr;
 
@@ -65,7 +65,7 @@ void ABP_Ceiling_2DynamicLight_Rect_C::ToggleLight(bool isOff)
 
 	Params::BP_Ceiling_2DynamicLight_Rect_C_ToggleLight Parms{};
 
-	Parms.isOff = isOff;
+	Parms.IsOff = IsOff;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

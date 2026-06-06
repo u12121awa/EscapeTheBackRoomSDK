@@ -20,7 +20,7 @@ enum class E_Ceiling_6x6_broken_1::E_Ceiling_6x6_broken : uint8
 {
 	NewEnumerator19                          = 0,
 	NewEnumerator25                          = 1,
-	E_Ceiling_6x6_0_MAX                      = 2,
+	E_Ceiling_6x6_1_MAX                      = 2,
 };
 
 }

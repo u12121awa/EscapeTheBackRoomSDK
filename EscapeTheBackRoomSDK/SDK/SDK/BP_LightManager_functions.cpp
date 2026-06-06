@@ -207,10 +207,10 @@ void ABP_LightManager_C::SetupExit(int32 CurrentExitIndex)
 // Function BP_LightManager.BP_LightManager_C.GetExitLocation
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class Pipe_Exit::APipe_Exit_C*          Exit                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class Pipe_Exit_0::APipe_Exit_C*        Exit                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTransform*                      Location                                               (Parm, OutParm, IsPlainOldData, NoDestructor)
 
-void ABP_LightManager_C::GetExitLocation(class Pipe_Exit::APipe_Exit_C* Exit, struct FTransform* Location)
+void ABP_LightManager_C::GetExitLocation(class Pipe_Exit_0::APipe_Exit_C* Exit, struct FTransform* Location)
 {
 	static class UFunction* Func = nullptr;
 

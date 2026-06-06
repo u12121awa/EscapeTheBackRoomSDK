@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "E_Floors_0_structs.hpp"
-#include "E_Ceiling_3x3_broken_0_structs.hpp"
-#include "E_Ceiling_6x6_broken_structs.hpp"
+#include "E_Ceiling_3x3_broken_1_structs.hpp"
+#include "E_Ceiling_6x6_broken_1_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -31,8 +31,8 @@ public:
 	E_Floors_0::E_Floors                          Floors;                                            // 0x0239(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Add_Ceiling;                                       // 0x023A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Ceiling_Broken_;                                   // 0x023B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	E_Ceiling_3x3_broken_0::E_Ceiling_3x3_broken  Ceiling_3x3_Broken;                                // 0x023C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	E_Ceiling_6x6_broken::E_Ceiling_6x6_broken    Ceiling_6x6_Broken;                                // 0x023D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_Ceiling_3x3_broken_1::E_Ceiling_3x3_broken  Ceiling_3x3_Broken;                                // 0x023C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_Ceiling_6x6_broken_1::E_Ceiling_6x6_broken  Ceiling_6x6_Broken;                                // 0x023D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Revert_Default_Materials;                          // 0x023E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:

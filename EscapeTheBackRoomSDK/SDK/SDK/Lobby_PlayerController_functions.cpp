@@ -85,26 +85,6 @@ void ALobby_PlayerController_C::OC_KickedFromLobby()
 }
 
 
-// Function Lobby_PlayerController.Lobby_PlayerController_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ALobby_PlayerController_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lobby_PlayerController_C", "ReceiveEndPlay");
-
-	Params::Lobby_PlayerController_C_ReceiveEndPlay Parms{};
-
-	Parms.EndPlayReason = EndPlayReason;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function Lobby_PlayerController.Lobby_PlayerController_C.OC_Update_ConnectedPlayersList
 // (Net, NetReliable, HasOutParams, NetClient, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -225,20 +205,6 @@ void ALobby_PlayerController_C::MC_LoadingScreen()
 }
 
 
-// Function Lobby_PlayerController.Lobby_PlayerController_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ALobby_PlayerController_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lobby_PlayerController_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Lobby_PlayerController.Lobby_PlayerController_C.InpActEvt_Talk_K2Node_InputActionEvent_0
 // (BlueprintEvent)
 // Parameters:
@@ -296,34 +262,6 @@ void ALobby_PlayerController_C::InpActEvt_Chat_K2Node_InputActionEvent_2(const s
 	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Lobby_PlayerController.Lobby_PlayerController_C.OnSuccess_6E7D169843C1BE4CDA92E896C8C1B365
-// (BlueprintCallable, BlueprintEvent)
-
-void ALobby_PlayerController_C::OnSuccess_6E7D169843C1BE4CDA92E896C8C1B365()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lobby_PlayerController_C", "OnSuccess_6E7D169843C1BE4CDA92E896C8C1B365");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Lobby_PlayerController.Lobby_PlayerController_C.OnFailure_6E7D169843C1BE4CDA92E896C8C1B365
-// (BlueprintCallable, BlueprintEvent)
-
-void ALobby_PlayerController_C::OnFailure_6E7D169843C1BE4CDA92E896C8C1B365()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lobby_PlayerController_C", "OnFailure_6E7D169843C1BE4CDA92E896C8C1B365");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -606,6 +544,40 @@ void ALobby_PlayerController_C::OnRep_CanTalk()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("Lobby_PlayerController_C", "OnRep_CanTalk");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Lobby_PlayerController.Lobby_PlayerController_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALobby_PlayerController_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Lobby_PlayerController_C", "ReceiveEndPlay");
+
+	Params::Lobby_PlayerController_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Lobby_PlayerController.Lobby_PlayerController_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ALobby_PlayerController_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Lobby_PlayerController_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

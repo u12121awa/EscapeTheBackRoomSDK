@@ -18,61 +18,21 @@
 namespace SDK::Params
 {
 
-// Function AugmentedReality.ARTraceResultLibrary.GetDistanceFromCamera
-// 0x0070 (0x0070 - 0x0000)
-struct ARTraceResultLibrary_GetDistanceFromCamera final
+// Function AugmentedReality.ARLifeCycleComponent.ServerDestroyARActor
+// 0x0008 (0x0008 - 0x0000)
+struct ARLifeCycleComponent_ServerDestroyARActor final
 {
 public:
-	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	float                                         ReturnValue;                                       // 0x0060(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_64[0xC];                                       // 0x0064(0x000C)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	class AARActor*                               Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AugmentedReality.ARTraceResultLibrary.GetLocalToTrackingTransform
-// 0x0090 (0x0090 - 0x0000)
-struct ARTraceResultLibrary_GetLocalToTrackingTransform final
+// Function AugmentedReality.ARLifeCycleComponent.ServerSpawnARActor
+// 0x0018 (0x0018 - 0x0000)
+struct ARLifeCycleComponent_ServerSpawnARActor final
 {
 public:
-	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FTransform                             ReturnValue;                                       // 0x0060(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function AugmentedReality.ARTraceResultLibrary.GetLocalToWorldTransform
-// 0x0090 (0x0090 - 0x0000)
-struct ARTraceResultLibrary_GetLocalToWorldTransform final
-{
-public:
-	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FTransform                             ReturnValue;                                       // 0x0060(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function AugmentedReality.ARTraceResultLibrary.GetLocalTransform
-// 0x0090 (0x0090 - 0x0000)
-struct ARTraceResultLibrary_GetLocalTransform final
-{
-public:
-	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FTransform                             ReturnValue;                                       // 0x0060(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function AugmentedReality.ARTraceResultLibrary.GetTraceChannel
-// 0x0070 (0x0070 - 0x0000)
-struct ARTraceResultLibrary_GetTraceChannel final
-{
-public:
-	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	EARLineTraceChannels                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_61[0xF];                                       // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
-// Function AugmentedReality.ARTraceResultLibrary.GetTrackedGeometry
-// 0x0070 (0x0070 - 0x0000)
-struct ARTraceResultLibrary_GetTrackedGeometry final
-{
-public:
-	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	class UARTrackedGeometry*                     ReturnValue;                                       // 0x0060(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	class UClass*                                 ComponentClass;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuid                                  NativeID;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function AugmentedReality.ARSessionConfig.AddCandidateImage
@@ -875,30 +835,6 @@ public:
 	class USceneComponent*                        ComponentToUnpin;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AugmentedReality.ARBasicLightEstimate.GetAmbientColor
-// 0x0010 (0x0010 - 0x0000)
-struct ARBasicLightEstimate_GetAmbientColor final
-{
-public:
-	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AugmentedReality.ARBasicLightEstimate.GetAmbientColorTemperatureKelvin
-// 0x0004 (0x0004 - 0x0000)
-struct ARBasicLightEstimate_GetAmbientColorTemperatureKelvin final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AugmentedReality.ARBasicLightEstimate.GetAmbientIntensityLumens
-// 0x0004 (0x0004 - 0x0000)
-struct ARBasicLightEstimate_GetAmbientIntensityLumens final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function AugmentedReality.ARTrackedGeometry.GetUnderlyingMesh
 // 0x0008 (0x0008 - 0x0000)
 struct ARTrackedGeometry_GetUnderlyingMesh final
@@ -988,18 +924,47 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AugmentedReality.ARMeshGeometry.GetObjectClassificationAtLocation
-// 0x0024 (0x0024 - 0x0000)
-struct ARMeshGeometry_GetObjectClassificationAtLocation final
+// Function AugmentedReality.ARTrackedObject.GetDetectedObject
+// 0x0008 (0x0008 - 0x0000)
+struct ARTrackedObject_GetDetectedObject final
 {
 public:
-	struct FVector                                InWorldLocation;                                   // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EARObjectClassification                       OutClassification;                                 // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FVector                                OutClassificationLocation;                         // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxLocationDiff;                                   // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	class UARCandidateObject*                     ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy.GetGeoLocationAtWorldPosition
+// 0x0020 (0x0020 - 0x0000)
+struct GetGeoLocationAsyncTaskBlueprintProxy_GetGeoLocationAtWorldPosition final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                WorldPosition;                                     // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	class UGetGeoLocationAsyncTaskBlueprintProxy* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AugmentedReality.ARBasicLightEstimate.GetAmbientColor
+// 0x0010 (0x0010 - 0x0000)
+struct ARBasicLightEstimate_GetAmbientColor final
+{
+public:
+	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AugmentedReality.ARBasicLightEstimate.GetAmbientColorTemperatureKelvin
+// 0x0004 (0x0004 - 0x0000)
+struct ARBasicLightEstimate_GetAmbientColorTemperatureKelvin final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AugmentedReality.ARBasicLightEstimate.GetAmbientIntensityLumens
+// 0x0004 (0x0004 - 0x0000)
+struct ARBasicLightEstimate_GetAmbientIntensityLumens final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function AugmentedReality.ARCandidateImage.GetCandidateTexture
@@ -1050,6 +1015,63 @@ public:
 	TSubclassOf<class UARComponent>               InComponentClass;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                  NativeID;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UARComponent*                           ReturnValue;                                       // 0x0018(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AugmentedReality.ARTraceResultLibrary.GetDistanceFromCamera
+// 0x0070 (0x0070 - 0x0000)
+struct ARTraceResultLibrary_GetDistanceFromCamera final
+{
+public:
+	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0060(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_64[0xC];                                       // 0x0064(0x000C)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function AugmentedReality.ARTraceResultLibrary.GetLocalToTrackingTransform
+// 0x0090 (0x0090 - 0x0000)
+struct ARTraceResultLibrary_GetLocalToTrackingTransform final
+{
+public:
+	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FTransform                             ReturnValue;                                       // 0x0060(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function AugmentedReality.ARTraceResultLibrary.GetLocalToWorldTransform
+// 0x0090 (0x0090 - 0x0000)
+struct ARTraceResultLibrary_GetLocalToWorldTransform final
+{
+public:
+	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FTransform                             ReturnValue;                                       // 0x0060(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function AugmentedReality.ARTraceResultLibrary.GetLocalTransform
+// 0x0090 (0x0090 - 0x0000)
+struct ARTraceResultLibrary_GetLocalTransform final
+{
+public:
+	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FTransform                             ReturnValue;                                       // 0x0060(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function AugmentedReality.ARTraceResultLibrary.GetTraceChannel
+// 0x0070 (0x0070 - 0x0000)
+struct ARTraceResultLibrary_GetTraceChannel final
+{
+public:
+	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	EARLineTraceChannels                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_61[0xF];                                       // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function AugmentedReality.ARTraceResultLibrary.GetTrackedGeometry
+// 0x0070 (0x0070 - 0x0000)
+struct ARTraceResultLibrary_GetTrackedGeometry final
+{
+public:
+	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UARTrackedGeometry*                     ReturnValue;                                       // 0x0060(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // Function AugmentedReality.ARSaveWorldAsyncTaskBlueprintProxy.ARSaveWorld
@@ -1522,34 +1544,6 @@ public:
 	class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy* ReturnValue;                         // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AugmentedReality.GetGeoLocationAsyncTaskBlueprintProxy.GetGeoLocationAtWorldPosition
-// 0x0020 (0x0020 - 0x0000)
-struct GetGeoLocationAsyncTaskBlueprintProxy_GetGeoLocationAtWorldPosition final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                WorldPosition;                                     // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class UGetGeoLocationAsyncTaskBlueprintProxy* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AugmentedReality.ARLifeCycleComponent.ServerDestroyARActor
-// 0x0008 (0x0008 - 0x0000)
-struct ARLifeCycleComponent_ServerDestroyARActor final
-{
-public:
-	class AARActor*                               Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AugmentedReality.ARLifeCycleComponent.ServerSpawnARActor
-// 0x0018 (0x0018 - 0x0000)
-struct ARLifeCycleComponent_ServerSpawnARActor final
-{
-public:
-	class UClass*                                 ComponentClass;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuid                                  NativeID;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function AugmentedReality.ARPin.DebugDraw
 // 0x0020 (0x0020 - 0x0000)
 struct ARPin_DebugDraw final
@@ -1780,20 +1774,26 @@ public:
 	struct FVector                                ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AugmentedReality.ARTrackedObject.GetDetectedObject
-// 0x0008 (0x0008 - 0x0000)
-struct ARTrackedObject_GetDetectedObject final
-{
-public:
-	class UARCandidateObject*                     ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function AugmentedReality.ARTrackedPose.GetTrackedPoseData
 // 0x0050 (0x0050 - 0x0000)
 struct ARTrackedPose_GetTrackedPoseData final
 {
 public:
 	struct FARPose3D                              ReturnValue;                                       // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function AugmentedReality.ARMeshGeometry.GetObjectClassificationAtLocation
+// 0x0024 (0x0024 - 0x0000)
+struct ARMeshGeometry_GetObjectClassificationAtLocation final
+{
+public:
+	struct FVector                                InWorldLocation;                                   // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EARObjectClassification                       OutClassification;                                 // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FVector                                OutClassificationLocation;                         // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxLocationDiff;                                   // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // Function AugmentedReality.ARGeoAnchor.GetAltitudeMeters

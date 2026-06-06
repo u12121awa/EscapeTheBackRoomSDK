@@ -10,20 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "MP_GameMode_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "MP_GameMode_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_Level10.MP_Level10_C
-// 0x00A8 (0x0430 - 0x0388)
+// 0x00B0 (0x0430 - 0x0380)
 class AMP_Level10_C final : public AMP_GameMode_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Level10_C;                       // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Level10_C;                       // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	uint8                                         Pad_388[0x8];                                      // 0x0388(0x0008)(Fixing Size After Last Property [ Dumper-8 ])
 	struct FTransform                             Checkpoint1Spawn;                                  // 0x0390(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FTransform                             Checkpoint2Spawn;                                  // 0x03C0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FTransform                             Checkpoint3Spawn;                                  // 0x03F0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)

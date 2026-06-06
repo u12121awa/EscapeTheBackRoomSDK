@@ -30,33 +30,5 @@ void BP_Floor_4::ABP_Floor_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-
-// Function BP_Floor.BP_Floor_C.OverrideMeshMaterials
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UStaticMeshComponent*             Mesh                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UMaterialInterface*>&      Materials                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// TArray<class UMaterialInterface*>*      InitMaterials                                          (Parm, OutParm)
-
-void BP_Floor_4::ABP_Floor_C::OverrideMeshMaterials(class UStaticMeshComponent* Mesh, TArray<class UMaterialInterface*>& Materials, TArray<class UMaterialInterface*>* InitMaterials)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Floor_C", "OverrideMeshMaterials");
-
-	Params::BP_Floor_C_OverrideMeshMaterials Parms{};
-
-	Parms.Mesh = Mesh;
-	Parms.Materials = std::move(Materials);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Materials = std::move(Parms.Materials);
-
-	if (InitMaterials != nullptr)
-		*InitMaterials = std::move(Parms.InitMaterials);
-}
-
 }
 

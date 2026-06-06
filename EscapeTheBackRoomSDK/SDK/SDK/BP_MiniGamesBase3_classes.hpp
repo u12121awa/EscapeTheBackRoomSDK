@@ -19,20 +19,20 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_MiniGamesBase3.BP_MiniGamesBase3_C
-// 0x0048 (0x0370 - 0x0328)
+// 0x0048 (0x0378 - 0x0330)
 class ABP_MiniGamesBase3_C : public ABP_Interactable_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MiniGamesBase3_C;                // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   MiniGameScreen;                                    // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          MiniGameEnabled;                                   // 0x0338(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_339[0x3];                                      // 0x0339(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         DelayTimeWhenComplete;                             // 0x033C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnMiniGameSuccess;                                 // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              OnMiniGameCanceled;                                // 0x0350(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class USoundCue*                              ErrorSound;                                        // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          TickEnabled;                                       // 0x0368(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	bool                                          IsBeingUsed;                                       // 0x0369(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_MiniGamesBase3_C;                // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   MiniGameScreen;                                    // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          MiniGameEnabled;                                   // 0x0340(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_341[0x3];                                      // 0x0341(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	float                                         DelayTimeWhenComplete;                             // 0x0344(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              OnMiniGameSuccess;                                 // 0x0348(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnMiniGameCanceled;                                // 0x0358(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class USoundCue*                              ErrorSound;                                        // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          TickEnabled;                                       // 0x0370(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	bool                                          IsBeingUsed;                                       // 0x0371(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_BP_MiniGamesBase3(int32 EntryPoint);

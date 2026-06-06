@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "MP_GameMode_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MP_GameMode_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_Thallasophobia.MP_Thallasophobia_C
-// 0x0008 (0x0390 - 0x0388)
+// 0x0008 (0x0388 - 0x0380)
 class AMP_Thallasophobia_C final : public AMP_GameMode_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Thallasophobia_C;                // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Thallasophobia_C;                // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_MP_Thallasophobia(int32 EntryPoint);

@@ -13,6 +13,7 @@
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "UMG_structs.hpp"
+#include "E_CameraSetting_structs.hpp"
 
 
 namespace SDK
@@ -38,6 +39,8 @@ public:
 	void Create_Chat_Widget(bool IsInGame);
 	void Focus_Chat();
 	void Clear_Chat();
+	void Get_All_ChatComponents(TArray<class UChatComponent_C*>* PlayerControllers);
+	void GetSenderPlayerState(const struct FS_ChatMessage& ChatMessage, class APlayerState** PlayerState, bool* Success);
 
 public:
 	static class UClass* StaticClass()

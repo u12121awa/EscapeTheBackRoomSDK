@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_MiniGameState_structs.hpp"
-#include "E_MiniGameStatus_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "E_MiniGameState_structs.hpp"
+#include "E_MiniGameStatus_structs.hpp"
 
 
 namespace SDK
@@ -58,7 +58,7 @@ public:
 public:
 	void ExecuteUbergraph_BPC_MiniGameBase_2(int32 EntryPoint);
 	void MiniGame_Activate();
-	void SpawnMinigame();
+	void SpawnMiniGame();
 	void CalculateTimer();
 	void IncreaseComplete();
 	void DisablePawnInput();

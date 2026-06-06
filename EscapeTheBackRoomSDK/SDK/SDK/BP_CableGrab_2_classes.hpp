@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "BP_Interactable_classes.hpp"
-#include "CableColors_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "CableColors_structs.hpp"
+#include "BP_Interactable_classes.hpp"
 #include "Backrooms_structs.hpp"
 
 
@@ -22,59 +22,59 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_CableGrab_2.BP_CableGrab_2_C
-// 0x0240 (0x0568 - 0x0328)
+// 0x0240 (0x0570 - 0x0330)
 class ABP_CableGrab_2_C final : public ABP_Interactable_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_CableGrab_2_C;                   // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPointLightComponent*                   PointLight;                                        // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_Lamp_01;                                        // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Elevator_Lamp;                                     // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh2;                                       // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   YellowCableInsertPoint;                            // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   BlueCableInsertPoint;                              // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   GreenCableInsertPoint;                             // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   RedCableInsertPoint;                               // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   YellowCableGrabPoint;                              // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCableComponent*                        YellowCable;                                       // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   BlueCableGrabPoint;                                // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCableComponent*                        BlueCable;                                         // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   GreenCableGrabPoint;                               // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCableComponent*                        GreenCable;                                        // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   RedCableGrabPoint;                                 // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCableComponent*                        RedCable;                                          // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_Rotation_ACA206EE4F3BB139BE58B68707DCADE3; // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_ACA206EE4F3BB139BE58B68707DCADE3; // 0x03B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B5[0x3];                                      // 0x03B5(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                RedPlugLocation;                                   // 0x03C0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                GreenPlugLocation;                                 // 0x03CC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                BluePlugLocation;                                  // 0x03D8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                YellowPlugLocation;                                // 0x03E4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CableIsGrabbed;                                    // 0x03F0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	ECableColors                                  CableColorGrabbed;                                 // 0x03F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          PluggingCable;                                     // 0x03F2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F3[0x5];                                      // 0x03F3(0x0005)(Fixing Size After Last Property [ Dumper-8 ])
-	TMap<ECableColors, bool>                      CableStates;                                       // 0x03F8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<ECableColors, struct FTransform>         PlugLocations;                                     // 0x0448(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRandomStream                          RandomStream;                                      // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor)
-	TMap<int32, ECableColors>                     RandomPlugs;                                       // 0x04A0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FVector                                RedStartLocation;                                  // 0x04F0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                GreenStartLocation;                                // 0x04FC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                BlueStartLocation;                                 // 0x0508(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                YellowStartLocation;                               // 0x0514(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         FuseboxIndex;                                      // 0x0520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnabled;                                         // 0x0524(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                         Pad_525[0x3];                                      // 0x0525(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class ABP_StationManager_C*                   StationManager;                                    // 0x0528(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsDoorOpen;                                        // 0x0530(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	bool                                          ShouldCheckCables;                                 // 0x0531(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                         Pad_532[0x6];                                      // 0x0532(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FTimerHandle                           Timer;                                             // 0x0538(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentSelectionIndex;                             // 0x0540(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_544[0x4];                                      // 0x0544(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	TArray<class UStaticMeshComponent*>           GrabPointArray;                                    // 0x0548(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify, ContainsInstancedReference)
-	TArray<class UStaticMeshComponent*>           InsertPointArray;                                  // 0x0558(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, ContainsInstancedReference)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_CableGrab_2_C;                   // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPointLightComponent*                   PointLight;                                        // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_Lamp_01;                                        // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Elevator_Lamp;                                     // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh2;                                       // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   YellowCableInsertPoint;                            // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   BlueCableInsertPoint;                              // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   GreenCableInsertPoint;                             // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   RedCableInsertPoint;                               // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   YellowCableGrabPoint;                              // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCableComponent*                        YellowCable;                                       // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   BlueCableGrabPoint;                                // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCableComponent*                        BlueCable;                                         // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   GreenCableGrabPoint;                               // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCableComponent*                        GreenCable;                                        // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   RedCableGrabPoint;                                 // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCableComponent*                        RedCable;                                          // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_Rotation_ACA206EE4F3BB139BE58B68707DCADE3; // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_ACA206EE4F3BB139BE58B68707DCADE3; // 0x03BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BD[0x3];                                      // 0x03BD(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                RedPlugLocation;                                   // 0x03C8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                GreenPlugLocation;                                 // 0x03D4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                BluePlugLocation;                                  // 0x03E0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                YellowPlugLocation;                                // 0x03EC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CableIsGrabbed;                                    // 0x03F8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	ECableColors                                  CableColorGrabbed;                                 // 0x03F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          PluggingCable;                                     // 0x03FA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3FB[0x5];                                      // 0x03FB(0x0005)(Fixing Size After Last Property [ Dumper-8 ])
+	TMap<ECableColors, bool>                      CableStates;                                       // 0x0400(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<ECableColors, struct FTransform>         PlugLocations;                                     // 0x0450(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRandomStream                          RandomStream;                                      // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor)
+	TMap<int32, ECableColors>                     RandomPlugs;                                       // 0x04A8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FVector                                RedStartLocation;                                  // 0x04F8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                GreenStartLocation;                                // 0x0504(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                BlueStartLocation;                                 // 0x0510(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                YellowStartLocation;                               // 0x051C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         FuseboxIndex;                                      // 0x0528(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnabled;                                         // 0x052C(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	uint8                                         Pad_52D[0x3];                                      // 0x052D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class ABP_StationManager_C*                   StationManager;                                    // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDoorOpen;                                        // 0x0538(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	bool                                          ShouldCheckCables;                                 // 0x0539(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	uint8                                         Pad_53A[0x6];                                      // 0x053A(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FTimerHandle                           Timer;                                             // 0x0540(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentSelectionIndex;                             // 0x0548(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54C[0x4];                                      // 0x054C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<class UStaticMeshComponent*>           GrabPointArray;                                    // 0x0550(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify, ContainsInstancedReference)
+	TArray<class UStaticMeshComponent*>           InsertPointArray;                                  // 0x0560(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void ExecuteUbergraph_BP_CableGrab_2(int32 EntryPoint);

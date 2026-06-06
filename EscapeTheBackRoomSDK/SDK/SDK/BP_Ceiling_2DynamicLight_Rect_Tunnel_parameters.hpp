@@ -75,7 +75,7 @@ public:
 struct BP_Ceiling_2DynamicLight_Rect_Tunnel_C_ToggleLight final
 {
 public:
-	bool                                          isOff;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsOff;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

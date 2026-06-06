@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -17,17 +18,37 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Lamp.BP_Lamp_C
-// 0x0008 (0x0238 - 0x0230)
-class BP_Lamp_0::ABP_Lamp_C final : public AStaticMeshActor
+// 0x0048 (0x0268 - 0x0220)
+class BP_Lamp_0::ABP_Lamp_C final : public AActor
 {
 public:
-	class USpotLightComponent*                    SpotLight;                                         // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPointLightComponent*                   PointLight;                                        // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   SM_Lamp;                                           // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_NewTrack_1_F59641924E58D182A869DCB351D64E40; // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_NewTrack_0_F59641924E58D182A869DCB351D64E40; // 0x023C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_F59641924E58D182A869DCB351D64E40; // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         FlickerTime_NewTrack_0_ECB0B6AD4616F65372CE6FB8EF049E67; // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            FlickerTime__Direction_ECB0B6AD4616F65372CE6FB8EF049E67; // 0x0254(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_255[0x3];                                      // 0x0255(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     FlickerTime;                                       // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Intensity;                                         // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Stationary;                                        // 0x0264(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Active;                                            // 0x0265(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Flickering;                                        // 0x0266(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void TurnOFF();
-	void TurnON();
-	void CheckLight(float Value);
-	void SetPointLight(float Intensity);
+	void ExecuteUbergraph_BP_Lamp(int32 EntryPoint);
+	void StopFlicker();
+	void Flicker();
+	void ReceiveBeginPlay();
+	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void FlickerTime__UpdateFunc();
+	void FlickerTime__FinishedFunc();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
-#include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -109,18 +109,19 @@ public:
 };
 
 // Function UI_Drag.UI_Drag_C.OnKeyDown
-// 0x02B8 (0x02B8 - 0x0000)
+// 0x02A8 (0x02A8 - 0x0000)
 struct UI_Drag_C_OnKeyDown final
 {
 public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0128(0x0018)(HasGetValueTypeHash)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0140(0x00B8)()
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0200(0x00B8)()
+	EUINavigationAction                           CallFunc_Key_GetNavigationActionFromKey_ReturnValue; // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0130(0x00B8)()
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x01F0(0x00B8)()
 };
 
 }

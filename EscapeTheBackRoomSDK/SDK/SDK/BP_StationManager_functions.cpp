@@ -392,9 +392,9 @@ void ABP_StationManager_C::LoadFuseboxes()
 // Function BP_StationManager.BP_StationManager_C.DisableFusebox
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           Fusebox                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           fusebox                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_StationManager_C::DisableFusebox(class AActor* Fusebox)
+void ABP_StationManager_C::DisableFusebox(class AActor* fusebox)
 {
 	static class UFunction* Func = nullptr;
 
@@ -403,7 +403,7 @@ void ABP_StationManager_C::DisableFusebox(class AActor* Fusebox)
 
 	Params::BP_StationManager_C_DisableFusebox Parms{};
 
-	Parms.Fusebox = Fusebox;
+	Parms.fusebox = fusebox;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

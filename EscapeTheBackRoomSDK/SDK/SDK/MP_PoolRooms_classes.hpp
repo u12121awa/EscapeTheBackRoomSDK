@@ -10,21 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "MP_GameMode_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MP_GameMode_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_PoolRooms.MP_PoolRooms_C
-// 0x0010 (0x0398 - 0x0388)
+// 0x0010 (0x0390 - 0x0380)
 class AMP_PoolRooms_C final : public AMP_GameMode_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_MP_PoolRooms_C;                     // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	int32                                         CurrentSpawnIndex;                                 // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsHubOrExit;                                       // 0x0394(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_MP_PoolRooms_C;                     // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	int32                                         CurrentSpawnIndex;                                 // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsHubOrExit;                                       // 0x038C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_MP_PoolRooms(int32 EntryPoint);

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "AdvancedSessions_structs.hpp"
 #include "S_ConnectedPlayer_structs.hpp"
+#include "AdvancedSessions_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -20,14 +20,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass Lobby_PlayerList.Lobby_PlayerList_C
-// 0x0028 (0x0288 - 0x0260)
+// 0x0028 (0x0298 - 0x0270)
 class ULobby_PlayerList_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UTextBlock*                             PlayerCount_Text;                                  // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             PlayerList;                                        // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<struct FS_ConnectedPlayer>             ConnectedPlayers;                                  // 0x0278(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UTextBlock*                             PlayerCount_Text;                                  // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             PlayerList;                                        // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<struct FS_ConnectedPlayer>             ConnectedPlayers;                                  // 0x0288(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void ExecuteUbergraph_Lobby_PlayerList(int32 EntryPoint);

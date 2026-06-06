@@ -40,9 +40,9 @@ void ABP_Elevator_System_C::ExecuteUbergraph_BP_Elevator_System(int32 EntryPoint
 // Function BP_Elevator_System.BP_Elevator_System_C.eventAddDoorFrame
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class ABP_DoorFrame_C*&           Doorframe                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class ABP_DoorFrame_C*&           DoorFrame                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Elevator_System_C::eventAddDoorFrame(const class ABP_DoorFrame_C*& Doorframe)
+void ABP_Elevator_System_C::eventAddDoorFrame(const class ABP_DoorFrame_C*& DoorFrame)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51,7 +51,7 @@ void ABP_Elevator_System_C::eventAddDoorFrame(const class ABP_DoorFrame_C*& Door
 
 	Params::BP_Elevator_System_C_eventAddDoorFrame Parms{};
 
-	Parms.Doorframe = Doorframe;
+	Parms.DoorFrame = DoorFrame;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

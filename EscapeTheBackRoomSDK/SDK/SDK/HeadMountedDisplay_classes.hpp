@@ -10,41 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "HeadMountedDisplay_structs.hpp"
 #include "Engine_classes.hpp"
 #include "InputCore_structs.hpp"
+#include "HeadMountedDisplay_structs.hpp"
 
 
 namespace SDK
 {
-
-// Class HeadMountedDisplay.VRNotificationsComponent
-// 0x00B0 (0x0160 - 0x00B0)
-class UVRNotificationsComponent : public UActorComponent
-{
-public:
-	TMulticastInlineDelegate<void()>              HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate; // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              HMDTrackingInitializedDelegate;                    // 0x00C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              HMDRecenteredDelegate;                             // 0x00D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              HMDLostDelegate;                                   // 0x00E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              HMDReconnectedDelegate;                            // 0x00F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              HMDConnectCanceledDelegate;                        // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              HMDPutOnHeadDelegate;                              // 0x0110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              HMDRemovedFromHeadDelegate;                        // 0x0120(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              VRControllerRecenteredDelegate;                    // 0x0130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              XRTrackingOriginChangedDelegate;                   // 0x0140(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              XRPlayAreaChangedDelegate;                         // 0x0150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"VRNotificationsComponent">();
-	}
-	static class UVRNotificationsComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UVRNotificationsComponent>();
-	}
-};
 
 // Class HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -54,10 +26,10 @@ public:
 	static void DisableMotionTrackingForComponent(const class UMotionControllerComponent* MotionControllerComponent);
 	static void DisableMotionTrackingOfAllControllers();
 	static void DisableMotionTrackingOfControllersForPlayer(int32 PlayerIndex);
-	static void DisableMotionTrackingOfDevice(int32 PlayerIndex, EControllerHand hand);
+	static void DisableMotionTrackingOfDevice(int32 PlayerIndex, EControllerHand Hand);
 	static void DisableMotionTrackingOfSource(int32 PlayerIndex, class FName SourceName);
 	static bool EnableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent);
-	static bool EnableMotionTrackingOfDevice(int32 PlayerIndex, EControllerHand hand);
+	static bool EnableMotionTrackingOfDevice(int32 PlayerIndex, EControllerHand Hand);
 	static bool EnableMotionTrackingOfSource(int32 PlayerIndex, class FName SourceName);
 	static TArray<class FName> EnumerateMotionSources();
 	static class FName GetActiveTrackingSystemName();
@@ -66,7 +38,7 @@ public:
 	static bool IsMotionSourceTracking(int32 PlayerIndex, class FName SourceName);
 	static bool IsMotionTrackedDeviceCountManagementNecessary();
 	static bool IsMotionTrackingEnabledForComponent(const class UMotionControllerComponent* MotionControllerComponent);
-	static bool IsMotionTrackingEnabledForDevice(int32 PlayerIndex, EControllerHand hand);
+	static bool IsMotionTrackingEnabledForDevice(int32 PlayerIndex, EControllerHand Hand);
 	static bool IsMotionTrackingEnabledForSource(int32 PlayerIndex, class FName SourceName);
 	static void SetIsControllerMotionTrackingEnabledByDefault(bool Enable);
 
@@ -88,7 +60,7 @@ class alignas(0x10) UMotionControllerComponent : public UPrimitiveComponent
 {
 public:
 	int32                                         PlayerIndex;                                       // 0x0450(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EControllerHand                               hand;                                              // 0x0454(0x0001)(BlueprintVisible, ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EControllerHand                               Hand;                                              // 0x0454(0x0001)(BlueprintVisible, ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_455[0x3];                                      // 0x0455(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
 	class FName                                   MotionSource;                                      // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bDisableLowLatencyUpdate : 1;                      // 0x0460(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
@@ -129,12 +101,40 @@ public:
 };
 #pragma pack(pop)
 
+// Class HeadMountedDisplay.VRNotificationsComponent
+// 0x00B0 (0x0160 - 0x00B0)
+class UVRNotificationsComponent : public UActorComponent
+{
+public:
+	TMulticastInlineDelegate<void()>              HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate; // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              HMDTrackingInitializedDelegate;                    // 0x00C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              HMDRecenteredDelegate;                             // 0x00D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              HMDLostDelegate;                                   // 0x00E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              HMDReconnectedDelegate;                            // 0x00F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              HMDConnectCanceledDelegate;                        // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              HMDPutOnHeadDelegate;                              // 0x0110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              HMDRemovedFromHeadDelegate;                        // 0x0120(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              VRControllerRecenteredDelegate;                    // 0x0130(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              XRTrackingOriginChangedDelegate;                   // 0x0140(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              XRPlayAreaChangedDelegate;                         // 0x0150(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"VRNotificationsComponent">();
+	}
+	static class UVRNotificationsComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UVRNotificationsComponent>();
+	}
+};
+
 // Class HeadMountedDisplay.HeadMountedDisplayFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
 class UHeadMountedDisplayFunctionLibrary final : public UBlueprintFunctionLibrary
 {
 public:
-	static void BreakKey(const struct FKey& InKey, class FString* InteractionProfile, EControllerHand* hand, class FName* MotionSource, class FString* Indentifier, class FString* Component);
+	static void BreakKey(const struct FKey& InKey, class FString* InteractionProfile, EControllerHand* Hand, class FName* MotionSource, class FString* Indentifier, class FString* Component);
 	static void CalibrateExternalTrackingToHMD(const struct FTransform& ExternalTrackingTransform);
 	static void ClearXRTimedInputActionDelegate(const class FName& ActionPath);
 	static bool ConfigureGestures(const struct FXRGestureConfig& GestureConfig);
@@ -149,7 +149,7 @@ public:
 	static void GetHMDData(class UObject* WorldContext, struct FXRHMDData* HMDData);
 	static class FName GetHMDDeviceName();
 	static EHMDWornState GetHMDWornState();
-	static void GetMotionControllerData(class UObject* WorldContext, const EControllerHand hand, struct FXRMotionControllerData* MotionControllerData);
+	static void GetMotionControllerData(class UObject* WorldContext, const EControllerHand Hand, struct FXRMotionControllerData* MotionControllerData);
 	static int32 GetNumOfTrackingSensors();
 	static void GetOrientationAndPosition(struct FRotator* DeviceRotation, struct FVector* DevicePosition);
 	static float GetPixelDensity();

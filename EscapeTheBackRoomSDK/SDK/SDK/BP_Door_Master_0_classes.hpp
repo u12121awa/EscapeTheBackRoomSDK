@@ -47,12 +47,12 @@ public:
 	bool                                          IsOpen;                                            // 0x0280(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsFirst;                                           // 0x0281(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Closed;                                            // 0x0282(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	bool                                          IsLocked;                                          // 0x0283(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsFrontDoor;                                       // 0x0284(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_BP_Door_Master(int32 EntryPoint);
-	void MC_Open();
 	void CloseDoor();
-	void ReceiveBeginPlay();
 	void EntityOpen(bool Open);
 	void ToggleDoor();
 	void DoorTimeline();

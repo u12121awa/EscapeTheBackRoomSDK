@@ -10,16 +10,38 @@
 
 #include "Basic.hpp"
 
-#include "BP_Door_classes.hpp"
+#include "Engine_structs.hpp"
+#include "Backrooms_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DoubleDoor.BP_DoubleDoor_C
-// 0x0000 (0x0240 - 0x0240)
-class BP_DoubleDoor::ABP_DoubleDoor_C final : public ABP_Door_C
+// 0x0038 (0x0280 - 0x0248)
+class BP_DoubleDoor::ABP_DoubleDoor_C final : public AInteractableActor
 {
+public:
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   doorLeft;                                          // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Door_Rotate_Open_DoorOpen_2D59B74E496F5F77D00EC5819A7B6EEF; // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Door_Rotate_Open__Direction_2D59B74E496F5F77D00EC5819A7B6EEF; // 0x025C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25D[0x3];                                      // 0x025D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     Door_Rotate_Open;                                  // 0x0260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            VariableDoorRight;                                 // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Closed_Door;                                       // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Is_Locked_;                                        // 0x0271(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_272[0x6];                                      // 0x0272(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
+	class UStaticMesh*                            VariableDoorLeft;                                  // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+public:
+	void ExecuteUbergraph_BP_DoubleDoor(int32 EntryPoint);
+	void OnUsedNotify();
+	void OnActorUsed(class ACharacter* Character);
+	void Door_Rotate_Open__UpdateFunc();
+	void Door_Rotate_Open__FinishedFunc();
+	void UserConstructionScript();
+
 public:
 	static class UClass* StaticClass()
 	{

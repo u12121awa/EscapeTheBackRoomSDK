@@ -10,9 +10,19 @@
 
 #include "Basic.hpp"
 
+#include "Backrooms_structs.hpp"
+
 
 namespace SDK::Params
 {
+
+// Function Card_UI.Card_UI_C.ExecuteUbergraph_Card_UI
+// 0x0004 (0x0004 - 0x0000)
+struct Card_UI_C_ExecuteUbergraph_Card_UI final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
 
 // Function Card_UI.Card_UI_C.SetName
 // 0x0018 (0x0018 - 0x0000)
@@ -20,6 +30,23 @@ struct Card_UI_C_SetName final
 {
 public:
 	class FText                                   Name_0;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+
+// Function Card_UI.Card_UI_C.SetPlatform
+// 0x0090 (0x0090 - 0x0000)
+struct Card_UI_C_SetPlatform final
+{
+public:
+	EFancyPlatform                                PlayerPlatform;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class APlayerState*                           PlayerState;                                       // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EFancyPlatform                                Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0018(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0030(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_2;            // 0x0048(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_3;            // 0x0060(0x0018)()
+	class FText                                   K2Node_Select_Default;                             // 0x0078(0x0018)(ConstParm)
 };
 
 }

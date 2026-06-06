@@ -18,12 +18,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass UI_ImageViewer.UI_ImageViewer_C
-// 0x0010 (0x0270 - 0x0260)
+// 0x0010 (0x0280 - 0x0270)
 class UUI_ImageViewer_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 ProgImage;                                         // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 ProgImage;                                         // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_UI_ImageViewer(int32 EntryPoint);

@@ -117,14 +117,6 @@ enum class EBPLoginStatus : uint8
 	EBPLoginStatus_MAX                       = 3,
 };
 
-// ScriptStruct AdvancedSessions.SessionsSearchSetting
-// 0x0028 (0x0028 - 0x0000)
-struct alignas(0x08) FSessionsSearchSetting final
-{
-public:
-	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
 // ScriptStruct AdvancedSessions.BPUniqueNetId
 // 0x0028 (0x0028 - 0x0000)
 struct FBPUniqueNetId final
@@ -179,6 +171,14 @@ public:
 	bool                                          bIsPlayingSameGame;                                // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
 	struct FBPFriendPresenceInfo                  PresenceInfo;                                      // 0x0058(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+
+// ScriptStruct AdvancedSessions.SessionsSearchSetting
+// 0x0028 (0x0028 - 0x0000)
+struct alignas(0x08) FSessionsSearchSetting final
+{
+public:
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // ScriptStruct AdvancedSessions.SessionPropertyKeyPair

@@ -51,7 +51,7 @@ public:
 struct BP_Elevator_System_C_eventAddDoorFrame final
 {
 public:
-	const class ABP_DoorFrame_C*                  Doorframe;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class ABP_DoorFrame_C*                  DoorFrame;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function BP_Elevator_System.BP_Elevator_System_C.CanMove

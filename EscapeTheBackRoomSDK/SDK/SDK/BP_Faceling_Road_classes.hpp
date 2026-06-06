@@ -37,11 +37,12 @@ public:
 	bool                                          IsCarrying;                                        // 0x04F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4FA[0x6];                                      // 0x04FA(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
 	class APlayerController*                      CarryingController;                                // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABPCharacter_Demo_C*                    Attached;                                          // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABPCharacter_Demo_C*                    Attached;                                          // 0x0508(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABPCharacter_Demo_C*                    TargetPlayer;                                      // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_Faceling_Road(int32 EntryPoint);
+	void ApplyCostumeAndShowSkeletal_Mesh(class ABPCharacter_Demo_C* InTargetPlayer);
 	void SRV_Carry(class ABPCharacter_Demo_C* Player);
 	void StopCarry();
 	void StartCarry();

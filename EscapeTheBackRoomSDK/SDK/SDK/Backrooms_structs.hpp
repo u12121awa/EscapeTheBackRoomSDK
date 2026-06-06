@@ -12,6 +12,7 @@
 
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "AdvancedSessions_structs.hpp"
 
 
 namespace SDK
@@ -28,26 +29,17 @@ enum class EFancyInputDevice : uint8
 	EFancyInputDevice_MAX                    = 4,
 };
 
-// Enum Backrooms.EOnlineStatus
-// NumValues: 0x0003
-enum class EOnlineStatus : uint8
-{
-	Offline                                  = 0,
-	Online                                   = 1,
-	EOnlineStatus_MAX                        = 2,
-};
-
-// Enum Backrooms.EEstablishUserReason
+// Enum Backrooms.EOnJoinSessionCompleteFancyResult
 // NumValues: 0x0007
-enum class EEstablishUserReason : uint8
+enum class EOnJoinSessionCompleteFancyResult : uint8
 {
-	NONE                                     = 0,
-	INITIAL_USER                             = 1,
-	USER_WAS_INVALID                         = 2,
-	CTRL_DISCONNECTED                        = 3,
-	SIGNED_OUT                               = 4,
-	REQUESTED                                = 5,
-	EEstablishUserReason_MAX                 = 6,
+	Success                                  = 0,
+	SessionIsFull                            = 1,
+	SessionDoesNotExist                      = 2,
+	CouldNotRetrieveAddress                  = 3,
+	AlreadyInSession                         = 4,
+	UnknownError                             = 5,
+	EOnJoinSessionCompleteFancyResult_MAX    = 6,
 };
 
 // Enum Backrooms.EMotionComponentType
@@ -58,6 +50,41 @@ enum class EMotionComponentType : uint8
 	TEAMMATE                                 = 1,
 	SCANNER                                  = 2,
 	EMotionComponentType_MAX                 = 3,
+};
+
+// Enum Backrooms.EFancyModalButton
+// NumValues: 0x0003
+enum class EFancyModalButton : uint8
+{
+	Button1                                  = 0,
+	Button2                                  = 1,
+	EFancyModalButton_MAX                    = 2,
+};
+
+// Enum Backrooms.EInputMode
+// NumValues: 0x0005
+enum class EInputMode : uint8
+{
+	UIOnly                                   = 0,
+	GameAndUI                                = 1,
+	GameOnly                                 = 2,
+	Unknown                                  = 3,
+	EInputMode_MAX                           = 4,
+};
+
+// Enum Backrooms.EFancyUserReportCategory
+// NumValues: 0x0009
+enum class EFancyUserReportCategory : uint8
+{
+	Invalid                                  = 0,
+	Cheating                                 = 1,
+	Exploiting                               = 2,
+	OffensiveProfile                         = 3,
+	VerbalAbuse                              = 4,
+	Scamming                                 = 5,
+	Spamming                                 = 6,
+	Other                                    = 7,
+	EFancyUserReportCategory_MAX             = 8,
 };
 
 // Enum Backrooms.EAimAssistCastType
@@ -120,6 +147,31 @@ enum class EEventType : uint8
 	EEventType_MAX                           = 3,
 };
 
+// Enum Backrooms.EFancyUserPrivileges
+// NumValues: 0x0006
+enum class EFancyUserPrivileges : uint8
+{
+	CanPlay                                  = 0,
+	CanPlayOnline                            = 1,
+	CanCommunicateOnline                     = 2,
+	CanUseUserGeneratedContent               = 3,
+	CanUserCrossPlay                         = 4,
+	EFancyUserPrivileges_MAX                 = 5,
+};
+
+// Enum Backrooms.EFancyPlatform
+// NumValues: 0x0007
+enum class EFancyPlatform : uint8
+{
+	None                                     = 0,
+	Windows                                  = 1,
+	WinGDK                                   = 2,
+	XboxSeries                               = 3,
+	PS5                                      = 4,
+	Switch2                                  = 5,
+	EFancyPlatform_MAX                       = 6,
+};
+
 // Enum Backrooms.ActivityCompletionStatus
 // NumValues: 0x0004
 enum class EActivityCompletionStatus : uint8
@@ -130,15 +182,25 @@ enum class EActivityCompletionStatus : uint8
 	ActivityCompletionStatus_MAX             = 3,
 };
 
-// Enum Backrooms.EInputMode
+// Enum Backrooms.EFancyNetIDFormat
 // NumValues: 0x0005
-enum class EInputMode : uint8
+enum class EFancyNetIDFormat : uint8
 {
-	UIOnly                                   = 0,
-	GameAndUI                                = 1,
-	GameOnly                                 = 2,
-	Unknown                                  = 3,
-	EInputMode_MAX                           = 4,
+	Unknown                                  = 0,
+	EOS                                      = 1,
+	EOSPlus                                  = 2,
+	Platform                                 = 3,
+	EFancyNetIDFormat_MAX                    = 4,
+};
+
+// Enum Backrooms.EFancySaveSubsystemFlushingState
+// NumValues: 0x0004
+enum class EFancySaveSubsystemFlushingState : uint8
+{
+	Idle                                     = 0,
+	WarmingUpForQueuedSaves                  = 1,
+	WritingQueuedSaves                       = 2,
+	EFancySaveSubsystemFlushingState_MAX     = 3,
 };
 
 // Enum Backrooms.EVRVelocityType
@@ -247,25 +309,12 @@ enum class EMoveAxis : uint8
 	EMoveAxis_MAX                            = 4,
 };
 
-// ScriptStruct Backrooms.TargetStruct
-// 0x0018 (0x0018 - 0x0000)
-struct FTargetStruct final
-{
-public:
-	class UStaticMesh*                            TargetStaticMesh;                                  // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     TargetMaterial;                                    // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SizeScale;                                         // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
-// ScriptStruct Backrooms.LIDARDotStruct
+// ScriptStruct Backrooms.FancyGDKCalcCannotCommunicateResult
 // 0x0010 (0x0010 - 0x0000)
-struct FLIDARDotStruct final
+struct FFancyGDKCalcCannotCommunicateResult final
 {
 public:
-	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         timestamp;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	TArray<class APlayerState*>                   Result;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 
 // ScriptStruct Backrooms.AimAssistTarget
@@ -279,19 +328,6 @@ public:
 	struct FVector                                ActorLocation;                                     // 0x0018(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Velocity;                                          // 0x0024(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   Tag;                                               // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// ScriptStruct Backrooms.AimAssistSettings
-// 0x0014 (0x0014 - 0x0000)
-struct FAimAssistSettings final
-{
-public:
-	float                                         HorizontalSmoothnessAwayFromTarget;                // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, SimpleDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HorizontalSmoothnessTowardsTarget;                 // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         HorizontalSmoothnessGranularity;                   // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bVerticalCompensation;                             // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         VerticalSmoothness;                                // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // ScriptStruct Backrooms.RadarTargetStruct
@@ -318,15 +354,12 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
-// ScriptStruct Backrooms.BPLowPassPeakFilter
-// 0x0020 (0x0020 - 0x0000)
-struct FBPLowPassPeakFilter final
+// ScriptStruct Backrooms.FancyReportedPlayers
+// 0x0050 (0x0050 - 0x0000)
+struct FFancyReportedPlayers final
 {
 public:
-	int32                                         VelocitySamples;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	TArray<struct FVector>                        VelocitySampleLog;                                 // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	TMap<struct FUniqueNetIdRepl, double>         ReportedPlayersAndTime;                            // 0x0000(0x0050)(NativeAccessSpecifierPublic)
 };
 
 // ScriptStruct Backrooms.VoteData
@@ -342,6 +375,16 @@ public:
 	float                                         CurrentTime;                                       // 0x005C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          IsActive;                                          // 0x0060(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// ScriptStruct Backrooms.FancyReportingPlayerRecord
+// 0x0018 (0x0018 - 0x0000)
+struct FFancyReportingPlayerRecord final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFancyPlatform                                Platform;                                          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // ScriptStruct Backrooms.TelemetryStruct
@@ -366,19 +409,6 @@ public:
 	float                                         WaveMultiply;                                      // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WavePositionUI;                                    // 0x0018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WaveDistance;                                      // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// ScriptStruct Backrooms.Collectible
-// 0x0038 (0x0040 - 0x0008)
-struct FCollectible final : public FTableRowBase
-{
-public:
-	class FName                                   ID;                                                // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FText                                   Name;                                              // 0x0010(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FName                                   Description;                                       // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Quantity;                                          // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTexture2D*                             Icon;                                              // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // ScriptStruct Backrooms.CostumeDismembermentSet
@@ -415,6 +445,70 @@ public:
 	struct FCostumeDismembermentSet               DismembermentSet;                                  // 0x0230(0x01E0)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
 
+// ScriptStruct Backrooms.TargetStruct
+// 0x0018 (0x0018 - 0x0000)
+struct FTargetStruct final
+{
+public:
+	class UStaticMesh*                            TargetStaticMesh;                                  // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     TargetMaterial;                                    // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SizeScale;                                         // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// ScriptStruct Backrooms.FancyAudioInputBuffer
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FFancyAudioInputBuffer final
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// ScriptStruct Backrooms.FancyBlockedPlayerMap
+// 0x0050 (0x0050 - 0x0000)
+struct FFancyBlockedPlayerMap final
+{
+public:
+	TMap<struct FUniqueNetIdRepl, struct FFancyReportingPlayerRecord> MapInternal;                   // 0x0000(0x0050)(NativeAccessSpecifierPublic)
+};
+
+// ScriptStruct Backrooms.BPFancyReportingPlayerRecord
+// 0x0040 (0x0040 - 0x0000)
+struct FBPFancyReportingPlayerRecord final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	class FString                                 Name;                                              // 0x0028(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFancyPlatform                                Platform;                                          // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// ScriptStruct Backrooms.AimAssistSettings
+// 0x0014 (0x0014 - 0x0000)
+struct FAimAssistSettings final
+{
+public:
+	float                                         HorizontalSmoothnessAwayFromTarget;                // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, SimpleDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HorizontalSmoothnessTowardsTarget;                 // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         HorizontalSmoothnessGranularity;                   // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bVerticalCompensation;                             // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	float                                         VerticalSmoothness;                                // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// ScriptStruct Backrooms.Collectible
+// 0x0038 (0x0040 - 0x0008)
+struct FCollectible final : public FTableRowBase
+{
+public:
+	class FName                                   ID;                                                // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Name;                                              // 0x0010(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FName                                   Description;                                       // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Quantity;                                          // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTexture2D*                             Icon;                                              // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // ScriptStruct Backrooms.CostumeWidgetData
 // 0x0008 (0x0008 - 0x0000)
 struct FCostumeWidgetData final
@@ -423,13 +517,33 @@ public:
 	class UCostume*                               Costume;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// ScriptStruct Backrooms.QueuedSaveGame
-// 0x0020 (0x0020 - 0x0000)
-struct FQueuedSaveGame final
+// ScriptStruct Backrooms.FancyPlayerNamePlatformDecoratorStyle
+// 0x0038 (0x0038 - 0x0000)
+struct FFancyPlayerNamePlatformDecoratorStyle final
 {
 public:
-	class USaveGame*                              SaveGameObject;                                    // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x18];                                       // 0x0008(0x0018)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	TSoftObjectPtr<class UTexture2D>              Texture;                                           // 0x0000(0x0028)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MinWidth;                                          // 0x0028(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MinHeight;                                         // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FColor                                 Tint;                                              // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// ScriptStruct Backrooms.FancySaveGameSlotCacheData
+// 0x0018 (0x0018 - 0x0000)
+struct FFancySaveGameSlotCacheData final
+{
+public:
+	class FString                                 Slot;                                              // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USaveGame*                              SaveGame;                                          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// ScriptStruct Backrooms.FancyUserFlowLatentFlowResumeData
+// 0x0060 (0x0060 - 0x0000)
+struct alignas(0x10) FFancyUserFlowLatentFlowResumeData final
+{
+public:
+	uint8                                         Pad_0[0x60];                                       // 0x0000(0x0060)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // ScriptStruct Backrooms.VoteParameters
@@ -453,6 +567,17 @@ public:
 	EVRVectorQuantization                         QuantizationLevel;                                 // 0x0018(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EVRRotationQuantization                       RotationQuantizationLevel;                         // 0x0019(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// ScriptStruct Backrooms.BPLowPassPeakFilter
+// 0x0020 (0x0020 - 0x0000)
+struct FBPLowPassPeakFilter final
+{
+public:
+	int32                                         VelocitySamples;                                   // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<struct FVector>                        VelocitySampleLog;                                 // 0x0008(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // ScriptStruct Backrooms.BPEuroLowPassFilterTrans
@@ -495,6 +620,16 @@ public:
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
 	class UStaticMesh*                            ItemMesh;                                          // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UStaticMesh*                            DroppedMesh;                                       // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// ScriptStruct Backrooms.LIDARDotStruct
+// 0x0010 (0x0010 - 0x0000)
+struct FLIDARDotStruct final
+{
+public:
+	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         timestamp;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // ScriptStruct Backrooms.MapEditorItem

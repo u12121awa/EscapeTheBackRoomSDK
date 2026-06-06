@@ -22,11 +22,11 @@ struct PlayerCard_UI_C_ExecuteUbergraph_PlayerCard_UI final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetLevelColor_Color;                      // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetPlayerName_PlayerName;                 // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0030(0x0018)()
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetPlayerName_PlayerName;                 // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
+	struct FLinearColor                           CallFunc_GetLevelColor_Color;                      // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function PlayerCard_UI.PlayerCard_UI_C.SetName

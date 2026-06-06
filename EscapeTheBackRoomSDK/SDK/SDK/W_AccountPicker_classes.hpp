@@ -18,19 +18,15 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass W_AccountPicker.W_AccountPicker_C
-// 0x0020 (0x0280 - 0x0260)
+// 0x0010 (0x0280 - 0x0270)
 class UW_AccountPicker_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBorder*                                AvatarBorder;                                      // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             UserName;                                          // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UW_Input_Icon_C*                        W_Input_Icon;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UTextBlock*                             UserName;                                          // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_W_AccountPicker(int32 EntryPoint);
-	void UpdateAvatarName(bool bIsSameUser);
-	void UpdateAvatarIcon(const struct FSlateBrush& Icon);
 	void Construct();
 
 public:

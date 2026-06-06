@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_SpawnTrigger.BP_SpawnTrigger_C
-// 0x0048 (0x0270 - 0x0228)
+// 0x0028 (0x0250 - 0x0228)
 class BP_SpawnTrigger_0::ABP_SpawnTrigger_C final : public ATriggerBox
 {
 public:
@@ -27,16 +27,10 @@ public:
 	int32                                         Direction;                                         // 0x0238(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
 	TArray<class FString>                         PlayersEntered;                                    // 0x0240(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          ShouldDespawn;                                     // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class ASmiler_BP_C*                           SmilerRef;                                         // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ShowText;                                          // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_261[0x3];                                      // 0x0261(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         SpeedMultiplier;                                   // 0x0264(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          NeedsAllPlayers;                                   // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_BP_SpawnTrigger(int32 EntryPoint);
+	void MC_Sound();
 	void ReceiveActorEndOverlap(class AActor* OtherActor);
 	void ReceiveActorBeginOverlap(class AActor* OtherActor);
 

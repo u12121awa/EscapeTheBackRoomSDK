@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
+#include "ST_Item_structs.hpp"
+#include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "Backrooms_structs.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
-#include "ST_Item_structs.hpp"
 #include "InputCore_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function UI_Inventory.UI_Inventory_C.ExecuteUbergraph_UI_Inventory
-// 0x0150 (0x0150 - 0x0000)
+// 0x0158 (0x0158 - 0x0000)
 struct UI_Inventory_C_ExecuteUbergraph_UI_Inventory final
 {
 public:
@@ -103,9 +103,9 @@ public:
 	class UFancyGameInstance*                     K2Node_DynamicCast_AsFancy_Game_Instance;          // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFancyInputDevice                             K2Node_CustomEvent_Device;                         // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0142(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_143[0x5];                                      // 0x0143(0x0005)(Fixing Size After Last Property [ Dumper-8 ])
-	class UWidget*                                K2Node_Select_Default_1;                           // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_142[0x6];                                      // 0x0142(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
+	class UWidget*                                K2Node_Select_Default;                             // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function UI_Inventory.UI_Inventory_C.InputChange
@@ -133,28 +133,28 @@ public:
 };
 
 // Function UI_Inventory.UI_Inventory_C.OnKeyDown
-// 0x0220 (0x0220 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct UI_Inventory_C_OnKeyDown final
 {
 public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0128(0x0018)(HasGetValueTypeHash)
-	struct FKey                                   CallFunc_GetKey_ReturnValue_1;                     // 0x0140(0x0018)(HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_2;          // 0x015A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_InputDown_KeyDown;                        // 0x015B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_3;          // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x015D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15E[0x2];                                      // 0x015E(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsHeadMountedDisplayEnabled_ReturnValue;  // 0x021A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x021B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x021C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EUINavigationAction                           CallFunc_Key_GetNavigationActionFromKey_ReturnValue; // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x0130(0x0018)(HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_InputDown_KeyDown;                        // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue_1;          // 0x014B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x014C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x014D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x014E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x014F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0150(0x00B8)()
+	bool                                          CallFunc_IsHeadMountedDisplayEnabled_ReturnValue;  // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x020A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function UI_Inventory.UI_Inventory_C.GetIconPanel
@@ -179,17 +179,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x00B0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
 	int32                                         CallFunc_Conv_StringToInt_ReturnValue;             // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function UI_Inventory.UI_Inventory_C.CheckFont
-// 0x0070 (0x0070 - 0x0000)
-struct UI_Inventory_C_CheckFont final
-{
-public:
-	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0000(0x0058)(HasGetValueTypeHash)
-	class FString                                 CallFunc_GetCurrentCulture_ReturnValue;            // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_StartsWith_ReturnValue;                   // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function UI_Inventory.UI_Inventory_C.InputDown

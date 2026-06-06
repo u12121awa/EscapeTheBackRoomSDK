@@ -40,7 +40,7 @@ public:
 	void ExecuteUbergraph_Old_Instance(int32 EntryPoint);
 	void UnlockAchievement(class FName AchievementName);
 	void OnPlayerTalkingStateChanged(const struct FBPUniqueNetId& PlayerId, bool bIsTalking);
-	void OnSessionInviteAccepted(int32 LocalPlayerNum, const struct FBPUniqueNetId& PersonInvited, const struct FBlueprintSessionResult& SessionToJoin);
+	void OnSessionInviteAccepted(bool bWasSuccessful, int32 LocalPlayerNum, const struct FBPUniqueNetId& PersonInvited, const struct FBlueprintSessionResult& SessionToJoin);
 	void ReceiveInit();
 	void Initialize_AudioSettings();
 	void ResetAfterErrorFocus(class APlayerController* PlayerController, class UWidget* Widget);

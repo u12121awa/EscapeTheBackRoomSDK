@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EBlockoutStairsType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "EBlockoutStairsType_structs.hpp"
 #include "BlockoutToolsPlugin_classes.hpp"
 
 

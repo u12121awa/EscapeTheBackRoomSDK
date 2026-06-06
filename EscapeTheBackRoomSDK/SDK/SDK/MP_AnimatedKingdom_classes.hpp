@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass MP_AnimatedKingdom.MP_AnimatedKingdom_C
-// 0x0000 (0x0388 - 0x0388)
+// 0x0000 (0x0380 - 0x0380)
 class AMP_AnimatedKingdom_C final : public AMP_GameMode_C
 {
 public:

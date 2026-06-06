@@ -63,7 +63,7 @@ public:
 	void UserConstructionScript();
 	void ResetLights();
 	void GetTimerDelay(float* Delay);
-	void Get_Lamp(int32 Index_0, class UStaticMeshComponent** lamp, class UPointLightComponent** Light);
+	void Get_Lamp(int32 Index_0, class UStaticMeshComponent** Lamp, class UPointLightComponent** Light);
 	void ToggleLightColor(bool Enable, int32 Index_0);
 	void OnRep_IsActive();
 

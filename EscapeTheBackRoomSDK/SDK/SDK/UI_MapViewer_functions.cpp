@@ -131,19 +131,5 @@ void UUI_MapViewer_C::RoundedTime(float TimeIn, class FString* Timeout)
 		*Timeout = std::move(Parms.Timeout);
 }
 
-
-// Function UI_MapViewer.UI_MapViewer_C.CheckFont
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UUI_MapViewer_C::CheckFont()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_MapViewer_C", "CheckFont");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
 }
 

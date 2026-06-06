@@ -17,13 +17,14 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_LockedDoor.BP_LockedDoor_C
-// 0x0018 (0x0260 - 0x0248)
+// 0x0008 (0x0250 - 0x0248)
 class BP_LockedDoor_1::ABP_LockedDoor_C final : public AInteractableActor
 {
 public:
-	class UStaticMeshComponent*                   StaticMesh3;                                       // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh2;                                       // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            Door;                                              // 0x0248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+public:
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

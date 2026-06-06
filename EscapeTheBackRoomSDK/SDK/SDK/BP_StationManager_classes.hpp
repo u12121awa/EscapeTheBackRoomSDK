@@ -62,7 +62,7 @@ public:
 	void UpdateFuseboxes(class FName Tag);
 	void ActivateFusebox(class FName Tag, class FName FuseboxId);
 	void LoadFuseboxes();
-	void DisableFusebox(class AActor* Fusebox);
+	void DisableFusebox(class AActor* fusebox);
 
 public:
 	static class UClass* StaticClass()

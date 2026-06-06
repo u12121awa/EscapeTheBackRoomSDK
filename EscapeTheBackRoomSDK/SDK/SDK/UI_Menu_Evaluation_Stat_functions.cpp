@@ -37,6 +37,40 @@ void UUI_Menu_Evaluation_Stat_C::ExecuteUbergraph_UI_Menu_Evaluation_Stat(int32 
 }
 
 
+// Function UI_Menu_Evaluation_Stat.UI_Menu_Evaluation_Stat_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UUI_Menu_Evaluation_Stat_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UI_Menu_Evaluation_Stat_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UI_Menu_Evaluation_Stat.UI_Menu_Evaluation_Stat_C.UpdateSelect
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bSelected_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UUI_Menu_Evaluation_Stat_C::UpdateSelect(bool bSelected_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UI_Menu_Evaluation_Stat_C", "UpdateSelect");
+
+	Params::UI_Menu_Evaluation_Stat_C_UpdateSelect Parms{};
+
+	Parms.bSelected_0 = bSelected_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function UI_Menu_Evaluation_Stat.UI_Menu_Evaluation_Stat_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -76,40 +110,6 @@ void UUI_Menu_Evaluation_Stat_C::OnMouseEnter(const struct FGeometry& MyGeometry
 	Parms.MouseEvent = std::move(MouseEvent);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UI_Menu_Evaluation_Stat.UI_Menu_Evaluation_Stat_C.UpdateSelect
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bSelected_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UUI_Menu_Evaluation_Stat_C::UpdateSelect(bool bSelected_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_Menu_Evaluation_Stat_C", "UpdateSelect");
-
-	Params::UI_Menu_Evaluation_Stat_C_UpdateSelect Parms{};
-
-	Parms.bSelected_0 = bSelected_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UI_Menu_Evaluation_Stat.UI_Menu_Evaluation_Stat_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UUI_Menu_Evaluation_Stat_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_Menu_Evaluation_Stat_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

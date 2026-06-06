@@ -18,17 +18,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_HideActor_Locker.BP_HideActor_Locker_C
-// 0x0028 (0x0328 - 0x0300)
+// 0x0028 (0x0330 - 0x0308)
 class ABP_HideActor_Locker_C final : public AInteractablePawn
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_Alpha_6457297447E53CC6B42BFC90323F0E51; // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_6457297447E53CC6B42BFC90323F0E51; // 0x0314(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_315[0x3];                                      // 0x0315(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x0318(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ToggleDoor;                                        // 0x0320(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   StaticMesh1;                                       // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_Alpha_6457297447E53CC6B42BFC90323F0E51; // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_6457297447E53CC6B42BFC90323F0E51; // 0x031C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31D[0x3];                                      // 0x031D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x0320(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ToggleDoor;                                        // 0x0328(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 
 public:
 	void ExecuteUbergraph_BP_HideActor_Locker(int32 EntryPoint);

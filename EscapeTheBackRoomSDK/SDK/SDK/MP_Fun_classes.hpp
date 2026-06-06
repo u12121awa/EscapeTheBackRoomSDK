@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "MP_GameMode_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MP_GameMode_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_Fun.MP_Fun_C
-// 0x0010 (0x0398 - 0x0388)
+// 0x0010 (0x0390 - 0x0380)
 class AMP_Fun_C final : public AMP_GameMode_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Fun_C;                           // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class ABP_Audio_Manager_C*                    AudioManager;                                      // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Fun_C;                           // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class ABP_Audio_Manager_C*                    AudioManager;                                      // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MP_Fun(int32 EntryPoint);

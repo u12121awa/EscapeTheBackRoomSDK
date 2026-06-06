@@ -28,7 +28,7 @@ public:
 	static int32 GetFriendSteamLevel(const struct FBPUniqueNetId& UniqueNetId);
 	static struct FBPUniqueNetId GetLocalSteamIDFromSteam();
 	static class UTexture2D* GetSteamFriendAvatar(const struct FBPUniqueNetId& UniqueNetId, EBlueprintAsyncResultSwitch* Result, ESteamAvatarSize AvatarSize);
-	static void GetSteamFriendGamePlayed(const struct FBPUniqueNetId& UniqueNetId, EBlueprintResultSwitch* Result, int32* AppId);
+	static void GetSteamFriendGamePlayed(const struct FBPUniqueNetId& UniqueNetId, EBlueprintResultSwitch* Result, int32* AppID);
 	static void GetSteamGroups(TArray<struct FBPSteamGroupInfo>* SteamGroups);
 	static class FString GetSteamPersonaName(const struct FBPUniqueNetId& UniqueNetId);
 	static bool InitTextFiltering();

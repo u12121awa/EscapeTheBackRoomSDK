@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "LocationServicesBPLibrary_structs.hpp"
 #include "Engine_classes.hpp"
 #include "CoreUObject_classes.hpp"
-#include "LocationServicesBPLibrary_structs.hpp"
 
 
 namespace SDK

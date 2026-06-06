@@ -244,10 +244,10 @@ void ABP_Timed_Lever_C::GetTimerDelay(float* Delay)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UStaticMeshComponent**            lamp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent**            Lamp                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPointLightComponent**            Light                                                  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Timed_Lever_C::Get_Lamp(int32 Index_0, class UStaticMeshComponent** lamp, class UPointLightComponent** Light)
+void ABP_Timed_Lever_C::Get_Lamp(int32 Index_0, class UStaticMeshComponent** Lamp, class UPointLightComponent** Light)
 {
 	static class UFunction* Func = nullptr;
 
@@ -260,8 +260,8 @@ void ABP_Timed_Lever_C::Get_Lamp(int32 Index_0, class UStaticMeshComponent** lam
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (lamp != nullptr)
-		*lamp = Parms.lamp;
+	if (Lamp != nullptr)
+		*Lamp = Parms.Lamp;
 
 	if (Light != nullptr)
 		*Light = Parms.Light;

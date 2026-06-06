@@ -19,12 +19,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass W_VOIPInGame.W_VOIPInGame_C
-// 0x0010 (0x0270 - 0x0260)
+// 0x0010 (0x0280 - 0x0270)
 class UW_VOIPInGame_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UW_VOIPAnim_C*                          W_VOIPStatus;                                      // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UW_VOIPAnim_C*                          W_VOIPStatus;                                      // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_W_VOIPInGame(int32 EntryPoint);

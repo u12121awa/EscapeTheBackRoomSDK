@@ -155,8 +155,9 @@ void ABP_Spectator_C::InpAxisEvt_LookUpRate_K2Node_InputAxisEvent_2(float AxisVa
 // (Net, NetReliable, NetClient, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FString&                    Spectating                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// EFancyPlatform                          PlayerPlatform                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Spectator_C::UpdateSpectating(const class FString& Spectating)
+void ABP_Spectator_C::UpdateSpectating(const class FString& Spectating, EFancyPlatform PlayerPlatform)
 {
 	static class UFunction* Func = nullptr;
 
@@ -166,6 +167,7 @@ void ABP_Spectator_C::UpdateSpectating(const class FString& Spectating)
 	Params::BP_Spectator_C_UpdateSpectating Parms{};
 
 	Parms.Spectating = std::move(Spectating);
+	Parms.PlayerPlatform = PlayerPlatform;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -364,6 +366,34 @@ void ABP_Spectator_C::SpectateIndex(int32 SpectateIndex_0)
 	Parms.SpectateIndex_0 = SpectateIndex_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Spectator.BP_Spectator_C.GetPlayerNamePlatform
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class APlayerState*                     PlayerState_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString*                          PlayerName                                             (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// EFancyPlatform*                         PlayerPlatform                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Spectator_C::GetPlayerNamePlatform(class APlayerState* PlayerState_0, class FString* PlayerName, EFancyPlatform* PlayerPlatform)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Spectator_C", "GetPlayerNamePlatform");
+
+	Params::BP_Spectator_C_GetPlayerNamePlatform Parms{};
+
+	Parms.PlayerState_0 = PlayerState_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PlayerName != nullptr)
+		*PlayerName = std::move(Parms.PlayerName);
+
+	if (PlayerPlatform != nullptr)
+		*PlayerPlatform = Parms.PlayerPlatform;
 }
 
 }

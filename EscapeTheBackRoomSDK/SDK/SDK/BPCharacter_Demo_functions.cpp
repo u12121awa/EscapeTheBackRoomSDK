@@ -37,6 +37,20 @@ void ABPCharacter_Demo_C::ExecuteUbergraph_BPCharacter_Demo(int32 EntryPoint)
 }
 
 
+// Function BPCharacter_Demo.BPCharacter_Demo_C.SpawnCard
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+
+void ABPCharacter_Demo_C::SpawnCard()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPCharacter_Demo_C", "SpawnCard");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BPCharacter_Demo.BPCharacter_Demo_C.ApplyCostume
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -6349,6 +6363,20 @@ void ABPCharacter_Demo_C::ClampMovement(float In, float* Clamped)
 
 	if (Clamped != nullptr)
 		*Clamped = Parms.Clamped;
+}
+
+
+// Function BPCharacter_Demo.BPCharacter_Demo_C.OnRep_Card
+// (BlueprintCallable, BlueprintEvent)
+
+void ABPCharacter_Demo_C::OnRep_Card()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPCharacter_Demo_C", "OnRep_Card");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

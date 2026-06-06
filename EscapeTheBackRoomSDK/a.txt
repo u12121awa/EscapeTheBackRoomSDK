@@ -363,6 +363,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BPFL_ChatUtilities_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BPFL_ControllerSupport_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -371,11 +375,15 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BPFL_Localization_functions.cpp">
+    <ClCompile Include="SDK\SDK\BPFL_SaveSystem_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BPFL_SaveSystem_functions.cpp">
+    <ClCompile Include="SDK\SDK\BPFL_UIUtilities_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BPFL_UserPrivileges_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -404,6 +412,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BPI_PlayerHidding_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BPI_PlayerList_EntryWithContextMenu_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -527,6 +539,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_AttemptToEnterLobby_Flow_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Audience_Chair_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -536,6 +552,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Audio_Manager_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_Autosave_Flow_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -600,6 +620,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Bed_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_BlockPlayerFlow_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -675,11 +699,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Cabinet_Base_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_Cabinet_1_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Cabinet_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_Cabinet_Base_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -975,6 +999,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_ConnectionErrorFlow_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_ConnectorRoom_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -991,6 +1019,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_ControllerDisconnectionFlow_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Corridor_2_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -1000,6 +1032,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_CostumeSelector_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_CrossplayWarningFlow_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -1195,11 +1231,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_DoubleDoor_0_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_DoubleDoor_922_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_DoubleDoor_922_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_DoubleDoor_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -1252,6 +1288,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Dynamic_Force_SkelMesh_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_EULA_Flow_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -1347,7 +1387,15 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_ExitConfirmationFlow_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_ExitDoor_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_ExitZoneLightsOut_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -1471,6 +1519,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_FancyFlow_TestModalFocus_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Fence_A1_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -1488,6 +1540,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Final_Ending_Arcade_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_FindSessionFlow_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -1547,15 +1603,15 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Floor_1_functions.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Floor_3_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Floor_4_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_Floor_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -1787,6 +1843,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_HostLeftSessionErrorFlow_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_HotelCode_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -1927,6 +1987,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_JoinWithLobbyCodeFlow_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Juice_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -1944,6 +2008,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_KeyTurn_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_KickPlayerFlow_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_KickedFlow_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -1996,6 +2068,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Lamp_0_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_Lamp_1_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -2076,10 +2152,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Lamp_flickering_low_functions.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Lamp_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -2243,7 +2315,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_LockedDoor_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_LockedDoor_1_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -2503,6 +2575,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_PlayerLogoutInGameFlow_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_PoolWaterManager_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -2572,6 +2648,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_RenderGerstnerWaves_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_ReportPlayerFlow_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -2711,11 +2791,19 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_ServerConnectionErrorFlow_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_ShadowLight_Switch_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_SimpleDoor_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_SimpleFancyError_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -3023,6 +3111,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_TimeStampCapture_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Timed_Lever_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -3100,6 +3192,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_TypeWriter_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_UnblockPlayerFlow_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -3207,11 +3303,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Wardrobe_0_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_Wardrobe_A1_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Wardrobe_A1_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_Wardrobe_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -3595,6 +3691,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\BlueprintFileUtils_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\Boat_AnimBP_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -3799,6 +3899,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\GM_MainMenu_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\GameEnd_UI_2_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -3959,7 +4063,15 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\Lobby_JoinWithCode_Modal_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\Lobby_Level_Switcher_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\Lobby_LobbyCodeDisplay_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -4251,6 +4363,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\ManillaRoom_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\MediaAssets_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -4312,10 +4428,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\OnlineSubsystem_functions.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\OpenInputPlugin_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -4535,10 +4647,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\SplashScreen_MediaSoundActor_functions.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\SplashScreen_UI_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -4548,14 +4656,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\StaticMeshDescription_functions.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\SteamVRInputDevice_functions.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\SteamVR_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -4667,11 +4767,19 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\UI_MainMenu_Button_ProperFocus_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\UI_MainMenu_Button_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\UI_MapViewer_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\UI_Menu_Button_ProperFocus_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -4927,6 +5035,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\WB_SimpleNonModalMessageEntry_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\WB_SimpleNonModalMessageQueueDisplay_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\WB_Slider_Theme2_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -4939,11 +5055,19 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\W_CheckBox_ProperFocus_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_CheckableWideButton_ProperFocus_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\W_Confirmation_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\W_ControllerDisonnectNotification_functions.cpp">
+    <ClCompile Include="SDK\SDK\W_ControllerDisconnectNotification_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -4975,6 +5099,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\W_EULA_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\W_ErrorModal_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -4983,7 +5111,23 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\W_Game_Button_functions.cpp">
+    <ClCompile Include="SDK\SDK\W_FancyConfirmationModal_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_FancyModal_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_FancyRichChoiceModal_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_FancyRichMessageModal_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_IDCard_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -5003,11 +5147,39 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\W_LoadGameButton_functions.cpp">
+    <ClCompile Include="SDK\SDK\W_LoadingScreen_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\W_LoadingScreen_functions.cpp">
+    <ClCompile Include="SDK\SDK\W_Lobby_PlayerList_ContextMenu_Button_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_Lobby_PlayerList_ContextMenu_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_Lobby_PlayerList_Entry_CommunicationStatus_Icon_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_Lobby_PlayerList_Entry_ProgressionDetails_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_Lobby_PlayerList_Entry_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_Lobby_PlayerList_PlayerName_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_Lobby_PlayerList_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_MainMenu_ServerList_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -5023,7 +5195,23 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\W_PlayerBlockList_Button_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_PlayerBlockList_Entry_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_PlayerBlockList_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="SDK\SDK\W_ProgressBars_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_ReportPlayer_Modal_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -5052,6 +5240,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\W_VOIPIndicator_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_VOIP_PlayerList_Entry_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\W_VOIP_PlayerList_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -5096,10 +5292,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\Weather_Override_Volume_functions.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\XRVisualization_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -5333,14 +5525,18 @@
     <ClInclude Include="SDK\SDK\BPC_Movement_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BPCharacter_Demo_classes.hpp" />
     <ClInclude Include="SDK\SDK\BPCharacter_Demo_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BPFL_ChatUtilities_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BPFL_ChatUtilities_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BPFL_ControllerSupport_classes.hpp" />
     <ClInclude Include="SDK\SDK\BPFL_ControllerSupport_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BPFL_EntitySighting_classes.hpp" />
     <ClInclude Include="SDK\SDK\BPFL_EntitySighting_parameters.hpp" />
-    <ClInclude Include="SDK\SDK\BPFL_Localization_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BPFL_Localization_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BPFL_SaveSystem_classes.hpp" />
     <ClInclude Include="SDK\SDK\BPFL_SaveSystem_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BPFL_UIUtilities_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BPFL_UIUtilities_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BPFL_UserPrivileges_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BPFL_UserPrivileges_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BPFL_XP_classes.hpp" />
     <ClInclude Include="SDK\SDK\BPFL_XP_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BPI_DoorC_classes.hpp" />
@@ -5356,6 +5552,8 @@
     <ClInclude Include="SDK\SDK\BPI_Noise_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BPI_PlayerHidding_classes.hpp" />
     <ClInclude Include="SDK\SDK\BPI_PlayerHidding_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BPI_PlayerList_EntryWithContextMenu_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BPI_PlayerList_EntryWithContextMenu_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BPI_ShadowLight_classes.hpp" />
     <ClInclude Include="SDK\SDK\BPI_UserInterface_classes.hpp" />
     <ClInclude Include="SDK\SDK\BPI_UserInterface_parameters.hpp" />
@@ -5432,12 +5630,16 @@
     <ClInclude Include="SDK\SDK\BP_Arch_300cm_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Armchair_01_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Armchair_02_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_AttemptToEnterLobby_Flow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_AttemptToEnterLobby_Flow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Audience_Chair_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Audience_Chair_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Audio_Manager_Expanded_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Audio_Manager_Expanded_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Audio_Manager_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Audio_Manager_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_Autosave_Flow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_Autosave_Flow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Bacteria_RoomPoint_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Bacteria_Zone_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Bacteria_Zone_parameters.hpp" />
@@ -5483,6 +5685,8 @@
     <ClInclude Include="SDK\SDK\BP_Bed_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_BedsideTable_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Bedside_Cabinet_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_BlockPlayerFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_BlockPlayerFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Blue_Door_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Blue_Door_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Blueprint_classes.hpp" />
@@ -5532,6 +5736,7 @@
     <ClInclude Include="SDK\SDK\BP_Cabinet_0_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cabinet_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cabinet_1_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_Cabinet_1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cabinet_A_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cabinet_B_0_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cabinet_B_classes.hpp" />
@@ -5541,7 +5746,6 @@
     <ClInclude Include="SDK\SDK\BP_Cabinet_D_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cabinet_Small_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cabinet_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BP_Cabinet_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cabinets_A1_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cabinets_A1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cabinets_A2_classes.hpp" />
@@ -5741,6 +5945,8 @@
     <ClInclude Include="SDK\SDK\BP_Computer_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Connected_Door_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Connected_Door_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ConnectionErrorFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ConnectionErrorFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_ConnectorRoom_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_ConnectorRoom_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_ConnectorValve_classes.hpp" />
@@ -5754,6 +5960,8 @@
     <ClInclude Include="SDK\SDK\BP_Construction_Lift_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_ControlPanel_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_ControlPanel_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ControllerDisconnectionFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ControllerDisconnectionFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_CookingRange_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cooler_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Corridor_2_classes.hpp" />
@@ -5765,6 +5973,8 @@
     <ClInclude Include="SDK\SDK\BP_CratesPile_03_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_CratesPile_07_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Creature_1_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_CrossplayWarningFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_CrossplayWarningFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Cupboard_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Curtains_long_doublewindow_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Curtains_long_singlewindow_classes.hpp" />
@@ -5890,10 +6100,10 @@
     <ClInclude Include="SDK\SDK\BP_DoubleDoorGlass_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_DoubleDoorGlass_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_DoubleDoor_0_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BP_DoubleDoor_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_DoubleDoor_922_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_DoubleDoor_922_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_DoubleDoor_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_DoubleDoor_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Drawer_A1_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Drawer_A1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Drawer_Base_classes.hpp" />
@@ -5949,6 +6159,8 @@
     <ClInclude Include="SDK\SDK\BP_Dynamic_Force_Component_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Dynamic_Force_SkelMesh_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Dynamic_Force_SkelMesh_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_EULA_Flow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_EULA_Flow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_EggProcess_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Egg_002_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Egg_classes.hpp" />
@@ -6009,8 +6221,12 @@
     <ClInclude Include="SDK\SDK\BP_EventManager_Fun_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_EventManager_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_EventManager_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ExitConfirmationFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ExitConfirmationFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_ExitDoor_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_ExitDoor_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ExitZoneLightsOut_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ExitZoneLightsOut_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_ExitZone_922_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_ExitZone_922_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_ExitZone_974_classes.hpp" />
@@ -6072,6 +6288,8 @@
     <ClInclude Include="SDK\SDK\BP_Fan_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Fan_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Fan_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_FancyFlow_TestModalFocus_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_FancyFlow_TestModalFocus_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Feeder_01_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Feeder_02_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Fence_A1_classes.hpp" />
@@ -6084,6 +6302,8 @@
     <ClInclude Include="SDK\SDK\BP_FinalArcade_Player_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Final_Ending_Arcade_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Final_Ending_Arcade_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_FindSessionFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_FindSessionFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_FireAlarm_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_FireAlarm_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Fireplace_classes.hpp" />
@@ -6115,7 +6335,6 @@
     <ClInclude Include="SDK\SDK\BP_Floor_0_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_1_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BP_Floor_1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_2_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_3_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_3_parameters.hpp" />
@@ -6123,6 +6342,7 @@
     <ClInclude Include="SDK\SDK\BP_Floor_4_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_Small_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_Floor_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floors_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floors_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_FluidSim_01_classes.hpp" />
@@ -6244,6 +6464,8 @@
     <ClInclude Include="SDK\SDK\BP_Hive_Trigger_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Hoard2_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Hoard2_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_HostLeftSessionErrorFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_HostLeftSessionErrorFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_HotelCode_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_HotelCode_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_HotelDoor_classes.hpp" />
@@ -6324,6 +6546,8 @@
     <ClInclude Include="SDK\SDK\BP_JailGates_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_JailGates_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_JewelryCasket_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_JoinWithLobbyCodeFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_JoinWithLobbyCodeFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Juice_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Juice_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_KeyMachine_classes.hpp" />
@@ -6335,6 +6559,10 @@
     <ClInclude Include="SDK\SDK\BP_KeyRoom_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_KeyTurn_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_KeyTurn_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_KickPlayerFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_KickPlayerFlow_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_KickedFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_KickedFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_KilledPlayer_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_KilledPlayer_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_KillerClown_classes.hpp" />
@@ -6404,6 +6632,7 @@
     <ClInclude Include="SDK\SDK\BP_Lamp_0_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_1_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_Lamp_1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_Basement_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_bathroom_wall_0_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_bathroom_wall_classes.hpp" />
@@ -6430,7 +6659,6 @@
     <ClInclude Include="SDK\SDK\BP_Lamp_flickering_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_hanging_fluorescent_0_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_hanging_fluorescent_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BP_Lamp_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_standing_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_table_shade_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_table_shade_clean_classes.hpp" />
@@ -6508,6 +6736,7 @@
     <ClInclude Include="SDK\SDK\BP_LobbyDoors_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_LobbyDoors_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_LobbySaveGame_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_LobbyVoice_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lobby_Exit_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lobby_Exit_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lobby_Manager_classes.hpp" />
@@ -6517,8 +6746,8 @@
     <ClInclude Include="SDK\SDK\BP_LockedDoor_0_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_LockedDoor_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_LockedDoor_1_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_LockedDoor_1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_LockedDoor_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BP_LockedDoor_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Locker01_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Locker01_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Locker02_classes.hpp" />
@@ -6661,6 +6890,8 @@
     <ClInclude Include="SDK\SDK\BP_PlasticClown_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_PlayVideo_Trigger_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_PlayVideo_Trigger_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_PlayerLogoutInGameFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_PlayerLogoutInGameFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_PoolWaterManager_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_PoolWaterManager_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Pool_Ladder_ClimbUp_classes.hpp" />
@@ -6722,6 +6953,8 @@
     <ClInclude Include="SDK\SDK\BP_RenderBase_2_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_RenderGerstnerWaves_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_RenderGerstnerWaves_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ReportPlayerFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ReportPlayerFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Retreat_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Retreat_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_RoamingPartygoer_Idle_classes.hpp" />
@@ -6796,6 +7029,8 @@
     <ClInclude Include="SDK\SDK\BP_SecurityTV_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_SegmentDisplay_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_SegmentDisplay_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ServerConnectionErrorFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_ServerConnectionErrorFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_ShadowLight_Manager_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_ShadowLight_Switch_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_ShadowLight_Switch_parameters.hpp" />
@@ -6812,6 +7047,8 @@
     <ClInclude Include="SDK\SDK\BP_Sidetable_large_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_SimpleDoor_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_SimpleDoor_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_SimpleFancyError_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_SimpleFancyError_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_SingleDoor_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_SingleDoor_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Siren_classes.hpp" />
@@ -6974,6 +7211,8 @@
     <ClInclude Include="SDK\SDK\BP_Thermometer_Display_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Thermometer_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Thermometer_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_TimeStampCapture_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_TimeStampCapture_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Timed_Lever_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Timed_Lever_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_To_showercurtain_classes.hpp" />
@@ -7020,6 +7259,8 @@
     <ClInclude Include="SDK\SDK\BP_TypeWriterButton_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_TypeWriter_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_TypeWriter_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BP_UnblockPlayerFlow_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_UnblockPlayerFlow_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_UnderwaterLight_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_UnderwaterScatter_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_UnderwaterScatter_parameters.hpp" />
@@ -7119,12 +7360,12 @@
     <ClInclude Include="SDK\SDK\BP_Wall_in_plain_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_01_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_0_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BP_Wardrobe_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_A1_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_A1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_A_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_B_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_Wardrobe_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_WaterHeight_Zone_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_WaterHeight_Zone_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Water_Pipe_classes.hpp" />
@@ -7353,6 +7594,8 @@
     <ClInclude Include="SDK\SDK\Blockout_Tube_parameters.hpp" />
     <ClInclude Include="SDK\SDK\Blockout_Window_classes.hpp" />
     <ClInclude Include="SDK\SDK\Blockout_Window_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\BlueprintFileUtils_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BlueprintFileUtils_parameters.hpp" />
     <ClInclude Include="SDK\SDK\Boat_AnimBP_classes.hpp" />
     <ClInclude Include="SDK\SDK\Boat_AnimBP_parameters.hpp" />
     <ClInclude Include="SDK\SDK\Book_Bp_classes.hpp" />
@@ -7543,6 +7786,7 @@
     <ClInclude Include="SDK\SDK\E_GlowstickColor_structs.hpp" />
     <ClInclude Include="SDK\SDK\E_Ground_structs.hpp" />
     <ClInclude Include="SDK\SDK\E_HeadsetType_structs.hpp" />
+    <ClInclude Include="SDK\SDK\E_InputActions_structs.hpp" />
     <ClInclude Include="SDK\SDK\E_LeverState_structs.hpp" />
     <ClInclude Include="SDK\SDK\E_MG_SwitcherCount_structs.hpp" />
     <ClInclude Include="SDK\SDK\E_Mailbox_structs.hpp" />
@@ -7639,6 +7883,7 @@
     <ClInclude Include="SDK\SDK\FootstepActionsEnum_structs.hpp" />
     <ClInclude Include="SDK\SDK\FuseBoxInterface_classes.hpp" />
     <ClInclude Include="SDK\SDK\GM_MainMenu_classes.hpp" />
+    <ClInclude Include="SDK\SDK\GM_MainMenu_parameters.hpp" />
     <ClInclude Include="SDK\SDK\GameEnd_UI_2_classes.hpp" />
     <ClInclude Include="SDK\SDK\GameEnd_UI_2_parameters.hpp" />
     <ClInclude Include="SDK\SDK\GameEnd_UI_classes.hpp" />
@@ -7770,8 +8015,12 @@
     <ClInclude Include="SDK\SDK\Lobby_GS_parameters.hpp" />
     <ClInclude Include="SDK\SDK\Lobby_HUD_classes.hpp" />
     <ClInclude Include="SDK\SDK\Lobby_HUD_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\Lobby_JoinWithCode_Modal_classes.hpp" />
+    <ClInclude Include="SDK\SDK\Lobby_JoinWithCode_Modal_parameters.hpp" />
     <ClInclude Include="SDK\SDK\Lobby_Level_Switcher_classes.hpp" />
     <ClInclude Include="SDK\SDK\Lobby_Level_Switcher_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\Lobby_LobbyCodeDisplay_classes.hpp" />
+    <ClInclude Include="SDK\SDK\Lobby_LobbyCodeDisplay_parameters.hpp" />
     <ClInclude Include="SDK\SDK\Lobby_MapSelection_2_classes.hpp" />
     <ClInclude Include="SDK\SDK\Lobby_MapSelection_2_parameters.hpp" />
     <ClInclude Include="SDK\SDK\Lobby_MapSelection_classes.hpp" />
@@ -7803,6 +8052,7 @@
     <ClInclude Include="SDK\SDK\MD_LatchTypes2_Enum_structs.hpp" />
     <ClInclude Include="SDK\SDK\MD_RollDoorStateEnum_structs.hpp" />
     <ClInclude Include="SDK\SDK\MD_RollDoorWidthEnum_structs.hpp" />
+    <ClInclude Include="SDK\SDK\ML_SessionUtils_classes.hpp" />
     <ClInclude Include="SDK\SDK\MP_3999_Arcade_classes.hpp" />
     <ClInclude Include="SDK\SDK\MP_3999_Arcade_parameters.hpp" />
     <ClInclude Include="SDK\SDK\MP_922_classes.hpp" />
@@ -7941,6 +8191,8 @@
     <ClInclude Include="SDK\SDK\MagicLeap_structs.hpp" />
     <ClInclude Include="SDK\SDK\MainMenuMap_classes.hpp" />
     <ClInclude Include="SDK\SDK\MainMenuMap_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\ManillaRoom_classes.hpp" />
+    <ClInclude Include="SDK\SDK\ManillaRoom_parameters.hpp" />
     <ClInclude Include="SDK\SDK\MaterialShaderQualitySettings_classes.hpp" />
     <ClInclude Include="SDK\SDK\MaterialShaderQualitySettings_structs.hpp" />
     <ClInclude Include="SDK\SDK\Material_type_structs.hpp" />
@@ -7996,6 +8248,8 @@
     <ClInclude Include="SDK\SDK\OceanMap_parameters.hpp" />
     <ClInclude Include="SDK\SDK\Old_Instance_classes.hpp" />
     <ClInclude Include="SDK\SDK\Old_Instance_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\OnlineSubsystemEOS_classes.hpp" />
+    <ClInclude Include="SDK\SDK\OnlineSubsystemEOS_structs.hpp" />
     <ClInclude Include="SDK\SDK\OnlineSubsystemSteam_classes.hpp" />
     <ClInclude Include="SDK\SDK\OnlineSubsystemUtils_classes.hpp" />
     <ClInclude Include="SDK\SDK\OnlineSubsystemUtils_parameters.hpp" />
@@ -8005,9 +8259,6 @@
     <ClInclude Include="SDK\SDK\OnlineSubsystem_structs.hpp" />
     <ClInclude Include="SDK\SDK\OodleNetworkHandlerComponent_classes.hpp" />
     <ClInclude Include="SDK\SDK\OodleNetworkHandlerComponent_structs.hpp" />
-    <ClInclude Include="SDK\SDK\OpenInputPlugin_classes.hpp" />
-    <ClInclude Include="SDK\SDK\OpenInputPlugin_parameters.hpp" />
-    <ClInclude Include="SDK\SDK\OpenInputPlugin_structs.hpp" />
     <ClInclude Include="SDK\SDK\Overlay_classes.hpp" />
     <ClInclude Include="SDK\SDK\Overlay_structs.hpp" />
     <ClInclude Include="SDK\SDK\PacketHandler_classes.hpp" />
@@ -8102,6 +8353,7 @@
     <ClInclude Include="SDK\SDK\RenderToTextureMacros_classes.hpp" />
     <ClInclude Include="SDK\SDK\Renderer_structs.hpp" />
     <ClInclude Include="SDK\SDK\RichTextImageDecorator_classes.hpp" />
+    <ClInclude Include="SDK\SDK\RichTextInputIconDecorator_classes.hpp" />
     <ClInclude Include="SDK\SDK\RollDoorBase_BP_classes.hpp" />
     <ClInclude Include="SDK\SDK\RollDoorBase_BP_parameters.hpp" />
     <ClInclude Include="SDK\SDK\RollDoor_ABP_classes.hpp" />
@@ -8116,6 +8368,7 @@
     <ClInclude Include="SDK\SDK\SM_Wall_D_9_Blueprint_classes.hpp" />
     <ClInclude Include="SDK\SDK\SM_Wall_D_9_Blueprint_parameters.hpp" />
     <ClInclude Include="SDK\SDK\SM_cables_tube_23_Blueprint_classes.hpp" />
+    <ClInclude Include="SDK\SDK\ST_ActivityRow_structs.hpp" />
     <ClInclude Include="SDK\SDK\ST_ItemSpawnDT_structs.hpp" />
     <ClInclude Include="SDK\SDK\ST_Item_structs.hpp" />
     <ClInclude Include="SDK\SDK\ST_UI_Mission_structs.hpp" />
@@ -8193,8 +8446,6 @@
     <ClInclude Include="SDK\SDK\Spectator_UI_parameters.hpp" />
     <ClInclude Include="SDK\SDK\SplashScreenMap_classes.hpp" />
     <ClInclude Include="SDK\SDK\SplashScreenMap_parameters.hpp" />
-    <ClInclude Include="SDK\SDK\SplashScreen_MediaSoundActor_classes.hpp" />
-    <ClInclude Include="SDK\SDK\SplashScreen_MediaSoundActor_parameters.hpp" />
     <ClInclude Include="SDK\SDK\SplashScreen_UI_classes.hpp" />
     <ClInclude Include="SDK\SDK\SplashScreen_UI_parameters.hpp" />
     <ClInclude Include="SDK\SDK\SquarePushable_classes.hpp" />
@@ -8206,12 +8457,6 @@
     <ClInclude Include="SDK\SDK\StaticMeshDescription_parameters.hpp" />
     <ClInclude Include="SDK\SDK\StaticMeshDescription_structs.hpp" />
     <ClInclude Include="SDK\SDK\SteamSockets_classes.hpp" />
-    <ClInclude Include="SDK\SDK\SteamVRInputDevice_classes.hpp" />
-    <ClInclude Include="SDK\SDK\SteamVRInputDevice_parameters.hpp" />
-    <ClInclude Include="SDK\SDK\SteamVRInputDevice_structs.hpp" />
-    <ClInclude Include="SDK\SDK\SteamVR_classes.hpp" />
-    <ClInclude Include="SDK\SDK\SteamVR_parameters.hpp" />
-    <ClInclude Include="SDK\SDK\SteamVR_structs.hpp" />
     <ClInclude Include="SDK\SDK\SubtitleTextWB_classes.hpp" />
     <ClInclude Include="SDK\SDK\SubtitleTextWB_parameters.hpp" />
     <ClInclude Include="SDK\SDK\SubtitleWB_classes.hpp" />
@@ -8298,10 +8543,14 @@
     <ClInclude Include="SDK\SDK\UI_Inventory_Slot_parameters.hpp" />
     <ClInclude Include="SDK\SDK\UI_Inventory_classes.hpp" />
     <ClInclude Include="SDK\SDK\UI_Inventory_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\UI_MainMenu_Button_ProperFocus_classes.hpp" />
+    <ClInclude Include="SDK\SDK\UI_MainMenu_Button_ProperFocus_parameters.hpp" />
     <ClInclude Include="SDK\SDK\UI_MainMenu_Button_classes.hpp" />
     <ClInclude Include="SDK\SDK\UI_MainMenu_Button_parameters.hpp" />
     <ClInclude Include="SDK\SDK\UI_MapViewer_classes.hpp" />
     <ClInclude Include="SDK\SDK\UI_MapViewer_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\UI_Menu_Button_ProperFocus_classes.hpp" />
+    <ClInclude Include="SDK\SDK\UI_Menu_Button_ProperFocus_parameters.hpp" />
     <ClInclude Include="SDK\SDK\UI_Menu_Button_classes.hpp" />
     <ClInclude Include="SDK\SDK\UI_Menu_Button_parameters.hpp" />
     <ClInclude Include="SDK\SDK\UI_Menu_Evaluation_Mission_classes.hpp" />
@@ -8436,16 +8685,24 @@
     <ClInclude Include="SDK\SDK\WB_SettingsItem_Text_Theme2_parameters.hpp" />
     <ClInclude Include="SDK\SDK\WB_SettingsPanel_Theme2_classes.hpp" />
     <ClInclude Include="SDK\SDK\WB_SettingsPanel_Theme2_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\WB_SimpleNonModalMessageEntry_classes.hpp" />
+    <ClInclude Include="SDK\SDK\WB_SimpleNonModalMessageEntry_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\WB_SimpleNonModalMessageQueueDisplay_classes.hpp" />
+    <ClInclude Include="SDK\SDK\WB_SimpleNonModalMessageQueueDisplay_parameters.hpp" />
     <ClInclude Include="SDK\SDK\WB_Slider_Theme2_classes.hpp" />
     <ClInclude Include="SDK\SDK\WB_Slider_Theme2_parameters.hpp" />
     <ClInclude Include="SDK\SDK\WB_VideoPlayer_classes.hpp" />
     <ClInclude Include="SDK\SDK\WB_VideoPlayer_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_AccountPicker_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_AccountPicker_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_CheckBox_ProperFocus_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_CheckBox_ProperFocus_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_CheckableWideButton_ProperFocus_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_CheckableWideButton_ProperFocus_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_Confirmation_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_Confirmation_parameters.hpp" />
-    <ClInclude Include="SDK\SDK\W_ControllerDisonnectNotification_classes.hpp" />
-    <ClInclude Include="SDK\SDK\W_ControllerDisonnectNotification_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_ControllerDisconnectNotification_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_ControllerDisconnectNotification_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_ControllerScheme_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_ControllerScheme_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_CostumeSelector_CostumeListItem_classes.hpp" />
@@ -8464,12 +8721,23 @@
     <ClInclude Include="SDK\SDK\W_Credits_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_Credits_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_Crosshair_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_EULA_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_EULA_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_ErrorModal_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_ErrorModal_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_Error_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_Error_parameters.hpp" />
-    <ClInclude Include="SDK\SDK\W_Game_Button_classes.hpp" />
-    <ClInclude Include="SDK\SDK\W_Game_Button_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_FancyConfirmationModal_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_FancyConfirmationModal_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_FancyModal_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_FancyModal_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_FancyRichChoiceModal_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_FancyRichChoiceModal_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_FancyRichMessageModal_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_FancyRichMessageModal_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_FancySaveIndicatorOverlay_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_IDCard_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_IDCard_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_Input_Icon_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_Input_Icon_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_Intro_classes.hpp" />
@@ -8478,11 +8746,26 @@
     <ClInclude Include="SDK\SDK\W_JoinServer_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_Kicked_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_Kicked_parameters.hpp" />
-    <ClInclude Include="SDK\SDK\W_LoadGameButton_classes.hpp" />
-    <ClInclude Include="SDK\SDK\W_LoadGameButton_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_LoadingScreen_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_LoadingScreen_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_ContextMenu_Button_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_ContextMenu_Button_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_ContextMenu_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_ContextMenu_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_Entry_CommunicationStatus_Icon_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_Entry_CommunicationStatus_Icon_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_Entry_PlatformIcon_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_Entry_ProgressionDetails_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_Entry_ProgressionDetails_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_Entry_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_Entry_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_PlayerName_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_PlayerName_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_Lobby_PlayerList_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_MainHUD_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_MainMenu_ServerList_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_MainMenu_ServerList_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_MainMenu_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_MainMenu_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_Map_Selection_classes.hpp" />
@@ -8490,8 +8773,17 @@
     <ClInclude Include="SDK\SDK\W_MiniGameHacker_InputUI_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_NewGame_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_NewGame_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_PlayerBlockList_Button_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_PlayerBlockList_Button_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_PlayerBlockList_Entry_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_PlayerBlockList_Entry_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_PlayerBlockList_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_PlayerBlockList_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_ProgressBars_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_ProgressBars_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_ReportPlayer_Modal_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_ReportPlayer_Modal_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_ReportPlayer_ReasonButton_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_ServerButton_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_ServerButton_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_TemplateTitle_classes.hpp" />
@@ -8506,6 +8798,10 @@
     <ClInclude Include="SDK\SDK\W_VOIPInGame_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_VOIPIndicator_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_VOIPIndicator_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_VOIP_PlayerList_Entry_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_VOIP_PlayerList_Entry_parameters.hpp" />
+    <ClInclude Include="SDK\SDK\W_VOIP_PlayerList_classes.hpp" />
+    <ClInclude Include="SDK\SDK\W_VOIP_PlayerList_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_VOIP_Speaker_classes.hpp" />
     <ClInclude Include="SDK\SDK\W_VOIP_Speaker_parameters.hpp" />
     <ClInclude Include="SDK\SDK\W_VersionNumber_classes.hpp" />
@@ -8534,8 +8830,6 @@
     <ClInclude Include="SDK\SDK\Weather_Override_Volume_classes.hpp" />
     <ClInclude Include="SDK\SDK\Weather_Override_Volume_parameters.hpp" />
     <ClInclude Include="SDK\SDK\WmfMediaFactory_classes.hpp" />
-    <ClInclude Include="SDK\SDK\XRVisualization_classes.hpp" />
-    <ClInclude Include="SDK\SDK\XRVisualization_parameters.hpp" />
     <ClInclude Include="SDK\SDK\XShip_classes.hpp" />
     <ClInclude Include="SDK\SDK\XShip_parameters.hpp" />
     <ClInclude Include="SDK\SDK\XShip_structs.hpp" />

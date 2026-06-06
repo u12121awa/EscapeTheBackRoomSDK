@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "F_MG_SwitcherPin_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "F_MG_SwitcherPin_structs.hpp"
 
 
 namespace SDK::Params

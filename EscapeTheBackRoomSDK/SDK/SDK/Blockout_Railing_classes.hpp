@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "EBlockoutRailingType_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "BlockoutToolsPlugin_classes.hpp"
 
 

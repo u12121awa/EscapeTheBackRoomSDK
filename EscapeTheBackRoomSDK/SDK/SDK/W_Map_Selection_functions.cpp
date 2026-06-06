@@ -37,6 +37,34 @@ void UW_Map_Selection_C::ExecuteUbergraph_W_Map_Selection(int32 EntryPoint)
 }
 
 
+// Function W_Map_Selection.W_Map_Selection_C.BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UW_Map_Selection_C::BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_Map_Selection_C", "BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function W_Map_Selection.W_Map_Selection_C.BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UW_Map_Selection_C::BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_Map_Selection_C", "BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function W_Map_Selection.W_Map_Selection_C.UpdateLevelName
 // (BlueprintCallable, BlueprintEvent)
 
@@ -65,20 +93,6 @@ void UW_Map_Selection_C::Construct()
 }
 
 
-// Function W_Map_Selection.W_Map_Selection_C.BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UW_Map_Selection_C::BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_Map_Selection_C", "BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function W_Map_Selection.W_Map_Selection_C.BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -88,20 +102,6 @@ void UW_Map_Selection_C::BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBound
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("W_Map_Selection_C", "BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function W_Map_Selection.W_Map_Selection_C.BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UW_Map_Selection_C::BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_Map_Selection_C", "BndEvt__W_Map_Selection_Button_68_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

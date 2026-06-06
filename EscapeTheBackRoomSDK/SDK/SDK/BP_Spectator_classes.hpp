@@ -41,7 +41,7 @@ public:
 	void ReceivePossessed(class AController* NewController);
 	void InpAxisEvt_TurnRate_K2Node_InputAxisEvent_3(float AxisValue);
 	void InpAxisEvt_LookUpRate_K2Node_InputAxisEvent_2(float AxisValue);
-	void UpdateSpectating(const class FString& Spectating);
+	void UpdateSpectating(const class FString& Spectating, EFancyPlatform PlayerPlatform);
 	void SpectatePreviousPlayer();
 	void SpectateNextPlayer();
 	void InpAxisEvt_Turn_K2Node_InputAxisEvent_1(float AxisValue);
@@ -53,6 +53,7 @@ public:
 	void SpectatePrevious();
 	void SpectateNext();
 	void SpectateIndex(int32 SpectateIndex_0);
+	void GetPlayerNamePlatform(class APlayerState* PlayerState_0, class FString* PlayerName, EFancyPlatform* PlayerPlatform);
 
 public:
 	static class UClass* StaticClass()

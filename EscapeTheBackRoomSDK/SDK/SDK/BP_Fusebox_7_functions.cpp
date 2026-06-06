@@ -155,15 +155,15 @@ void ABP_Fusebox_7_C::ToggleVoltageSound(bool ShouldPlay)
 }
 
 
-// Function BP_Fusebox-7.BP_Fusebox-7_C.SpawnMinigame
+// Function BP_Fusebox-7.BP_Fusebox-7_C.SpawnMiniGame
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_Fusebox_7_C::SpawnMinigame()
+void ABP_Fusebox_7_C::SpawnMiniGame()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fusebox-7_C", "SpawnMinigame");
+		Func = Class->GetFunction("BP_Fusebox-7_C", "SpawnMiniGame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

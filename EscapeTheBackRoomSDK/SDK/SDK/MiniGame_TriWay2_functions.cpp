@@ -57,15 +57,15 @@ void UMiniGame_TriWay2_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function MiniGame_TriWay2.MiniGame_TriWay2_C.SpawnMinigame
+// Function MiniGame_TriWay2.MiniGame_TriWay2_C.SpawnMiniGame
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UMiniGame_TriWay2_C::SpawnMinigame()
+void UMiniGame_TriWay2_C::SpawnMiniGame()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MiniGame_TriWay2_C", "SpawnMinigame");
+		Func = Class->GetFunction("MiniGame_TriWay2_C", "SpawnMiniGame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -214,12 +214,12 @@ void UMiniGame_TriWay2_C::GetWheelByYpos(bool MoveUp, int32* NewCellId)
 // Function MiniGame_TriWay2.MiniGame_TriWay2_C.RotateWheel
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   WheelId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Wheelid                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   ToState                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool*                                   IsFinished                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMiniGame_TriWay2_C::RotateWheel(int32 WheelId, int32 ToState, float DeltaTime, bool* IsFinished)
+void UMiniGame_TriWay2_C::RotateWheel(int32 Wheelid, int32 ToState, float DeltaTime, bool* IsFinished)
 {
 	static class UFunction* Func = nullptr;
 
@@ -228,7 +228,7 @@ void UMiniGame_TriWay2_C::RotateWheel(int32 WheelId, int32 ToState, float DeltaT
 
 	Params::MiniGame_TriWay2_C_RotateWheel Parms{};
 
-	Parms.WheelId = WheelId;
+	Parms.Wheelid = Wheelid;
 	Parms.ToState = ToState;
 	Parms.DeltaTime = DeltaTime;
 
@@ -315,11 +315,11 @@ void UMiniGame_TriWay2_C::SpawnPS()
 // Function MiniGame_TriWay2.MiniGame_TriWay2_C.AdjustWheelRotation
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   WheelId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Wheelid                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    RotateToRight                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32*                                  OutState                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMiniGame_TriWay2_C::AdjustWheelRotation(int32 WheelId, bool RotateToRight, int32* OutState)
+void UMiniGame_TriWay2_C::AdjustWheelRotation(int32 Wheelid, bool RotateToRight, int32* OutState)
 {
 	static class UFunction* Func = nullptr;
 
@@ -328,7 +328,7 @@ void UMiniGame_TriWay2_C::AdjustWheelRotation(int32 WheelId, bool RotateToRight,
 
 	Params::MiniGame_TriWay2_C_AdjustWheelRotation Parms{};
 
-	Parms.WheelId = WheelId;
+	Parms.Wheelid = Wheelid;
 	Parms.RotateToRight = RotateToRight;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -341,10 +341,10 @@ void UMiniGame_TriWay2_C::AdjustWheelRotation(int32 WheelId, bool RotateToRight,
 // Function MiniGame_TriWay2.MiniGame_TriWay2_C.SetWheelState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   WheelId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Wheelid                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMiniGame_TriWay2_C::SetWheelState(int32 WheelId, int32 NewState)
+void UMiniGame_TriWay2_C::SetWheelState(int32 Wheelid, int32 NewState)
 {
 	static class UFunction* Func = nullptr;
 
@@ -353,7 +353,7 @@ void UMiniGame_TriWay2_C::SetWheelState(int32 WheelId, int32 NewState)
 
 	Params::MiniGame_TriWay2_C_SetWheelState Parms{};
 
-	Parms.WheelId = WheelId;
+	Parms.Wheelid = Wheelid;
 	Parms.NewState = NewState;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -363,10 +363,10 @@ void UMiniGame_TriWay2_C::SetWheelState(int32 WheelId, int32 NewState)
 // Function MiniGame_TriWay2.MiniGame_TriWay2_C.SetWheelToggled
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   WheelId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Wheelid                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Toggled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMiniGame_TriWay2_C::SetWheelToggled(int32 WheelId, bool Toggled)
+void UMiniGame_TriWay2_C::SetWheelToggled(int32 Wheelid, bool Toggled)
 {
 	static class UFunction* Func = nullptr;
 
@@ -375,7 +375,7 @@ void UMiniGame_TriWay2_C::SetWheelToggled(int32 WheelId, bool Toggled)
 
 	Params::MiniGame_TriWay2_C_SetWheelToggled Parms{};
 
-	Parms.WheelId = WheelId;
+	Parms.Wheelid = Wheelid;
 	Parms.Toggled = Toggled;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -427,12 +427,12 @@ void UMiniGame_TriWay2_C::GetRandomPinColor(E_TriWayPinColor* PinColor)
 // Function MiniGame_TriWay2.MiniGame_TriWay2_C.GetWheelPins
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   WheelId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Wheelid                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // E_TriWayPinColor*                       Pin0                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // E_TriWayPinColor*                       Pin1                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // E_TriWayPinColor*                       Pin2                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMiniGame_TriWay2_C::GetWheelPins(int32 WheelId, E_TriWayPinColor* Pin0, E_TriWayPinColor* Pin1, E_TriWayPinColor* Pin2)
+void UMiniGame_TriWay2_C::GetWheelPins(int32 Wheelid, E_TriWayPinColor* Pin0, E_TriWayPinColor* Pin1, E_TriWayPinColor* Pin2)
 {
 	static class UFunction* Func = nullptr;
 
@@ -441,7 +441,7 @@ void UMiniGame_TriWay2_C::GetWheelPins(int32 WheelId, E_TriWayPinColor* Pin0, E_
 
 	Params::MiniGame_TriWay2_C_GetWheelPins Parms{};
 
-	Parms.WheelId = WheelId;
+	Parms.Wheelid = Wheelid;
 
 	UObject::ProcessEvent(Func, &Parms);
 

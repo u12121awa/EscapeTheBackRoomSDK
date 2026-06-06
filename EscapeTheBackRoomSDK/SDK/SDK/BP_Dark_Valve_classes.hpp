@@ -11,42 +11,42 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_Interactable_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BP_Interactable_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Dark_Valve.BP_Dark_Valve_C
-// 0x01A8 (0x04D0 - 0x0328)
+// 0x01A0 (0x04D0 - 0x0330)
 class ABP_Dark_Valve_C final : public ABP_Interactable_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Dark_Valve_C;                    // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        RightHandSocket;                                   // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        LeftHandSocket;                                    // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        Audio;                                             // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Swap_Alpha_EA30881A44E30B5D2C2DDA88FD879D1F;       // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Swap__Direction_EA30881A44E30B5D2C2DDA88FD879D1F;  // 0x0354(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_355[0x3];                                      // 0x0355(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     Swap;                                              // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Show_Alpha_0BFE94BE4BB7FC8EEE1904A1A331EDC5;       // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Show__Direction_0BFE94BE4BB7FC8EEE1904A1A331EDC5;  // 0x0364(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_365[0x3];                                      // 0x0365(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     Show;                                              // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TurnValve_Alpha_89AAB2AE4E5A0F989C7310A498E1EC93;  // 0x0370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            TurnValve__Direction_89AAB2AE4E5A0F989C7310A498E1EC93; // 0x0374(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_375[0x3];                                      // 0x0375(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     TurnValve;                                         // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsRotating;                                        // 0x0380(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	bool                                          CanInteract;                                       // 0x0381(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                         Pad_382[0x2];                                      // 0x0382(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
-	int32                                         ValveIndex;                                        // 0x0384(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABP_DarkPools_Manager_C*                Manager;                                           // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          DidFinish;                                         // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_391[0xF];                                      // 0x0391(0x000F)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Dark_Valve_C;                    // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USkeletalMeshComponent*                 SkeletalMesh;                                      // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        RightHandSocket;                                   // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        LeftHandSocket;                                    // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        Audio;                                             // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Swap_Alpha_EA30881A44E30B5D2C2DDA88FD879D1F;       // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Swap__Direction_EA30881A44E30B5D2C2DDA88FD879D1F;  // 0x035C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_35D[0x3];                                      // 0x035D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     Swap;                                              // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Show_Alpha_0BFE94BE4BB7FC8EEE1904A1A331EDC5;       // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Show__Direction_0BFE94BE4BB7FC8EEE1904A1A331EDC5;  // 0x036C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_36D[0x3];                                      // 0x036D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     Show;                                              // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TurnValve_Alpha_89AAB2AE4E5A0F989C7310A498E1EC93;  // 0x0378(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            TurnValve__Direction_89AAB2AE4E5A0F989C7310A498E1EC93; // 0x037C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_37D[0x3];                                      // 0x037D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     TurnValve;                                         // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsRotating;                                        // 0x0388(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	bool                                          CanInteract;                                       // 0x0389(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	uint8                                         Pad_38A[0x2];                                      // 0x038A(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
+	int32                                         ValveIndex;                                        // 0x038C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_DarkPools_Manager_C*                Manager;                                           // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          DidFinish;                                         // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_399[0x7];                                      // 0x0399(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
 	struct FTransform                             StartTransform;                                    // 0x03A0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FTransform                             TargetTransform;                                   // 0x03D0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FTransform                             LeftHandStartTransform;                            // 0x0400(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)

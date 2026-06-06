@@ -42,7 +42,7 @@ public:
 public:
 	void ExecuteUbergraph_BP_Ceiling_2DynamicLight_Rect(int32 EntryPoint);
 	void ReceiveBeginPlay();
-	void ToggleLight(bool isOff);
+	void ToggleLight(bool IsOff);
 	void BndEvt__BP_Ceiling_2DynamicLight_Rect_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void BndEvt__BP_Ceiling_2DynamicLight_Rect_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 	void TurnON();

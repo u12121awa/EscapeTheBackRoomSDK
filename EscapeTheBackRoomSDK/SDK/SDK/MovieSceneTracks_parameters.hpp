@@ -10,13 +10,21 @@
 
 #include "Basic.hpp"
 
+#include "MovieSceneTracks_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "MovieScene_structs.hpp"
-#include "MovieSceneTracks_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
+// 0x0030 (0x0030 - 0x0000)
+struct MovieSceneTransformOrigin_BP_GetTransformOrigin final
+{
+public:
+	struct FTransform                             ReturnValue;                                       // 0x0000(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
 
 // Function MovieSceneTracks.MovieScene3DConstraintSection.SetConstraintBindingID
 // 0x0018 (0x0018 - 0x0000)
@@ -32,14 +40,6 @@ struct MovieScene3DConstraintSection_GetConstraintBindingID final
 {
 public:
 	struct FMovieSceneObjectBindingID             ReturnValue;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function MovieSceneTracks.MovieSceneTransformOrigin.BP_GetTransformOrigin
-// 0x0030 (0x0030 - 0x0000)
-struct MovieSceneTransformOrigin_BP_GetTransformOrigin final
-{
-public:
-	struct FTransform                             ReturnValue;                                       // 0x0000(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // Function MovieSceneTracks.MovieSceneAudioSection.SetSound

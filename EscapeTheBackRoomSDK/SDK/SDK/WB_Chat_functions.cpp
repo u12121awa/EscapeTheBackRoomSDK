@@ -305,20 +305,6 @@ void UWB_Chat_C::FadeChatPanel(float Input)
 }
 
 
-// Function WB_Chat.WB_Chat_C.CheckFont
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWB_Chat_C::CheckFont()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_Chat_C", "CheckFont");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WB_Chat.WB_Chat_C.GetVisibilityOnConsoles
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:

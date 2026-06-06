@@ -107,20 +107,6 @@ void UUI_Gate_C::BndEvt__UI_SecurityPopup_CancelButton_K2Node_ComponentBoundEven
 }
 
 
-// Function UI_Gate.UI_Gate_C.CheckFont
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UUI_Gate_C::CheckFont()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_Gate_C", "CheckFont");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function UI_Gate.UI_Gate_C.CustomNavigation
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

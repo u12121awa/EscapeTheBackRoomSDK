@@ -463,5 +463,25 @@ ESlateVisibility UUI_Menu_ModeSelection_C::GetVisibilityPremiumFeatureErrorXSX()
 	return Parms.ReturnValue;
 }
 
+
+// Function UI_Menu_ModeSelection.UI_Menu_ModeSelection_C.CanPlayOnlineVisbility
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+ESlateVisibility UUI_Menu_ModeSelection_C::CanPlayOnlineVisbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("UI_Menu_ModeSelection_C", "CanPlayOnlineVisbility");
+
+	Params::UI_Menu_ModeSelection_C_CanPlayOnlineVisbility Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
 }
 

@@ -139,20 +139,6 @@ void ABP_MenuActor_C::OpenSettings()
 }
 
 
-// Function BP_MenuActor.BP_MenuActor_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MenuActor_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MenuActor_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_MenuActor.BP_MenuActor_C.CloseSettings
 // (BlueprintCallable, BlueprintEvent)
 
@@ -162,6 +148,20 @@ void ABP_MenuActor_C::CloseSettings()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_MenuActor_C", "CloseSettings");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MenuActor.BP_MenuActor_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MenuActor_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MenuActor_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,19 +187,19 @@ void ABP_MenuActor_C::ToggleKeyboard(bool Hide)
 }
 
 
-// Function BP_MenuActor.BP_MenuActor_C.InpActEvt_Use_K2Node_InputActionEvent_0
+// Function BP_MenuActor.BP_MenuActor_C.InpActEvt_Interact_K2Node_InputActionEvent_0
 // (BlueprintEvent)
 // Parameters:
 // const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void ABP_MenuActor_C::InpActEvt_Use_K2Node_InputActionEvent_0(const struct FKey& Key)
+void ABP_MenuActor_C::InpActEvt_Interact_K2Node_InputActionEvent_0(const struct FKey& Key)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MenuActor_C", "InpActEvt_Use_K2Node_InputActionEvent_0");
+		Func = Class->GetFunction("BP_MenuActor_C", "InpActEvt_Interact_K2Node_InputActionEvent_0");
 
-	Params::BP_MenuActor_C_InpActEvt_Use_K2Node_InputActionEvent_0 Parms{};
+	Params::BP_MenuActor_C_InpActEvt_Interact_K2Node_InputActionEvent_0 Parms{};
 
 	Parms.Key = std::move(Key);
 
@@ -207,19 +207,19 @@ void ABP_MenuActor_C::InpActEvt_Use_K2Node_InputActionEvent_0(const struct FKey&
 }
 
 
-// Function BP_MenuActor.BP_MenuActor_C.InpActEvt_Use_K2Node_InputActionEvent_1
+// Function BP_MenuActor.BP_MenuActor_C.InpActEvt_Secondary_K2Node_InputActionEvent_1
 // (BlueprintEvent)
 // Parameters:
 // const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void ABP_MenuActor_C::InpActEvt_Use_K2Node_InputActionEvent_1(const struct FKey& Key)
+void ABP_MenuActor_C::InpActEvt_Secondary_K2Node_InputActionEvent_1(const struct FKey& Key)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MenuActor_C", "InpActEvt_Use_K2Node_InputActionEvent_1");
+		Func = Class->GetFunction("BP_MenuActor_C", "InpActEvt_Secondary_K2Node_InputActionEvent_1");
 
-	Params::BP_MenuActor_C_InpActEvt_Use_K2Node_InputActionEvent_1 Parms{};
+	Params::BP_MenuActor_C_InpActEvt_Secondary_K2Node_InputActionEvent_1 Parms{};
 
 	Parms.Key = std::move(Key);
 
@@ -247,19 +247,19 @@ void ABP_MenuActor_C::InpActEvt_Secondary_K2Node_InputActionEvent_2(const struct
 }
 
 
-// Function BP_MenuActor.BP_MenuActor_C.InpActEvt_Secondary_K2Node_InputActionEvent_3
+// Function BP_MenuActor.BP_MenuActor_C.InpActEvt_Use_K2Node_InputActionEvent_3
 // (BlueprintEvent)
 // Parameters:
 // const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void ABP_MenuActor_C::InpActEvt_Secondary_K2Node_InputActionEvent_3(const struct FKey& Key)
+void ABP_MenuActor_C::InpActEvt_Use_K2Node_InputActionEvent_3(const struct FKey& Key)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MenuActor_C", "InpActEvt_Secondary_K2Node_InputActionEvent_3");
+		Func = Class->GetFunction("BP_MenuActor_C", "InpActEvt_Use_K2Node_InputActionEvent_3");
 
-	Params::BP_MenuActor_C_InpActEvt_Secondary_K2Node_InputActionEvent_3 Parms{};
+	Params::BP_MenuActor_C_InpActEvt_Use_K2Node_InputActionEvent_3 Parms{};
 
 	Parms.Key = std::move(Key);
 
@@ -267,19 +267,19 @@ void ABP_MenuActor_C::InpActEvt_Secondary_K2Node_InputActionEvent_3(const struct
 }
 
 
-// Function BP_MenuActor.BP_MenuActor_C.InpActEvt_Interact_K2Node_InputActionEvent_4
+// Function BP_MenuActor.BP_MenuActor_C.InpActEvt_Use_K2Node_InputActionEvent_4
 // (BlueprintEvent)
 // Parameters:
 // const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void ABP_MenuActor_C::InpActEvt_Interact_K2Node_InputActionEvent_4(const struct FKey& Key)
+void ABP_MenuActor_C::InpActEvt_Use_K2Node_InputActionEvent_4(const struct FKey& Key)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MenuActor_C", "InpActEvt_Interact_K2Node_InputActionEvent_4");
+		Func = Class->GetFunction("BP_MenuActor_C", "InpActEvt_Use_K2Node_InputActionEvent_4");
 
-	Params::BP_MenuActor_C_InpActEvt_Interact_K2Node_InputActionEvent_4 Parms{};
+	Params::BP_MenuActor_C_InpActEvt_Use_K2Node_InputActionEvent_4 Parms{};
 
 	Parms.Key = std::move(Key);
 

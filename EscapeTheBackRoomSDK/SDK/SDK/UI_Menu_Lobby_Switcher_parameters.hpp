@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
+#include "InputCore_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function UI_Menu_Lobby_Switcher.UI_Menu_Lobby_Switcher_C.ExecuteUbergraph_UI_Menu_Lobby_Switcher
-// 0x01C0 (0x01C0 - 0x0000)
+// 0x0168 (0x0168 - 0x0000)
 struct UI_Menu_Lobby_Switcher_C_ExecuteUbergraph_UI_Menu_Lobby_Switcher final
 {
 public:
@@ -67,19 +67,18 @@ public:
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_DA[0x6];                                       // 0x00DA(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FSlateFontInfo                         CallFunc_Get_Font_Culture_Checked_OutFont;         // 0x00E0(0x0058)(HasGetValueTypeHash)
-	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0138(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsEnabled;                            // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class FString                                 CallFunc_Split_LeftS;                              // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Split_RightS;                             // 0x0178(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Split_ReturnValue;                        // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0190(0x0018)()
-	float                                         K2Node_Select_Default_4;                           // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	TScriptInterface<class IBPI_UserInterface_C>  CallFunc_ToggleEnabled_self_CastInput;             // 0x01B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x00E0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsEnabled;                            // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class FString                                 CallFunc_Split_LeftS;                              // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Split_RightS;                             // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Split_ReturnValue;                        // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0138(0x0018)()
+	float                                         K2Node_Select_Default_4;                           // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	TScriptInterface<class IBPI_UserInterface_C>  CallFunc_ToggleEnabled_self_CastInput;             // 0x0158(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function UI_Menu_Lobby_Switcher.UI_Menu_Lobby_Switcher_C.ToggleEnabled

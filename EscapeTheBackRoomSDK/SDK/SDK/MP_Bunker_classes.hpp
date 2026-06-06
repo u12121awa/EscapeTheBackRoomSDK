@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "MP_GameMode_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MP_GameMode_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_Bunker.MP_Bunker_C
-// 0x0010 (0x0398 - 0x0388)
+// 0x0010 (0x0390 - 0x0380)
 class AMP_Bunker_C final : public AMP_GameMode_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Bunker_C;                        // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          PlayCutscene;                                      // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Bunker_C;                        // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          PlayCutscene;                                      // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_MP_Bunker(int32 EntryPoint);

@@ -37,161 +37,43 @@ void BP_Door_Master::ABP_Door_Master_C::ExecuteUbergraph_BP_Door_Master(int32 En
 }
 
 
-// Function BP_Door_Master.BP_Door_Master_C.CloseDoor
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_Door_Master.BP_Door_Master_C.OnUsedNotify
+// (Event, Public, BlueprintEvent)
 
-void BP_Door_Master::ABP_Door_Master_C::CloseDoor()
+void BP_Door_Master::ABP_Door_Master_C::OnUsedNotify()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "CloseDoor");
+		Func = Class->GetFunction("BP_Door_Master_C", "OnUsedNotify");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Door_Master.BP_Door_Master_C.EntityOpen
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Open                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void BP_Door_Master::ABP_Door_Master_C::EntityOpen(bool Open)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "EntityOpen");
-
-	Params::BP_Door_Master_C_EntityOpen Parms{};
-
-	Parms.Open = Open;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Door_Master.BP_Door_Master_C.ToggleDoor
-// (BlueprintCallable, BlueprintEvent)
-
-void BP_Door_Master::ABP_Door_Master_C::ToggleDoor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "ToggleDoor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Door_Master.BP_Door_Master_C.DoorTimeline
-// (BlueprintCallable, BlueprintEvent)
-
-void BP_Door_Master::ABP_Door_Master_C::DoorTimeline()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "DoorTimeline");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Door_Master.BP_Door_Master_C.SlideDoors
-// (BlueprintCallable, BlueprintEvent)
-
-void BP_Door_Master::ABP_Door_Master_C::SlideDoors()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "SlideDoors");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Door_Master.BP_Door_Master_C.Slide__UpdateFunc
+// Function BP_Door_Master.BP_Door_Master_C.OpenDoor__UpdateFunc
 // (BlueprintEvent)
 
-void BP_Door_Master::ABP_Door_Master_C::Slide__UpdateFunc()
+void BP_Door_Master::ABP_Door_Master_C::OpenDoor__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "Slide__UpdateFunc");
+		Func = Class->GetFunction("BP_Door_Master_C", "OpenDoor__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Door_Master.BP_Door_Master_C.Slide__FinishedFunc
+// Function BP_Door_Master.BP_Door_Master_C.OpenDoor__FinishedFunc
 // (BlueprintEvent)
 
-void BP_Door_Master::ABP_Door_Master_C::Slide__FinishedFunc()
+void BP_Door_Master::ABP_Door_Master_C::OpenDoor__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "Slide__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Door_Master.BP_Door_Master_C.Toggle__UpdateFunc
-// (BlueprintEvent)
-
-void BP_Door_Master::ABP_Door_Master_C::Toggle__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "Toggle__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Door_Master.BP_Door_Master_C.Toggle__FinishedFunc
-// (BlueprintEvent)
-
-void BP_Door_Master::ABP_Door_Master_C::Toggle__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "Toggle__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Door_Master.BP_Door_Master_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void BP_Door_Master::ABP_Door_Master_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Door_Master.BP_Door_Master_C.OnRep_Closed
-// (BlueprintCallable, BlueprintEvent)
-
-void BP_Door_Master::ABP_Door_Master_C::OnRep_Closed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "OnRep_Closed");
+		Func = Class->GetFunction("BP_Door_Master_C", "OpenDoor__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

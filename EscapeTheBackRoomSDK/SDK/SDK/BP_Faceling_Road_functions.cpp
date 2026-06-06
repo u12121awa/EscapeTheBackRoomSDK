@@ -37,6 +37,26 @@ void ABP_Faceling_Road_C::ExecuteUbergraph_BP_Faceling_Road(int32 EntryPoint)
 }
 
 
+// Function BP_Faceling_Road.BP_Faceling_Road_C.ApplyCostumeAndShowSkeletal Mesh
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ABPCharacter_Demo_C*              InTargetPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Faceling_Road_C::ApplyCostumeAndShowSkeletal_Mesh(class ABPCharacter_Demo_C* InTargetPlayer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Faceling_Road_C", "ApplyCostumeAndShowSkeletal Mesh");
+
+	Params::BP_Faceling_Road_C_ApplyCostumeAndShowSkeletal_Mesh Parms{};
+
+	Parms.InTargetPlayer = InTargetPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Faceling_Road.BP_Faceling_Road_C.SRV_Carry
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:

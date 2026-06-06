@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "E_CameraSetting_structs.hpp"
-#include "S_ConnectedPlayer_structs.hpp"
-#include "AdvancedSessions_structs.hpp"
-#include "S_Gamemode_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
+#include "AdvancedSessions_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "S_Gamemode_structs.hpp"
+#include "S_ConnectedPlayer_structs.hpp"
 #include "Engine_structs.hpp"
 
 
@@ -23,134 +23,158 @@ namespace SDK::Params
 {
 
 // Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.ExecuteUbergraph_Lobby_PlayerController_Nebula
-// 0x02A8 (0x02A8 - 0x0000)
+// 0x03F0 (0x03F0 - 0x0000)
 struct Lobby_PlayerController_Nebula_C_ExecuteUbergraph_Lobby_PlayerController_Nebula final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FKey                                   K2Node_InputActionEvent_Key_2;                     // 0x0008(0x0018)(HasGetValueTypeHash)
-	struct FKey                                   K2Node_InputActionEvent_Key_1;                     // 0x0020(0x0018)(HasGetValueTypeHash)
-	struct FKey                                   Temp_struct_Variable;                              // 0x0038(0x0018)(HasGetValueTypeHash)
-	class UW_VOIPHUD_C*                           CallFunc_Create_ReturnValue;                       // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_InputActionEvent_Key;                       // 0x0058(0x0018)(HasGetValueTypeHash)
-	class UFancyVideoSubsystem*                   CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x007B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsConsoleBuild_ReturnValue;               // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_RegisterLocalTalker_ReturnValue;          // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsConsoleBuild_ReturnValue_1;             // 0x007E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsConsoleBuild_ReturnValue_2;             // 0x007F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_Load_ControlSettings_Sensitivity;         // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_InvertMouse;         // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	E_CameraSetting                               CallFunc_Load_ControlSettings_CameraSetting;       // 0x0085(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_ShowBody;            // 0x0086(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_UsingPushToTalk;     // 0x0087(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Load_ControlSettings_FOV;                 // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_SmoothRotation;      // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_HideGore;            // 0x008D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_8E[0x2];                                       // 0x008E(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         CallFunc_Load_ControlSettings_Gamma;               // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_CameraShake;         // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_ShowEventContent;    // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_AimAssist;           // 0x0096(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_ControllerFeedback;  // 0x0097(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_ShowChat;            // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         CallFunc_Load_ControlSettings_Sensitivity_1;       // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_InvertMouse_1;       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	E_CameraSetting                               CallFunc_Load_ControlSettings_CameraSetting_1;     // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_ShowBody_1;          // 0x00A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_UsingPushToTalk_1;   // 0x00A3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Load_ControlSettings_FOV_1;               // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_SmoothRotation_1;    // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_HideGore_1;          // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AA[0x2];                                       // 0x00AA(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         CallFunc_Load_ControlSettings_Gamma_1;             // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_CameraShake_1;       // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_ShowEventContent_1;  // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_AimAssist_1;         // 0x00B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_ControllerFeedback_1; // 0x00B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_ShowChat_1;          // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class AMP_PS_C*                               K2Node_DynamicCast_AsMP_PS;                        // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class AMP_PS_C*                               K2Node_DynamicCast_AsMP_PS_1;                      // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	TScriptInterface<class IBPI_UserInterface_C>  K2Node_DynamicCast_AsBPI_User_Interface;           // 0x00D8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_CustomEvent_CircularThrobber_Visibility;    // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EA[0x6];                                       // 0x00EA(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
-	class FText                                   K2Node_CustomEvent_LobbyStatus_Text;               // 0x00F0(0x0018)()
-	class FText                                   K2Node_CustomEvent_Text;                           // 0x0108(0x0018)()
-	bool                                          K2Node_CustomEvent_WarningState_;                  // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_HideButton_;                    // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_IsLaunchingGame;                // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_123[0x5];                                      // 0x0123(0x0005)(Fixing Size After Last Property [ Dumper-8 ])
-	class FText                                   K2Node_CustomEvent_ServerName;                     // 0x0128(0x0018)()
-	TArray<struct FS_ConnectedPlayer>             K2Node_CustomEvent_ConnectedPlayers;               // 0x0140(0x0010)(ConstParm, ReferenceParm, ContainsInstancedReference)
-	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocalPlayerController_ReturnValue;      // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_153[0x5];                                      // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-8 ])
-	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue;              // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_MyGameInstance_C*                   K2Node_DynamicCast_AsBP_My_Game_Instance;          // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class UDestroySessionCallbackProxy*           CallFunc_DestroySession_ReturnValue;               // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_Map;                            // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue_1;            // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_MyGameInstance_C*                   K2Node_DynamicCast_AsBP_My_Game_Instance_1;        // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsHeadMountedDisplayEnabled_ReturnValue;  // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19A[0x6];                                      // 0x019A(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
-	class ABP_LobbyActor_C*                       CallFunc_GetActorOfClass_ReturnValue;              // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A9[0x3];                                      // 0x01A9(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x01AC(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_1BC[0x4];                                      // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class ACameraActor*                           CallFunc_GetActorOfClass_ReturnValue_1;            // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMissionSelectOpen_Yes;                  // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x01CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1CB[0x1];                                      // 0x01CB(0x0001)(Fixing Size After Last Property [ Dumper-8 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x01CC(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsCommunicationRestricted_ReturnValue;    // 0x01DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1DD[0x3];                                      // 0x01DD(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x01E0(0x0010)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_IsLocalPlayerController_ReturnValue_1;    // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class UDestroySessionCallbackProxy*           CallFunc_DestroySession_ReturnValue_1;             // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsConsoleBuild_ReturnValue_3;             // 0x0201(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_InitVoice_ReturnValue;                    // 0x0202(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_203[0x5];                                      // 0x0203(0x0005)(Fixing Size After Last Property [ Dumper-8 ])
-	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue_2;            // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_MyGameInstance_C*                   K2Node_DynamicCast_AsBP_My_Game_Instance_2;        // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_219[0x7];                                      // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	TScriptInterface<class IBPI_UserInterface_C>  K2Node_DynamicCast_AsBPI_User_Interface_1;         // 0x0220(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_231[0x3];                                      // 0x0231(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0234(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_244[0x4];                                      // 0x0244(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	TScriptInterface<class IBPI_UserInterface_C>  K2Node_DynamicCast_AsBPI_User_Interface_2;         // 0x0248(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue_3;            // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UBP_MyGameInstance_C*                   K2Node_DynamicCast_AsBP_My_Game_Instance_3;        // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FKey                                   K2Node_InputActionEvent_Key_3;                     // 0x0008(0x0018)(HasGetValueTypeHash)
+	TArray<uint8>                                 K2Node_ComponentBoundEvent_VoiceData;              // 0x0020(0x0010)(ConstParm, ReferenceParm)
+	float                                         K2Node_ComponentBoundEvent_MicLevel;               // 0x0030(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<uint8>                                 K2Node_CustomEvent_CompressedVoiceData;            // 0x0038(0x0010)(ConstParm, ReferenceParm)
+	struct FBPUniqueNetId                         K2Node_CustomEvent_Sender_1;                       // 0x0048(0x0028)()
+	bool                                          CallFunc_K2_IsTearingDown_isTearingDown;           // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<class APlayerState*>                   CallFunc_GetPlayerStateArray_ReturnValue;          // 0x0088(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<uint8>                                 K2Node_CustomEvent_Voice;                          // 0x00A0(0x0010)(ConstParm, ReferenceParm)
+	struct FBPUniqueNetId                         K2Node_CustomEvent_Sender;                         // 0x00B0(0x0028)()
+	class FString                                 CallFunc_UniqueNetIdToString_String;               // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
+	class UVoipAudioComponent*                    CallFunc_GetAudioComponentForRemoteSpeaker_Component; // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Should_Block_VOIPAudio_for_Player_ShouldBlock; // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FBPUniqueNetId                         CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId; // 0x0108(0x0028)()
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0130(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_CanUseCommunication_CanCommunicateOnline; // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0144(0x0010)(ZeroConstructor, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CanUseCommunication_CanCommunicateOnline_1; // 0x0155(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0156(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_157[0x1];                                      // 0x0157(0x0001)(Fixing Size After Last Property [ Dumper-8 ])
+	TScriptInterface<class IBPI_UserInterface_C>  K2Node_DynamicCast_AsBPI_User_Interface;           // 0x0158(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsConsoleBuild_ReturnValue;               // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              K2Node_CustomEvent_CircularThrobber_Visibility;    // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16B[0x5];                                      // 0x016B(0x0005)(Fixing Size After Last Property [ Dumper-8 ])
+	class FText                                   K2Node_CustomEvent_LobbyStatus_Text;               // 0x0170(0x0018)()
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class FText                                   K2Node_CustomEvent_Text;                           // 0x0190(0x0018)()
+	bool                                          K2Node_CustomEvent_WarningState_;                  // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_HideButton_;                    // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_CustomEvent_IsLaunchingGame;                // 0x01AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	class FText                                   K2Node_CustomEvent_ServerName;                     // 0x01B0(0x0018)()
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC[0x4];                                      // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<struct FS_ConnectedPlayer>             K2Node_CustomEvent_ConnectedPlayers;               // 0x01D0(0x0010)(ConstParm, ReferenceParm, ContainsInstancedReference)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsLocalPlayerController_ReturnValue;      // 0x01EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1EB[0x1];                                      // 0x01EB(0x0001)(Fixing Size After Last Property [ Dumper-8 ])
+	class FName                                   K2Node_CustomEvent_Map;                            // 0x01EC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerState*                           CallFunc_Array_Get_Item;                           // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0200(0x0010)(ZeroConstructor, NoDestructor)
+	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ALobby_PlayerController_Nebula_C*       K2Node_DynamicCast_AsLobby_Player_Controller_Nebula; // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0221(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsHeadMountedDisplayEnabled_ReturnValue;  // 0x0222(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_223[0x5];                                      // 0x0223(0x0005)(Fixing Size After Last Property [ Dumper-8 ])
+	class ABP_LobbyActor_C*                       CallFunc_GetActorOfClass_ReturnValue;              // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UFancyVideoSubsystem*                   CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPlaying_ReturnValue;                    // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class ACameraActor*                           CallFunc_GetActorOfClass_ReturnValue_1;            // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsMissionSelectOpen_Yes;                  // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_SetUsingMultiplayerFeatures_ReturnValue;  // 0x0252(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0253(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FKey                                   K2Node_InputActionEvent_Key;                       // 0x0258(0x0018)(HasGetValueTypeHash)
+	bool                                          CallFunc_IsLocalPlayerController_ReturnValue_1;    // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class UUI_Menu_Evaluation_C*                  CallFunc_Create_ReturnValue_1;                     // 0x0278(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWB_SettingsPanel_Theme2_C*             CallFunc_Create_ReturnValue_2;                     // 0x0280(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUI_Menu_Lobby_C*                       CallFunc_Create_ReturnValue_3;                     // 0x0288(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FKey                                   K2Node_InputActionEvent_Key_3;                     // 0x0290(0x0018)(HasGetValueTypeHash)
+	class UBP_KickedFlow_C*                       CallFunc_SpawnObject_ReturnValue;                  // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetUsingMultiplayerFeatures_ReturnValue_1; // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_281[0x7];                                      // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UDestroySessionCallbackProxy*           CallFunc_DestroySession_ReturnValue;               // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                K2Node_Event_PreviousFocusedWidget;                // 0x0290(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class FText                                   K2Node_Event_Message;                              // 0x02A0(0x0018)(ConstParm)
+	bool                                          CallFunc_IsOnSwitch2Platform_ReturnValue;          // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_FancyInitVoice_ReturnValue;               // 0x02B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_TryBeginFreeCommunication_ReturnValue;    // 0x02BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2BB[0x5];                                      // 0x02BB(0x0005)(Fixing Size After Last Property [ Dumper-8 ])
+	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue;              // 0x02C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_MyGameInstance_C*                   K2Node_DynamicCast_AsBP_My_Game_Instance;          // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x02D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FKey                                   K2Node_InputActionEvent_Key_1;                     // 0x02D8(0x0018)(HasGetValueTypeHash)
+	class UBP_CrossplayWarningFlow_C*             CallFunc_SpawnObject_ReturnValue_1;                // 0x02F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetUsingMultiplayerFeatures_ReturnValue_2; // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2F9[0x7];                                      // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UFancyOnlineInteractionsSubsystem*      CallFunc_GetGameInstanceSubsystem_ReturnValue_1;   // 0x0300(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_HostLeftSessionErrorFlow_C*         CallFunc_SpawnObject_ReturnValue_2;                // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFancyOnlineInteractionsSubsystem*      CallFunc_GetGameInstanceSubsystem_ReturnValue_2;   // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFancyDestroySessionCallbackProxy*      CallFunc_FancyDestroySession_ReturnValue;          // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UBP_SG_GameSettings_C*                  CallFunc_LoadSettings_SaveGame;                    // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UWB_SimpleNonModalMessageQueueDisplay_C* CallFunc_Create_ReturnValue;                      // 0x0340(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue_1;            // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBP_MyGameInstance_C*                   K2Node_DynamicCast_AsBP_My_Game_Instance_1;        // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0358(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_359[0x7];                                      // 0x0359(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	TScriptInterface<class IBPI_UserInterface_C>  K2Node_DynamicCast_AsBPI_User_Interface_1;         // 0x0360(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UGameInstance*                          CallFunc_GetGameInstance_ReturnValue_2;            // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IBPI_UserInterface_C>  K2Node_DynamicCast_AsBPI_User_Interface_2;         // 0x0380(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0390(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_391[0x7];                                      // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UBP_MyGameInstance_C*                   K2Node_DynamicCast_AsBP_My_Game_Instance_2;        // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x03A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3A1[0x7];                                      // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FKey                                   Temp_struct_Variable;                              // 0x03A8(0x0018)(HasGetValueTypeHash)
+	class UUI_Menu_Evaluation_C*                  CallFunc_Create_ReturnValue_1;                     // 0x03C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FKey                                   K2Node_InputActionEvent_Key_2;                     // 0x03C8(0x0018)(HasGetValueTypeHash)
+	class UWB_SettingsPanel_Theme2_C*             CallFunc_Create_ReturnValue_2;                     // 0x03E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUI_Menu_Lobby_C*                       CallFunc_Create_ReturnValue_3;                     // 0x03E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.ShowNonModalMessage
+// 0x0018 (0x0018 - 0x0000)
+struct Lobby_PlayerController_Nebula_C_ShowNonModalMessage final
+{
+public:
+	class FText                                   Message;                                           // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+
+// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.ResetInputModeToDefault
+// 0x0008 (0x0008 - 0x0000)
+struct Lobby_PlayerController_Nebula_C_ResetInputModeToDefault final
+{
+public:
+	class UWidget*                                PreviousFocusedWidget;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.OC_Create_MapTravel_Loadingscreen
@@ -159,14 +183,6 @@ struct Lobby_PlayerController_Nebula_C_OC_Create_MapTravel_Loadingscreen final
 {
 public:
 	class FName                                   Map;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct Lobby_PlayerController_Nebula_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.OC_Update_ConnectedPlayersList
@@ -213,6 +229,33 @@ public:
 	class FText                                   LobbyStatus_Text;                                  // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 
+// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.Client_RecieveVoiceData
+// 0x0038 (0x0038 - 0x0000)
+struct Lobby_PlayerController_Nebula_C_Client_RecieveVoiceData final
+{
+public:
+	TArray<uint8>                                 Voice;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FBPUniqueNetId                         Sender;                                            // 0x0010(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+
+// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.SRV_SendVoiceData
+// 0x0038 (0x0038 - 0x0000)
+struct Lobby_PlayerController_Nebula_C_SRV_SendVoiceData final
+{
+public:
+	TArray<uint8>                                 CompressedVoiceData;                               // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FBPUniqueNetId                         Sender;                                            // 0x0010(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+
+// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.BndEvt__Lobby_PlayerController_Nebula_FancyVoipManager_K2Node_ComponentBoundEvent_4_VoiceGenerated__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct Lobby_PlayerController_Nebula_C_BndEvt__Lobby_PlayerController_Nebula_FancyVoipManager_K2Node_ComponentBoundEvent_4_VoiceGenerated__DelegateSignature final
+{
+public:
+	TArray<uint8>                                 VoiceData;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	float                                         MicLevel;                                          // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
 // Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.InpActEvt_Chat_K2Node_InputActionEvent_0
 // 0x0018 (0x0018 - 0x0000)
 struct Lobby_PlayerController_Nebula_C_InpActEvt_Chat_K2Node_InputActionEvent_0 final
@@ -221,9 +264,9 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
 
-// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.InpActEvt_Talk_K2Node_InputActionEvent_1
+// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.InpActEvt_Settings_K2Node_InputActionEvent_1
 // 0x0018 (0x0018 - 0x0000)
-struct Lobby_PlayerController_Nebula_C_InpActEvt_Talk_K2Node_InputActionEvent_1 final
+struct Lobby_PlayerController_Nebula_C_InpActEvt_Settings_K2Node_InputActionEvent_1 final
 {
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -237,9 +280,9 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
 
-// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.InpActEvt_Settings_K2Node_InputActionEvent_3
+// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.InpActEvt_Talk_K2Node_InputActionEvent_3
 // 0x0018 (0x0018 - 0x0000)
-struct Lobby_PlayerController_Nebula_C_InpActEvt_Settings_K2Node_InputActionEvent_3 final
+struct Lobby_PlayerController_Nebula_C_InpActEvt_Talk_K2Node_InputActionEvent_3 final
 {
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
@@ -320,20 +363,18 @@ public:
 };
 
 // Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.CreateLoadingScreen
-// 0x0038 (0x0038 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct Lobby_PlayerController_Nebula_C_CreateLoadingScreen final
 {
 public:
 	class FText                                   LoadingScreen_FeedbackText;                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UTexture2D*                             LoadingScreen_Image;                               // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLocalPlayerController_ReturnValue;      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class UWB_LoadingScreen_C*                    CallFunc_Create_ReturnValue;                       // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWB_LoadingScreen_C*                    CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.Update Player Speaking
-// 0x00B8 (0x00B8 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct Lobby_PlayerController_Nebula_C_Update_Player_Speaking final
 {
 public:
@@ -341,35 +382,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
 	struct FBPUniqueNetId                         UniqueId;                                          // 0x0008(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FString                                 PlayerName;                                        // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0058(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class UUI_Menu_Lobby_Player_C*                K2Node_DynamicCast_AsUI_Menu_Lobby_Player;         // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_83[0x5];                                       // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FBPUniqueNetId                         CallFunc_GetUniqueNetIDFromPlayerState_UniqueNetId; // 0x0088(0x0028)()
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_UNetIDUnetID_ReturnValue;      // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
-// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.OnRep_CanTalk
-// 0x0001 (0x0001 - 0x0000)
-struct Lobby_PlayerController_Nebula_C_OnRep_CanTalk final
-{
-public:
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.IsMissionSelectOpen
@@ -386,29 +398,27 @@ public:
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.On Push to Talk Changed
-// 0x0020 (0x0020 - 0x0000)
-struct Lobby_PlayerController_Nebula_C_On_Push_to_Talk_Changed final
+// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.GetAudioComponentForRemoteSpeaker
+// 0x0070 (0x0070 - 0x0000)
+struct Lobby_PlayerController_Nebula_C_GetAudioComponentForRemoteSpeaker final
 {
 public:
-	bool                                          CallFunc_IsConsoleBuild_ReturnValue;               // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         CallFunc_Load_ControlSettings_Sensitivity;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_InvertMouse;         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	E_CameraSetting                               CallFunc_Load_ControlSettings_CameraSetting;       // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_ShowBody;            // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_UsingPushToTalk;     // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Load_ControlSettings_FOV;                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_SmoothRotation;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_HideGore;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         CallFunc_Load_ControlSettings_Gamma;               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Load_ControlSettings_CameraShake;         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_ShowEventContent;    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_AimAssist;           // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_ControllerFeedback;  // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Load_ControlSettings_ShowChat;            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsConsoleBuild_ReturnValue_1;             // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FString                                 RemoteId;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class UVoipAudioComponent*                    Component;                                         // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_LobbyVoice_C*                       CallFunc_FinishSpawningActor_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_LobbyVoice_C*                       CallFunc_Map_Find_Value;                           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct Lobby_PlayerController_Nebula_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

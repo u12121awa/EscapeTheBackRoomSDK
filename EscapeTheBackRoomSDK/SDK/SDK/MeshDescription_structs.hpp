@@ -51,12 +51,6 @@ struct FPolygonGroupID final : public FElementID
 {
 };
 
-// ScriptStruct MeshDescription.TriangleID
-// 0x0000 (0x0004 - 0x0004)
-struct FTriangleID final : public FElementID
-{
-};
-
 // ScriptStruct MeshDescription.PolygonID
 // 0x0000 (0x0004 - 0x0004)
 struct FPolygonID final : public FElementID
@@ -66,6 +60,12 @@ struct FPolygonID final : public FElementID
 // ScriptStruct MeshDescription.VertexInstanceID
 // 0x0000 (0x0004 - 0x0004)
 struct FVertexInstanceID final : public FElementID
+{
+};
+
+// ScriptStruct MeshDescription.TriangleID
+// 0x0000 (0x0004 - 0x0004)
+struct FTriangleID final : public FElementID
 {
 };
 

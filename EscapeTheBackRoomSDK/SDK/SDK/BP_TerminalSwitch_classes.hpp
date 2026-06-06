@@ -19,18 +19,18 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_TerminalSwitch.BP_TerminalSwitch_C
-// 0x0028 (0x0350 - 0x0328)
+// 0x0028 (0x0358 - 0x0330)
 class ABP_TerminalSwitch_C final : public ABP_Interactable_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_TerminalSwitch_C;                // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   Level;                                             // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         SwitchLever_X_0F136E574D89BE19A0C2B9BC4B5826EA;    // 0x0338(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            SwitchLever__Direction_0F136E574D89BE19A0C2B9BC4B5826EA; // 0x033C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33D[0x3];                                      // 0x033D(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     SwitchLever;                                       // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnabled;                                         // 0x0348(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	bool                                          HasPoweredOn;                                      // 0x0349(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_TerminalSwitch_C;                // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   Level;                                             // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         SwitchLever_X_0F136E574D89BE19A0C2B9BC4B5826EA;    // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            SwitchLever__Direction_0F136E574D89BE19A0C2B9BC4B5826EA; // 0x0344(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_345[0x3];                                      // 0x0345(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     SwitchLever;                                       // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnabled;                                         // 0x0350(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	bool                                          HasPoweredOn;                                      // 0x0351(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 
 public:
 	void ExecuteUbergraph_BP_TerminalSwitch(int32 EntryPoint);

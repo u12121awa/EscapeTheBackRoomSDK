@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "Enum_SegmentDisplayType_structs.hpp"
 #include "Engine_classes.hpp"
+#include "Enum_SegmentDisplayType_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK

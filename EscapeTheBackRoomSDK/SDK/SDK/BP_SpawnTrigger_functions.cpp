@@ -37,20 +37,6 @@ void BP_SpawnTrigger::ABP_SpawnTrigger_C::ExecuteUbergraph_BP_SpawnTrigger(int32
 }
 
 
-// Function BP_SpawnTrigger.BP_SpawnTrigger_C.MC_Sound
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void BP_SpawnTrigger::ABP_SpawnTrigger_C::MC_Sound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnTrigger_C", "MC_Sound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_SpawnTrigger.BP_SpawnTrigger_C.ReceiveActorEndOverlap
 // (Event, Public, BlueprintEvent)
 // Parameters:

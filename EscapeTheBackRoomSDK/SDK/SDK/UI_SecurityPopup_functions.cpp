@@ -79,20 +79,6 @@ void UUI_SecurityPopup_C::BndEvt__UI_SecurityPopup_RunButton_K2Node_ComponentBou
 }
 
 
-// Function UI_SecurityPopup.UI_SecurityPopup_C.CheckFont
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UUI_SecurityPopup_C::CheckFont()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_SecurityPopup_C", "CheckFont");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function UI_SecurityPopup.UI_SecurityPopup_C.CustomNavigation
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

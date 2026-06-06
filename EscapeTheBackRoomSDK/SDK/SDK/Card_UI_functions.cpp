@@ -17,6 +17,40 @@
 namespace SDK
 {
 
+// Function Card_UI.Card_UI_C.ExecuteUbergraph_Card_UI
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UCard_UI_C::ExecuteUbergraph_Card_UI(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Card_UI_C", "ExecuteUbergraph_Card_UI");
+
+	Params::Card_UI_C_ExecuteUbergraph_Card_UI Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Card_UI.Card_UI_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UCard_UI_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Card_UI_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Card_UI.Card_UI_C.SetName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -32,6 +66,26 @@ void UCard_UI_C::SetName(const class FText& Name_0)
 	Params::Card_UI_C_SetName Parms{};
 
 	Parms.Name_0 = std::move(Name_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Card_UI.Card_UI_C.SetPlatform
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFancyPlatform                          PlayerPlatform                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UCard_UI_C::SetPlatform(EFancyPlatform PlayerPlatform)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Card_UI_C", "SetPlatform");
+
+	Params::Card_UI_C_SetPlatform Parms{};
+
+	Parms.PlayerPlatform = PlayerPlatform;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

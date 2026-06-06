@@ -10,46 +10,48 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params
 {
 
 // Function BP_Floor.BP_Floor_C.UserConstructionScript
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x00E0 (0x00E0 - 0x0000)
 struct BP_Floor_C_UserConstructionScript final
 {
 public:
-	int32                                         Number_Of_Materials;                               // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_2;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_3;              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_4;              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_5;              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_6;              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class UStaticMesh*                            CallFunc_Array_Get_Item;                           // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_7;              // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue_1;             // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetNumMaterials_ReturnValue;              // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class UStaticMesh*                            CallFunc_Array_Get_Item_1;                         // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_8;              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D2[0x2];                                       // 0x00D2(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             Temp_struct_Variable;                              // 0x0000(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FTransform                             Temp_struct_Variable_1;                            // 0x0030(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue_1;               // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             Temp_struct_Variable_2;                            // 0x0070(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	TArray<class UMaterialInterface*>             CallFunc_OverrideMeshMaterials_InitMaterials;      // 0x00A0(0x0010)(ReferenceParm)
+	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue_2;               // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInterface*>             CallFunc_OverrideMeshMaterials_InitMaterials_1;    // 0x00B8(0x0010)(ReferenceParm)
+	TArray<class UMaterialInterface*>             CallFunc_OverrideMeshMaterials_InitMaterials_2;    // 0x00C8(0x0010)(ReferenceParm)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function BP_Floor.BP_Floor_C.OverrideMeshMaterials
+// 0x0060 (0x0060 - 0x0000)
+struct BP_Floor_C_OverrideMeshMaterials final
+{
+public:
+	class UStaticMeshComponent*                   Mesh;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInterface*>             Materials;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class UMaterialInterface*>             InitMaterials;                                     // 0x0018(0x0010)(Parm, OutParm)
+	int32                                         CallFunc_GetNumMaterials_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x0030(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

@@ -12,51 +12,12 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AudioMixer_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "AudioMixer_structs.hpp"
 
 
 namespace SDK
 {
-
-// Class AudioMixer.QuartzSubsystem
-// 0x0110 (0x0150 - 0x0040)
-class UQuartzSubsystem final : public UTickableWorldSubsystem
-{
-public:
-	uint8                                         Pad_40[0x110];                                     // 0x0040(0x0110)(Fixing Struct Size After Last Property [ Dumper-8 ])
-
-public:
-	class UQuartzClockHandle* CreateNewClock(const class UObject* WorldContextObject, class FName ClockName, const struct FQuartzClockSettings& InSettings, bool bOverrideSettingsIfClockExists, bool bUseAudioEngineClockManager);
-	void DeleteClockByHandle(const class UObject* WorldContextObject, class UQuartzClockHandle*& InClockHandle);
-	void DeleteClockByName(const class UObject* WorldContextObject, class FName ClockName);
-	bool DoesClockExist(const class UObject* WorldContextObject, class FName ClockName);
-	float GetAudioRenderThreadToGameThreadAverageLatency();
-	float GetAudioRenderThreadToGameThreadMaxLatency();
-	float GetAudioRenderThreadToGameThreadMinLatency();
-	struct FQuartzTransportTimeStamp GetCurrentClockTimestamp(const class UObject* WorldContextObject, const class FName& InClockName);
-	float GetDurationOfQuantizationTypeInSeconds(const class UObject* WorldContextObject, class FName ClockName, const EQuartzCommandQuantization& QuantizationType, float Multiplier);
-	float GetEstimatedClockRunTime(const class UObject* WorldContextObject, const class FName& InClockName);
-	float GetGameThreadToAudioRenderThreadAverageLatency(const class UObject* WorldContextObject);
-	float GetGameThreadToAudioRenderThreadMaxLatency(const class UObject* WorldContextObject);
-	float GetGameThreadToAudioRenderThreadMinLatency(const class UObject* WorldContextObject);
-	class UQuartzClockHandle* GetHandleForClock(const class UObject* WorldContextObject, class FName ClockName);
-	float GetRoundTripAverageLatency(const class UObject* WorldContextObject);
-	float GetRoundTripMaxLatency(const class UObject* WorldContextObject);
-	float GetRoundTripMinLatency(const class UObject* WorldContextObject);
-	bool IsClockRunning(const class UObject* WorldContextObject, class FName ClockName);
-	bool IsQuartzEnabled();
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"QuartzSubsystem">();
-	}
-	static class UQuartzSubsystem* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UQuartzSubsystem>();
-	}
-};
 
 // Class AudioMixer.SynthComponent
 // 0x04C0 (0x06C0 - 0x0200)
@@ -117,6 +78,24 @@ public:
 	}
 };
 
+// Class AudioMixer.AudioGenerator
+// 0x0080 (0x00A8 - 0x0028)
+class UAudioGenerator : public UObject
+{
+public:
+	uint8                                         Pad_28[0x80];                                      // 0x0028(0x0080)(Fixing Struct Size After Last Property [ Dumper-8 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"AudioGenerator">();
+	}
+	static class UAudioGenerator* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAudioGenerator>();
+	}
+};
+
 // Class AudioMixer.AudioMixerBlueprintLibrary
 // 0x0000 (0x0028 - 0x0028)
 class UAudioMixerBlueprintLibrary final : public UBlueprintFunctionLibrary
@@ -165,24 +144,6 @@ public:
 	static class UAudioMixerBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAudioMixerBlueprintLibrary>();
-	}
-};
-
-// Class AudioMixer.AudioGenerator
-// 0x0080 (0x00A8 - 0x0028)
-class UAudioGenerator : public UObject
-{
-public:
-	uint8                                         Pad_28[0x80];                                      // 0x0028(0x0080)(Fixing Struct Size After Last Property [ Dumper-8 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"AudioGenerator">();
-	}
-	static class UAudioGenerator* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAudioGenerator>();
 	}
 };
 
@@ -302,6 +263,45 @@ public:
 	static class USubmixEffectReverbPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectReverbPreset>();
+	}
+};
+
+// Class AudioMixer.QuartzSubsystem
+// 0x0110 (0x0150 - 0x0040)
+class UQuartzSubsystem final : public UTickableWorldSubsystem
+{
+public:
+	uint8                                         Pad_40[0x110];                                     // 0x0040(0x0110)(Fixing Struct Size After Last Property [ Dumper-8 ])
+
+public:
+	class UQuartzClockHandle* CreateNewClock(const class UObject* WorldContextObject, class FName ClockName, const struct FQuartzClockSettings& InSettings, bool bOverrideSettingsIfClockExists, bool bUseAudioEngineClockManager);
+	void DeleteClockByHandle(const class UObject* WorldContextObject, class UQuartzClockHandle*& InClockHandle);
+	void DeleteClockByName(const class UObject* WorldContextObject, class FName ClockName);
+	bool DoesClockExist(const class UObject* WorldContextObject, class FName ClockName);
+	float GetAudioRenderThreadToGameThreadAverageLatency();
+	float GetAudioRenderThreadToGameThreadMaxLatency();
+	float GetAudioRenderThreadToGameThreadMinLatency();
+	struct FQuartzTransportTimeStamp GetCurrentClockTimestamp(const class UObject* WorldContextObject, const class FName& InClockName);
+	float GetDurationOfQuantizationTypeInSeconds(const class UObject* WorldContextObject, class FName ClockName, const EQuartzCommandQuantization& QuantizationType, float Multiplier);
+	float GetEstimatedClockRunTime(const class UObject* WorldContextObject, const class FName& InClockName);
+	float GetGameThreadToAudioRenderThreadAverageLatency(const class UObject* WorldContextObject);
+	float GetGameThreadToAudioRenderThreadMaxLatency(const class UObject* WorldContextObject);
+	float GetGameThreadToAudioRenderThreadMinLatency(const class UObject* WorldContextObject);
+	class UQuartzClockHandle* GetHandleForClock(const class UObject* WorldContextObject, class FName ClockName);
+	float GetRoundTripAverageLatency(const class UObject* WorldContextObject);
+	float GetRoundTripMaxLatency(const class UObject* WorldContextObject);
+	float GetRoundTripMinLatency(const class UObject* WorldContextObject);
+	bool IsClockRunning(const class UObject* WorldContextObject, class FName ClockName);
+	bool IsQuartzEnabled();
+
+public:
+	static class UClass* StaticClass()
+	{
+		return StaticClassImpl<"QuartzSubsystem">();
+	}
+	static class UQuartzSubsystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UQuartzSubsystem>();
 	}
 };
 

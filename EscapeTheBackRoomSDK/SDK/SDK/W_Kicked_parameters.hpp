@@ -10,9 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "E_Comfirmation_structs.hpp"
 
 
@@ -88,7 +87,7 @@ public:
 };
 
 // Function W_Kicked.W_Kicked_C.OnPreviewKeyDown
-// 0x0200 (0x0200 - 0x0000)
+// 0x01E8 (0x01E8 - 0x0000)
 struct W_Kicked_C_OnPreviewKeyDown final
 {
 public:
@@ -96,8 +95,8 @@ public:
 	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FEventReply                            ReturnValue;                                       // 0x0070(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0128(0x00B8)()
-	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x01E0(0x0018)(HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EUINavigationAction                           CallFunc_Key_GetNavigationActionFromKey_ReturnValue; // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

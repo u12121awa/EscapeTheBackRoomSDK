@@ -157,10 +157,10 @@ void ABP_TriWayRender_C::SpawnPS(class UParticleSystem* ParticleSystem, const st
 // Function BP_TriWayRender.BP_TriWayRender_C.SetWheelYpos
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   WheelId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Wheelid                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TriWayRender_C::SetWheelYpos(int32 WheelId, const struct FVector& Location)
+void ABP_TriWayRender_C::SetWheelYpos(int32 Wheelid, const struct FVector& Location)
 {
 	static class UFunction* Func = nullptr;
 
@@ -169,7 +169,7 @@ void ABP_TriWayRender_C::SetWheelYpos(int32 WheelId, const struct FVector& Locat
 
 	Params::BP_TriWayRender_C_SetWheelYpos Parms{};
 
-	Parms.WheelId = WheelId;
+	Parms.Wheelid = Wheelid;
 	Parms.Location = std::move(Location);
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -179,10 +179,10 @@ void ABP_TriWayRender_C::SetWheelYpos(int32 WheelId, const struct FVector& Locat
 // Function BP_TriWayRender.BP_TriWayRender_C.SetWheelRotation
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   WheelId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Wheelid                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FRotator&                  Rotator                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_TriWayRender_C::SetWheelRotation(int32 WheelId, const struct FRotator& Rotator)
+void ABP_TriWayRender_C::SetWheelRotation(int32 Wheelid, const struct FRotator& Rotator)
 {
 	static class UFunction* Func = nullptr;
 
@@ -191,7 +191,7 @@ void ABP_TriWayRender_C::SetWheelRotation(int32 WheelId, const struct FRotator& 
 
 	Params::BP_TriWayRender_C_SetWheelRotation Parms{};
 
-	Parms.WheelId = WheelId;
+	Parms.Wheelid = Wheelid;
 	Parms.Rotator = std::move(Rotator);
 
 	UObject::ProcessEvent(Func, &Parms);

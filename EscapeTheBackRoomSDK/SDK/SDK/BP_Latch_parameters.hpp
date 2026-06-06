@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "material_Default_Settings_structs.hpp"
 #include "Latch_Settings_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Scratches_settings_structs.hpp"
 #include "CoreUObject_structs.hpp"
 

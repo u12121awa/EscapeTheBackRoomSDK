@@ -10,96 +10,265 @@
 
 #include "Basic.hpp"
 
-#include "XShip_structs.hpp"
+#include "InteractiveToolsFramework_structs.hpp"
+#include "MovieScene_structs.hpp"
+#include "AdvancedSessions_structs.hpp"
+#include "Backrooms_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "InteractiveToolsFramework_structs.hpp"
-#include "Backrooms_structs.hpp"
 #include "Engine_structs.hpp"
-#include "MovieScene_structs.hpp"
+#include "XShip_structs.hpp"
+#include "OnlineSubsystemUtils_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function Backrooms.MapEditorCharacterMovement.DecreaseSpeedMultiplier
-// 0x0004 (0x0004 - 0x0000)
-struct MapEditorCharacterMovement_DecreaseSpeedMultiplier final
-{
-public:
-	float                                         DecreaseAmount;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.MapEditorCharacterMovement.EnterMovementMode
+// Function Backrooms.InteractablePawn.OnAttemptUse
 // 0x0001 (0x0001 - 0x0000)
-struct MapEditorCharacterMovement_EnterMovementMode final
+struct InteractablePawn_OnAttemptUse final
 {
 public:
-	bool                                          Enter;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          CanUse;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.MapEditorCharacterMovement.IncreaseSpeedMultiplier
-// 0x0004 (0x0004 - 0x0000)
-struct MapEditorCharacterMovement_IncreaseSpeedMultiplier final
+// Function Backrooms.InteractablePawn.OnHiddenPossess
+// 0x0008 (0x0008 - 0x0000)
+struct InteractablePawn_OnHiddenPossess final
 {
 public:
-	float                                         IncreaseAmount;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.MapEditorCharacterMovement.LookUp
-// 0x0004 (0x0004 - 0x0000)
-struct MapEditorCharacterMovement_LookUp final
+// Function Backrooms.InteractablePawn.OnStartInteracting
+// 0x0008 (0x0008 - 0x0000)
+struct InteractablePawn_OnStartInteracting final
 {
 public:
-	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.MapEditorCharacterMovement.MoveForward
-// 0x0004 (0x0004 - 0x0000)
-struct MapEditorCharacterMovement_MoveForward final
+// Function Backrooms.InteractablePawn.OnUsedServer
+// 0x0008 (0x0008 - 0x0000)
+struct InteractablePawn_OnUsedServer final
 {
 public:
-	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.MapEditorCharacterMovement.MoveRight
-// 0x0004 (0x0004 - 0x0000)
-struct MapEditorCharacterMovement_MoveRight final
-{
-public:
-	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.MapEditorCharacterMovement.MoveUp
-// 0x0004 (0x0004 - 0x0000)
-struct MapEditorCharacterMovement_MoveUp final
-{
-public:
-	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.MapEditorCharacterMovement.Server_SetSpeedMultiplier
-// 0x0004 (0x0004 - 0x0000)
-struct MapEditorCharacterMovement_Server_SetSpeedMultiplier final
-{
-public:
-	float                                         SpeedMultiplier;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.MapEditorCharacterMovement.Turn
-// 0x0004 (0x0004 - 0x0000)
-struct MapEditorCharacterMovement_Turn final
-{
-public:
-	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.MapEditorCharacterMovement.InMovementMode
+// Function Backrooms.InteractablePawn.OnVRPossess
 // 0x0001 (0x0001 - 0x0000)
-struct MapEditorCharacterMovement_InMovementMode final
+struct InteractablePawn_OnVRPossess final
+{
+public:
+	bool                                          bPossess;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.InteractablePawn.SetCameraPostProcessing
+// 0x0008 (0x0008 - 0x0000)
+struct InteractablePawn_SetCameraPostProcessing final
+{
+public:
+	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.InteractablePawn.SetUsingVR
+// 0x0010 (0x0010 - 0x0000)
+struct InteractablePawn_SetUsingVR final
+{
+public:
+	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bPossess;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.InteractablePawn.ToggleMouse
+// 0x0001 (0x0001 - 0x0000)
+struct InteractablePawn_ToggleMouse final
+{
+public:
+	bool                                          bHide;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.GripMotionControllerComponent.BP_IsLocallyControlled
+// 0x0001 (0x0001 - 0x0000)
+struct GripMotionControllerComponent_BP_IsLocallyControlled final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.GripMotionControllerComponent.GetPhysicsVelocity
+// 0x0018 (0x0018 - 0x0000)
+struct GripMotionControllerComponent_GetPhysicsVelocity final
+{
+public:
+	struct FVector                                AngularVelocity;                                   // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                LinearVelocity;                                    // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.GripMotionControllerComponent.Server_SendControllerTransform
+// 0x0030 (0x0030 - 0x0000)
+struct GripMotionControllerComponent_Server_SendControllerTransform final
+{
+public:
+	struct FTransform                             NewTransform;                                      // 0x0000(0x0030)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlayerController.GetObjectScreenRadius
+// 0x0010 (0x0010 - 0x0000)
+struct FancyPlayerController_GetObjectScreenRadius final
+{
+public:
+	class UStaticMeshComponent*                   MeshComponent;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyPlayerController.GetInputMode
+// 0x0001 (0x0001 - 0x0000)
+struct FancyPlayerController_GetInputMode final
+{
+public:
+	EInputMode                                    ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyVideoPlayer.OnSkipVoteFinished
+// 0x0001 (0x0001 - 0x0000)
+struct FancyVideoPlayer_OnSkipVoteFinished final
+{
+public:
+	bool                                          Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyVideoPlayer.PlayVideoClients
+// 0x0018 (0x0018 - 0x0000)
+struct FancyVideoPlayer_PlayVideoClients final
+{
+public:
+	class FString                                 MediaFileName;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          AddToQueue;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyVideoPlayer.PlayVideoServer
+// 0x0018 (0x0018 - 0x0000)
+struct FancyVideoPlayer_PlayVideoServer final
+{
+public:
+	class FString                                 MediaFileName;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          AddToQueue;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyVideoPlayer.SetCanSkip
+// 0x0001 (0x0001 - 0x0000)
+struct FancyVideoPlayer_SetCanSkip final
+{
+public:
+	bool                                          CanSkip;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyVideoPlayer.CanSkip
+// 0x0001 (0x0001 - 0x0000)
+struct FancyVideoPlayer_CanSkip final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyVideoPlayer.IsPlaying
+// 0x0001 (0x0001 - 0x0000)
+struct FancyVideoPlayer_IsPlaying final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserReportingSubsystem.BlockPlayer
+// 0x0038 (0x0038 - 0x0000)
+struct FancyUserReportingSubsystem_BlockPlayer final
+{
+public:
+	struct FBPUniqueNetId                         NetIdToBlock;                                      // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(bool bSuccess, const struct FBPUniqueNetId& NetId, const class FString& Name)> Done; // 0x0028(0x0010)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserReportingSubsystem.OnLoginComplete
+// 0x0001 (0x0001 - 0x0000)
+struct FancyUserReportingSubsystem_OnLoginComplete final
+{
+public:
+	bool                                          bSuccess;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserReportingSubsystem.SendPlayerReport
+// 0x0050 (0x0050 - 0x0000)
+struct FancyUserReportingSubsystem_SendPlayerReport final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	EFancyUserReportCategory                      BehaviorCategory;                                  // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class FString                                 Explanation;                                       // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             Done;                                              // 0x0040(0x0010)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserReportingSubsystem.UnblockPlayer
+// 0x0038 (0x0038 - 0x0000)
+struct FancyUserReportingSubsystem_UnblockPlayer final
+{
+public:
+	struct FBPUniqueNetId                         NetIdToUnblock;                                    // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(bool bSuccess, const struct FBPUniqueNetId& NetId, const class FString& Name)> Done; // 0x0028(0x0010)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserReportingSubsystem.GetAllBlockedPlayers
+// 0x0018 (0x0018 - 0x0000)
+struct FancyUserReportingSubsystem_GetAllBlockedPlayers final
+{
+public:
+	TArray<struct FBPFancyReportingPlayerRecord>  BlockedPlayers;                                    // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyUserReportingSubsystem.GetInteractedWithPlayers
+// 0x0020 (0x0020 - 0x0000)
+struct FancyUserReportingSubsystem_GetInteractedWithPlayers final
+{
+public:
+	TArray<struct FBPUniqueNetId>                 IDs;                                               // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         Names;                                             // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserReportingSubsystem.GetMaxReportExplanationLength
+// 0x0004 (0x0004 - 0x0000)
+struct FancyUserReportingSubsystem_GetMaxReportExplanationLength final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserReportingSubsystem.IsPlayerBlocked
+// 0x0030 (0x0030 - 0x0000)
+struct FancyUserReportingSubsystem_IsPlayerBlocked final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyUserReportingSubsystem.IsPlayerReported
+// 0x0030 (0x0030 - 0x0000)
+struct FancyUserReportingSubsystem_IsPlayerReported final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	float                                         SecondsAgoLimit;                                   // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x002C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // Function Backrooms.AI_ObjectWC.GetWeight
@@ -170,16 +339,6 @@ struct BackroomsBPFunctionLibrary_ClearCharacterFloor final
 {
 public:
 	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.BackroomsBPFunctionLibrary.DetectCurrentGesture
-// 0x0020 (0x0020 - 0x0000)
-struct BackroomsBPFunctionLibrary_DetectCurrentGesture final
-{
-public:
-	TArray<float>                                 PoseFingerCurls;                                   // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	class UOpenInputGestureDatabase*              GesturesDB;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.BackroomsBPFunctionLibrary.GetAllSaveGameSlotNames
@@ -258,6 +417,14 @@ public:
 // Function Backrooms.BackroomsBPFunctionLibrary.IsNoHMDMode
 // 0x0001 (0x0001 - 0x0000)
 struct BackroomsBPFunctionLibrary_IsNoHMDMode final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.BackroomsBPFunctionLibrary.IsSteamDeckActive
+// 0x0001 (0x0001 - 0x0000)
+struct BackroomsBPFunctionLibrary_IsSteamDeckActive final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -342,6 +509,22 @@ public:
 	class FString                                 Value;                                             // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function Backrooms.FancyUserFlowDelegate.ResetInputModeToDefault
+// 0x0008 (0x0008 - 0x0000)
+struct FancyUserFlowDelegate_ResetInputModeToDefault final
+{
+public:
+	class UWidget*                                PreviousFocusedWidget;                             // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserFlowDelegate.ShowNonModalMessage
+// 0x0018 (0x0018 - 0x0000)
+struct FancyUserFlowDelegate_ShowNonModalMessage final
+{
+public:
+	class FText                                   Message;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
 // Function Backrooms.BoatComponent.GetShipBoundsRadius
 // 0x0004 (0x0004 - 0x0000)
 struct BoatComponent_GetShipBoundsRadius final
@@ -372,72 +555,6 @@ struct BoatComponent_Server_PassMovementInfo final
 {
 public:
 	struct FRepXShipMovement                      NewRepXShipMovement;                               // 0x0000(0x0030)(ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.InteractablePawn.OnAttemptUse
-// 0x0001 (0x0001 - 0x0000)
-struct InteractablePawn_OnAttemptUse final
-{
-public:
-	bool                                          CanUse;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.InteractablePawn.OnHiddenPossess
-// 0x0008 (0x0008 - 0x0000)
-struct InteractablePawn_OnHiddenPossess final
-{
-public:
-	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.InteractablePawn.OnStartInteracting
-// 0x0008 (0x0008 - 0x0000)
-struct InteractablePawn_OnStartInteracting final
-{
-public:
-	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.InteractablePawn.OnUsedServer
-// 0x0008 (0x0008 - 0x0000)
-struct InteractablePawn_OnUsedServer final
-{
-public:
-	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.InteractablePawn.OnVRPossess
-// 0x0001 (0x0001 - 0x0000)
-struct InteractablePawn_OnVRPossess final
-{
-public:
-	bool                                          bPossess;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.InteractablePawn.SetCameraPostProcessing
-// 0x0008 (0x0008 - 0x0000)
-struct InteractablePawn_SetCameraPostProcessing final
-{
-public:
-	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.InteractablePawn.SetUsingVR
-// 0x0010 (0x0010 - 0x0000)
-struct InteractablePawn_SetUsingVR final
-{
-public:
-	class ACharacter*                             Character;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bPossess;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
-// Function Backrooms.InteractablePawn.ToggleMouse
-// 0x0001 (0x0001 - 0x0000)
-struct InteractablePawn_ToggleMouse final
-{
-public:
-	bool                                          bHide;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.BoatPawn.AddRotationInput
@@ -483,44 +600,14 @@ public:
 	class UBoatComponent*                         ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.CostumeLoaderSubsystem.LoadAndApplyCostumeBP
+// Function Backrooms.FancyVoipManagerComponent.FancyInitVoice
 // 0x0010 (0x0010 - 0x0000)
-struct CostumeLoaderSubsystem_LoadAndApplyCostumeBP final
+struct FancyVoipManagerComponent_FancyInitVoice final
 {
 public:
-	class UCostume*                               Costume;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.CostumeLoaderSubsystem.LoadAndApplyCostumeBPWithCallback
-// 0x0020 (0x0020 - 0x0000)
-struct CostumeLoaderSubsystem_LoadAndApplyCostumeBPWithCallback final
-{
-public:
-	class UCostume*                               Costume;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(class AActor* Actor, class UCostume* Costume)> OnAppliedCostume;                  // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.LIDARBlueprintFunctionLibrary.CreateLiDarDot
-// 0x0020 (0x0020 - 0x0000)
-struct LIDARBlueprintFunctionLibrary_CreateLiDarDot final
-{
-public:
-	class UObject*                                caller;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLIDARDotStruct                        ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.LIDARBlueprintFunctionLibrary.FindCollisionUVSkeletalMesh
-// 0x0094 (0x0094 - 0x0000)
-struct LIDARBlueprintFunctionLibrary_FindCollisionUVSkeletalMesh final
-{
-public:
-	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	struct FVector2D                              UV;                                                // 0x0088(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	class AController*                            Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // Function Backrooms.CostumeCharacter.ApplyCostume
@@ -615,6 +702,25 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
 	TSoftObjectPtr<class UStaticMesh>             Mesh;                                              // 0x0010(0x0028)(Parm, OutParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<int32, TSoftObjectPtr<class UMaterialInterface>> MaterialSet;                               // 0x0038(0x0050)(Parm, OutParm, UObjectWrapper, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.CostumeLoaderSubsystem.LoadAndApplyCostumeBP
+// 0x0010 (0x0010 - 0x0000)
+struct CostumeLoaderSubsystem_LoadAndApplyCostumeBP final
+{
+public:
+	class UCostume*                               Costume;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.CostumeLoaderSubsystem.LoadAndApplyCostumeBPWithCallback
+// 0x0020 (0x0020 - 0x0000)
+struct CostumeLoaderSubsystem_LoadAndApplyCostumeBPWithCallback final
+{
+public:
+	class UCostume*                               Costume;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(class AActor* Actor, class UCostume* Costume)> OnAppliedCostume;                  // 0x0010(0x0010)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.CostumeSelector.SelectCostume
@@ -875,6 +981,36 @@ public:
 	class AActor*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function Backrooms.FancyCheckPrivilegeProxy.CheckPrivilege
+// 0x0018 (0x0018 - 0x0000)
+struct FancyCheckPrivilegeProxy_CheckPrivilege final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFancyUserPrivileges                          PrivilegeToCheck;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bForceAttemptToResolve;                            // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
+	class UFancyCheckPrivilegeProxy*              ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyCustomModal.BindCustomModalCompleteCallback
+// 0x0010 (0x0010 - 0x0000)
+struct FancyCustomModal_BindCustomModalCompleteCallback final
+{
+public:
+	TDelegate<void()>                             CompleteCallback;                                  // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyDestroySessionCallbackProxy.FancyDestroySession
+// 0x0018 (0x0018 - 0x0000)
+struct FancyDestroySessionCallbackProxy_FancyDestroySession final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APlayerController*                      PlayerController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFancyDestroySessionCallbackProxy*      ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function Backrooms.FancyEntitySightingManager.OnEntitySighting
 // 0x0008 (0x0008 - 0x0000)
 struct FancyEntitySightingManager_OnEntitySighting final
@@ -889,43 +1025,6 @@ struct FancyEntitySightingManager_GetNumEntitySightings final
 {
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.FancyFileSystemUtilsLibrary.LoadCurrentGameAsync
-// 0x0028 (0x0028 - 0x0000)
-struct FancyFileSystemUtilsLibrary_LoadCurrentGameAsync final
-{
-public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SlotName;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         UserIndex;                                         // 0x0018(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class USaveGame*                              ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.FancyFileSystemUtilsLibrary.SaveGameToSlotAsync
-// 0x0028 (0x0028 - 0x0000)
-struct FancyFileSystemUtilsLibrary_SaveGameToSlotAsync final
-{
-public:
-	const class UObject*                          WorldContextObject;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USaveGame*                              SaveGameObject;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SlotName;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         UserIndex;                                         // 0x0020(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bForceSave;                                        // 0x0024(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
-// Function Backrooms.FancyFileSystemUtilsLibrary.WriteStringToSaveFile
-// 0x0028 (0x0028 - 0x0000)
-struct FancyFileSystemUtilsLibrary_WriteStringToSaveFile final
-{
-public:
-	class FString                                 Filename;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Content;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         UserIndex;                                         // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // Function Backrooms.FancyGameInstance.CompleteMission
@@ -949,12 +1048,21 @@ public:
 	class FString                                 MissionStructRowName;                              // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyGameInstance.GetCurrentGameLanguage
-// 0x0010 (0x0010 - 0x0000)
-struct FancyGameInstance_GetCurrentGameLanguage final
+// Function Backrooms.FancyGameInstance.HandleSageGameChatActive
+// 0x0001 (0x0001 - 0x0000)
+struct FancyGameInstance_HandleSageGameChatActive final
 {
 public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bActive;                                           // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyGameInstance.HandleSeamlessTravelStart
+// 0x0018 (0x0018 - 0x0000)
+struct FancyGameInstance_HandleSeamlessTravelStart final
+{
+public:
+	class UWorld*                                 World;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 String;                                            // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.FancyGameInstance.InitializeCPPElements
@@ -981,6 +1089,14 @@ public:
 	EFancyInputDevice                             NewInputDevice;                                    // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function Backrooms.FancyGameInstance.OnPreLoadMap
+// 0x0010 (0x0010 - 0x0000)
+struct FancyGameInstance_OnPreLoadMap final
+{
+public:
+	class FString                                 String;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function Backrooms.FancyGameInstance.OnSteamOverlayIsActive
 // 0x0001 (0x0001 - 0x0000)
 struct FancyGameInstance_OnSteamOverlayIsActive final
@@ -989,12 +1105,22 @@ public:
 	bool                                          isOverlayActive;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyGameMode.OnPreLoadMap
-// 0x0010 (0x0010 - 0x0000)
-struct FancyGameMode_OnPreLoadMap final
+// Function Backrooms.FancyGameInstance.SageGameChatActive
+// 0x0001 (0x0001 - 0x0000)
+struct FancyGameInstance_SageGameChatActive final
 {
 public:
-	class FString                                 MapName;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bActive;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyGDKCalcCannotCommunicateWithProxy.GDKCalcCannotCommunicate
+// 0x0020 (0x0020 - 0x0000)
+struct FancyGDKCalcCannotCommunicateWithProxy_GDKCalcCannotCommunicate final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class APlayerState*>                   PlayerStates;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+	class UFancyGDKCalcCannotCommunicateWithProxy* ReturnValue;                                      // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.FancyInputIconWidget.OnInputDeviceChanged
@@ -1005,12 +1131,369 @@ public:
 	EFancyInputDevice                             NewInputDevice;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function Backrooms.FancyInputUIUtils.FindNextVisibleWidget
+// 0x0028 (0x0028 - 0x0000)
+struct FancyInputUIUtils_FindNextVisibleWidget final
+{
+public:
+	TArray<class UUserWidget*>                    OrderedWidgets;                                    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	class UUserWidget*                            CurrentWidget;                                     // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bForward;                                          // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UUserWidget*                            ReturnValue;                                       // 0x0020(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyInputUIUtils.GetEnglishInputActionKeyName
+// 0x0020 (0x0020 - 0x0000)
+struct FancyInputUIUtils_GetEnglishInputActionKeyName final
+{
+public:
+	class FName                                   ActionName;                                        // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyJoinSessionCallbackProxy.FancyJoinSession
+// 0x0130 (0x0130 - 0x0000)
+struct FancyJoinSessionCallbackProxy_FancyJoinSession final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APlayerController*                      PlayerController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FBlueprintSessionResult                SearchResult;                                      // 0x0010(0x0108)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FName                                   SessionName;                                       // 0x0118(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   OptionalBoolParamToCheck;                          // 0x0120(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFancyJoinSessionCallbackProxy*         ReturnValue;                                       // 0x0128(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyModal.SetUpChoice
+// 0x0088 (0x0088 - 0x0000)
+struct FancyModal_SetUpChoice final
+{
+public:
+	class FText                                   Message;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FText                                   Title;                                             // 0x0018(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FText                                   Header;                                            // 0x0030(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FText                                   Button1Label;                                      // 0x0048(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FText                                   Button2Label;                                      // 0x0060(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(EFancyModalButton ClickedButton)> OnButtonPressed;                                // 0x0078(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyModal.SetUpMessage
+// 0x0070 (0x0070 - 0x0000)
+struct FancyModal_SetUpMessage final
+{
+public:
+	class FText                                   Message;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FText                                   Title;                                             // 0x0018(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FText                                   Header;                                            // 0x0030(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FText                                   Button1Label;                                      // 0x0048(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(EFancyModalButton ClickedButton)> OnButtonPressed;                                // 0x0060(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyModalSubsystem.CloseAllModalsCreatedByObject
+// 0x0008 (0x0008 - 0x0000)
+struct FancyModalSubsystem_CloseAllModalsCreatedByObject final
+{
+public:
+	const class UObject*                          Object;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyModalSubsystem.IsFancyModalVisible
+// 0x0010 (0x0010 - 0x0000)
+struct FancyModalSubsystem_IsFancyModalVisible final
+{
+public:
+	const class UObject*                          WorldContext;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyModalSubsystem.ShowChoiceModalBP
+// 0x00A0 (0x00A0 - 0x0000)
+struct FancyModalSubsystem_ShowChoiceModalBP final
+{
+public:
+	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Message;                                           // 0x0008(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
+	class FText                                   Title;                                             // 0x0020(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
+	class FText                                   Header;                                            // 0x0038(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
+	class FText                                   Button1;                                           // 0x0050(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
+	class FText                                   Button2;                                           // 0x0068(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
+	struct FLatentActionInfo                      LatentInfo;                                        // 0x0080(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	EFancyModalButton                             Result;                                            // 0x0098(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyModalSubsystem.ShowCustomModalBP
+// 0x0058 (0x0058 - 0x0000)
+struct FancyModalSubsystem_ShowCustomModalBP final
+{
+public:
+	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftClassPtr<class UClass>                   CustomModalClass;                                  // 0x0008(0x0028)(ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(class UUserWidget* Modal)>     OnPrepareModal;                                    // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(class UUserWidget* Modal)>     OnCompleteModal;                                   // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyModalSubsystem.ShowMessageModalBP
+// 0x0080 (0x0080 - 0x0000)
+struct FancyModalSubsystem_ShowMessageModalBP final
+{
+public:
+	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Message;                                           // 0x0008(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
+	class FText                                   Title;                                             // 0x0020(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
+	class FText                                   Header;                                            // 0x0038(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
+	class FText                                   Button;                                            // 0x0050(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
+	struct FLatentActionInfo                      LatentInfo;                                        // 0x0068(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyModalSubsystem.HandleButtonPressForCurrentModal
+// 0x0001 (0x0001 - 0x0000)
+struct FancyModalSubsystem_HandleButtonPressForCurrentModal final
+{
+public:
+	EFancyModalButton                             PressedButton;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function Backrooms.FancyMovementComponent.SetSprinting
 // 0x0001 (0x0001 - 0x0000)
 struct FancyMovementComponent_SetSprinting final
 {
 public:
 	bool                                          Sprint;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.CreatePlayerStateBoundStatusHelper
+// 0x0030 (0x0030 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_CreatePlayerStateBoundStatusHelper final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class UFancyOnlinePlayerStatusHelper*         ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.CreateStaticStatusHelper
+// 0x0048 (0x0048 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_CreateStaticStatusHelper final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	class FString                                 PlayerName;                                        // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFancyPlatform                                Platform;                                          // 0x0038(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UFancyOnlinePlayerStatusHelper*         ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.MarkPlayerTalking
+// 0x0028 (0x0028 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_MarkPlayerTalking final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.NotifyDidChange
+// 0x0028 (0x0028 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_NotifyDidChange final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.SetIsPlayerChatMuted
+// 0x0030 (0x0030 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_SetIsPlayerChatMuted final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          Value;                                             // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.SetIsPlayerVoiceMuted
+// 0x0030 (0x0030 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_SetIsPlayerVoiceMuted final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          Value;                                             // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.GetIsBlocked
+// 0x0030 (0x0030 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_GetIsBlocked final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.GetIsChatMuted
+// 0x0030 (0x0030 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_GetIsChatMuted final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.GetIsPlayerTalking
+// 0x0030 (0x0030 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_GetIsPlayerTalking final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.GetIsReportCooldownActive
+// 0x0030 (0x0030 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_GetIsReportCooldownActive final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.GetIsReportedThisSession
+// 0x0030 (0x0030 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_GetIsReportedThisSession final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyOnlineInteractionsSubsystem.GetIsVoiceMuted
+// 0x0030 (0x0030 - 0x0000)
+struct FancyOnlineInteractionsSubsystem_GetIsVoiceMuted final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.SubscribeToPlayerState
+// 0x0008 (0x0008 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_SubscribeToPlayerState final
+{
+public:
+	class AFancyPlayerState*                      PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetIsLocalPlayer
+// 0x0001 (0x0001 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetIsLocalPlayer final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetIsPlayerBlocked
+// 0x0001 (0x0001 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetIsPlayerBlocked final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetIsPlayerChatMuted
+// 0x0001 (0x0001 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetIsPlayerChatMuted final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetIsPlayerReportCooldownActive
+// 0x0001 (0x0001 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetIsPlayerReportCooldownActive final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetIsPlayerReportedThisSession
+// 0x0001 (0x0001 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetIsPlayerReportedThisSession final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetIsPlayerTalking
+// 0x0001 (0x0001 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetIsPlayerTalking final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetIsPlayerVoiceMuted
+// 0x0001 (0x0001 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetIsPlayerVoiceMuted final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetPlayerName
+// 0x0010 (0x0010 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetPlayerName final
+{
+public:
+	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetPlayerNetID
+// 0x0028 (0x0028 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetPlayerNetID final
+{
+public:
+	struct FBPUniqueNetId                         ReturnValue;                                       // 0x0000(0x0028)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetPlayerPlatform
+// 0x0001 (0x0001 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetPlayerPlatform final
+{
+public:
+	EFancyPlatform                                ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetPlayerRichTextNameAndPlatform
+// 0x0020 (0x0020 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetPlayerRichTextNameAndPlatform final
+{
+public:
+	class FString                                 TextStyle;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetPlayerRichTextPlatform
+// 0x0010 (0x0010 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetPlayerRichTextPlatform final
+{
+public:
+	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyOnlinePlayerStatusHelper.GetPlayerState
+// 0x0008 (0x0008 - 0x0000)
+struct FancyOnlinePlayerStatusHelper_GetPlayerState final
+{
+public:
+	class AFancyPlayerState*                      ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.FancyPlatformActivities.EndActivity
@@ -1023,20 +1506,12 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
-// Function Backrooms.FancyPlatformActivities.GetLastPlayedActivity
-// 0x0004 (0x0004 - 0x0000)
-struct FancyPlatformActivities_GetLastPlayedActivity final
+// Function Backrooms.FancyPlatformActivities.GetCurrentActivityName
+// 0x0010 (0x0010 - 0x0000)
+struct FancyPlatformActivities_GetCurrentActivityName final
 {
 public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.FancyPlatformActivities.IsActivityCallbackReceived
-// 0x0001 (0x0001 - 0x0000)
-struct FancyPlatformActivities_IsActivityCallbackReceived final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.FancyPlatformActivities.ResumeActivity
@@ -1057,20 +1532,51 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
-// Function Backrooms.FancyPlatformActivities.SetLastPlayedActivity
-// 0x0004 (0x0004 - 0x0000)
-struct FancyPlatformActivities_SetLastPlayedActivity final
-{
-public:
-	int32                                         ActivityIndex;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function Backrooms.FancyPlatformActivities.StartActivity
 // 0x0010 (0x0010 - 0x0000)
 struct FancyPlatformActivities_StartActivity final
 {
 public:
 	class FString                                 ActivityName;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.AreEOSIDsEqual
+// 0x0028 (0x0028 - 0x0000)
+struct FancyPlatformUtilsLibrary_AreEOSIDsEqual final
+{
+public:
+	class FString                                 EOSFormattedIDA;                                   // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 EOSFormattedIDB;                                   // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.BPTryGetPlatformNetIDFromCachedID
+// 0x0050 (0x0050 - 0x0000)
+struct FancyPlatformUtilsLibrary_BPTryGetPlatformNetIDFromCachedID final
+{
+public:
+	struct FBPUniqueNetId                         BPNetID;                                           // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FBPUniqueNetId                         ReturnValue;                                       // 0x0028(0x0028)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.CreatePlatformIconRichText
+// 0x0018 (0x0018 - 0x0000)
+struct FancyPlatformUtilsLibrary_CreatePlatformIconRichText final
+{
+public:
+	EFancyPlatform                                PlayerPlatform;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.FromBase64
+// 0x0020 (0x0020 - 0x0000)
+struct FancyPlatformUtilsLibrary_FromBase64 final
+{
+public:
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.FancyPlatformUtilsLibrary.GetCurrentInputDevice
@@ -1089,14 +1595,40 @@ public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyPlatformUtilsLibrary.IsCommunicationRestricted
+// Function Backrooms.FancyPlatformUtilsLibrary.GetLocalPlayerController
 // 0x0010 (0x0010 - 0x0000)
-struct FancyPlatformUtilsLibrary_IsCommunicationRestricted final
+struct FancyPlatformUtilsLibrary_GetLocalPlayerController final
 {
 public:
-	const class APlayerController*                PlayerController;                                  // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APlayerController*                      ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.GetPlatform
+// 0x0001 (0x0001 - 0x0000)
+struct FancyPlatformUtilsLibrary_GetPlatform final
+{
+public:
+	EFancyPlatform                                ReturnValue;                                       // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.GetPlatformFromString
+// 0x0018 (0x0018 - 0x0000)
+struct FancyPlatformUtilsLibrary_GetPlatformFromString final
+{
+public:
+	class FString                                 PlatformString;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFancyPlatform                                ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.IsCompatiblePlatform
+// 0x0002 (0x0002 - 0x0000)
+struct FancyPlatformUtilsLibrary_IsCompatiblePlatform final
+{
+public:
+	EFancyPlatform                                OtherPlatform;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.FancyPlatformUtilsLibrary.IsConnectedToNetwork
@@ -1115,9 +1647,28 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function Backrooms.FancyPlatformUtilsLibrary.IsCorrespondingPlatformId
+// 0x0028 (0x0028 - 0x0000)
+struct FancyPlatformUtilsLibrary_IsCorrespondingPlatformId final
+{
+public:
+	class FString                                 EOSFormattedID;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 PlatformFormattedID;                               // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
 // Function Backrooms.FancyPlatformUtilsLibrary.IsEditor
 // 0x0001 (0x0001 - 0x0000)
 struct FancyPlatformUtilsLibrary_IsEditor final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.IsOnAnyNintendoPlatform
+// 0x0001 (0x0001 - 0x0000)
+struct FancyPlatformUtilsLibrary_IsOnAnyNintendoPlatform final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1139,12 +1690,14 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyPlatformUtilsLibrary.IsOnPS4Platform
-// 0x0001 (0x0001 - 0x0000)
-struct FancyPlatformUtilsLibrary_IsOnPS4Platform final
+// Function Backrooms.FancyPlatformUtilsLibrary.IsOnline
+// 0x0010 (0x0010 - 0x0000)
+struct FancyPlatformUtilsLibrary_IsOnline final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // Function Backrooms.FancyPlatformUtilsLibrary.IsOnPS5Platform
@@ -1155,9 +1708,25 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyPlatformUtilsLibrary.IsOnXboxOnePlatform
+// Function Backrooms.FancyPlatformUtilsLibrary.IsOnSteam
 // 0x0001 (0x0001 - 0x0000)
-struct FancyPlatformUtilsLibrary_IsOnXboxOnePlatform final
+struct FancyPlatformUtilsLibrary_IsOnSteam final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.IsOnSwitch2Platform
+// 0x0001 (0x0001 - 0x0000)
+struct FancyPlatformUtilsLibrary_IsOnSwitch2Platform final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.IsOnWinGDK
+// 0x0001 (0x0001 - 0x0000)
+struct FancyPlatformUtilsLibrary_IsOnWinGDK final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1166,14 +1735,6 @@ public:
 // Function Backrooms.FancyPlatformUtilsLibrary.IsOnXboxSeriesPlatform
 // 0x0001 (0x0001 - 0x0000)
 struct FancyPlatformUtilsLibrary_IsOnXboxSeriesPlatform final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.FancyPlatformUtilsLibrary.IsOnXboxSeriesSPlatform
-// 0x0001 (0x0001 - 0x0000)
-struct FancyPlatformUtilsLibrary_IsOnXboxSeriesSPlatform final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1194,12 +1755,13 @@ struct FancyPlatformUtilsLibrary_SetUsingMultiplayerFeatures final
 public:
 	const class APlayerController*                PlayerController;                                  // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUsingMP;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
-// Function Backrooms.FancyPlatformUtilsLibrary.SubscriptionCheck
+// Function Backrooms.FancyPlatformUtilsLibrary.ShowCommunicationRestrictedMessage
 // 0x0010 (0x0010 - 0x0000)
-struct FancyPlatformUtilsLibrary_SubscriptionCheck final
+struct FancyPlatformUtilsLibrary_ShowCommunicationRestrictedMessage final
 {
 public:
 	const class APlayerController*                PlayerController;                                  // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1207,22 +1769,34 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
-// Function Backrooms.FancyPlayerController.GetObjectScreenRadius
-// 0x0010 (0x0010 - 0x0000)
-struct FancyPlayerController_GetObjectScreenRadius final
+// Function Backrooms.FancyPlatformUtilsLibrary.ToBase64
+// 0x0020 (0x0020 - 0x0000)
+struct FancyPlatformUtilsLibrary_ToBase64 final
 {
 public:
-	class UStaticMeshComponent*                   MeshComponent;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	class FString                                 inString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyPlayerController.GetInputMode
+// Function Backrooms.FancyPlatformUtilsLibrary.TryBeginFreeCommunication
 // 0x0001 (0x0001 - 0x0000)
-struct FancyPlayerController_GetInputMode final
+struct FancyPlatformUtilsLibrary_TryBeginFreeCommunication final
 {
 public:
-	EInputMode                                    ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlatformUtilsLibrary.TryParseNetId
+// 0x0038 (0x0038 - 0x0000)
+struct FancyPlatformUtilsLibrary_TryParseNetId final
+{
+public:
+	class FString                                 IDstr;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 OutEOSComponent;                                   // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 OutPlatformComponent;                              // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EFancyNetIDFormat                             DetectedFormat;                                    // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0031(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // Function Backrooms.FancyPlayerCostumeComponent.AssignCostumeRPC
@@ -1241,12 +1815,37 @@ public:
 	class UCostume*                               Costume;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function Backrooms.FancyPlayerState.SubscribeToPlayerArrayChanged
+// 0x0018 (0x0018 - 0x0000)
+struct FancyPlayerState_SubscribeToPlayerArrayChanged final
+{
+public:
+	class UObject*                                Subscriber;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             PlayerStateUpdated;                                // 0x0008(0x0010)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlayerState.UnsubscribeFromPlayerArrayChanged
+// 0x0008 (0x0008 - 0x0000)
+struct FancyPlayerState_UnsubscribeFromPlayerArrayChanged final
+{
+public:
+	class UObject*                                Subscriber;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function Backrooms.FancyPlayerState.AddSanity
 // 0x0004 (0x0004 - 0x0000)
 struct FancyPlayerState_AddSanity final
 {
 public:
 	float                                         Amount;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlayerState.HandleUserReportingStatusChanged
+// 0x0028 (0x0028 - 0x0000)
+struct FancyPlayerState_HandleUserReportingStatusChanged final
+{
+public:
+	struct FBPUniqueNetId                         NetId;                                             // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.FancyPlayerState.RemoveSanity
@@ -1257,6 +1856,150 @@ public:
 	float                                         Amount;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function Backrooms.FancyPlayerState.SetBlockedPlayersList
+// 0x0010 (0x0010 - 0x0000)
+struct FancyPlayerState_SetBlockedPlayersList final
+{
+public:
+	TArray<struct FBPUniqueNetId>                 InBlockedPlayers;                                  // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyPlayerState.SetPlatform
+// 0x0001 (0x0001 - 0x0000)
+struct FancyPlayerState_SetPlatform final
+{
+public:
+	EFancyPlatform                                InPlatform;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancySaveIndicatorSubsystem.HandleDiskWritingStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct FancySaveIndicatorSubsystem_HandleDiskWritingStateChanged final
+{
+public:
+	bool                                          bIsWritingToDisk;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancySaveSubsystem.DeleteGameInSlot
+// 0x0018 (0x0018 - 0x0000)
+struct FancySaveSubsystem_DeleteGameInSlot final
+{
+public:
+	class FString                                 SlotName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancySaveSubsystem.DoesSaveGameExist
+// 0x0018 (0x0018 - 0x0000)
+struct FancySaveSubsystem_DoesSaveGameExist final
+{
+public:
+	class FString                                 SlotName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancySaveSubsystem.LoadGameFromSlot
+// 0x0018 (0x0018 - 0x0000)
+struct FancySaveSubsystem_LoadGameFromSlot final
+{
+public:
+	class FString                                 SlotName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USaveGame*                              ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancySaveSubsystem.SaveGameToCache
+// 0x0018 (0x0018 - 0x0000)
+struct FancySaveSubsystem_SaveGameToCache final
+{
+public:
+	class FString                                 SlotName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USaveGame*                              SaveGame;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancySaveSubsystem.SaveGameToDisk
+// 0x0020 (0x0020 - 0x0000)
+struct FancySaveSubsystem_SaveGameToDisk final
+{
+public:
+	class FString                                 SlotName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USaveGame*                              SaveGame;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function Backrooms.FancySessionUtilsLibrary.CreateSessionPropertyKeyPair_BoolVal
+// 0x0030 (0x0030 - 0x0000)
+struct FancySessionUtilsLibrary_CreateSessionPropertyKeyPair_BoolVal final
+{
+public:
+	class FName                                   Name_0;                                            // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Val;                                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FSessionPropertyKeyPair                ReturnValue;                                       // 0x0010(0x0020)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancySessionUtilsLibrary.CreateSessionPropertyKeyPair_IntVal
+// 0x0030 (0x0030 - 0x0000)
+struct FancySessionUtilsLibrary_CreateSessionPropertyKeyPair_IntVal final
+{
+public:
+	class FName                                   Name_0;                                            // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Val;                                               // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FSessionPropertyKeyPair                ReturnValue;                                       // 0x0010(0x0020)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancySessionUtilsLibrary.CreateSessionPropertyKeyPair_StringVal
+// 0x0038 (0x0038 - 0x0000)
+struct FancySessionUtilsLibrary_CreateSessionPropertyKeyPair_StringVal final
+{
+public:
+	class FName                                   Name_0;                                            // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Val;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSessionPropertyKeyPair                ReturnValue;                                       // 0x0018(0x0020)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancySessionUtilsLibrary.CreateSessionsSearchSetting
+// 0x0050 (0x0050 - 0x0000)
+struct FancySessionUtilsLibrary_CreateSessionsSearchSetting final
+{
+public:
+	EOnlineComparisonOpRedux                      CompareOp;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FSessionPropertyKeyPair                Val;                                               // 0x0008(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FSessionsSearchSetting                 ReturnValue;                                       // 0x0028(0x0028)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancySessionUtilsLibrary.GenerateLobbyCode
+// 0x0018 (0x0018 - 0x0000)
+struct FancySessionUtilsLibrary_GenerateLobbyCode final
+{
+public:
+	int32                                         NumCharacters;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancySessionUtilsLibrary.GetBuildVersionId
+// 0x0004 (0x0004 - 0x0000)
+struct FancySessionUtilsLibrary_GetBuildVersionId final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancySessionUtilsLibrary.GetMaxPlayersForGameMode
+// 0x0010 (0x0010 - 0x0000)
+struct FancySessionUtilsLibrary_GetMaxPlayersForGameMode final
+{
+public:
+	class AGameModeBase*                          GameMode;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
 // Function Backrooms.FancyUserControllerSystem.GetActiveUserIcon
 // 0x0088 (0x0088 - 0x0000)
 struct FancyUserControllerSystem_GetActiveUserIcon final
@@ -1265,104 +2008,149 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0088)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyUserControllerSystem.GetDisplayName
+// Function Backrooms.FancyUserControllerSystem.IsConnectToInternet
+// 0x0001 (0x0001 - 0x0000)
+struct FancyUserControllerSystem_IsConnectToInternet final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserFlow.GetFocusedWidget
+// 0x0008 (0x0008 - 0x0000)
+struct FancyUserFlow_GetFocusedWidget final
+{
+public:
+	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserFlow.GetGameInstance
 // 0x0010 (0x0010 - 0x0000)
-struct FancyUserControllerSystem_GetDisplayName final
+struct FancyUserFlow_GetGameInstance final
 {
 public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UGameInstance>              GameInstanceType;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UGameInstance*                          ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyUserControllerSystem.OpenAccountPickerFromBP
-// 0x0001 (0x0001 - 0x0000)
-struct FancyUserControllerSystem_OpenAccountPickerFromBP final
+// Function Backrooms.FancyUserFlow.ResetInputModeToGameModeDefault
+// 0x0008 (0x0008 - 0x0000)
+struct FancyUserFlow_ResetInputModeToGameModeDefault final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                OverrideWidgetFocus;                               // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyUserControllerSystem.SetUnpauseBlocked
-// 0x0001 (0x0001 - 0x0000)
-struct FancyUserControllerSystem_SetUnpauseBlocked final
+// Function Backrooms.FancyUserFlow.ReturnToMainMenu
+// 0x0020 (0x0020 - 0x0000)
+struct FancyUserFlow_ReturnToMainMenu final
 {
 public:
-	bool                                          bNewIsUnpauseBlocked;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContext;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLatentActionInfo                      LatentInfo;                                        // 0x0008(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyUserControllerSystem.GetCurrentConnectionStatus
-// 0x0001 (0x0001 - 0x0000)
-struct FancyUserControllerSystem_GetCurrentConnectionStatus final
+// Function Backrooms.FancyUserFlow.RunSubFlow
+// 0x0030 (0x0030 - 0x0000)
+struct FancyUserFlow_RunSubFlow final
 {
 public:
-	EOnlineStatus                                 ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContext;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFancyUserFlow*                         FancyUserFlow;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLatentActionInfo                      LatentInfo;                                        // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	class UFancyUserFlow*                         CompletedFlowOut;                                  // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyUserControllerSystem.HasEstablishedInitialUser
-// 0x0001 (0x0001 - 0x0000)
-struct FancyUserControllerSystem_HasEstablishedInitialUser final
+// Function Backrooms.FancyUserFlow.ShowNonModalMessage
+// 0x0020 (0x0020 - 0x0000)
+struct FancyUserFlow_ShowNonModalMessage final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContext;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FText                                   Message;                                           // 0x0008(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyUserControllerSystem.HasValidUser
-// 0x0001 (0x0001 - 0x0000)
-struct FancyUserControllerSystem_HasValidUser final
+// Function Backrooms.FancyUserFlowSubsystem.BudgeFlow
+// 0x0010 (0x0010 - 0x0000)
+struct FancyUserFlowSubsystem_BudgeFlow final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFancyUserFlow*                         Flow;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyVideoPlayer.OnSkipVoteFinished
-// 0x0001 (0x0001 - 0x0000)
-struct FancyVideoPlayer_OnSkipVoteFinished final
+// Function Backrooms.FancyUserFlowSubsystem.IsAnyFancyFlowInProgress
+// 0x0010 (0x0010 - 0x0000)
+struct FancyUserFlowSubsystem_IsAnyFancyFlowInProgress final
 {
 public:
-	bool                                          Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContext;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
-// Function Backrooms.FancyVideoPlayer.PlayVideoClients
-// 0x0018 (0x0018 - 0x0000)
-struct FancyVideoPlayer_PlayVideoClients final
+// Function Backrooms.FancyUserFlowSubsystem.IsFancyFlowInProgressOrQueued
+// 0x0038 (0x0038 - 0x0000)
+struct FancyUserFlowSubsystem_IsFancyFlowInProgressOrQueued final
 {
 public:
-	class FString                                 MediaFileName;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          AddToQueue;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	const class UObject*                          WorldContext;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftClassPtr<class UClass>                   SoftFlowType;                                      // 0x0008(0x0028)(Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
-// Function Backrooms.FancyVideoPlayer.PlayVideoServer
-// 0x0018 (0x0018 - 0x0000)
-struct FancyVideoPlayer_PlayVideoServer final
+// Function Backrooms.FancyUserFlowSubsystem.QueueFancyUserFlow
+// 0x0010 (0x0010 - 0x0000)
+struct FancyUserFlowSubsystem_QueueFancyUserFlow final
 {
 public:
-	class FString                                 MediaFileName;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          AddToQueue;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
+	class UObject*                                WorldContext;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFancyUserFlow*                         Flow;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyVideoPlayer.SetCanSkip
-// 0x0001 (0x0001 - 0x0000)
-struct FancyVideoPlayer_SetCanSkip final
+// Function Backrooms.FancyUserFlowSubsystem.ResumeFancyFlows
+// 0x0008 (0x0008 - 0x0000)
+struct FancyUserFlowSubsystem_ResumeFancyFlows final
 {
 public:
-	bool                                          CanSkip;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContext;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyVideoPlayer.CanSkip
-// 0x0001 (0x0001 - 0x0000)
-struct FancyVideoPlayer_CanSkip final
+// Function Backrooms.FancyUserFlowSubsystem.RunSingleFlowAndWait
+// 0x0030 (0x0030 - 0x0000)
+struct FancyUserFlowSubsystem_RunSingleFlowAndWait final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContext;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UFancyUserFlow*                         Flow;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLatentActionInfo                      LatentActionInfo;                                  // 0x0010(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	class UFancyUserFlow*                         CompletedFlowOut;                                  // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function Backrooms.FancyVideoPlayer.IsPlaying
-// 0x0001 (0x0001 - 0x0000)
-struct FancyVideoPlayer_IsPlaying final
+// Function Backrooms.FancyUserFlowSubsystem.WaitForQueuedFancyFlows
+// 0x0020 (0x0020 - 0x0000)
+struct FancyUserFlowSubsystem_WaitForQueuedFancyFlows final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContext;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLatentActionInfo                      LatentActionInfo;                                  // 0x0008(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserFlowSubsystem.CompleteRunningSingleFlow
+// 0x0008 (0x0008 - 0x0000)
+struct FancyUserFlowSubsystem_CompleteRunningSingleFlow final
+{
+public:
+	class UFancyUserFlow*                         Flow;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.FancyUserFlowSubsystem.HandleFlowComplete
+// 0x0008 (0x0008 - 0x0000)
+struct FancyUserFlowSubsystem_HandleFlowComplete final
+{
+public:
+	class UFancyUserFlow*                         Flow;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.FancyVideoSubsystem.PlayVideo
@@ -1449,31 +2237,6 @@ struct FancyVotingComponent_IsVotingActive final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.GripMotionControllerComponent.BP_IsLocallyControlled
-// 0x0001 (0x0001 - 0x0000)
-struct GripMotionControllerComponent_BP_IsLocallyControlled final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.GripMotionControllerComponent.GetPhysicsVelocity
-// 0x0018 (0x0018 - 0x0000)
-struct GripMotionControllerComponent_GetPhysicsVelocity final
-{
-public:
-	struct FVector                                AngularVelocity;                                   // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                LinearVelocity;                                    // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function Backrooms.GripMotionControllerComponent.Server_SendControllerTransform
-// 0x0030 (0x0030 - 0x0000)
-struct GripMotionControllerComponent_Server_SendControllerTransform final
-{
-public:
-	struct FTransform                             NewTransform;                                      // 0x0000(0x0030)(Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.InspectableActor.GetMesh
@@ -1571,6 +2334,27 @@ public:
 	int32                                         SecondIdx;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function Backrooms.LIDARBlueprintFunctionLibrary.CreateLiDarDot
+// 0x0020 (0x0020 - 0x0000)
+struct LIDARBlueprintFunctionLibrary_CreateLiDarDot final
+{
+public:
+	class UObject*                                caller;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLIDARDotStruct                        ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.LIDARBlueprintFunctionLibrary.FindCollisionUVSkeletalMesh
+// 0x0094 (0x0094 - 0x0000)
+struct LIDARBlueprintFunctionLibrary_FindCollisionUVSkeletalMesh final
+{
+public:
+	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FVector2D                              UV;                                                // 0x0088(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
 // Function Backrooms.LIDARComponent.ScannerTrace
 // 0x0090 (0x0090 - 0x0000)
 struct LIDARComponent_ScannerTrace final
@@ -1578,6 +2362,86 @@ struct LIDARComponent_ScannerTrace final
 public:
 	class UStaticMeshComponent*                   Mesh;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHitResult                             ReturnValue;                                       // 0x0008(0x0088)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.MapEditorCharacterMovement.DecreaseSpeedMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct MapEditorCharacterMovement_DecreaseSpeedMultiplier final
+{
+public:
+	float                                         DecreaseAmount;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.MapEditorCharacterMovement.EnterMovementMode
+// 0x0001 (0x0001 - 0x0000)
+struct MapEditorCharacterMovement_EnterMovementMode final
+{
+public:
+	bool                                          Enter;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.MapEditorCharacterMovement.IncreaseSpeedMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct MapEditorCharacterMovement_IncreaseSpeedMultiplier final
+{
+public:
+	float                                         IncreaseAmount;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.MapEditorCharacterMovement.LookUp
+// 0x0004 (0x0004 - 0x0000)
+struct MapEditorCharacterMovement_LookUp final
+{
+public:
+	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.MapEditorCharacterMovement.MoveForward
+// 0x0004 (0x0004 - 0x0000)
+struct MapEditorCharacterMovement_MoveForward final
+{
+public:
+	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.MapEditorCharacterMovement.MoveRight
+// 0x0004 (0x0004 - 0x0000)
+struct MapEditorCharacterMovement_MoveRight final
+{
+public:
+	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.MapEditorCharacterMovement.MoveUp
+// 0x0004 (0x0004 - 0x0000)
+struct MapEditorCharacterMovement_MoveUp final
+{
+public:
+	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.MapEditorCharacterMovement.Server_SetSpeedMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct MapEditorCharacterMovement_Server_SetSpeedMultiplier final
+{
+public:
+	float                                         SpeedMultiplier;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.MapEditorCharacterMovement.Turn
+// 0x0004 (0x0004 - 0x0000)
+struct MapEditorCharacterMovement_Turn final
+{
+public:
+	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Backrooms.MapEditorCharacterMovement.InMovementMode
+// 0x0001 (0x0001 - 0x0000)
+struct MapEditorCharacterMovement_InMovementMode final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Backrooms.MapEditorHandlerComponent.MouseTrace

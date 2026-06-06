@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "PhysicsCore_structs.hpp"
 #include "HorrorEngineSettings_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_GlowstickColor_structs.hpp"
-#include "E_CameraSetting_structs.hpp"
 #include "Backrooms_structs.hpp"
 #include "Backrooms_classes.hpp"
+#include "E_GlowstickColor_structs.hpp"
+#include "E_CameraSetting_structs.hpp"
+#include "PhysicsCore_structs.hpp"
 #include "FootstepActionsEnum_structs.hpp"
 #include "AIModule_structs.hpp"
 
@@ -265,7 +265,7 @@ public:
 	class UAudioComponent*                        HeartbeatSound;                                    // 0x09C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        WhisperSound;                                      // 0x09D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                InspectUI;                                         // 0x09D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABP_Card_C*                             Card;                                              // 0x09E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_Card_C*                             Card;                                              // 0x09E0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          PlayFootsteps;                                     // 0x09E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsClimbing;                                        // 0x09E9(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9EA[0x2];                                      // 0x09EA(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
@@ -351,6 +351,7 @@ public:
 
 public:
 	void ExecuteUbergraph_BPCharacter_Demo(int32 EntryPoint);
+	void SpawnCard();
 	void ApplyCostume(class UCostume* Costume_0);
 	void Restore_PP_Barrel_Distortion();
 	void Reduce_PP_Barrel_Distortion();
@@ -724,6 +725,7 @@ public:
 	void PlayRumble(class UForceFeedbackEffect* Rumble);
 	void OnRep_ShouldUseStamina();
 	void ClampMovement(float In, float* Clamped);
+	void OnRep_Card();
 
 public:
 	static class UClass* StaticClass()

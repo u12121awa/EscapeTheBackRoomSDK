@@ -10,42 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "Backrooms_classes.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Wardrobe.BP_Wardrobe_C
-// 0x0038 (0x0338 - 0x0300)
-class BP_Wardrobe_0::ABP_Wardrobe_C final : public AInteractablePawn
+// 0x0028 (0x0248 - 0x0220)
+class BP_Wardrobe_0::ABP_Wardrobe_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   SM_Louvered_Wardrobe_01_Door_2;                    // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   SM_Louvered_Wardrobe_01_Door_1;                    // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         ClosetOpen_Open2_6209BCCF4C4040400BA6DCB12F0A1DCE; // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         ClosetOpen_Open_6209BCCF4C4040400BA6DCB12F0A1DCE;  // 0x031C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            ClosetOpen__Direction_6209BCCF4C4040400BA6DCB12F0A1DCE; // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     ClosetOpen;                                        // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TurnSpeed;                                         // 0x0330(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-public:
-	void ExecuteUbergraph_BP_Wardrobe(int32 EntryPoint);
-	void ReceiveUnpossessed(class AController* OldController);
-	void MC_UnHide();
-	void ReceiveBeginPlay();
-	void ReceivePossessed(class AController* NewController);
-	void OnUsedAll();
-	void UnPossess();
-	void InpAxisEvt_LookUp_K2Node_InputAxisEvent_1(float AxisValue);
-	void OnActorUsed(class ACharacter* Character);
-	void InpActEvt_Back_K2Node_InputActionEvent_0(const struct FKey& Key);
-	void InpActEvt_Interact_K2Node_InputActionEvent_1(const struct FKey& Key);
-	void ClosetOpen__UpdateFunc();
-	void ClosetOpen__FinishedFunc();
+	class UStaticMeshComponent*                   Wardrobe_door1;                                    // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Wardrobe;                                          // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Wardrobe_drawer;                                   // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Wardrobe_door;                                     // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

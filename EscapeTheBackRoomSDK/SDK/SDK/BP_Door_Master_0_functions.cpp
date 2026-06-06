@@ -37,20 +37,6 @@ void BP_Door_Master_0::ABP_Door_Master_C::ExecuteUbergraph_BP_Door_Master(int32 
 }
 
 
-// Function BP_Door_Master.BP_Door_Master_C.MC_Open
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void BP_Door_Master_0::ABP_Door_Master_C::MC_Open()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "MC_Open");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Door_Master.BP_Door_Master_C.CloseDoor
 // (BlueprintCallable, BlueprintEvent)
 
@@ -60,20 +46,6 @@ void BP_Door_Master_0::ABP_Door_Master_C::CloseDoor()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Door_Master_C", "CloseDoor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Door_Master.BP_Door_Master_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void BP_Door_Master_0::ABP_Door_Master_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Door_Master_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

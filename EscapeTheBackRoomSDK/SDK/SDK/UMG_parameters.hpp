@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Slate_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Slate_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "InputCore_structs.hpp"
 
 
@@ -483,6 +483,54 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
+// Function UMG.CircularThrobber.SetNumberOfPieces
+// 0x0004 (0x0004 - 0x0000)
+struct CircularThrobber_SetNumberOfPieces final
+{
+public:
+	int32                                         InNumberOfPieces;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.CircularThrobber.SetPeriod
+// 0x0004 (0x0004 - 0x0000)
+struct CircularThrobber_SetPeriod final
+{
+public:
+	float                                         InPeriod;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.CircularThrobber.SetRadius
+// 0x0004 (0x0004 - 0x0000)
+struct CircularThrobber_SetRadius final
+{
+public:
+	float                                         InRadius;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.OverlaySlot.SetHorizontalAlignment
+// 0x0001 (0x0001 - 0x0000)
+struct OverlaySlot_SetHorizontalAlignment final
+{
+public:
+	EHorizontalAlignment                          InHorizontalAlignment;                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.OverlaySlot.SetPadding
+// 0x0010 (0x0010 - 0x0000)
+struct OverlaySlot_SetPadding final
+{
+public:
+	struct FMargin                                InPadding;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.OverlaySlot.SetVerticalAlignment
+// 0x0001 (0x0001 - 0x0000)
+struct OverlaySlot_SetVerticalAlignment final
+{
+public:
+	EVerticalAlignment                            InVerticalAlignment;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function UMG.ContentWidget.SetContent
 // 0x0010 (0x0010 - 0x0000)
 struct ContentWidget_SetContent final
@@ -508,36 +556,28 @@ public:
 	class UPanelSlot*                             ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function UMG.DynamicEntryBoxBase.SetEntrySpacing
-// 0x0008 (0x0008 - 0x0000)
-struct DynamicEntryBoxBase_SetEntrySpacing final
+// Function UMG.ExpandableArea.SetIsExpanded
+// 0x0001 (0x0001 - 0x0000)
+struct ExpandableArea_SetIsExpanded final
 {
 public:
-	struct FVector2D                              InEntrySpacing;                                    // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IsExpanded;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function UMG.DynamicEntryBoxBase.SetRadialSettings
-// 0x0010 (0x0010 - 0x0000)
-struct DynamicEntryBoxBase_SetRadialSettings final
+// Function UMG.ExpandableArea.SetIsExpanded_Animated
+// 0x0001 (0x0001 - 0x0000)
+struct ExpandableArea_SetIsExpanded_Animated final
 {
 public:
-	struct FRadialBoxSettings                     InSettings;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          IsExpanded;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function UMG.DynamicEntryBoxBase.GetAllEntries
-// 0x0010 (0x0010 - 0x0000)
-struct DynamicEntryBoxBase_GetAllEntries final
+// Function UMG.ExpandableArea.GetIsExpanded
+// 0x0001 (0x0001 - 0x0000)
+struct ExpandableArea_GetIsExpanded final
 {
 public:
-	TArray<class UUserWidget*>                    ReturnValue;                                       // 0x0000(0x0010)(ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.DynamicEntryBoxBase.GetNumEntries
-// 0x0004 (0x0004 - 0x0000)
-struct DynamicEntryBoxBase_GetNumEntries final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function UMG.UserWidget.AddToPlayerScreen
@@ -1284,24 +1324,6 @@ public:
 	struct FPaintContext                          Context;                                           // 0x0000(0x0030)(Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 
-// Function UMG.AsyncTaskDownloadImage.DownloadImage
-// 0x0018 (0x0018 - 0x0000)
-struct AsyncTaskDownloadImage_DownloadImage final
-{
-public:
-	class FString                                 URL;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAsyncTaskDownloadImage*                ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.Overlay.AddChildToOverlay
-// 0x0010 (0x0010 - 0x0000)
-struct Overlay_AddChildToOverlay final
-{
-public:
-	class UWidget*                                Content;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOverlaySlot*                           ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function UMG.BackgroundBlur.SetApplyAlphaToBlur
 // 0x0001 (0x0001 - 0x0000)
 struct BackgroundBlur_SetApplyAlphaToBlur final
@@ -1356,6 +1378,87 @@ struct BackgroundBlur_SetVerticalAlignment final
 {
 public:
 	EVerticalAlignment                            InVerticalAlignment;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.InvalidationBox.SetCanCache
+// 0x0001 (0x0001 - 0x0000)
+struct InvalidationBox_SetCanCache final
+{
+public:
+	bool                                          CanCache;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.InvalidationBox.GetCanCache
+// 0x0001 (0x0001 - 0x0000)
+struct InvalidationBox_GetCanCache final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.AsyncTaskDownloadImage.DownloadImage
+// 0x0018 (0x0018 - 0x0000)
+struct AsyncTaskDownloadImage_DownloadImage final
+{
+public:
+	class FString                                 URL;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAsyncTaskDownloadImage*                ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.TextLayoutWidget.SetJustification
+// 0x0001 (0x0001 - 0x0000)
+struct TextLayoutWidget_SetJustification final
+{
+public:
+	ETextJustify                                  InJustification;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.MultiLineEditableText.SetHintText
+// 0x0018 (0x0018 - 0x0000)
+struct MultiLineEditableText_SetHintText final
+{
+public:
+	class FText                                   InHintText;                                        // 0x0000(0x0018)(Parm, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.MultiLineEditableText.SetIsReadOnly
+// 0x0001 (0x0001 - 0x0000)
+struct MultiLineEditableText_SetIsReadOnly final
+{
+public:
+	bool                                          bReadOnly;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.MultiLineEditableText.SetText
+// 0x0018 (0x0018 - 0x0000)
+struct MultiLineEditableText_SetText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0018)(Parm, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.MultiLineEditableText.SetWidgetStyle
+// 0x0270 (0x0270 - 0x0000)
+struct MultiLineEditableText_SetWidgetStyle final
+{
+public:
+	struct FTextBlockStyle                        InWidgetStyle;                                     // 0x0000(0x0270)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.MultiLineEditableText.GetHintText
+// 0x0018 (0x0018 - 0x0000)
+struct MultiLineEditableText_GetHintText final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.MultiLineEditableText.GetText
+// 0x0018 (0x0018 - 0x0000)
+struct MultiLineEditableText_GetText final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 
 // Function UMG.BackgroundBlurSlot.SetHorizontalAlignment
@@ -1599,6 +1702,70 @@ public:
 	class UCanvasPanelSlot*                       ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function UMG.SizeBox.SetHeightOverride
+// 0x0004 (0x0004 - 0x0000)
+struct SizeBox_SetHeightOverride final
+{
+public:
+	float                                         InHeightOverride;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.SizeBox.SetMaxAspectRatio
+// 0x0004 (0x0004 - 0x0000)
+struct SizeBox_SetMaxAspectRatio final
+{
+public:
+	float                                         InMaxAspectRatio;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.SizeBox.SetMaxDesiredHeight
+// 0x0004 (0x0004 - 0x0000)
+struct SizeBox_SetMaxDesiredHeight final
+{
+public:
+	float                                         InMaxDesiredHeight;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.SizeBox.SetMaxDesiredWidth
+// 0x0004 (0x0004 - 0x0000)
+struct SizeBox_SetMaxDesiredWidth final
+{
+public:
+	float                                         InMaxDesiredWidth;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.SizeBox.SetMinAspectRatio
+// 0x0004 (0x0004 - 0x0000)
+struct SizeBox_SetMinAspectRatio final
+{
+public:
+	float                                         InMinAspectRatio;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.SizeBox.SetMinDesiredHeight
+// 0x0004 (0x0004 - 0x0000)
+struct SizeBox_SetMinDesiredHeight final
+{
+public:
+	float                                         InMinDesiredHeight;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.SizeBox.SetMinDesiredWidth
+// 0x0004 (0x0004 - 0x0000)
+struct SizeBox_SetMinDesiredWidth final
+{
+public:
+	float                                         InMinDesiredWidth;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.SizeBox.SetWidthOverride
+// 0x0004 (0x0004 - 0x0000)
+struct SizeBox_SetWidthOverride final
+{
+public:
+	float                                         InWidthOverride;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function UMG.CanvasPanelSlot.SetAlignment
 // 0x0008 (0x0008 - 0x0000)
 struct CanvasPanelSlot_SetAlignment final
@@ -1815,30 +1982,6 @@ public:
 	ECheckBoxState                                ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function UMG.CircularThrobber.SetNumberOfPieces
-// 0x0004 (0x0004 - 0x0000)
-struct CircularThrobber_SetNumberOfPieces final
-{
-public:
-	int32                                         InNumberOfPieces;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.CircularThrobber.SetPeriod
-// 0x0004 (0x0004 - 0x0000)
-struct CircularThrobber_SetPeriod final
-{
-public:
-	float                                         InPeriod;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.CircularThrobber.SetRadius
-// 0x0004 (0x0004 - 0x0000)
-struct CircularThrobber_SetRadius final
-{
-public:
-	float                                         InRadius;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function UMG.ColorBinding.GetLinearValue
 // 0x0010 (0x0010 - 0x0000)
 struct ColorBinding_GetLinearValue final
@@ -1853,6 +1996,130 @@ struct ColorBinding_GetSlateValue final
 {
 public:
 	struct FSlateColor                            ReturnValue;                                       // 0x0000(0x0028)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.ScrollWidgetIntoView
+// 0x0010 (0x0010 - 0x0000)
+struct ScrollBox_ScrollWidgetIntoView final
+{
+public:
+	class UWidget*                                WidgetToFind;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          AnimateScroll;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDescendantScrollDestination                  ScrollDestination;                                 // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
+	float                                         Padding;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetAllowOverscroll
+// 0x0001 (0x0001 - 0x0000)
+struct ScrollBox_SetAllowOverscroll final
+{
+public:
+	bool                                          NewAllowOverscroll;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetAlwaysShowScrollbar
+// 0x0001 (0x0001 - 0x0000)
+struct ScrollBox_SetAlwaysShowScrollbar final
+{
+public:
+	bool                                          NewAlwaysShowScrollbar;                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetAnimateWheelScrolling
+// 0x0001 (0x0001 - 0x0000)
+struct ScrollBox_SetAnimateWheelScrolling final
+{
+public:
+	bool                                          bShouldAnimateWheelScrolling;                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetConsumeMouseWheel
+// 0x0001 (0x0001 - 0x0000)
+struct ScrollBox_SetConsumeMouseWheel final
+{
+public:
+	EConsumeMouseWheel                            NewConsumeMouseWheel;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetOrientation
+// 0x0001 (0x0001 - 0x0000)
+struct ScrollBox_SetOrientation final
+{
+public:
+	EOrientation                                  NewOrientation;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetScrollbarPadding
+// 0x0010 (0x0010 - 0x0000)
+struct ScrollBox_SetScrollbarPadding final
+{
+public:
+	struct FMargin                                NewScrollbarPadding;                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetScrollbarThickness
+// 0x0008 (0x0008 - 0x0000)
+struct ScrollBox_SetScrollbarThickness final
+{
+public:
+	struct FVector2D                              NewScrollbarThickness;                             // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetScrollbarVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct ScrollBox_SetScrollbarVisibility final
+{
+public:
+	ESlateVisibility                              NewScrollBarVisibility;                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetScrollOffset
+// 0x0004 (0x0004 - 0x0000)
+struct ScrollBox_SetScrollOffset final
+{
+public:
+	float                                         NewScrollOffset;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetScrollWhenFocusChanges
+// 0x0001 (0x0001 - 0x0000)
+struct ScrollBox_SetScrollWhenFocusChanges final
+{
+public:
+	EScrollWhenFocusChanges                       NewScrollWhenFocusChanges;                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.SetWheelScrollMultiplier
+// 0x0004 (0x0004 - 0x0000)
+struct ScrollBox_SetWheelScrollMultiplier final
+{
+public:
+	float                                         NewWheelScrollMultiplier;                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.GetScrollOffset
+// 0x0004 (0x0004 - 0x0000)
+struct ScrollBox_GetScrollOffset final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.GetScrollOffsetOfEnd
+// 0x0004 (0x0004 - 0x0000)
+struct ScrollBox_GetScrollOffsetOfEnd final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.ScrollBox.GetViewOffsetFraction
+// 0x0004 (0x0004 - 0x0000)
+struct ScrollBox_GetViewOffsetFraction final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function UMG.ComboBoxString.AddOption
@@ -1965,6 +2232,38 @@ public:
 	struct FPointerEvent                          PointerEvent;                                      // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 
+// Function UMG.DynamicEntryBoxBase.SetEntrySpacing
+// 0x0008 (0x0008 - 0x0000)
+struct DynamicEntryBoxBase_SetEntrySpacing final
+{
+public:
+	struct FVector2D                              InEntrySpacing;                                    // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.DynamicEntryBoxBase.SetRadialSettings
+// 0x0010 (0x0010 - 0x0000)
+struct DynamicEntryBoxBase_SetRadialSettings final
+{
+public:
+	struct FRadialBoxSettings                     InSettings;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.DynamicEntryBoxBase.GetAllEntries
+// 0x0010 (0x0010 - 0x0000)
+struct DynamicEntryBoxBase_GetAllEntries final
+{
+public:
+	TArray<class UUserWidget*>                    ReturnValue;                                       // 0x0000(0x0010)(ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.DynamicEntryBoxBase.GetNumEntries
+// 0x0004 (0x0004 - 0x0000)
+struct DynamicEntryBoxBase_GetNumEntries final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function UMG.DynamicEntryBox.BP_CreateEntry
 // 0x0008 (0x0008 - 0x0000)
 struct DynamicEntryBox_BP_CreateEntry final
@@ -2046,38 +2345,6 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 
-// Function UMG.Throbber.SetAnimateHorizontally
-// 0x0001 (0x0001 - 0x0000)
-struct Throbber_SetAnimateHorizontally final
-{
-public:
-	bool                                          bInAnimateHorizontally;                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.Throbber.SetAnimateOpacity
-// 0x0001 (0x0001 - 0x0000)
-struct Throbber_SetAnimateOpacity final
-{
-public:
-	bool                                          bInAnimateOpacity;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.Throbber.SetAnimateVertically
-// 0x0001 (0x0001 - 0x0000)
-struct Throbber_SetAnimateVertically final
-{
-public:
-	bool                                          bInAnimateVertically;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.Throbber.SetNumberOfPieces
-// 0x0004 (0x0004 - 0x0000)
-struct Throbber_SetNumberOfPieces final
-{
-public:
-	int32                                         InNumberOfPieces;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function UMG.EditableTextBox.SetError
 // 0x0018 (0x0018 - 0x0000)
 struct EditableTextBox_SetError final
@@ -2137,30 +2404,6 @@ public:
 // Function UMG.EditableTextBox.HasError
 // 0x0001 (0x0001 - 0x0000)
 struct EditableTextBox_HasError final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ExpandableArea.SetIsExpanded
-// 0x0001 (0x0001 - 0x0000)
-struct ExpandableArea_SetIsExpanded final
-{
-public:
-	bool                                          IsExpanded;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ExpandableArea.SetIsExpanded_Animated
-// 0x0001 (0x0001 - 0x0000)
-struct ExpandableArea_SetIsExpanded_Animated final
-{
-public:
-	bool                                          IsExpanded;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ExpandableArea.GetIsExpanded
-// 0x0001 (0x0001 - 0x0000)
-struct ExpandableArea_GetIsExpanded final
 {
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2282,22 +2525,6 @@ struct HorizontalBox_AddChildToHorizontalBox final
 public:
 	class UWidget*                                Content;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UHorizontalBoxSlot*                     ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.TextBinding.GetStringValue
-// 0x0010 (0x0010 - 0x0000)
-struct TextBinding_GetStringValue final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.TextBinding.GetTextValue
-// 0x0018 (0x0018 - 0x0000)
-struct TextBinding_GetTextValue final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 
 // Function UMG.HorizontalBoxSlot.SetHorizontalAlignment
@@ -2522,22 +2749,6 @@ struct Int32Binding_GetValue final
 {
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.InvalidationBox.SetCanCache
-// 0x0001 (0x0001 - 0x0000)
-struct InvalidationBox_SetCanCache final
-{
-public:
-	bool                                          CanCache;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.InvalidationBox.GetCanCache
-// 0x0001 (0x0001 - 0x0000)
-struct InvalidationBox_GetCanCache final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function UMG.UserListEntry.BP_OnItemExpansionChanged
@@ -2876,62 +3087,6 @@ public:
 	EMouseCursor                                  ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function UMG.TextLayoutWidget.SetJustification
-// 0x0001 (0x0001 - 0x0000)
-struct TextLayoutWidget_SetJustification final
-{
-public:
-	ETextJustify                                  InJustification;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.MultiLineEditableText.SetHintText
-// 0x0018 (0x0018 - 0x0000)
-struct MultiLineEditableText_SetHintText final
-{
-public:
-	class FText                                   InHintText;                                        // 0x0000(0x0018)(Parm, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.MultiLineEditableText.SetIsReadOnly
-// 0x0001 (0x0001 - 0x0000)
-struct MultiLineEditableText_SetIsReadOnly final
-{
-public:
-	bool                                          bReadOnly;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.MultiLineEditableText.SetText
-// 0x0018 (0x0018 - 0x0000)
-struct MultiLineEditableText_SetText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(Parm, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.MultiLineEditableText.SetWidgetStyle
-// 0x0270 (0x0270 - 0x0000)
-struct MultiLineEditableText_SetWidgetStyle final
-{
-public:
-	struct FTextBlockStyle                        InWidgetStyle;                                     // 0x0000(0x0270)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.MultiLineEditableText.GetHintText
-// 0x0018 (0x0018 - 0x0000)
-struct MultiLineEditableText_GetHintText final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.MultiLineEditableText.GetText
-// 0x0018 (0x0018 - 0x0000)
-struct MultiLineEditableText_GetText final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
-};
-
 // Function UMG.MultiLineEditableTextBox.SetError
 // 0x0018 (0x0018 - 0x0000)
 struct MultiLineEditableTextBox_SetError final
@@ -2988,28 +3143,13 @@ public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 
-// Function UMG.OverlaySlot.SetHorizontalAlignment
-// 0x0001 (0x0001 - 0x0000)
-struct OverlaySlot_SetHorizontalAlignment final
-{
-public:
-	EHorizontalAlignment                          InHorizontalAlignment;                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.OverlaySlot.SetPadding
+// Function UMG.Overlay.AddChildToOverlay
 // 0x0010 (0x0010 - 0x0000)
-struct OverlaySlot_SetPadding final
+struct Overlay_AddChildToOverlay final
 {
 public:
-	struct FMargin                                InPadding;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.OverlaySlot.SetVerticalAlignment
-// 0x0001 (0x0001 - 0x0000)
-struct OverlaySlot_SetVerticalAlignment final
-{
-public:
-	EVerticalAlignment                            InVerticalAlignment;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UWidget*                                Content;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOverlaySlot*                           ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function UMG.ProgressBar.SetFillColorAndOpacity
@@ -3258,130 +3398,6 @@ public:
 	float                                         InThumbSizeFraction;                               // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function UMG.ScrollBox.ScrollWidgetIntoView
-// 0x0010 (0x0010 - 0x0000)
-struct ScrollBox_ScrollWidgetIntoView final
-{
-public:
-	class UWidget*                                WidgetToFind;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          AnimateScroll;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EDescendantScrollDestination                  ScrollDestination;                                 // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-8 ])
-	float                                         Padding;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetAllowOverscroll
-// 0x0001 (0x0001 - 0x0000)
-struct ScrollBox_SetAllowOverscroll final
-{
-public:
-	bool                                          NewAllowOverscroll;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetAlwaysShowScrollbar
-// 0x0001 (0x0001 - 0x0000)
-struct ScrollBox_SetAlwaysShowScrollbar final
-{
-public:
-	bool                                          NewAlwaysShowScrollbar;                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetAnimateWheelScrolling
-// 0x0001 (0x0001 - 0x0000)
-struct ScrollBox_SetAnimateWheelScrolling final
-{
-public:
-	bool                                          bShouldAnimateWheelScrolling;                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetConsumeMouseWheel
-// 0x0001 (0x0001 - 0x0000)
-struct ScrollBox_SetConsumeMouseWheel final
-{
-public:
-	EConsumeMouseWheel                            NewConsumeMouseWheel;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetOrientation
-// 0x0001 (0x0001 - 0x0000)
-struct ScrollBox_SetOrientation final
-{
-public:
-	EOrientation                                  NewOrientation;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetScrollbarPadding
-// 0x0010 (0x0010 - 0x0000)
-struct ScrollBox_SetScrollbarPadding final
-{
-public:
-	struct FMargin                                NewScrollbarPadding;                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetScrollbarThickness
-// 0x0008 (0x0008 - 0x0000)
-struct ScrollBox_SetScrollbarThickness final
-{
-public:
-	struct FVector2D                              NewScrollbarThickness;                             // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetScrollbarVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct ScrollBox_SetScrollbarVisibility final
-{
-public:
-	ESlateVisibility                              NewScrollBarVisibility;                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetScrollOffset
-// 0x0004 (0x0004 - 0x0000)
-struct ScrollBox_SetScrollOffset final
-{
-public:
-	float                                         NewScrollOffset;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetScrollWhenFocusChanges
-// 0x0001 (0x0001 - 0x0000)
-struct ScrollBox_SetScrollWhenFocusChanges final
-{
-public:
-	EScrollWhenFocusChanges                       NewScrollWhenFocusChanges;                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.SetWheelScrollMultiplier
-// 0x0004 (0x0004 - 0x0000)
-struct ScrollBox_SetWheelScrollMultiplier final
-{
-public:
-	float                                         NewWheelScrollMultiplier;                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.GetScrollOffset
-// 0x0004 (0x0004 - 0x0000)
-struct ScrollBox_GetScrollOffset final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.GetScrollOffsetOfEnd
-// 0x0004 (0x0004 - 0x0000)
-struct ScrollBox_GetScrollOffsetOfEnd final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.ScrollBox.GetViewOffsetFraction
-// 0x0004 (0x0004 - 0x0000)
-struct ScrollBox_GetViewOffsetFraction final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function UMG.ScrollBoxSlot.SetHorizontalAlignment
 // 0x0001 (0x0001 - 0x0000)
 struct ScrollBoxSlot_SetHorizontalAlignment final
@@ -3404,70 +3420,6 @@ struct ScrollBoxSlot_SetVerticalAlignment final
 {
 public:
 	EVerticalAlignment                            InVerticalAlignment;                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.SizeBox.SetHeightOverride
-// 0x0004 (0x0004 - 0x0000)
-struct SizeBox_SetHeightOverride final
-{
-public:
-	float                                         InHeightOverride;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.SizeBox.SetMaxAspectRatio
-// 0x0004 (0x0004 - 0x0000)
-struct SizeBox_SetMaxAspectRatio final
-{
-public:
-	float                                         InMaxAspectRatio;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.SizeBox.SetMaxDesiredHeight
-// 0x0004 (0x0004 - 0x0000)
-struct SizeBox_SetMaxDesiredHeight final
-{
-public:
-	float                                         InMaxDesiredHeight;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.SizeBox.SetMaxDesiredWidth
-// 0x0004 (0x0004 - 0x0000)
-struct SizeBox_SetMaxDesiredWidth final
-{
-public:
-	float                                         InMaxDesiredWidth;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.SizeBox.SetMinAspectRatio
-// 0x0004 (0x0004 - 0x0000)
-struct SizeBox_SetMinAspectRatio final
-{
-public:
-	float                                         InMinAspectRatio;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.SizeBox.SetMinDesiredHeight
-// 0x0004 (0x0004 - 0x0000)
-struct SizeBox_SetMinDesiredHeight final
-{
-public:
-	float                                         InMinDesiredHeight;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.SizeBox.SetMinDesiredWidth
-// 0x0004 (0x0004 - 0x0000)
-struct SizeBox_SetMinDesiredWidth final
-{
-public:
-	float                                         InMinDesiredWidth;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function UMG.SizeBox.SetWidthOverride
-// 0x0004 (0x0004 - 0x0000)
-struct SizeBox_SetWidthOverride final
-{
-public:
-	float                                         InWidthOverride;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function UMG.SizeBoxSlot.SetHorizontalAlignment
@@ -3901,6 +3853,22 @@ public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function UMG.TextBinding.GetStringValue
+// 0x0010 (0x0010 - 0x0000)
+struct TextBinding_GetStringValue final
+{
+public:
+	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.TextBinding.GetTextValue
+// 0x0018 (0x0018 - 0x0000)
+struct TextBinding_GetTextValue final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
 // Function UMG.TextBlock.GetDynamicFontMaterial
 // 0x0008 (0x0008 - 0x0000)
 struct TextBlock_GetDynamicFontMaterial final
@@ -4003,6 +3971,38 @@ struct TextBlock_GetText final
 {
 public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.Throbber.SetAnimateHorizontally
+// 0x0001 (0x0001 - 0x0000)
+struct Throbber_SetAnimateHorizontally final
+{
+public:
+	bool                                          bInAnimateHorizontally;                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.Throbber.SetAnimateOpacity
+// 0x0001 (0x0001 - 0x0000)
+struct Throbber_SetAnimateOpacity final
+{
+public:
+	bool                                          bInAnimateOpacity;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.Throbber.SetAnimateVertically
+// 0x0001 (0x0001 - 0x0000)
+struct Throbber_SetAnimateVertically final
+{
+public:
+	bool                                          bInAnimateVertically;                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function UMG.Throbber.SetNumberOfPieces
+// 0x0004 (0x0004 - 0x0000)
+struct Throbber_SetNumberOfPieces final
+{
+public:
+	int32                                         InNumberOfPieces;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function UMG.TileView.SetEntryHeight

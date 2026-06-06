@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ShadowLight_Switch.BP_ShadowLight_Switch_C
-// 0x0080 (0x02C8 - 0x0248)
+// 0x0090 (0x02D8 - 0x0248)
 class ABP_ShadowLight_Switch_C final : public AInteractableActor
 {
 public:
@@ -42,6 +42,7 @@ public:
 	class ABP_Sculpture_C*                        Sculpture;                                         // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               LightMat1;                                         // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               LightMat2;                                         // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ADecalActor*>                    DecalArray;                                        // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 
 public:
 	void ExecuteUbergraph_BP_ShadowLight_Switch(int32 EntryPoint);

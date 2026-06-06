@@ -18,12 +18,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass SplashScreenMap.SplashScreenMap_C
-// 0x0010 (0x0238 - 0x0228)
+// 0x0008 (0x0230 - 0x0228)
 class ASplashScreenMap_C final : public ALevelScriptActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class ASplashScreen_MediaSoundActor_C*        SplashScreen_MediaSoundActor_4_ExecuteUbergraph_SplashScreenMap_RefProperty; // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_SplashScreenMap(int32 EntryPoint);

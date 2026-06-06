@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -18,23 +17,11 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Cabinet.BP_Cabinet_C
-// 0x0040 (0x0260 - 0x0220)
+// 0x0008 (0x0228 - 0x0220)
 class BP_Cabinet::ABP_Cabinet_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Box3;                                              // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Box2;                                              // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Box1;                                              // 0x0238(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Cabinet1;                                          // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Box;                                               // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Cabinet;                                           // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-
-public:
-	void ExecuteUbergraph_BP_Cabinet(int32 EntryPoint);
-	void MC_Fall();
-	void ReceiveActorBeginOverlap(class AActor* OtherActor);
+	class UStaticMeshComponent*                   Cabinet;                                           // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

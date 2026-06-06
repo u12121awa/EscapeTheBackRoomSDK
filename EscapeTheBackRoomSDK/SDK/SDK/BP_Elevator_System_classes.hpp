@@ -34,7 +34,7 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_Elevator_System(int32 EntryPoint);
-	void eventAddDoorFrame(const class ABP_DoorFrame_C*& Doorframe);
+	void eventAddDoorFrame(const class ABP_DoorFrame_C*& DoorFrame);
 	void ReceiveBeginPlay();
 	void CanMove(bool* CanMove_0);
 	void GetElevatorBox(class ABP_Elevator_Box_C** ElevatorBox);

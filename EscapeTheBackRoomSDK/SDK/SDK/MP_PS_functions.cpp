@@ -59,26 +59,6 @@ void AMP_PS_C::InvSwap(int32 Index1, int32 Index2)
 }
 
 
-// Function MP_PS.MP_PS_C.UpdateIsTalking
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsTalking_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AMP_PS_C::UpdateIsTalking(bool IsTalking_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MP_PS_C", "UpdateIsTalking");
-
-	Params::MP_PS_C_UpdateIsTalking Parms{};
-
-	Parms.IsTalking_0 = IsTalking_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function MP_PS.MP_PS_C.UpdateLevel
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 // Parameters:

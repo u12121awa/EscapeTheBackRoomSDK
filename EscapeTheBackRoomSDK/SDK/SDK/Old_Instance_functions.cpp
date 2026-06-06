@@ -82,11 +82,12 @@ void UOld_Instance_C::OnPlayerTalkingStateChanged(const struct FBPUniqueNetId& P
 // Function Old_Instance.Old_Instance_C.OnSessionInviteAccepted
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
+// bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                                   LocalPlayerNum                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FBPUniqueNetId&            PersonInvited                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 // const struct FBlueprintSessionResult&   SessionToJoin                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UOld_Instance_C::OnSessionInviteAccepted(int32 LocalPlayerNum, const struct FBPUniqueNetId& PersonInvited, const struct FBlueprintSessionResult& SessionToJoin)
+void UOld_Instance_C::OnSessionInviteAccepted(bool bWasSuccessful, int32 LocalPlayerNum, const struct FBPUniqueNetId& PersonInvited, const struct FBlueprintSessionResult& SessionToJoin)
 {
 	static class UFunction* Func = nullptr;
 
@@ -95,6 +96,7 @@ void UOld_Instance_C::OnSessionInviteAccepted(int32 LocalPlayerNum, const struct
 
 	Params::Old_Instance_C_OnSessionInviteAccepted Parms{};
 
+	Parms.bWasSuccessful = bWasSuccessful;
 	Parms.LocalPlayerNum = LocalPlayerNum;
 	Parms.PersonInvited = std::move(PersonInvited);
 	Parms.SessionToJoin = std::move(SessionToJoin);

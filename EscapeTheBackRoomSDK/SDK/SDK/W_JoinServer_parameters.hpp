@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK::Params
@@ -145,7 +145,7 @@ public:
 struct W_JoinServer_C_Check_Server_Name final
 {
 public:
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Len_ReturnValue;                          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-8 ])

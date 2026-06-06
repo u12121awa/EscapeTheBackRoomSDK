@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass W_MainHUD.W_MainHUD_C
-// 0x0010 (0x0270 - 0x0260)
+// 0x0010 (0x0280 - 0x0270)
 class UW_MainHUD_C final : public UUserWidget
 {
 public:
-	class UW_Crosshair_C*                         W_Crosshair;                                       // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UW_ProgressBars_C*                      W_ProgressBars;                                    // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UW_Crosshair_C*                         W_Crosshair;                                       // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UW_ProgressBars_C*                      W_ProgressBars;                                    // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

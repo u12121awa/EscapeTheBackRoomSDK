@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "HE_Subtitle_structs.hpp"
-#include "HE_SubtitleSeq_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "HE_SubtitleSeq_structs.hpp"
 
 
 namespace SDK::Params

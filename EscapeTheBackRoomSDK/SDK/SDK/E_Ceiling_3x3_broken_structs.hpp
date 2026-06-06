@@ -21,7 +21,7 @@ enum class E_Ceiling_3x3_broken::E_Ceiling_3x3_broken : uint8
 	NewEnumerator19                          = 0,
 	NewEnumerator25                          = 1,
 	NewEnumerator54                          = 2,
-	E_Ceiling_3x3_MAX                        = 3,
+	E_Ceiling_3x3_0_MAX                      = 3,
 };
 
 }

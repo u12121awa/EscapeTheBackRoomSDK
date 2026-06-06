@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_VideoPlayerActor.BP_VideoPlayerActor_C
-// 0x0040 (0x0300 - 0x02C0)
+// 0x0050 (0x0310 - 0x02C0)
 class ABP_VideoPlayerActor_C final : public AFancyVideoPlayer
 {
 public:
@@ -30,6 +30,7 @@ public:
 	float                                         DialogueDelay;                                     // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                DialogueOffset;                                    // 0x02DC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   DialogueSubtitle;                                  // 0x02E8(0x0018)(Edit, BlueprintVisible)
+	TMulticastInlineDelegate<void(bool IsPlayingCinematic)> OnCinematicUpdated;                      // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ExecuteUbergraph_BP_VideoPlayerActor(int32 EntryPoint);

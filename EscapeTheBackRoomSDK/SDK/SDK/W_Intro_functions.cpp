@@ -57,26 +57,6 @@ void UW_Intro_C::HandleOnStartCostumeSelect(class UUserWidget* CostumeWidget)
 }
 
 
-// Function W_Intro.W_Intro_C.OnActiveUserChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSameUser                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UW_Intro_C::OnActiveUserChanged(bool bIsSameUser)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_Intro_C", "OnActiveUserChanged");
-
-	Params::W_Intro_C_OnActiveUserChanged Parms{};
-
-	Parms.bIsSameUser = bIsSameUser;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function W_Intro.W_Intro_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -128,20 +108,6 @@ void UW_Intro_C::CreateMainMenuWidget()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("W_Intro_C", "CreateMainMenuWidget");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function W_Intro.W_Intro_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UW_Intro_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_Intro_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -299,20 +265,6 @@ struct FEventReply UW_Intro_C::OnMouseButtonDown(const struct FGeometry& MyGeome
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-}
-
-
-// Function W_Intro.W_Intro_C.CheckFont
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UW_Intro_C::CheckFont()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_Intro_C", "CheckFont");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

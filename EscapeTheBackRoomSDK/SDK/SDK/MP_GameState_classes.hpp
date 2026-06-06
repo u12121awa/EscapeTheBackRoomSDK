@@ -13,13 +13,14 @@
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "S_HubLevels_structs.hpp"
+#include "AdvancedSessions_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_GameState.MP_GameState_C
-// 0x0080 (0x0310 - 0x0290)
+// 0x0098 (0x0328 - 0x0290)
 class AMP_GameState_C final : public AGameState
 {
 public:
@@ -28,6 +29,9 @@ public:
 	TArray<class ABPCharacter_Demo_C*>            PlayersAlive;                                      // 0x02A0(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnTemplate, DisableEditOnInstance)
 	TMap<class FString, struct FS_HubLevels>      LevelsUnlocked;                                    // 0x02B0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	class FString                                 MatchID;                                           // 0x0300(0x0010)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	int32                                         MaxPlayers;                                        // 0x0310(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_314[0x4];                                      // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	TMulticastInlineDelegate<void()>              OnLobbyDataChanged;                                // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ExecuteUbergraph_MP_GameState(int32 EntryPoint);
@@ -35,6 +39,7 @@ public:
 	void ReceiveBeginPlay();
 	void Generate_Encrypted_Name(const class FText& Level, class FString* Name_0);
 	void GenerateUUID();
+	void OnRep_MaxPlayers();
 
 public:
 	static class UClass* StaticClass()

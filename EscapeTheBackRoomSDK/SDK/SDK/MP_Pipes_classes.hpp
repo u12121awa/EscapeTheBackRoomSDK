@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "MP_GameMode_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MP_GameMode_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_Pipes.MP_Pipes_C
-// 0x0010 (0x0398 - 0x0388)
+// 0x0010 (0x0390 - 0x0380)
 class AMP_Pipes_C final : public AMP_GameMode_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Pipes_C;                         // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          HasUnlockedFun;                                    // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Pipes_C;                         // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          HasUnlockedFun;                                    // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_MP_Pipes(int32 EntryPoint);

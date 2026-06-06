@@ -20,16 +20,6 @@
 namespace SDK::Params
 {
 
-// Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
-// 0x0008 (0x0008 - 0x0000)
-struct AIAsyncTaskBlueprintProxy_OnMoveCompleted final
-{
-public:
-	struct FAIRequestID                           RequestID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EPathFollowingResult                          MovementResult;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
 // Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject
 // 0x0038 (0x0038 - 0x0000)
 struct AIBlueprintHelperLibrary_CreateMoveToProxyObject final
@@ -199,6 +189,26 @@ public:
 	bool                                          bUnlockMovement;                                   // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          UnlockAILogic;                                     // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
+// 0x0008 (0x0008 - 0x0000)
+struct AIAsyncTaskBlueprintProxy_OnMoveCompleted final
+{
+public:
+	struct FAIRequestID                           RequestID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EPathFollowingResult                          MovementResult;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function AIModule.AITask_RunEQS.RunEQS
+// 0x0018 (0x0018 - 0x0000)
+struct AITask_RunEQS_RunEQS final
+{
+public:
+	class AAIController*                          Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UEnvQuery*                              QueryTemplate;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAITask_RunEQS*                         ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function AIModule.AIController.ClaimTaskResource
@@ -389,6 +399,20 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function AIModule.EnvQueryManager.RunEQSQuery
+// 0x0030 (0x0030 - 0x0000)
+struct EnvQueryManager_RunEQSQuery final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UEnvQuery*                              QueryTemplate;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                Querier;                                           // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EEnvQueryRunMode                              RunMode;                                           // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	TSubclassOf<class UEnvQueryInstanceBlueprintWrapper> WrapperClass;                               // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UEnvQueryInstanceBlueprintWrapper*      ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function AIModule.AIPerceptionComponent.GetActorsPerception
 // 0x0030 (0x0030 - 0x0000)
 struct AIPerceptionComponent_GetActorsPerception final
@@ -530,42 +554,6 @@ public:
 	class UAISenseEvent*                          PerceptionEvent;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AIModule.PathFollowingComponent.OnActorBump
-// 0x00A8 (0x00A8 - 0x0000)
-struct PathFollowingComponent_OnActorBump final
-{
-public:
-	class AActor*                                 SelfActor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                NormalImpulse;                                     // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHitResult                             Hit;                                               // 0x001C(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
-// Function AIModule.PathFollowingComponent.OnNavDataRegistered
-// 0x0008 (0x0008 - 0x0000)
-struct PathFollowingComponent_OnNavDataRegistered final
-{
-public:
-	class ANavigationData*                        NavData;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.PathFollowingComponent.GetPathActionType
-// 0x0001 (0x0001 - 0x0000)
-struct PathFollowingComponent_GetPathActionType final
-{
-public:
-	EPathFollowingAction                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.PathFollowingComponent.GetPathDestination
-// 0x000C (0x000C - 0x0000)
-struct PathFollowingComponent_GetPathDestination final
-{
-public:
-	struct FVector                                ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function AIModule.AISense_Blueprint.K2_OnNewPawn
 // 0x0008 (0x0008 - 0x0000)
 struct AISense_Blueprint_K2_OnNewPawn final
@@ -678,62 +666,6 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
-// Function AIModule.EnvQueryManager.RunEQSQuery
-// 0x0030 (0x0030 - 0x0000)
-struct EnvQueryManager_RunEQSQuery final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UEnvQuery*                              QueryTemplate;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UObject*                                Querier;                                           // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EEnvQueryRunMode                              RunMode;                                           // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	TSubclassOf<class UEnvQueryInstanceBlueprintWrapper> WrapperClass;                               // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UEnvQueryInstanceBlueprintWrapper*      ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.NavLinkProxy.ReceiveSmartLinkReached
-// 0x0018 (0x0018 - 0x0000)
-struct NavLinkProxy_ReceiveSmartLinkReached final
-{
-public:
-	class AActor*                                 Agent;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Destination;                                       // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
-// Function AIModule.NavLinkProxy.ResumePathFollowing
-// 0x0008 (0x0008 - 0x0000)
-struct NavLinkProxy_ResumePathFollowing final
-{
-public:
-	class AActor*                                 Agent;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.NavLinkProxy.SetSmartLinkEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct NavLinkProxy_SetSmartLinkEnabled final
-{
-public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.NavLinkProxy.HasMovingAgents
-// 0x0001 (0x0001 - 0x0000)
-struct NavLinkProxy_HasMovingAgents final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.NavLinkProxy.IsSmartLinkEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct NavLinkProxy_IsSmartLinkEnabled final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function AIModule.PawnAction.CreateActionInstance
 // 0x0018 (0x0018 - 0x0000)
 struct PawnAction_CreateActionInstance final
@@ -760,95 +692,44 @@ public:
 	EAIRequestPriority                            ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AIModule.AITask_MoveTo.AIMoveTo
-// 0x0038 (0x0038 - 0x0000)
-struct AITask_MoveTo_AIMoveTo final
+// Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle
+// 0x0004 (0x0004 - 0x0000)
+struct PawnSensingComponent_SetPeripheralVisionAngle final
 {
 public:
-	class AAIController*                          Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                GoalLocation;                                      // 0x0008(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class AActor*                                 GoalActor;                                         // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AcceptanceRadius;                                  // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAIOptionFlag                                 StopOnOverlap;                                     // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAIOptionFlag                                 AcceptPartialPath;                                 // 0x0025(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUsePathfinding;                                   // 0x0026(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bLockAILogic;                                      // 0x0027(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseContinuosGoalTracking;                         // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAIOptionFlag                                 ProjectGoalOnNavigation;                           // 0x0029(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
-	class UAITask_MoveTo*                         ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NewPeripheralVisionAngle;                          // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AIModule.AITask_RunEQS.RunEQS
-// 0x0018 (0x0018 - 0x0000)
-struct AITask_RunEQS_RunEQS final
+// Function AIModule.PawnSensingComponent.SetSensingInterval
+// 0x0004 (0x0004 - 0x0000)
+struct PawnSensingComponent_SetSensingInterval final
 {
 public:
-	class AAIController*                          Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UEnvQuery*                              QueryTemplate;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAITask_RunEQS*                         ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NewSensingInterval;                                // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AIModule.BrainComponent.StopLogic
-// 0x0010 (0x0010 - 0x0000)
-struct BrainComponent_StopLogic final
-{
-public:
-	class FString                                 reason;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.BrainComponent.IsPaused
+// Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled
 // 0x0001 (0x0001 - 0x0000)
-struct BrainComponent_IsPaused final
+struct PawnSensingComponent_SetSensingUpdatesEnabled final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnabled;                                          // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AIModule.BrainComponent.IsRunning
-// 0x0001 (0x0001 - 0x0000)
-struct BrainComponent_IsRunning final
+// Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle
+// 0x0004 (0x0004 - 0x0000)
+struct PawnSensingComponent_GetPeripheralVisionAngle final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration
-// 0x0010 (0x0010 - 0x0000)
-struct BehaviorTreeComponent_AddCooldownTagDuration final
+// Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine
+// 0x0004 (0x0004 - 0x0000)
+struct PawnSensingComponent_GetPeripheralVisionCosine final
 {
 public:
-	struct FGameplayTag                           CooldownTag;                                       // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CooldownDuration;                                  // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAddToExistingDuration;                            // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
-// Function AIModule.BehaviorTreeComponent.SetDynamicSubtree
-// 0x0010 (0x0010 - 0x0000)
-struct BehaviorTreeComponent_SetDynamicSubtree final
-{
-public:
-	struct FGameplayTag                           InjectTag;                                         // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBehaviorTree*                          BehaviorAsset;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime
-// 0x000C (0x000C - 0x0000)
-struct BehaviorTreeComponent_GetTagCooldownEndTime final
-{
-public:
-	struct FGameplayTag                           CooldownTag;                                       // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.BlackboardAssetProvider.GetBlackboardAsset
-// 0x0008 (0x0008 - 0x0000)
-struct BlackboardAssetProvider_GetBlackboardAsset final
-{
-public:
-	class UBlackboardData*                        ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function AIModule.PawnAction_BlueprintBase.ActionFinished
@@ -893,6 +774,170 @@ public:
 	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet
+// 0x0020 (0x0020 - 0x0000)
+struct EnvQueryContext_BlueprintBase_ProvideActorsSet final
+{
+public:
+	class UObject*                                QuerierObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 QuerierActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class AActor*>                         ResultingActorsSet;                                // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet
+// 0x0020 (0x0020 - 0x0000)
+struct EnvQueryContext_BlueprintBase_ProvideLocationsSet final
+{
+public:
+	class UObject*                                QuerierObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 QuerierActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                        ResultingLocationSet;                              // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor
+// 0x0018 (0x0018 - 0x0000)
+struct EnvQueryContext_BlueprintBase_ProvideSingleActor final
+{
+public:
+	class UObject*                                QuerierObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 QuerierActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 ResultingActor;                                    // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation
+// 0x0020 (0x0020 - 0x0000)
+struct EnvQueryContext_BlueprintBase_ProvideSingleLocation final
+{
+public:
+	class UObject*                                QuerierObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 QuerierActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ResultingLocation;                                 // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function AIModule.AITask_MoveTo.AIMoveTo
+// 0x0038 (0x0038 - 0x0000)
+struct AITask_MoveTo_AIMoveTo final
+{
+public:
+	class AAIController*                          Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                GoalLocation;                                      // 0x0008(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	class AActor*                                 GoalActor;                                         // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AcceptanceRadius;                                  // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAIOptionFlag                                 StopOnOverlap;                                     // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAIOptionFlag                                 AcceptPartialPath;                                 // 0x0025(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUsePathfinding;                                   // 0x0026(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bLockAILogic;                                      // 0x0027(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseContinuosGoalTracking;                         // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAIOptionFlag                                 ProjectGoalOnNavigation;                           // 0x0029(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
+	class UAITask_MoveTo*                         ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.BrainComponent.StopLogic
+// 0x0010 (0x0010 - 0x0000)
+struct BrainComponent_StopLogic final
+{
+public:
+	class FString                                 reason;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.BrainComponent.IsPaused
+// 0x0001 (0x0001 - 0x0000)
+struct BrainComponent_IsPaused final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.BrainComponent.IsRunning
+// 0x0001 (0x0001 - 0x0000)
+struct BrainComponent_IsRunning final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.NavLinkProxy.ReceiveSmartLinkReached
+// 0x0018 (0x0018 - 0x0000)
+struct NavLinkProxy_ReceiveSmartLinkReached final
+{
+public:
+	class AActor*                                 Agent;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Destination;                                       // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function AIModule.NavLinkProxy.ResumePathFollowing
+// 0x0008 (0x0008 - 0x0000)
+struct NavLinkProxy_ResumePathFollowing final
+{
+public:
+	class AActor*                                 Agent;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.NavLinkProxy.SetSmartLinkEnabled
+// 0x0001 (0x0001 - 0x0000)
+struct NavLinkProxy_SetSmartLinkEnabled final
+{
+public:
+	bool                                          bEnabled;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.NavLinkProxy.HasMovingAgents
+// 0x0001 (0x0001 - 0x0000)
+struct NavLinkProxy_HasMovingAgents final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.NavLinkProxy.IsSmartLinkEnabled
+// 0x0001 (0x0001 - 0x0000)
+struct NavLinkProxy_IsSmartLinkEnabled final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.BehaviorTreeComponent.AddCooldownTagDuration
+// 0x0010 (0x0010 - 0x0000)
+struct BehaviorTreeComponent_AddCooldownTagDuration final
+{
+public:
+	struct FGameplayTag                           CooldownTag;                                       // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CooldownDuration;                                  // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAddToExistingDuration;                            // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function AIModule.BehaviorTreeComponent.SetDynamicSubtree
+// 0x0010 (0x0010 - 0x0000)
+struct BehaviorTreeComponent_SetDynamicSubtree final
+{
+public:
+	struct FGameplayTag                           InjectTag;                                         // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UBehaviorTree*                          BehaviorAsset;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.BehaviorTreeComponent.GetTagCooldownEndTime
+// 0x000C (0x000C - 0x0000)
+struct BehaviorTreeComponent_GetTagCooldownEndTime final
+{
+public:
+	struct FGameplayTag                           CooldownTag;                                       // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.BlackboardAssetProvider.GetBlackboardAsset
+// 0x0008 (0x0008 - 0x0000)
+struct BlackboardAssetProvider_GetBlackboardAsset final
+{
+public:
+	class UBlackboardData*                        ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function AIModule.BlackboardComponent.ClearValue
@@ -1700,53 +1745,48 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// Function AIModule.PathFollowingComponent.OnActorBump
+// 0x00A8 (0x00A8 - 0x0000)
+struct PathFollowingComponent_OnActorBump final
+{
+public:
+	class AActor*                                 SelfActor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                NormalImpulse;                                     // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHitResult                             Hit;                                               // 0x001C(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
+};
+
+// Function AIModule.PathFollowingComponent.OnNavDataRegistered
+// 0x0008 (0x0008 - 0x0000)
+struct PathFollowingComponent_OnNavDataRegistered final
+{
+public:
+	class ANavigationData*                        NavData;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.PathFollowingComponent.GetPathActionType
+// 0x0001 (0x0001 - 0x0000)
+struct PathFollowingComponent_GetPathActionType final
+{
+public:
+	EPathFollowingAction                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function AIModule.PathFollowingComponent.GetPathDestination
+// 0x000C (0x000C - 0x0000)
+struct PathFollowingComponent_GetPathDestination final
+{
+public:
+	struct FVector                                ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // Function AIModule.CrowdFollowingComponent.SuspendCrowdSteering
 // 0x0001 (0x0001 - 0x0000)
 struct CrowdFollowingComponent_SuspendCrowdSteering final
 {
 public:
 	bool                                          bSuspend;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet
-// 0x0020 (0x0020 - 0x0000)
-struct EnvQueryContext_BlueprintBase_ProvideActorsSet final
-{
-public:
-	class UObject*                                QuerierObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 QuerierActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class AActor*>                         ResultingActorsSet;                                // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet
-// 0x0020 (0x0020 - 0x0000)
-struct EnvQueryContext_BlueprintBase_ProvideLocationsSet final
-{
-public:
-	class UObject*                                QuerierObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 QuerierActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                        ResultingLocationSet;                              // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor
-// 0x0018 (0x0018 - 0x0000)
-struct EnvQueryContext_BlueprintBase_ProvideSingleActor final
-{
-public:
-	class UObject*                                QuerierObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 QuerierActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 ResultingActor;                                    // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation
-// 0x0020 (0x0020 - 0x0000)
-struct EnvQueryContext_BlueprintBase_ProvideSingleLocation final
-{
-public:
-	class UObject*                                QuerierObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 QuerierActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ResultingLocation;                                 // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-8 ])
 };
 
 // Function AIModule.EnvQueryGenerator_BlueprintBase.AddGeneratedActor
@@ -1976,46 +2016,6 @@ public:
 	class UObject*                                Instigator;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-8 ])
-};
-
-// Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle
-// 0x0004 (0x0004 - 0x0000)
-struct PawnSensingComponent_SetPeripheralVisionAngle final
-{
-public:
-	float                                         NewPeripheralVisionAngle;                          // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.PawnSensingComponent.SetSensingInterval
-// 0x0004 (0x0004 - 0x0000)
-struct PawnSensingComponent_SetSensingInterval final
-{
-public:
-	float                                         NewSensingInterval;                                // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct PawnSensingComponent_SetSensingUpdatesEnabled final
-{
-public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle
-// 0x0004 (0x0004 - 0x0000)
-struct PawnSensingComponent_GetPeripheralVisionAngle final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine
-// 0x0004 (0x0004 - 0x0000)
-struct PawnSensingComponent_GetPeripheralVisionCosine final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 }

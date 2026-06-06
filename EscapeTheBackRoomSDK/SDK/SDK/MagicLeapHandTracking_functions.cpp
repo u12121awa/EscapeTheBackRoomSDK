@@ -61,11 +61,11 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetConfiguration(TArray<EMagicLeapHa
 // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetCurrentGesture
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// EControllerHand                         hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerHand                         Hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EMagicLeapHandTrackingGesture*          Gesture                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMagicLeapHandTrackingFunctionLibrary::GetCurrentGesture(EControllerHand hand, EMagicLeapHandTrackingGesture* Gesture)
+bool UMagicLeapHandTrackingFunctionLibrary::GetCurrentGesture(EControllerHand Hand, EMagicLeapHandTrackingGesture* Gesture)
 {
 	static class UFunction* Func = nullptr;
 
@@ -74,7 +74,7 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetCurrentGesture(EControllerHand ha
 
 	Params::MagicLeapHandTrackingFunctionLibrary_GetCurrentGesture Parms{};
 
-	Parms.hand = hand;
+	Parms.Hand = Hand;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -93,11 +93,11 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetCurrentGesture(EControllerHand ha
 // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetCurrentGestureConfidence
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// EControllerHand                         hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerHand                         Hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float*                                  Confidence                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMagicLeapHandTrackingFunctionLibrary::GetCurrentGestureConfidence(EControllerHand hand, float* Confidence)
+bool UMagicLeapHandTrackingFunctionLibrary::GetCurrentGestureConfidence(EControllerHand Hand, float* Confidence)
 {
 	static class UFunction* Func = nullptr;
 
@@ -106,7 +106,7 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetCurrentGestureConfidence(EControl
 
 	Params::MagicLeapHandTrackingFunctionLibrary_GetCurrentGestureConfidence Parms{};
 
-	Parms.hand = hand;
+	Parms.Hand = Hand;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -125,11 +125,11 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetCurrentGestureConfidence(EControl
 // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetGestureKeypoints
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// EControllerHand                         hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerHand                         Hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // TArray<struct FTransform>*              Keypoints                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMagicLeapHandTrackingFunctionLibrary::GetGestureKeypoints(EControllerHand hand, TArray<struct FTransform>* Keypoints)
+bool UMagicLeapHandTrackingFunctionLibrary::GetGestureKeypoints(EControllerHand Hand, TArray<struct FTransform>* Keypoints)
 {
 	static class UFunction* Func = nullptr;
 
@@ -138,7 +138,7 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetGestureKeypoints(EControllerHand 
 
 	Params::MagicLeapHandTrackingFunctionLibrary_GetGestureKeypoints Parms{};
 
-	Parms.hand = hand;
+	Parms.Hand = Hand;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -157,13 +157,13 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetGestureKeypoints(EControllerHand 
 // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetGestureKeypointTransform
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// EControllerHand                         hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerHand                         Hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EMagicLeapHandTrackingKeypoint          Keypoint                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EMagicLeapGestureTransformSpace         TransformSpace                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FTransform*                      Transform                                              (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMagicLeapHandTrackingFunctionLibrary::GetGestureKeypointTransform(EControllerHand hand, EMagicLeapHandTrackingKeypoint Keypoint, EMagicLeapGestureTransformSpace TransformSpace, struct FTransform* Transform)
+bool UMagicLeapHandTrackingFunctionLibrary::GetGestureKeypointTransform(EControllerHand Hand, EMagicLeapHandTrackingKeypoint Keypoint, EMagicLeapGestureTransformSpace TransformSpace, struct FTransform* Transform)
 {
 	static class UFunction* Func = nullptr;
 
@@ -172,7 +172,7 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetGestureKeypointTransform(EControl
 
 	Params::MagicLeapHandTrackingFunctionLibrary_GetGestureKeypointTransform Parms{};
 
-	Parms.hand = hand;
+	Parms.Hand = Hand;
 	Parms.Keypoint = Keypoint;
 	Parms.TransformSpace = TransformSpace;
 
@@ -193,11 +193,11 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetGestureKeypointTransform(EControl
 // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandCenter
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// EControllerHand                         hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerHand                         Hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FTransform*                      HandCenter                                             (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMagicLeapHandTrackingFunctionLibrary::GetHandCenter(EControllerHand hand, struct FTransform* HandCenter)
+bool UMagicLeapHandTrackingFunctionLibrary::GetHandCenter(EControllerHand Hand, struct FTransform* HandCenter)
 {
 	static class UFunction* Func = nullptr;
 
@@ -206,7 +206,7 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetHandCenter(EControllerHand hand, 
 
 	Params::MagicLeapHandTrackingFunctionLibrary_GetHandCenter Parms{};
 
-	Parms.hand = hand;
+	Parms.Hand = Hand;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -225,11 +225,11 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetHandCenter(EControllerHand hand, 
 // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandCenterNormalized
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// EControllerHand                         hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerHand                         Hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FVector*                         HandCenterNormalized                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMagicLeapHandTrackingFunctionLibrary::GetHandCenterNormalized(EControllerHand hand, struct FVector* HandCenterNormalized)
+bool UMagicLeapHandTrackingFunctionLibrary::GetHandCenterNormalized(EControllerHand Hand, struct FVector* HandCenterNormalized)
 {
 	static class UFunction* Func = nullptr;
 
@@ -238,7 +238,7 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetHandCenterNormalized(EControllerH
 
 	Params::MagicLeapHandTrackingFunctionLibrary_GetHandCenterNormalized Parms{};
 
-	Parms.hand = hand;
+	Parms.Hand = Hand;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -257,12 +257,12 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetHandCenterNormalized(EControllerH
 // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandIndexFingerTip
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// EControllerHand                         hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerHand                         Hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EMagicLeapGestureTransformSpace         TransformSpace                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FTransform*                      Pointer                                                (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMagicLeapHandTrackingFunctionLibrary::GetHandIndexFingerTip(EControllerHand hand, EMagicLeapGestureTransformSpace TransformSpace, struct FTransform* Pointer)
+bool UMagicLeapHandTrackingFunctionLibrary::GetHandIndexFingerTip(EControllerHand Hand, EMagicLeapGestureTransformSpace TransformSpace, struct FTransform* Pointer)
 {
 	static class UFunction* Func = nullptr;
 
@@ -271,7 +271,7 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetHandIndexFingerTip(EControllerHan
 
 	Params::MagicLeapHandTrackingFunctionLibrary_GetHandIndexFingerTip Parms{};
 
-	Parms.hand = hand;
+	Parms.Hand = Hand;
 	Parms.TransformSpace = TransformSpace;
 
 	auto Flgs = Func->FunctionFlags;
@@ -323,12 +323,12 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetHandKeypointForMotionSource(class
 // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetHandThumbTip
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// EControllerHand                         hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerHand                         Hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EMagicLeapGestureTransformSpace         TransformSpace                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FTransform*                      Secondary                                              (Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMagicLeapHandTrackingFunctionLibrary::GetHandThumbTip(EControllerHand hand, EMagicLeapGestureTransformSpace TransformSpace, struct FTransform* Secondary)
+bool UMagicLeapHandTrackingFunctionLibrary::GetHandThumbTip(EControllerHand Hand, EMagicLeapGestureTransformSpace TransformSpace, struct FTransform* Secondary)
 {
 	static class UFunction* Func = nullptr;
 
@@ -337,7 +337,7 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetHandThumbTip(EControllerHand hand
 
 	Params::MagicLeapHandTrackingFunctionLibrary_GetHandThumbTip Parms{};
 
-	Parms.hand = hand;
+	Parms.Hand = Hand;
 	Parms.TransformSpace = TransformSpace;
 
 	auto Flgs = Func->FunctionFlags;
@@ -386,12 +386,12 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetMagicLeapHandTrackingLiveLinkSour
 // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.GetMotionSourceForHandKeypoint
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// EControllerHand                         hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerHand                         Hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EMagicLeapHandTrackingKeypoint          Keypoint                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName*                            OutMotionSource                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMagicLeapHandTrackingFunctionLibrary::GetMotionSourceForHandKeypoint(EControllerHand hand, EMagicLeapHandTrackingKeypoint Keypoint, class FName* OutMotionSource)
+bool UMagicLeapHandTrackingFunctionLibrary::GetMotionSourceForHandKeypoint(EControllerHand Hand, EMagicLeapHandTrackingKeypoint Keypoint, class FName* OutMotionSource)
 {
 	static class UFunction* Func = nullptr;
 
@@ -400,7 +400,7 @@ bool UMagicLeapHandTrackingFunctionLibrary::GetMotionSourceForHandKeypoint(ECont
 
 	Params::MagicLeapHandTrackingFunctionLibrary_GetMotionSourceForHandKeypoint Parms{};
 
-	Parms.hand = hand;
+	Parms.Hand = Hand;
 	Parms.Keypoint = Keypoint;
 
 	auto Flgs = Func->FunctionFlags;
@@ -448,10 +448,10 @@ float UMagicLeapHandTrackingFunctionLibrary::GetStaticGestureConfidenceThreshold
 // Function MagicLeapHandTracking.MagicLeapHandTrackingFunctionLibrary.IsHoldingControl
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// EControllerHand                         hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EControllerHand                         Hand                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMagicLeapHandTrackingFunctionLibrary::IsHoldingControl(EControllerHand hand)
+bool UMagicLeapHandTrackingFunctionLibrary::IsHoldingControl(EControllerHand Hand)
 {
 	static class UFunction* Func = nullptr;
 
@@ -460,7 +460,7 @@ bool UMagicLeapHandTrackingFunctionLibrary::IsHoldingControl(EControllerHand han
 
 	Params::MagicLeapHandTrackingFunctionLibrary_IsHoldingControl Parms{};
 
-	Parms.hand = hand;
+	Parms.Hand = Hand;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

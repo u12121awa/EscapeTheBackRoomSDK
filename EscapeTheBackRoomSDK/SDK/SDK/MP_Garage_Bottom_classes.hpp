@@ -10,20 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "MP_GameMode_classes.hpp"
 #include "Engine_structs.hpp"
+#include "MP_GameMode_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_Garage_Bottom.MP_Garage_Bottom_C
-// 0x0010 (0x0398 - 0x0388)
+// 0x0010 (0x0390 - 0x0380)
 class AMP_Garage_Bottom_C final : public AMP_GameMode_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Garage_Bottom_C;                 // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	int32                                         SelectedElevator;                                  // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Garage_Bottom_C;                 // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	int32                                         SelectedElevator;                                  // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MP_Garage_Bottom(int32 EntryPoint);

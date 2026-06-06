@@ -19,18 +19,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_Bed.BP_Bed_C
-// 0x00A0 (0x03A0 - 0x0300)
+// 0x0098 (0x03A0 - 0x0308)
 class ABP_Bed_C final : public AInteractablePawn
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Box;                                               // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         MoveCamera_AlphaRot_FBFDBA874FF89ECC26DF168FFF3E498B; // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MoveCamera_AlphaLoc_FBFDBA874FF89ECC26DF168FFF3E498B; // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            MoveCamera__Direction_FBFDBA874FF89ECC26DF168FFF3E498B; // 0x0318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_319[0x7];                                      // 0x0319(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     MoveCamera;                                        // 0x0320(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_328[0x8];                                      // 0x0328(0x0008)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          Box;                                               // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         MoveCamera_AlphaRot_FBFDBA874FF89ECC26DF168FFF3E498B; // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MoveCamera_AlphaLoc_FBFDBA874FF89ECC26DF168FFF3E498B; // 0x031C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            MoveCamera__Direction_FBFDBA874FF89ECC26DF168FFF3E498B; // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     MoveCamera;                                        // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             HideTransform;                                     // 0x0330(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FTransform                             CurrentTransform;                                  // 0x0360(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                         TurnSpeed;                                         // 0x0390(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

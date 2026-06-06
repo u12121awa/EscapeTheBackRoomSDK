@@ -18,28 +18,27 @@ namespace SDK::Params
 {
 
 // Function BP_ValveHint.BP_ValveHint_C.ExecuteUbergraph_BP_ValveHint
-// 0x00C0 (0x00C0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct BP_ValveHint_C_ExecuteUbergraph_BP_ValveHint final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class AMP_PlayerController_C*                 K2Node_DynamicCast_AsMP_Player_Controller;         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
-	class AActor*                                 K2Node_Event_OtherActor;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHE_Subtitle                           K2Node_MakeStruct_HE_Subtitle;                     // 0x0030(0x0050)(HasGetValueTypeHash)
-	class ABPCharacter_Demo_C*                    K2Node_DynamicCast_AsBPCharacter_Demo;             // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	TArray<struct FHE_Subtitle>                   K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	struct FHE_SubtitleSeq                        K2Node_MakeStruct_HE_SubtitleSeq;                  // 0x00A8(0x0018)(HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AMP_PlayerController_C*                 K2Node_DynamicCast_AsMP_Player_Controller;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-8 ])
+	class AActor*                                 K2Node_Event_OtherActor;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHE_Subtitle                           K2Node_MakeStruct_HE_Subtitle;                     // 0x0028(0x0050)(HasGetValueTypeHash)
+	class ABPCharacter_Demo_C*                    K2Node_DynamicCast_AsBPCharacter_Demo;             // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<struct FHE_Subtitle>                   K2Node_MakeArray_Array;                            // 0x0088(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsLocallyControlled_ReturnValue;          // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	struct FHE_SubtitleSeq                        K2Node_MakeStruct_HE_SubtitleSeq;                  // 0x00A0(0x0018)(HasGetValueTypeHash)
 };
 
 // Function BP_ValveHint.BP_ValveHint_C.ReceiveActorBeginOverlap

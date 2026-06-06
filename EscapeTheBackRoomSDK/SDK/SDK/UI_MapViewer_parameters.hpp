@@ -10,9 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-#include "S_LevelStats_structs.hpp"
 #include "S_LevelIntel_structs.hpp"
+#include "S_LevelStats_structs.hpp"
 
 
 namespace SDK::Params
@@ -89,16 +88,6 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_FloatToString_ReturnValue;           // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-
-// Function UI_MapViewer.UI_MapViewer_C.CheckFont
-// 0x0070 (0x0070 - 0x0000)
-struct UI_MapViewer_C_CheckFont final
-{
-public:
-	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0000(0x0058)(HasGetValueTypeHash)
-	class FString                                 CallFunc_GetCurrentCulture_ReturnValue;            // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_StrStr_ReturnValue;              // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

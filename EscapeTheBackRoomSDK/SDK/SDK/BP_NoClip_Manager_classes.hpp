@@ -18,27 +18,19 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_NoClip_Manager.BP_NoClip_Manager_C
-// 0x0078 (0x0298 - 0x0220)
+// 0x0018 (0x0238 - 0x0220)
 class BP_NoClip_Manager::ABP_NoClip_Manager_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	int32                                         IndexChosen;                                       // 0x0230(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	class AStaticMeshActor*                       FirstExitWall;                                     // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AStaticMeshActor*                       SecondExitWall;                                    // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         HoundSpawnsFloor1;                                 // 0x0248(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class AActor*                                 BacteriaSpawnFloor1;                               // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         SkinStealerSpawnsFloor1;                           // 0x0260(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	TArray<class AActor*>                         HoundSpawnsFloor2;                                 // 0x0270(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	class AActor*                                 BacteriaSpawnFloor2;                               // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         SkinStealerSpawnsFloor2;                           // 0x0288(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	int32                                         Players;                                           // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_NoClip_Manager(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void OnRep_IndexChosen();
+	void CheckPlayers();
+	void StartChecking();
+	void AddPlayer();
 
 public:
 	static class UClass* StaticClass()

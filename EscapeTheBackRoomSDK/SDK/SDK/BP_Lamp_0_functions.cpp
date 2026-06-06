@@ -17,71 +17,135 @@
 namespace SDK
 {
 
-// Function BP_Lamp.BP_Lamp_C.TurnOFF
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BP_Lamp_0::ABP_Lamp_C::TurnOFF()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lamp_C", "TurnOFF");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Lamp.BP_Lamp_C.TurnON
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BP_Lamp_0::ABP_Lamp_C::TurnON()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lamp_C", "TurnON");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Lamp.BP_Lamp_C.CheckLight
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Lamp.BP_Lamp_C.ExecuteUbergraph_BP_Lamp
+// (Final, UbergraphFunction)
 // Parameters:
-// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_Lamp_0::ABP_Lamp_C::CheckLight(float Value)
+void BP_Lamp_0::ABP_Lamp_C::ExecuteUbergraph_BP_Lamp(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lamp_C", "CheckLight");
+		Func = Class->GetFunction("BP_Lamp_C", "ExecuteUbergraph_BP_Lamp");
 
-	Params::BP_Lamp_C_CheckLight Parms{};
+	Params::BP_Lamp_C_ExecuteUbergraph_BP_Lamp Parms{};
 
-	Parms.Value = Value;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Lamp.BP_Lamp_C.SetPointLight
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Intensity                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Lamp.BP_Lamp_C.StopFlicker
+// (BlueprintCallable, BlueprintEvent)
 
-void BP_Lamp_0::ABP_Lamp_C::SetPointLight(float Intensity)
+void BP_Lamp_0::ABP_Lamp_C::StopFlicker()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lamp_C", "SetPointLight");
+		Func = Class->GetFunction("BP_Lamp_C", "StopFlicker");
 
-	Params::BP_Lamp_C_SetPointLight Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Intensity = Intensity;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BP_Lamp.BP_Lamp_C.Flicker
+// (BlueprintCallable, BlueprintEvent)
+
+void BP_Lamp_0::ABP_Lamp_C::Flicker()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Lamp_C", "Flicker");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Lamp.BP_Lamp_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void BP_Lamp_0::ABP_Lamp_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Lamp_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Lamp.BP_Lamp_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
+
+void BP_Lamp_0::ABP_Lamp_C::Timeline_0__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Lamp_C", "Timeline_0__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Lamp.BP_Lamp_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void BP_Lamp_0::ABP_Lamp_C::Timeline_0__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Lamp_C", "Timeline_0__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Lamp.BP_Lamp_C.FlickerTime__UpdateFunc
+// (BlueprintEvent)
+
+void BP_Lamp_0::ABP_Lamp_C::FlickerTime__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Lamp_C", "FlickerTime__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Lamp.BP_Lamp_C.FlickerTime__FinishedFunc
+// (BlueprintEvent)
+
+void BP_Lamp_0::ABP_Lamp_C::FlickerTime__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Lamp_C", "FlickerTime__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Lamp.BP_Lamp_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void BP_Lamp_0::ABP_Lamp_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Lamp_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

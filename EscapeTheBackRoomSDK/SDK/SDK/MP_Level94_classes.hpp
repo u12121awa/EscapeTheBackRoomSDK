@@ -11,24 +11,24 @@
 #include "Basic.hpp"
 
 #include "AIModule_structs.hpp"
-#include "MP_GameMode_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "MP_GameMode_classes.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass MP_Level94.MP_Level94_C
-// 0x0070 (0x03F8 - 0x0388)
+// 0x0070 (0x03F0 - 0x0380)
 class AMP_Level94_C final : public AMP_GameMode_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Level94_C;                       // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          IsNight;                                           // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_391[0x7];                                      // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	TMap<int32, class ABPCharacter_Demo_C*>       PlayerMap;                                         // 0x0398(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FVector                                RetreatLocation;                                   // 0x03E8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_MP_Level94_C;                       // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          IsNight;                                           // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
+	TMap<int32, class ABPCharacter_Demo_C*>       PlayerMap;                                         // 0x0390(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FVector                                RetreatLocation;                                   // 0x03E0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MP_Level94(int32 EntryPoint);

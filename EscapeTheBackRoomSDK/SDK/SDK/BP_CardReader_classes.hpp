@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "E_SoundTypes_structs.hpp"
 #include "Engine_structs.hpp"
-#include "E_PersonalTypes_structs.hpp"
-#include "F_CardInfo_structs.hpp"
 #include "Backrooms_classes.hpp"
+#include "F_CardInfo_structs.hpp"
+#include "E_SoundTypes_structs.hpp"
+#include "E_PersonalTypes_structs.hpp"
 
 
 namespace SDK

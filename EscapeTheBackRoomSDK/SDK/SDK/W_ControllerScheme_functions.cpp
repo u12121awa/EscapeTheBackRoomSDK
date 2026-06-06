@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function W_ControllerScheme.W_ControllerScheme_C.ExecuteUbergraph_W_ControllerScheme
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -34,20 +34,6 @@ void UW_ControllerScheme_C::ExecuteUbergraph_W_ControllerScheme(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function W_ControllerScheme.W_ControllerScheme_C.CheckFont
-// (BlueprintCallable, BlueprintEvent)
-
-void UW_ControllerScheme_C::CheckFont()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_ControllerScheme_C", "CheckFont");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

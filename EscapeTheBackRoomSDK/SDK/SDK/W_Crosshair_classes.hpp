@@ -17,11 +17,11 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass W_Crosshair.W_Crosshair_C
-// 0x0008 (0x0268 - 0x0260)
+// 0x0008 (0x0278 - 0x0270)
 class UW_Crosshair_C final : public UUserWidget
 {
 public:
-	class UImage*                                 Image_129;                                         // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_129;                                         // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

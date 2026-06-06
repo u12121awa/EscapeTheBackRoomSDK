@@ -10,47 +10,47 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "E_GarageColor_structs.hpp"
+#include "Engine_structs.hpp"
 #include "BP_Interactable_classes.hpp"
 #include "Backrooms_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ColorPicker.BP_ColorPicker_C
-// 0x00C8 (0x03F0 - 0x0328)
+// 0x00C8 (0x03F8 - 0x0330)
 class ABP_ColorPicker_C final : public ABP_Interactable_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_ColorPicker_C;                   // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_ColorButton_C*                      BP_ColorButton_Yellow_02;                          // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Blue_02;                            // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Green_02;                           // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Red_02;                             // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Yellow_01;                          // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Blue_01;                            // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Green_01;                           // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Red_01;                             // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Yellow_04;                          // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Blue_04;                            // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Green_04;                           // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Red_04;                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Yellow_03;                          // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Blue_03;                            // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Green_03;                           // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBP_ColorButton_C*                      BP_ColorButton_Red_03;                             // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Toggle_Y_684396A64176A2834789F683B8AA8B89;         // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Toggle__Direction_684396A64176A2834789F683B8AA8B89; // 0x03B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B5[0x3];                                      // 0x03B5(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class UTimelineComponent*                     Toggle;                                            // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABP_Car_Manager_C*                      CarManager;                                        // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<E_GarageColor>                         EnteredColors;                                     // 0x03C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         CurrentSelectedIndex;                              // 0x03D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC[0x4];                                      // 0x03DC(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
-	TArray<class UBP_ColorButton_C*>              ButtonArray;                                       // 0x03E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_ColorPicker_C;                   // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_ColorButton_C*                      BP_ColorButton_Yellow_02;                          // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Blue_02;                            // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Green_02;                           // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Red_02;                             // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Yellow_01;                          // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Blue_01;                            // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Green_01;                           // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Red_01;                             // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Yellow_04;                          // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Blue_04;                            // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Green_04;                           // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Red_04;                             // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Yellow_03;                          // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Blue_03;                            // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Green_03;                           // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBP_ColorButton_C*                      BP_ColorButton_Red_03;                             // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Toggle_Y_684396A64176A2834789F683B8AA8B89;         // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Toggle__Direction_684396A64176A2834789F683B8AA8B89; // 0x03BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BD[0x3];                                      // 0x03BD(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
+	class UTimelineComponent*                     Toggle;                                            // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_Car_Manager_C*                      CarManager;                                        // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<E_GarageColor>                         EnteredColors;                                     // 0x03D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         CurrentSelectedIndex;                              // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E4[0x4];                                      // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
+	TArray<class UBP_ColorButton_C*>              ButtonArray;                                       // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void ExecuteUbergraph_BP_ColorPicker(int32 EntryPoint);

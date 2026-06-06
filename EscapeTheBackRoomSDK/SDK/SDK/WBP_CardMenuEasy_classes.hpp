@@ -17,12 +17,12 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_CardMenuEasy.WBP_CardMenuEasy_C
-// 0x0010 (0x0270 - 0x0260)
+// 0x0010 (0x0280 - 0x0270)
 class UWBP_CardMenuEasy_C final : public UUserWidget
 {
 public:
-	class UScrollBox*                             ScrollBoxCards;                                    // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAC_CardReaderPlayer_C*                 ComponentPlayer;                                   // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UScrollBox*                             ScrollBoxCards;                                    // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAC_CardReaderPlayer_C*                 ComponentPlayer;                                   // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void Update();

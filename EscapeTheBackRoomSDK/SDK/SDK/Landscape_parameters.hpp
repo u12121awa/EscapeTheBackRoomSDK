@@ -16,14 +16,6 @@
 namespace SDK::Params
 {
 
-// Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent
-// 0x0008 (0x0008 - 0x0000)
-struct LandscapeHeightfieldCollisionComponent_GetRenderComponent final
-{
-public:
-	class ULandscapeComponent*                    ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // Function Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections
 // 0x0004 (0x0004 - 0x0000)
 struct LandscapeProxy_ChangeComponentScreenSizeToUseSubSections final
@@ -191,6 +183,14 @@ public:
 	int32                                         InIndex;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-8 ])
 	class UMaterialInstanceDynamic*               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// Function Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent
+// 0x0008 (0x0008 - 0x0000)
+struct LandscapeHeightfieldCollisionComponent_GetRenderComponent final
+{
+public:
+	class ULandscapeComponent*                    ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents

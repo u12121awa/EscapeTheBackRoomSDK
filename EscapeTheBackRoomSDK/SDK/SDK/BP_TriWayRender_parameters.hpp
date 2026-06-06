@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "E_TriWayPinColor_structs.hpp"
+#include "S_TriWayData_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "S_FinderData_structs.hpp"
-#include "S_TriWayData_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 namespace SDK::Params
@@ -164,7 +164,7 @@ public:
 struct BP_TriWayRender_C_SetWheelYpos final
 {
 public:
-	int32                                         WheelId;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Wheelid;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Location;                                          // 0x0004(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FS_TriWayData                          CallFunc_Array_Get_Item;                           // 0x0010(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0030(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
@@ -175,7 +175,7 @@ public:
 struct BP_TriWayRender_C_SetWheelRotation final
 {
 public:
-	int32                                         WheelId;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Wheelid;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               Rotator;                                           // 0x0004(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FS_TriWayData                          CallFunc_Array_Get_Item;                           // 0x0010(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0030(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)

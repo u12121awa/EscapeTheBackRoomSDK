@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "S_TriWayData_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_TriWayState_structs.hpp"
-#include "S_TriWayData_structs.hpp"
-#include "S_TriWayLinks_structs.hpp"
-#include "E_TriWayDirection_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "E_TriWayCount_structs.hpp"
+#include "S_TriWayLinks_structs.hpp"
 #include "BPC_MiniGameBase_2_classes.hpp"
+#include "E_TriWayDirection_structs.hpp"
 #include "E_TriWayPinColor_structs.hpp"
 
 
@@ -56,13 +56,13 @@ public:
 	float                                         WheelYposCounter;                                  // 0x02E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsSoundPlay;                                       // 0x02EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2ED[0x3];                                      // 0x02ED(0x0003)(Fixing Size After Last Property [ Dumper-8 ])
-	class ABP_Fusebox_7_C*                        Fusebox;                                           // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_Fusebox_7_C*                        fusebox;                                           // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void()>              SpawningFinished;                                  // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ExecuteUbergraph_MiniGame_TriWay2(int32 EntryPoint);
 	void ReceiveTick(float DeltaSeconds);
-	void SpawnMinigame();
+	void SpawnMiniGame();
 	void CreateAndSpawnWheels(E_TriWayCount Count);
 	void AddWheel(const struct FVector& Location, int32 SolvedState, int32 CurrentState, E_TriWayPinColor Pin0, E_TriWayPinColor Pin1, E_TriWayPinColor Pin2);
 	void CreateSixWheels();
@@ -70,17 +70,17 @@ public:
 	void CreateFourWheels();
 	void GetWheelByXpos(bool MoveRight, int32* NewCellId);
 	void GetWheelByYpos(bool MoveUp, int32* NewCellId);
-	void RotateWheel(int32 WheelId, int32 ToState, float DeltaTime, bool* IsFinished);
+	void RotateWheel(int32 Wheelid, int32 ToState, float DeltaTime, bool* IsFinished);
 	void GetWheelState(int32* RandomState);
 	void GetRotationFromState(int32 WheelState, float* WheelAngle);
 	void UpdateLinks();
 	void SpawnPS();
-	void AdjustWheelRotation(int32 WheelId, bool RotateToRight, int32* OutState);
-	void SetWheelState(int32 WheelId, int32 NewState);
-	void SetWheelToggled(int32 WheelId, bool Toggled);
+	void AdjustWheelRotation(int32 Wheelid, bool RotateToRight, int32* OutState);
+	void SetWheelState(int32 Wheelid, int32 NewState);
+	void SetWheelToggled(int32 Wheelid, bool Toggled);
 	void CheckIsSovled(bool* IsComplete);
 	void GetRandomPinColor(E_TriWayPinColor* PinColor);
-	void GetWheelPins(int32 WheelId, E_TriWayPinColor* Pin0, E_TriWayPinColor* Pin1, E_TriWayPinColor* Pin2);
+	void GetWheelPins(int32 Wheelid, E_TriWayPinColor* Pin0, E_TriWayPinColor* Pin1, E_TriWayPinColor* Pin2);
 	void IsCorrectLinkNew(int32 WheelId1, int32 WheelId2, bool* IsLinked);
 	void GetPinsColor(E_TriWayDirection Direction, int32 WheelState1, int32 WheelState2, E_TriWayPinColor WheelOnePin0, E_TriWayPinColor WheelOnePin1, E_TriWayPinColor WheelOnePin2, E_TriWayPinColor WheelTwoPin0, E_TriWayPinColor WheelTwoPin1, E_TriWayPinColor WheelTwoPin2, E_TriWayPinColor* Color1, E_TriWayPinColor* Color2);
 	void StartStopSounds();

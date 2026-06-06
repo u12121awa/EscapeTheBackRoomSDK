@@ -37,6 +37,26 @@ void ABP_BoneThief_Slides_C::ExecuteUbergraph_BP_BoneThief_Slides(int32 EntryPoi
 }
 
 
+// Function BP_BoneThief_Slides.BP_BoneThief_Slides_C.Apply Costume To Skeletal Mesh
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ABP_SlidingPlayer_C*              InTargetPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BoneThief_Slides_C::Apply_Costume_To_Skeletal_Mesh(class ABP_SlidingPlayer_C* InTargetPlayer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BoneThief_Slides_C", "Apply Costume To Skeletal Mesh");
+
+	Params::BP_BoneThief_Slides_C_Apply_Costume_To_Skeletal_Mesh Parms{};
+
+	Parms.InTargetPlayer = InTargetPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_BoneThief_Slides.BP_BoneThief_Slides_C.MC_SlowBreathe
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 

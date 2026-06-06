@@ -102,5 +102,19 @@ void AMP_GameState_C::GenerateUUID()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
+
+// Function MP_GameState.MP_GameState_C.OnRep_MaxPlayers
+// (BlueprintCallable, BlueprintEvent)
+
+void AMP_GameState_C::OnRep_MaxPlayers()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MP_GameState_C", "OnRep_MaxPlayers");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

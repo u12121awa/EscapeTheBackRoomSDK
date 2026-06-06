@@ -64,7 +64,7 @@ public:
 struct BP_Ceiling_1DynamicLight_Rect_C_ToggleLight final
 {
 public:
-	bool                                          isOff;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsOff;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // Function BP_Ceiling_1DynamicLight_Rect.BP_Ceiling_1DynamicLight_Rect_C.BndEvt__BP_Ceiling_2DynamicLight_Rect_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature

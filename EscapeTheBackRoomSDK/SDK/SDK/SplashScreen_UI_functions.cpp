@@ -37,6 +37,62 @@ void USplashScreen_UI_C::ExecuteUbergraph_SplashScreen_UI(int32 EntryPoint)
 }
 
 
+// Function SplashScreen_UI.SplashScreen_UI_C.ResetSplashScreenSkip
+// (BlueprintCallable, BlueprintEvent)
+
+void USplashScreen_UI_C::ResetSplashScreenSkip()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplashScreen_UI_C", "ResetSplashScreenSkip");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SplashScreen_UI.SplashScreen_UI_C.CancelImageLogo
+// (BlueprintCallable, BlueprintEvent)
+
+void USplashScreen_UI_C::CancelImageLogo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplashScreen_UI_C", "CancelImageLogo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SplashScreen_UI.SplashScreen_UI_C.OnFinishFancyLogo
+// (BlueprintCallable, BlueprintEvent)
+
+void USplashScreen_UI_C::OnFinishFancyLogo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplashScreen_UI_C", "OnFinishFancyLogo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SplashScreen_UI.SplashScreen_UI_C.SkipSplashScreen
+// (BlueprintCallable, BlueprintEvent)
+
+void USplashScreen_UI_C::SkipSplashScreen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplashScreen_UI_C", "SkipSplashScreen");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function SplashScreen_UI.SplashScreen_UI_C.OnFinishBBILogo
 // (BlueprintCallable, BlueprintEvent)
 
@@ -53,21 +109,15 @@ void USplashScreen_UI_C::OnFinishBBILogo()
 
 // Function SplashScreen_UI.SplashScreen_UI_C.PlaySplashScreens
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASplashScreen_MediaSoundActor_C*  SoundActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USplashScreen_UI_C::PlaySplashScreens(class ASplashScreen_MediaSoundActor_C* SoundActor)
+void USplashScreen_UI_C::PlaySplashScreens()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("SplashScreen_UI_C", "PlaySplashScreens");
 
-	Params::SplashScreen_UI_C_PlaySplashScreens Parms{};
-
-	Parms.SoundActor = SoundActor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -119,6 +169,20 @@ void USplashScreen_UI_C::Finished_262FC8A444B59E2C880FAAAD09BCB060()
 }
 
 
+// Function SplashScreen_UI.SplashScreen_UI_C.Finished_D31BF3F246FE87473995198D7511F578
+// (BlueprintCallable, BlueprintEvent)
+
+void USplashScreen_UI_C::Finished_D31BF3F246FE87473995198D7511F578()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplashScreen_UI_C", "Finished_D31BF3F246FE87473995198D7511F578");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function SplashScreen_UI.SplashScreen_UI_C.Finished_1B0E4D10450F17056185DF8F68ED901C
 // (BlueprintCallable, BlueprintEvent)
 
@@ -133,17 +197,73 @@ void USplashScreen_UI_C::Finished_1B0E4D10450F17056185DF8F68ED901C()
 }
 
 
-// Function SplashScreen_UI.SplashScreen_UI_C.Finished_D31BF3F246FE87473995198D7511F578
-// (BlueprintCallable, BlueprintEvent)
+// Function SplashScreen_UI.SplashScreen_UI_C.OnKeyDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FKeyEvent&                 InKeyEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-void USplashScreen_UI_C::Finished_D31BF3F246FE87473995198D7511F578()
+struct FEventReply USplashScreen_UI_C::OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SplashScreen_UI_C", "Finished_D31BF3F246FE87473995198D7511F578");
+		Func = Class->GetFunction("SplashScreen_UI_C", "OnKeyDown");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::SplashScreen_UI_C_OnKeyDown Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InKeyEvent = std::move(InKeyEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function SplashScreen_UI.SplashScreen_UI_C.OnMouseButtonDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply USplashScreen_UI_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplashScreen_UI_C", "OnMouseButtonDown");
+
+	Params::SplashScreen_UI_C_OnMouseButtonDown Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function SplashScreen_UI.SplashScreen_UI_C.GetFadeOutStartTime
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+float USplashScreen_UI_C::GetFadeOutStartTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SplashScreen_UI_C", "GetFadeOutStartTime");
+
+	Params::SplashScreen_UI_C_GetFadeOutStartTime Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

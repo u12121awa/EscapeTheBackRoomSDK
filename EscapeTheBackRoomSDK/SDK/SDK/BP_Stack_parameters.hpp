@@ -58,7 +58,7 @@ public:
 	class ABP_Stack_C*                            CallFunc_FinishSpawningActor_ReturnValue;          // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-8 ])
-	class BP_Floor::ABP_Floor_C*                  CallFunc_GetActorOfClass_ReturnValue_1;            // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class BP_Floor_1::ABP_Floor_C*                CallFunc_GetActorOfClass_ReturnValue_1;            // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1B8[0x8];                                      // 0x01B8(0x0008)(Fixing Size After Last Property [ Dumper-8 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x01C0(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1; // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

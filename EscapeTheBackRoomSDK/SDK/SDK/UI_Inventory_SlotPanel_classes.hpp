@@ -18,13 +18,13 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass UI_Inventory_SlotPanel.UI_Inventory_SlotPanel_C
-// 0x0018 (0x0278 - 0x0260)
+// 0x0018 (0x0288 - 0x0270)
 class UUI_Inventory_SlotPanel_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0260(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Img_Icon;                                          // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FName                                   Item;                                              // 0x0270(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0270(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Img_Icon;                                          // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FName                                   Item;                                              // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_UI_Inventory_SlotPanel(int32 EntryPoint);

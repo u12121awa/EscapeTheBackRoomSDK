@@ -177,8 +177,9 @@ void ABP_PadLock_C::UnPossess()
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bActivate                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PadLock_C::MC_Highlight(float Value)
+void ABP_PadLock_C::MC_Highlight(float Value, bool bActivate)
 {
 	static class UFunction* Func = nullptr;
 
@@ -188,6 +189,7 @@ void ABP_PadLock_C::MC_Highlight(float Value)
 	Params::BP_PadLock_C_MC_Highlight Parms{};
 
 	Parms.Value = Value;
+	Parms.bActivate = bActivate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

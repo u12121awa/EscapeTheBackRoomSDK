@@ -13,9 +13,9 @@
 #include "MD_KickPlate_Enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "MD_DoorTypes_Enum_structs.hpp"
-#include "MD_RollDoorStateEnum_structs.hpp"
 #include "MD_LatchTypes2_Enum_structs.hpp"
 #include "SwingDoorBase_BP_classes.hpp"
+#include "MD_RollDoorStateEnum_structs.hpp"
 
 
 namespace SDK
@@ -42,7 +42,7 @@ public:
 	class UStaticMeshComponent*                   PushKickMesh1;                                     // 0x02D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   PullKickMesh1;                                     // 0x02E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Door1;                                             // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Doorframe;                                         // 0x02F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   DoorFrame;                                         // 0x02F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	EMD_DoorTypes_Enum                            DoorType;                                          // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMD_LatchTypes2_Enum                          LatchType;                                         // 0x02F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMD_KickPlate_Enum                            PullKickPlate;                                     // 0x02FA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

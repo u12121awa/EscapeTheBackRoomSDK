@@ -444,19 +444,5 @@ void ULobby_MapSelection_C::CheckName(bool* IsValid)
 		*IsValid = Parms.IsValid;
 }
 
-
-// Function Lobby_MapSelection.Lobby_MapSelection_C.CheckFont
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ULobby_MapSelection_C::CheckFont()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lobby_MapSelection_C", "CheckFont");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
 }
 

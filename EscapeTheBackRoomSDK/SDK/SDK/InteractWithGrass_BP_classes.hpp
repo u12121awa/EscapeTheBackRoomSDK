@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "GrassInteractionType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "GrassInteractionType_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -107,7 +107,7 @@ public:
 	void FreeUpInteractionChannel();
 	void CheckNearbyGrass();
 	void ReceiveBeginPlay();
-	void IsInDistanceToViewTarget(float InDistance, bool* isInDistance, float* currentDistance);
+	void IsInDistanceToViewTarget(float inDistance, bool* isInDistance, float* currentDistance);
 
 public:
 	static class UClass* StaticClass()
