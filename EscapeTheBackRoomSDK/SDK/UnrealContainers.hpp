@@ -25,6 +25,38 @@ namespace UC
 	typedef uint16_t uint16;
 	typedef uint32_t uint32;
 	typedef uint64_t uint64;
+	
+	class FMemory
+	{
+	private:
+		inline static void (*FMemoryFree)(void* Ptr) = nullptr;
+		inline static void* (*FMemoryRealloc)(void* Ptr, uint64 Size, uint32 Alignment) = nullptr;
+    
+	public:
+		static void InitFreeManually(void* Location)
+		{
+			FMemoryFree = reinterpret_cast<decltype(FMemoryFree)>(Location);
+		}
+    
+		static void InitReallocManually(void* Location)
+		{
+			FMemoryRealloc = reinterpret_cast<decltype(FMemoryRealloc)>(Location);
+		}
+    
+		static void Free(void* Ptr)
+		{
+			if (!FMemoryFree)
+				return;
+			return FMemoryFree(Ptr);
+		}
+    
+		static void* Realloc(void* Ptr, uint64 Size, uint32 Alignment = 0)
+		{
+			if (!FMemoryRealloc)
+				return nullptr;
+			return FMemoryRealloc(Ptr, Size, Alignment);
+		}
+	};
 
 	template<typename ArrayElementType>
 	class TArray;
@@ -274,12 +306,15 @@ namespace UC
 		inline const ArrayElementType& GetUnsafe(int32 Index) const { return Data[Index]; }
 
 	public:
-		/* Adds to the array if there is still space for one more element */
+		inline void ResizeTo(int32_t NewMax)
+		{
+			Data = (ArrayElementType*)FMemory::Realloc(Data, (MaxElements = NewMax) * sizeof(ArrayElementType));
+		}
+		
 		inline bool Add(const ArrayElementType& Element)
 		{
-			if (GetSlack() <= 0)
-				return false;
 
+			ResizeTo((NumElements + 1));
 			Data[NumElements] = Element;
 			NumElements++;
 
@@ -308,6 +343,15 @@ namespace UC
 
 			if (Data)
 				memset(Data, 0, NumElements * ElementSize);
+		}
+		
+		inline void Free()
+		{
+			if (Data)
+				FMemory::Free(Data);
+			Data = nullptr;
+			MaxElements = 0;
+			NumElements = 0;
 		}
 
     public:
