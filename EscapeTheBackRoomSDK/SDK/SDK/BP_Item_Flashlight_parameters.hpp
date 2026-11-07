@@ -240,14 +240,6 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// Function /BP_Item_Flashlight/BP_Item_Flashlight_C.SetMaterial
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Item_Flashlight_C_SetMaterial final
-{
-public:
-	bool                                          EnabledFOV;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
 // Function /BP_Item_Flashlight/BP_Item_Flashlight_C.OnRep_CurrentRepIntentsity
 // 0x0001 (0x0001 - 0x0000)
 struct BP_Item_Flashlight_C_OnRep_CurrentRepIntentsity final
@@ -274,6 +266,14 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFlashlight_BP_C*                       K2Node_DynamicCast_AsFlashlight_BP;                // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function /BP_Item_Flashlight/BP_Item_Flashlight_C.SetMaterial
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Item_Flashlight_C_SetMaterial final
+{
+public:
+	bool                                          EnabledFOV;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 SDK_PARAM_NAMESPACE_END

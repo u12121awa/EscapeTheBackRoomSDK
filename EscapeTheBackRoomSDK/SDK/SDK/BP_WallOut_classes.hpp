@@ -10,7 +10,7 @@
 
 #include "Basic.hpp"
 
-#include "E_WallOut_structs.hpp"
+#include "E_WallOut_0_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -28,7 +28,7 @@ public:
 	class UStaticMeshComponent*                   WallIn_mesh;                                       // 0x0240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   WallOut_mesh;                                      // 0x0248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	E_WallOut::E_WallOut                          WallOut;                                           // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_WallOut_0::E_WallOut                        WallOut;                                           // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Foundation;                                        // 0x0259(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Interior_Wall;                                     // 0x025A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          WallIn_B;                                          // 0x025B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)

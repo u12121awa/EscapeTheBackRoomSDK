@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Item_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -25,14 +25,14 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_Item_Toy(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void MC_Drop();
-	void UseItem();
 	void OnCompleted_E7C10CF145CF5799DFA524820188E4F6(class FName NotifyName);
 	void OnBlendOut_E7C10CF145CF5799DFA524820188E4F6(class FName NotifyName);
 	void OnInterrupted_E7C10CF145CF5799DFA524820188E4F6(class FName NotifyName);
 	void OnNotifyBegin_E7C10CF145CF5799DFA524820188E4F6(class FName NotifyName);
 	void OnNotifyEnd_E7C10CF145CF5799DFA524820188E4F6(class FName NotifyName);
+	void ReceiveBeginPlay();
+	void UseItem();
 
 public:
 	static class UClass* StaticClass()

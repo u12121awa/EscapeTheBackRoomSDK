@@ -36,41 +36,7 @@ void BP_NoClip_Zone::ABP_NoClip_Zone_C::ExecuteUbergraph_BP_NoClip_Zone(int32 En
 }
 
 
-// Function BP_NoClip_Zone.BP_NoClip_Zone_C.CheckPlayers
-// (BlueprintCallable, BlueprintEvent)
-
-void BP_NoClip_Zone::ABP_NoClip_Zone_C::CheckPlayers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NoClip_Zone_C", "CheckPlayers");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NoClip_Zone.BP_NoClip_Zone_C.SRV_NoClipped
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ABPCharacter_Demo_C*              Player                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void BP_NoClip_Zone::ABP_NoClip_Zone_C::SRV_NoClipped(class ABPCharacter_Demo_C* Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NoClip_Zone_C", "SRV_NoClipped");
-
-	Params::BP_NoClip_Zone_C_SRV_NoClipped Parms{};
-
-	Parms.Player = reinterpret_cast<class Params::ABPCharacter_Demo_C*>(Player);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NoClip_Zone.BP_NoClip_Zone_C.BndEvt__BP_ExitZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// Function BP_NoClip_Zone.BP_NoClip_Zone_C.BndEvt__BP_NoClip_Zone_CollisionComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
 // class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -80,14 +46,14 @@ void BP_NoClip_Zone::ABP_NoClip_Zone_C::SRV_NoClipped(class ABPCharacter_Demo_C*
 // bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void BP_NoClip_Zone::ABP_NoClip_Zone_C::BndEvt__BP_ExitZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+void BP_NoClip_Zone::ABP_NoClip_Zone_C::BndEvt__BP_NoClip_Zone_CollisionComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NoClip_Zone_C", "BndEvt__BP_ExitZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+		Func = Class->GetFunction("BP_NoClip_Zone_C", "BndEvt__BP_NoClip_Zone_CollisionComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
 
-	Params::BP_NoClip_Zone_C_BndEvt__BP_ExitZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
+	Params::BP_NoClip_Zone_C_BndEvt__BP_NoClip_Zone_CollisionComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -97,20 +63,6 @@ void BP_NoClip_Zone::ABP_NoClip_Zone_C::BndEvt__BP_ExitZone_Box_K2Node_Component
 	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NoClip_Zone.BP_NoClip_Zone_C.NoClip
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void BP_NoClip_Zone::ABP_NoClip_Zone_C::NoClip()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NoClip_Zone_C", "NoClip");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

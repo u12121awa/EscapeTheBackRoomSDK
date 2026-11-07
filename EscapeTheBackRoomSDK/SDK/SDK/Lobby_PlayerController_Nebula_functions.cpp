@@ -699,20 +699,6 @@ void ALobby_PlayerController_Nebula_C::GetAudioComponentForRemoteSpeaker(const c
 }
 
 
-// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ALobby_PlayerController_Nebula_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lobby_PlayerController_Nebula_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.ReceiveEndPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -730,6 +716,20 @@ void ALobby_PlayerController_Nebula_C::ReceiveEndPlay(EEndPlayReason EndPlayReas
 	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Lobby_PlayerController_Nebula.Lobby_PlayerController_Nebula_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ALobby_PlayerController_Nebula_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Lobby_PlayerController_Nebula_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Item_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -33,10 +33,8 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_Liquid_Pain(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void SRV_FinishDrink();
 	void PlayAnimation();
-	void UseItem();
 	void OnCompleted_0F271FAE4B4291EFCF443CB4D7BCBFE5(class FName NotifyName);
 	void OnBlendOut_0F271FAE4B4291EFCF443CB4D7BCBFE5(class FName NotifyName);
 	void OnInterrupted_0F271FAE4B4291EFCF443CB4D7BCBFE5(class FName NotifyName);
@@ -44,6 +42,8 @@ public:
 	void OnNotifyEnd_0F271FAE4B4291EFCF443CB4D7BCBFE5(class FName NotifyName);
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
+	void ReceiveBeginPlay();
+	void UseItem();
 	void SetMaterial(bool EnabledFOV);
 
 public:

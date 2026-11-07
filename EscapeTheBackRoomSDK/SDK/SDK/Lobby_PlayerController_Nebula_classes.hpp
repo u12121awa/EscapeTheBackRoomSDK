@@ -89,8 +89,8 @@ public:
 	void Update_Player_Speaking(bool IsSpeaking, const struct FBPUniqueNetId& UniqueId);
 	void IsMissionSelectOpen(bool* Yes);
 	void GetAudioComponentForRemoteSpeaker(const class FString& RemoteId, class UVoipAudioComponent** Component);
-	void ReceiveBeginPlay();
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
 	void OnInteractDoublePressed();
 
 public:

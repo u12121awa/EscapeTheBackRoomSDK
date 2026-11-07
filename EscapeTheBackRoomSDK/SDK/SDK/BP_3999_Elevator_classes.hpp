@@ -84,7 +84,7 @@ public:
 	ETimelineDirection                            ToggleDoors__Direction_3AD352AA43F0CB7974610AB75218109E; // 0x0404(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_405[0x3];                                      // 0x0405(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     ToggleDoors;                                       // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class ABP_Elevator_Button_Hub_C*>      Buttons;                                           // 0x0410(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
+	TArray<class ABP_Elevator_Button_Hub_C*>      buttons;                                           // 0x0410(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	class UMaterialInstanceDynamic*               Material_LEDDisplay;                               // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsClosed;                                          // 0x0428(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 	bool                                          DidFinish;                                         // 0x0429(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)

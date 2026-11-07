@@ -6,12 +6,12 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: BP_LockedDoor
+// Package: BP_LockedDoor_0
 
 #include "Basic.hpp"
 
-#include "BP_LockedDoor_classes.hpp"
-#include "BP_LockedDoor_parameters.hpp"
+#include "BP_LockedDoor_0_classes.hpp"
+#include "BP_LockedDoor_0_parameters.hpp"
 
 
 SDK_NAMESPACE_START
@@ -21,7 +21,7 @@ SDK_NAMESPACE_START
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_LockedDoor::ABP_LockedDoor_C::ExecuteUbergraph_BP_LockedDoor(int32 EntryPoint)
+void BP_LockedDoor_0::ABP_LockedDoor_C::ExecuteUbergraph_BP_LockedDoor(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
@@ -39,7 +39,7 @@ void BP_LockedDoor::ABP_LockedDoor_C::ExecuteUbergraph_BP_LockedDoor(int32 Entry
 // Function BP_LockedDoor.BP_LockedDoor_C.OpenDoor
 // (BlueprintCallable, BlueprintEvent)
 
-void BP_LockedDoor::ABP_LockedDoor_C::OpenDoor()
+void BP_LockedDoor_0::ABP_LockedDoor_C::OpenDoor()
 {
 	static class UFunction* Func = nullptr;
 
@@ -55,7 +55,7 @@ void BP_LockedDoor::ABP_LockedDoor_C::OpenDoor()
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_LockedDoor::ABP_LockedDoor_C::OnCompleted_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName)
+void BP_LockedDoor_0::ABP_LockedDoor_C::OnCompleted_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
@@ -75,7 +75,7 @@ void BP_LockedDoor::ABP_LockedDoor_C::OnCompleted_B9FA9AA74FD67E08EBC683BBB77711
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_LockedDoor::ABP_LockedDoor_C::OnBlendOut_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName)
+void BP_LockedDoor_0::ABP_LockedDoor_C::OnBlendOut_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
@@ -95,7 +95,7 @@ void BP_LockedDoor::ABP_LockedDoor_C::OnBlendOut_B9FA9AA74FD67E08EBC683BBB77711C
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_LockedDoor::ABP_LockedDoor_C::OnInterrupted_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName)
+void BP_LockedDoor_0::ABP_LockedDoor_C::OnInterrupted_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
@@ -115,7 +115,7 @@ void BP_LockedDoor::ABP_LockedDoor_C::OnInterrupted_B9FA9AA74FD67E08EBC683BBB777
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_LockedDoor::ABP_LockedDoor_C::OnNotifyBegin_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName)
+void BP_LockedDoor_0::ABP_LockedDoor_C::OnNotifyBegin_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
@@ -135,7 +135,7 @@ void BP_LockedDoor::ABP_LockedDoor_C::OnNotifyBegin_B9FA9AA74FD67E08EBC683BBB777
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_LockedDoor::ABP_LockedDoor_C::OnNotifyEnd_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName)
+void BP_LockedDoor_0::ABP_LockedDoor_C::OnNotifyEnd_B9FA9AA74FD67E08EBC683BBB77711CC(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
@@ -153,7 +153,7 @@ void BP_LockedDoor::ABP_LockedDoor_C::OnNotifyEnd_B9FA9AA74FD67E08EBC683BBB77711
 // Function BP_LockedDoor.BP_LockedDoor_C.OnRep_IsOpen
 // (BlueprintCallable, BlueprintEvent)
 
-void BP_LockedDoor::ABP_LockedDoor_C::OnRep_IsOpen()
+void BP_LockedDoor_0::ABP_LockedDoor_C::OnRep_IsOpen()
 {
 	static class UFunction* Func = nullptr;
 

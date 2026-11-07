@@ -1683,10 +1683,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Floor_0_functions.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Floor_1_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -1696,6 +1692,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Floor_4_functions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\BP_Floor_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -2183,7 +2183,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Lamp_0_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_Lamp_1_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -2427,11 +2427,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_LockedDoor_1_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_LockedDoor_0_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_LockedDoor_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_LockedDoor_1_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -3491,11 +3491,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Wardrobe_0_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_Wardrobe_A1_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Wardrobe_A1_functions.cpp">
+    <ClCompile Include="SDK\SDK\BP_Wardrobe_functions.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -6630,7 +6630,6 @@
     <ClInclude Include="SDK\SDK\BP_FloorLight_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_FloorLight_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_0_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BP_Floor_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_1_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_2_classes.hpp" />
@@ -6640,6 +6639,7 @@
     <ClInclude Include="SDK\SDK\BP_Floor_4_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_Small_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floor_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_Floor_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floors_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Floors_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_FlowerDecal_classes.hpp" />
@@ -6943,8 +6943,8 @@
     <ClInclude Include="SDK\SDK\BP_LampFall_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_LampFall_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_0_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BP_Lamp_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_1_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_Lamp_1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_Basement_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_ChildrenHospital_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lamp_bathroom_wall_0_classes.hpp" />
@@ -7059,10 +7059,10 @@
     <ClInclude Include="SDK\SDK\BP_Lock_5_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Lock_5_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_LockedDoor_0_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_LockedDoor_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_LockedDoor_1_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_LockedDoor_1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_LockedDoor_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BP_LockedDoor_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Locker01_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Locker01_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Locker02_classes.hpp" />
@@ -7716,12 +7716,12 @@
     <ClInclude Include="SDK\SDK\BP_WanderingSnowAngel_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_01_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_0_classes.hpp" />
-    <ClInclude Include="SDK\SDK\BP_Wardrobe_0_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_A1_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_A1_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_A_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_B_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_Wardrobe_classes.hpp" />
+    <ClInclude Include="SDK\SDK\BP_Wardrobe_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_WaterHeight_Zone_classes.hpp" />
     <ClInclude Include="SDK\SDK\BP_WaterHeight_Zone_parameters.hpp" />
     <ClInclude Include="SDK\SDK\BP_Water_Pipe_classes.hpp" />

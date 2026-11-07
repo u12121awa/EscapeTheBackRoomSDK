@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Item_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -76,8 +76,6 @@ public:
 	void StartFlicker();
 	void PlayAnimation();
 	void ToggleFadePower(bool FadeOut);
-	void ReceiveBeginPlay();
-	void UseItem();
 	void OnCompleted_858C6BED431A8EBEEAB2D09BA256DAA6(class FName NotifyName);
 	void OnBlendOut_858C6BED431A8EBEEAB2D09BA256DAA6(class FName NotifyName);
 	void OnInterrupted_858C6BED431A8EBEEAB2D09BA256DAA6(class FName NotifyName);
@@ -94,10 +92,12 @@ public:
 	void OnRep_IsFlashlightOn();
 	void GetAdjustedIntensity(float Intensity_0, float* Adjusted);
 	void GetAdjustedRadius(float Radius, float* Adjusted);
-	void SetMaterial(bool EnabledFOV);
 	void OnRep_CurrentRepIntentsity();
 	void OnRep_Replicated_Flashlight_BP();
 	void FindOwnerRepFlashlight();
+	void ReceiveBeginPlay();
+	void UseItem();
+	void SetMaterial(bool EnabledFOV);
 
 public:
 	static class UClass* StaticClass()

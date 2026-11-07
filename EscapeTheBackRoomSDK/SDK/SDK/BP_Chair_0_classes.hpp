@@ -16,9 +16,14 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass /BP_Chair.BP_Chair_C
-// 0x0000 (0x0230 - 0x0230)
-class BP_Chair_0::ABP_Chair_C final : public AStaticMeshActor
+// 0x0018 (0x0238 - 0x0220)
+class BP_Chair_0::ABP_Chair_C final : public AActor
 {
+public:
+	class UBoxComponent*                          Box6;                                              // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Folding_Chair2;                                    // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+
 public:
 	static class UClass* StaticClass()
 	{

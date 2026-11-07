@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Item_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -34,7 +34,6 @@ public:
 	void TraceForHit();
 	void PlayAnimation();
 	void Damage_SERVER(class UObject* Target, class AFancyCharacter* Character);
-	void UseItem();
 	void OnCompleted_EAE1020347AF8423F02534B24A6EB7A0(class FName NotifyName);
 	void OnBlendOut_EAE1020347AF8423F02534B24A6EB7A0(class FName NotifyName);
 	void OnInterrupted_EAE1020347AF8423F02534B24A6EB7A0(class FName NotifyName);
@@ -45,6 +44,7 @@ public:
 	void OnInterrupted_DCFF09A94F2F9174E32D89AADA2A2E4E(class FName NotifyName);
 	void OnNotifyBegin_DCFF09A94F2F9174E32D89AADA2A2E4E(class FName NotifyName);
 	void OnNotifyEnd_DCFF09A94F2F9174E32D89AADA2A2E4E(class FName NotifyName);
+	void UseItem();
 
 public:
 	static class UClass* StaticClass()

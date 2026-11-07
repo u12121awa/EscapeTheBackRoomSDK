@@ -6,12 +6,12 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: BP_Wardrobe_0
+// Package: BP_Wardrobe
 
 #include "Basic.hpp"
 
-#include "BP_Wardrobe_0_classes.hpp"
-#include "BP_Wardrobe_0_parameters.hpp"
+#include "BP_Wardrobe_classes.hpp"
+#include "BP_Wardrobe_parameters.hpp"
 
 
 SDK_NAMESPACE_START
@@ -21,7 +21,7 @@ SDK_NAMESPACE_START
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::ExecuteUbergraph_BP_Wardrobe(int32 EntryPoint)
+void BP_Wardrobe::ABP_Wardrobe_C::ExecuteUbergraph_BP_Wardrobe(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
@@ -41,7 +41,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::ExecuteUbergraph_BP_Wardrobe(int32 EntryPoin
 // Parameters:
 // class AController*                      OldController                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::ReceiveUnpossessed(class AController* OldController)
+void BP_Wardrobe::ABP_Wardrobe_C::ReceiveUnpossessed(class AController* OldController)
 {
 	static class UFunction* Func = nullptr;
 
@@ -59,7 +59,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::ReceiveUnpossessed(class AController* OldCon
 // Function BP_Wardrobe.BP_Wardrobe_C.MC_UnHide
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::MC_UnHide()
+void BP_Wardrobe::ABP_Wardrobe_C::MC_UnHide()
 {
 	static class UFunction* Func = nullptr;
 
@@ -73,7 +73,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::MC_UnHide()
 // Function BP_Wardrobe.BP_Wardrobe_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::ReceiveBeginPlay()
+void BP_Wardrobe::ABP_Wardrobe_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
@@ -89,7 +89,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::ReceiveBeginPlay()
 // Parameters:
 // class AController*                      NewController                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::ReceivePossessed(class AController* NewController)
+void BP_Wardrobe::ABP_Wardrobe_C::ReceivePossessed(class AController* NewController)
 {
 	static class UFunction* Func = nullptr;
 
@@ -107,7 +107,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::ReceivePossessed(class AController* NewContr
 // Function BP_Wardrobe.BP_Wardrobe_C.OnUsedAll
 // (Event, Public, BlueprintEvent)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::OnUsedAll()
+void BP_Wardrobe::ABP_Wardrobe_C::OnUsedAll()
 {
 	static class UFunction* Func = nullptr;
 
@@ -121,7 +121,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::OnUsedAll()
 // Function BP_Wardrobe.BP_Wardrobe_C.UnPossess
 // (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::UnPossess()
+void BP_Wardrobe::ABP_Wardrobe_C::UnPossess()
 {
 	static class UFunction* Func = nullptr;
 
@@ -137,7 +137,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::UnPossess()
 // Parameters:
 // float                                   AxisValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::InpAxisEvt_LookUp_K2Node_InputAxisEvent_1(float AxisValue)
+void BP_Wardrobe::ABP_Wardrobe_C::InpAxisEvt_LookUp_K2Node_InputAxisEvent_1(float AxisValue)
 {
 	static class UFunction* Func = nullptr;
 
@@ -157,7 +157,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::InpAxisEvt_LookUp_K2Node_InputAxisEvent_1(fl
 // Parameters:
 // class ACharacter*                       Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::OnActorUsed(class ACharacter* Character)
+void BP_Wardrobe::ABP_Wardrobe_C::OnActorUsed(class ACharacter* Character)
 {
 	static class UFunction* Func = nullptr;
 
@@ -177,7 +177,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::OnActorUsed(class ACharacter* Character)
 // Parameters:
 // const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::InpActEvt_Back_K2Node_InputActionEvent_0(const struct FKey& Key)
+void BP_Wardrobe::ABP_Wardrobe_C::InpActEvt_Back_K2Node_InputActionEvent_0(const struct FKey& Key)
 {
 	static class UFunction* Func = nullptr;
 
@@ -197,7 +197,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::InpActEvt_Back_K2Node_InputActionEvent_0(con
 // Parameters:
 // const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::InpActEvt_Interact_K2Node_InputActionEvent_1(const struct FKey& Key)
+void BP_Wardrobe::ABP_Wardrobe_C::InpActEvt_Interact_K2Node_InputActionEvent_1(const struct FKey& Key)
 {
 	static class UFunction* Func = nullptr;
 
@@ -215,7 +215,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::InpActEvt_Interact_K2Node_InputActionEvent_1
 // Function BP_Wardrobe.BP_Wardrobe_C.ClosetOpen__UpdateFunc
 // (BlueprintEvent)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::ClosetOpen__UpdateFunc()
+void BP_Wardrobe::ABP_Wardrobe_C::ClosetOpen__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
@@ -229,7 +229,7 @@ void BP_Wardrobe_0::ABP_Wardrobe_C::ClosetOpen__UpdateFunc()
 // Function BP_Wardrobe.BP_Wardrobe_C.ClosetOpen__FinishedFunc
 // (BlueprintEvent)
 
-void BP_Wardrobe_0::ABP_Wardrobe_C::ClosetOpen__FinishedFunc()
+void BP_Wardrobe::ABP_Wardrobe_C::ClosetOpen__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 

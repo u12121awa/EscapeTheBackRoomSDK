@@ -10,25 +10,30 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
+
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function /BP_Lamp/BP_Lamp_C.CheckLight
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Lamp_C_CheckLight final
+// Function /BP_Lamp/BP_Lamp_C.ExecuteUbergraph_BP_Lamp
+// 0x0060 (0x0060 - 0x0000)
+struct BP_Lamp_C_ExecuteUbergraph_BP_Lamp final
 {
 public:
-	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
-// Function /BP_Lamp/BP_Lamp_C.SetPointLight
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Lamp_C_SetPointLight final
-{
-public:
-	float                                         Intensity;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0014(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetGlobalTimeDilation_ReturnValue;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAudioComponent*                        CallFunc_SpawnSoundAtLocation_ReturnValue;         // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x0038(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAudioComponent*                        CallFunc_SpawnSoundAtLocation_ReturnValue_1;       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APostProcessVolume*                     CallFunc_GetActorOfClass_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 SDK_PARAM_NAMESPACE_END

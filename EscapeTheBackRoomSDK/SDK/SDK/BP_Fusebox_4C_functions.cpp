@@ -36,20 +36,6 @@ void ABP_Fusebox_4C_C::ExecuteUbergraph_BP_Fusebox_4C(int32 EntryPoint)
 }
 
 
-// Function BP_Fusebox-4C.BP_Fusebox-4C_C.InitializeSwitchArray
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Fusebox_4C_C::InitializeSwitchArray()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fusebox-4C_C", "InitializeSwitchArray");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Fusebox-4C.BP_Fusebox-4C_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -107,6 +93,20 @@ void ABP_Fusebox_4C_C::UserConstructionScript()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Fusebox-4C_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fusebox-4C.BP_Fusebox-4C_C.InitializeSwitchArray
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Fusebox_4C_C::InitializeSwitchArray()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fusebox-4C_C", "InitializeSwitchArray");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

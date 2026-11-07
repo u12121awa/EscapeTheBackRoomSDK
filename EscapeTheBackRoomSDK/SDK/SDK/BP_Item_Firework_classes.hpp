@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Item_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -36,7 +36,6 @@ public:
 public:
 	void ExecuteUbergraph_BP_Item_Firework(int32 EntryPoint);
 	void StartTimer();
-	void UseItem();
 	void MC_Throw();
 	void MC_Prime();
 	void OnCompleted_75A74F3E49D0A9605DCB0DAA1C18ED64(class FName NotifyName);
@@ -56,6 +55,7 @@ public:
 	void OnNotifyEnd_2A0F3273455CB03AB9B90EA95723A9CF(class FName NotifyName);
 	void ExplodeTimer__UpdateFunc();
 	void ExplodeTimer__FinishedFunc();
+	void UseItem();
 
 public:
 	static class UClass* StaticClass()

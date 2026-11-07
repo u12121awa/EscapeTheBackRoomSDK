@@ -419,10 +419,10 @@ E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_FlickeringLamp_fu
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_FlickeringLight_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_FlickeringLight_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_FloorLamp_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_FloorLamp_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_FloorLight_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_FloorLight_functions.obj
-E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Floor_0_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Floor_0_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Floor_1_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Floor_1_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Floor_2_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Floor_2_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Floor_4_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Floor_4_functions.obj
+E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Floor_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Floor_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Floors_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Floors_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_FlowerDecal_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_FlowerDecal_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_FlowerLightPuzzle_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_FlowerLightPuzzle_functions.obj
@@ -544,7 +544,7 @@ E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_LadderManager_fun
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_LadderPiece_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_LadderPiece_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Ladder_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Ladder_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_LampFall_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_LampFall_functions.obj
-E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Lamp_0_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Lamp_0_functions.obj
+E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Lamp_1_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Lamp_1_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Lamp_bathroom_wall_0_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Lamp_bathroom_wall_0_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Lamp_bathroom_wall_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Lamp_bathroom_wall_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Lamp_ceiling_ball_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Lamp_ceiling_ball_functions.obj
@@ -605,8 +605,8 @@ E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_LobbyDoors_functi
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Lobby_Exit_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Lobby_Exit_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Lobby_Manager_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Lobby_Manager_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Lock_5_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Lock_5_functions.obj
+E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_LockedDoor_0_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_LockedDoor_0_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_LockedDoor_1_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_LockedDoor_1_functions.obj
-E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_LockedDoor_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_LockedDoor_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Locker01_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Locker01_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Locker02_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Locker02_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Locker03_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Locker03_functions.obj
@@ -871,8 +871,8 @@ E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_WallOut_0_functio
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_WallOut_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_WallOut_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Wall_in_plain_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Wall_in_plain_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_WanderingSnowAngel_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_WanderingSnowAngel_functions.obj
-E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Wardrobe_0_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Wardrobe_0_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Wardrobe_A1_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Wardrobe_A1_functions.obj
+E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Wardrobe_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Wardrobe_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_WaterHeight_Zone_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_WaterHeight_Zone_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_Water_Pipe_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_Water_Pipe_functions.obj
 E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\SDK\SDK\BP_WaterfallTool_functions.cpp;E:\source\EscapeTheBackRoomSDK\EscapeTheBackRoomSDK\x64\Release\BP_WaterfallTool_functions.obj

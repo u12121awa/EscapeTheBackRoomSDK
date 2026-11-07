@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Latch_Settings_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Latch_Settings_structs.hpp"
 #include "Backrooms_classes.hpp"
 
 
@@ -56,7 +56,7 @@ public:
 	bool                                          Absolute;                                          // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Refresh;                                           // 0x0381(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_382[0x6];                                      // 0x0382(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class BP_Door_Master_0::ABP_Door_Master_C*    Door;                                              // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class BP_Door_Master::ABP_Door_Master_C*      Door;                                              // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_Latch(int32 EntryPoint);

@@ -28,7 +28,7 @@ enum class E_Floors::E_Floors : uint8
 	NewEnumerator49                          = 8,
 	NewEnumerator50                          = 9,
 	NewEnumerator51                          = 10,
-	E_1_MAX                                  = 11,
+	E_2_MAX                                  = 11,
 };
 
 SDK_NAMESPACE_END

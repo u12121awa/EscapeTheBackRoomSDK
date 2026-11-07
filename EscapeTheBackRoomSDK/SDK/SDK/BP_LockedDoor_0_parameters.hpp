@@ -6,7 +6,7 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: BP_LockedDoor
+// Package: BP_LockedDoor_0
 
 #include "Basic.hpp"
 

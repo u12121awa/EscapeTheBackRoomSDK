@@ -548,20 +548,6 @@ void ALobby_PlayerController_C::OnRep_CanTalk()
 }
 
 
-// Function Lobby_PlayerController.Lobby_PlayerController_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ALobby_PlayerController_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lobby_PlayerController_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Lobby_PlayerController.Lobby_PlayerController_C.ReceiveEndPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -579,6 +565,20 @@ void ALobby_PlayerController_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Lobby_PlayerController.Lobby_PlayerController_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ALobby_PlayerController_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Lobby_PlayerController_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

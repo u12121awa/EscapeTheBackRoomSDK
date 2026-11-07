@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "HE_LookAtLocation_structs.hpp"
-#include "Engine_structs.hpp"
 #include "HE_LookAtLocationSeq_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
+#include "HE_LookAtLocation_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -44,7 +44,7 @@ public:
 	class FName                                   K2Node_CustomEvent_NotifyName_7;                   // 0x00BC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_OtherActor_1;                         // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class BP_Door_Master_0::ABP_Door_Master_C*    K2Node_DynamicCast_AsBP_Door_Master;               // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class BP_Door_Master::ABP_Door_Master_C*      K2Node_DynamicCast_AsBP_Door_Master;               // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00DC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -86,7 +86,7 @@ public:
 	class AActor*                                 K2Node_Event_OtherActor;                           // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0290(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_291[0x7];                                      // 0x0291(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class BP_Door_Master_0::ABP_Door_Master_C*    K2Node_DynamicCast_AsBP_Door_Master_1;             // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class BP_Door_Master::ABP_Door_Master_C*      K2Node_DynamicCast_AsBP_Door_Master_1;             // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x02A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

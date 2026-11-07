@@ -12,8 +12,8 @@
 
 #include "CoreUObject_structs.hpp"
 #include "AIModule_structs.hpp"
-#include "Engine_structs.hpp"
 #include "MP_GameMode_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -31,14 +31,14 @@ public:
 
 public:
 	void ExecuteUbergraph_MP_Level94(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void RemoveAnimations();
 	void OnQueryFinish(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, EEnvQueryStatus QueryStatus);
 	void SpawnAnimations();
-	void OnPlayerSpawn(class ABPCharacter_Demo_C* Player);
 	void UserConstructionScript();
-	class AActor* ChoosePlayerStart(class AController* Player);
 	void LoadCheckpoints();
+	void ReceiveBeginPlay();
+	void OnPlayerSpawn(class ABPCharacter_Demo_C* Player);
+	class AActor* ChoosePlayerStart(class AController* Player);
 
 public:
 	static class UClass* StaticClass()

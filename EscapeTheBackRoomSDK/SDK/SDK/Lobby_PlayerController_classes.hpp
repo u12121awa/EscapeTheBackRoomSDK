@@ -74,8 +74,8 @@ public:
 	void CreateLoadingScreen(const class FText& LoadingScreen_FeedbackText, class UTexture2D* LoadingScreen_Image);
 	void Update_PlayerSpeaking(bool IsSpeaking, const struct FBPUniqueNetId& UniqueId);
 	void OnRep_CanTalk();
-	void ReceiveBeginPlay();
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

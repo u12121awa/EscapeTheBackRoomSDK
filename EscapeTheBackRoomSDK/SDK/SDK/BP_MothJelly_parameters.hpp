@@ -75,14 +75,6 @@ public:
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue_1;         // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// Function /BP_MothJelly/BP_MothJelly_C.OnEventLoaded
-// 0x0001 (0x0001 - 0x0000)
-struct BP_MothJelly_C_OnEventLoaded final
-{
-public:
-	uint8                                         EventType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function /BP_MothJelly/BP_MothJelly_C.ToggleEvent
 // 0x0001 (0x0001 - 0x0000)
 struct BP_MothJelly_C_ToggleEvent final
@@ -129,6 +121,14 @@ struct BP_MothJelly_C_OnNotifyEnd_1CCDCF174099237E391B5AA1C23BF140 final
 {
 public:
 	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function /BP_MothJelly/BP_MothJelly_C.OnEventLoaded
+// 0x0001 (0x0001 - 0x0000)
+struct BP_MothJelly_C_OnEventLoaded final
+{
+public:
+	uint8                                         EventType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 SDK_PARAM_NAMESPACE_END

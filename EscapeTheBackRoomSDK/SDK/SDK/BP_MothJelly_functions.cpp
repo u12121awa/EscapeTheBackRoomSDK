@@ -36,26 +36,6 @@ void ABP_MothJelly_C::ExecuteUbergraph_BP_MothJelly(int32 EntryPoint)
 }
 
 
-// Function BP_MothJelly.BP_MothJelly_C.OnEventLoaded
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// uint8                                   EventType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MothJelly_C::OnEventLoaded(uint8 EventType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MothJelly_C", "OnEventLoaded");
-
-	Params::BP_MothJelly_C_OnEventLoaded Parms{};
-
-	Parms.EventType = EventType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_MothJelly.BP_MothJelly_C.ToggleEvent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -99,20 +79,6 @@ void ABP_MothJelly_C::PlayAnimation()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_MothJelly_C", "PlayAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MothJelly.BP_MothJelly_C.UseItem
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_MothJelly_C::UseItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MothJelly_C", "UseItem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -241,6 +207,40 @@ void ABP_MothJelly_C::HoverDown__FinishedFunc()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_MothJelly_C", "HoverDown__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MothJelly.BP_MothJelly_C.OnEventLoaded
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// uint8                                   EventType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MothJelly_C::OnEventLoaded(uint8 EventType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MothJelly_C", "OnEventLoaded");
+
+	Params::BP_MothJelly_C_OnEventLoaded Parms{};
+
+	Parms.EventType = EventType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MothJelly.BP_MothJelly_C.UseItem
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MothJelly_C::UseItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MothJelly_C", "UseItem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -20,7 +20,7 @@ SDK_NAMESPACE_START
 class BP_Floor_3::ABP_Floor_C final : public AActor
 {
 public:
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   floor;                                             // 0x0220(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

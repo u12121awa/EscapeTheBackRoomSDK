@@ -47,6 +47,20 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 
+// Function /BP_Thermometer/BP_Thermometer_C.Has Spawned Display
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Thermometer_C_Has_Spawned_Display final
+{
+public:
+	bool                                          HasSpawned;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_GetAttachedActors_OutActors;              // 0x0008(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
 // Function /BP_Thermometer/BP_Thermometer_C.SetMaterial
 // 0x0058 (0x0058 - 0x0000)
 struct BP_Thermometer_C_SetMaterial final
@@ -71,20 +85,6 @@ public:
 	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_1;                         // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
-// Function /BP_Thermometer/BP_Thermometer_C.Has Spawned Display
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Thermometer_C_Has_Spawned_Display final
-{
-public:
-	bool                                          HasSpawned;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_GetAttachedActors_OutActors;              // 0x0008(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 SDK_PARAM_NAMESPACE_END

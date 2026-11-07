@@ -6,7 +6,7 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: BP_Wardrobe_0
+// Package: BP_Wardrobe
 
 #include "Basic.hpp"
 

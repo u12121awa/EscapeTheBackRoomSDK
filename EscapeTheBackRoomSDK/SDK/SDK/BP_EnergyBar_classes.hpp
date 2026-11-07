@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Item_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -35,7 +35,6 @@ public:
 	void ExecuteUbergraph_BP_EnergyBar(int32 EntryPoint);
 	void SRV_FinishEat();
 	void PlayAnimation();
-	void UseItem();
 	void OnCompleted_AE2A3D66458122E1C7ABE08F22ADD52E(class FName NotifyName);
 	void OnBlendOut_AE2A3D66458122E1C7ABE08F22ADD52E(class FName NotifyName);
 	void OnInterrupted_AE2A3D66458122E1C7ABE08F22ADD52E(class FName NotifyName);
@@ -48,6 +47,7 @@ public:
 	void OnNotifyEnd_2EF3CB7C458DDF5DC53EA4A7CA6DA62A(class FName NotifyName);
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
+	void UseItem();
 	void SetMaterial(bool EnabledFOV);
 
 public:

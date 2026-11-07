@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Item_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -30,10 +30,10 @@ public:
 public:
 	void ExecuteUbergraph_BP_Thermometer(int32 EntryPoint);
 	void ReceiveDestroyed();
-	void ReceiveBeginPlay();
 	void OnRep_Temperature();
-	void SetMaterial(bool EnabledFOV);
 	void Has_Spawned_Display(bool* HasSpawned);
+	void ReceiveBeginPlay();
+	void SetMaterial(bool EnabledFOV);
 
 public:
 	static class UClass* StaticClass()

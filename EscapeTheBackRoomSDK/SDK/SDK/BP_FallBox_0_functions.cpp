@@ -17,7 +17,7 @@
 SDK_NAMESPACE_START
 
 // Function BP_FallBox.BP_FallBox_C.ExecuteUbergraph_BP_FallBox
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

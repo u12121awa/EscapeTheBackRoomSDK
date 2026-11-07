@@ -36,20 +36,6 @@ void ABP_Item_PlasticBall_C::ExecuteUbergraph_BP_Item_PlasticBall(int32 EntryPoi
 }
 
 
-// Function BP_Item_PlasticBall.BP_Item_PlasticBall_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Item_PlasticBall_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Item_PlasticBall_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Item_PlasticBall.BP_Item_PlasticBall_C.MC_Throw
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 
@@ -59,20 +45,6 @@ void ABP_Item_PlasticBall_C::MC_Throw()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_Item_PlasticBall_C", "MC_Throw");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Item_PlasticBall.BP_Item_PlasticBall_C.UseItem
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Item_PlasticBall_C::UseItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Item_PlasticBall_C", "UseItem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -275,6 +247,34 @@ void ABP_Item_PlasticBall_C::OnNotifyEnd_3D9D3E014D86EA789E80D5BE8C6A60DF(class 
 	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Item_PlasticBall.BP_Item_PlasticBall_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Item_PlasticBall_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Item_PlasticBall_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Item_PlasticBall.BP_Item_PlasticBall_C.UseItem
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Item_PlasticBall_C::UseItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Item_PlasticBall_C", "UseItem");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -10,113 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function /BP_Door_Master/BP_Door_Master_C.ExecuteUbergraph_BP_Door_Master
-// 0x0408 (0x0408 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct BP_Door_Master_C_ExecuteUbergraph_BP_Door_Master final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UStaticMeshComponent*>           K2Node_MakeArray_Array;                            // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UStaticMeshComponent*                   CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x0054(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0060(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x00E8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult_2;  // 0x0170(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x01F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FA[0x2];                                      // 0x01FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_MapRangeClamped_ReturnValue;              // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MapRangeClamped_ReturnValue_1;            // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0204(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_2;        // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0214(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0220(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x02A8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_CustomEvent_Open;                           // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x0331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0332(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_333[0x5];                                      // 0x0333(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class AInteractableActor*                     K2Node_DynamicCast_AsInteractable_Actor;           // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0340(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_341[0x7];                                      // 0x0341(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UStaticMeshComponent*>           CallFunc_K2_GetComponentsByClass_ReturnValue;      // 0x0348(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UStaticMeshComponent*                   CallFunc_Array_Get_Item_1;                         // 0x0358(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0360(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0364(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_365[0x3];                                      // 0x0365(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_2;  // 0x0368(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3F1[0x3];                                      // 0x03F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x03F4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAudioComponent*                        CallFunc_SpawnSoundAtLocation_ReturnValue;         // 0x0400(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function /BP_Door_Master/BP_Door_Master_C.EntityOpen
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Door_Master_C_EntityOpen final
-{
-public:
-	bool                                          Open;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
-// Function /BP_Door_Master/BP_Door_Master_C.UserConstructionScript
-// 0x01B0 (0x01B0 - 0x0000)
-struct BP_Door_Master_C_UserConstructionScript final
-{
-public:
-	float                                         CallFunc_MapRangeClamped_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MapRangeClamped_ReturnValue_1;            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0xC];                                       // 0x0024(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0030(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_1;              // 0x0060(0x0030)(IsPlainOldData, NoDestructor)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue_1;               // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x00A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_2;              // 0x00C0(0x0030)(IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_3;              // 0x00F0(0x0030)(IsPlainOldData, NoDestructor)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue_2;               // 0x0120(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue_3;               // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue_4;               // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue_5;               // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue_6;               // 0x0140(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue_7;               // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue_2;                // 0x0150(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_15C[0x4];                                      // 0x015C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue_4;              // 0x0160(0x0030)(IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue_8;               // 0x0198(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue_9;               // 0x01A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue_10;              // 0x01A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0008(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0018(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 
 SDK_PARAM_NAMESPACE_END

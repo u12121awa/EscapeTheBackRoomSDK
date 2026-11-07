@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Item_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -29,12 +29,12 @@ public:
 	void ResetCounter();
 	void Damage_SERVER(class UObject* Target, class AFancyCharacter* Character);
 	void MC_Spray();
-	void UseItem();
 	void OnCompleted_0696912D47A3DC8FA5836F835E2CF98A(class FName NotifyName);
 	void OnBlendOut_0696912D47A3DC8FA5836F835E2CF98A(class FName NotifyName);
 	void OnInterrupted_0696912D47A3DC8FA5836F835E2CF98A(class FName NotifyName);
 	void OnNotifyBegin_0696912D47A3DC8FA5836F835E2CF98A(class FName NotifyName);
 	void OnNotifyEnd_0696912D47A3DC8FA5836F835E2CF98A(class FName NotifyName);
+	void UseItem();
 
 public:
 	static class UClass* StaticClass()

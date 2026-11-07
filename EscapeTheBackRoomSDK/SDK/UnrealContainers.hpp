@@ -25,38 +25,36 @@ namespace UC
 	typedef uint16_t uint16;
 	typedef uint32_t uint32;
 	typedef uint64_t uint64;
-	
-	class FMemory
-	{
-	private:
-		inline static void (*FMemoryFree)(void* Ptr) = nullptr;
-		inline static void* (*FMemoryRealloc)(void* Ptr, uint64 Size, uint32 Alignment) = nullptr;
+
+    class FMemory
+    {
+    private:
+        inline static void (*FMemoryFree)(void* Ptr) = nullptr;
+        inline static void* (*FMemoryRealloc)(void* Ptr, uint64 Size, uint32 Alignment) = nullptr;
+
+    public:
+        static void InitFreeManually(void* Location)
+        {
+            FMemoryFree = reinterpret_cast<decltype(FMemoryFree)>(Location);
+        }
+
+        static void InitReallocManually(void* Location)
+        {
+            FMemoryRealloc = reinterpret_cast<decltype(FMemoryRealloc)>(Location);
+        }
+
+        static void Free(void* Ptr)
+        {
+            if (!FMemoryFree) return;
+            return FMemoryFree(Ptr);
+        }
     
-	public:
-		static void InitFreeManually(void* Location)
-		{
-			FMemoryFree = reinterpret_cast<decltype(FMemoryFree)>(Location);
-		}
-    
-		static void InitReallocManually(void* Location)
-		{
-			FMemoryRealloc = reinterpret_cast<decltype(FMemoryRealloc)>(Location);
-		}
-    
-		static void Free(void* Ptr)
-		{
-			if (!FMemoryFree)
-				return;
-			return FMemoryFree(Ptr);
-		}
-    
-		static void* Realloc(void* Ptr, uint64 Size, uint32 Alignment = 0)
-		{
-			if (!FMemoryRealloc)
-				return nullptr;
-			return FMemoryRealloc(Ptr, Size, Alignment);
-		}
-	};
+        static void* Realloc(void* Ptr, uint64 Size, uint32 Alignment = 0)
+        {
+            if (!FMemoryRealloc) return nullptr;
+            return FMemoryRealloc(Ptr, Size, Alignment);
+        }
+    };
 
 	template<typename ArrayElementType>
 	class TArray;
@@ -92,7 +90,6 @@ namespace UC
 		template<typename KeyElementType, typename ValueElementType>
 		using TMapIterator = TContainerIterator<TMap<KeyElementType, ValueElementType>>;
 	}
-
 
 	namespace ContainerImpl
 	{
@@ -273,7 +270,7 @@ namespace UC
 		static constexpr uint64 ElementAlign = alignof(ArrayElementType);
 		static constexpr uint64 ElementSize = sizeof(ArrayElementType);
 
-	protected:
+	public:
 		ArrayElementType* Data;
 		int32 NumElements;
 		int32 MaxElements;
@@ -310,10 +307,9 @@ namespace UC
 		{
 			Data = (ArrayElementType*)FMemory::Realloc(Data, (MaxElements = NewMax) * sizeof(ArrayElementType));
 		}
-		
+
 		inline bool Add(const ArrayElementType& Element)
 		{
-
 			ResizeTo((NumElements + 1));
 			Data[NumElements] = Element;
 			NumElements++;
@@ -344,16 +340,15 @@ namespace UC
 			if (Data)
 				memset(Data, 0, NumElements * ElementSize);
 		}
-		
+
 		inline void Free()
 		{
 			if (Data)
 				FMemory::Free(Data);
-			Data = nullptr;
+            Data = nullptr;
 			MaxElements = 0;
 			NumElements = 0;
 		}
-
     public:
         template<typename OtherType>
         inline std::optional<ArrayElementType> Find(const OtherType& ElementToSearch, bool(*IsEqual)(const ArrayElementType&, const OtherType&)) const
@@ -467,7 +462,6 @@ namespace UC
 		inline bool operator!=(const FString& Other) const { return Other ? NumElements != Other.NumElements || wcscmp(Data, Other.Data) != 0 : true; }
 	};
 
-	// Utf8String that assumes C-APIs (strlen, strcmp) behaviour works for char8_t like Ansi strings, execept it's counting/comparing bytes not characters.
 	class FUtf8String : public TArray<char8_t>
 	{
 	public:
@@ -579,13 +573,6 @@ namespace UC
 		inline bool operator!=(const FAnsiString& Other) const { return Other ? NumElements != Other.NumElements || strcmp(Data, Other.Data) != 0 : true; }
 	};
 
-
-	/*
-	* Class to allow construction of a TArray, that uses c-style standard-library memory allocation.
-	* 
-	* Useful for calling functions that expect a buffer of a certain size and do not reallocate that buffer.
-	* This avoids leaking memory, if the array would otherwise be allocated by the engine, and couldn't be freed without FMemory-functions.
-	*/
 	template<typename ArrayElementType>
 	class TAllocatedArray : public TArray<ArrayElementType>
 	{
@@ -614,12 +601,6 @@ namespace UC
 		inline operator const TArray<ArrayElementType>() const { return *reinterpret_cast<const TArray<ArrayElementType>*>(this); }
 	};
 
-	/*
-	* Class to allow construction of an FString, that uses c-style standard-library memory allocation.
-	*
-	* Useful for calling functions that expect a buffer of a certain size and do not reallocate that buffer.
-	* This avoids leaking memory, if the array would otherwise be allocated by the engine, and couldn't be freed without FMemory-functions.
-	*/
 	class FAllocatedString : public FString
 	{
 	public:

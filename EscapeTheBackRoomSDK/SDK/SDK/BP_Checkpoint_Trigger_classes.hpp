@@ -17,12 +17,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass /BP_Checkpoint_Trigger.BP_Checkpoint_Trigger_C
-// 0x0010 (0x0238 - 0x0228)
+// 0x0008 (0x0230 - 0x0228)
 class BP_Checkpoint_Trigger::ABP_Checkpoint_Trigger_C final : public ATriggerBox
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	int32                                         Checkpoint;                                        // 0x0230(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_Checkpoint_Trigger(int32 EntryPoint);

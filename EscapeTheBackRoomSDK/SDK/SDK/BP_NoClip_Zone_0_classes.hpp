@@ -17,17 +17,24 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass /BP_NoClip_Zone.BP_NoClip_Zone_C
-// 0x0018 (0x0240 - 0x0228)
-class BP_NoClip_Zone_0::ABP_NoClip_Zone_C final : public ATriggerBox
+// 0x0040 (0x0260 - 0x0220)
+class BP_NoClip_Zone_0::ABP_NoClip_Zone_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0228(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UArrowComponent*                        TeleportArrow;                                     // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsLower;                                           // 0x0238(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0220(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          Box;                                               // 0x0228(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0230(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class BP_NoClip_Manager_0::ABP_NoClip_Manager_C* NoClipManager;                                  // 0x0238(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABPCharacter_Demo_C*                    CurrentPlayer;                                     // 0x0240(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class ABPCharacter_Demo_C*>            PlayerQueue;                                       // 0x0248(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FTimerHandle                           CheckPlayersTimer;                                 // 0x0258(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_NoClip_Zone(int32 EntryPoint);
-	void BndEvt__BP_NoClip_Zone_CollisionComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void CheckPlayers();
+	void SRV_NoClipped(class ABPCharacter_Demo_C* Player);
+	void BndEvt__BP_ExitZone_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void NoClip();
 
 public:
 	static class UClass* StaticClass()

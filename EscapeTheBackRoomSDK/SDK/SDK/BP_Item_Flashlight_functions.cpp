@@ -236,34 +236,6 @@ void ABP_Item_Flashlight_C::ToggleFadePower(bool FadeOut)
 }
 
 
-// Function BP_Item_Flashlight.BP_Item_Flashlight_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Item_Flashlight_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Item_Flashlight_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Item_Flashlight.BP_Item_Flashlight_C.UseItem
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Item_Flashlight_C::UseItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Item_Flashlight_C", "UseItem");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Item_Flashlight.BP_Item_Flashlight_C.OnCompleted_858C6BED431A8EBEEAB2D09BA256DAA6
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -538,26 +510,6 @@ void ABP_Item_Flashlight_C::GetAdjustedRadius(float Radius, float* Adjusted)
 }
 
 
-// Function BP_Item_Flashlight.BP_Item_Flashlight_C.SetMaterial
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    EnabledFOV                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_Item_Flashlight_C::SetMaterial(bool EnabledFOV)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Item_Flashlight_C", "SetMaterial");
-
-	Params::BP_Item_Flashlight_C_SetMaterial Parms{};
-
-	Parms.EnabledFOV = EnabledFOV;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Item_Flashlight.BP_Item_Flashlight_C.OnRep_CurrentRepIntentsity
 // (BlueprintCallable, BlueprintEvent)
 
@@ -597,6 +549,54 @@ void ABP_Item_Flashlight_C::FindOwnerRepFlashlight()
 		Func = Class->GetFunction("BP_Item_Flashlight_C", "FindOwnerRepFlashlight");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Item_Flashlight.BP_Item_Flashlight_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Item_Flashlight_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Item_Flashlight_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Item_Flashlight.BP_Item_Flashlight_C.UseItem
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Item_Flashlight_C::UseItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Item_Flashlight_C", "UseItem");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Item_Flashlight.BP_Item_Flashlight_C.SetMaterial
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    EnabledFOV                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ABP_Item_Flashlight_C::SetMaterial(bool EnabledFOV)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Item_Flashlight_C", "SetMaterial");
+
+	Params::BP_Item_Flashlight_C_SetMaterial Parms{};
+
+	Parms.EnabledFOV = EnabledFOV;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

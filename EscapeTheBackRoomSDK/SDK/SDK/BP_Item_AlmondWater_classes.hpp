@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Item_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -34,10 +34,8 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_Item_AlmondWater(int32 EntryPoint);
-	void OnEventLoaded(uint8 EventType);
 	void ToggleEvent(bool Enable);
 	void Damage_SERVER(class UObject* Target, class AFancyCharacter* Character);
-	void UseItem();
 	void PlayAnimation();
 	void OnCompleted_3881A8424F905F4C29433AB5756CB3DA(class FName NotifyName);
 	void OnBlendOut_3881A8424F905F4C29433AB5756CB3DA(class FName NotifyName);
@@ -46,6 +44,8 @@ public:
 	void OnNotifyEnd_3881A8424F905F4C29433AB5756CB3DA(class FName NotifyName);
 	void OpenCan__UpdateFunc();
 	void OpenCan__FinishedFunc();
+	void OnEventLoaded(uint8 EventType);
+	void UseItem();
 	void SetMaterial(bool EnabledFOV_0);
 
 public:

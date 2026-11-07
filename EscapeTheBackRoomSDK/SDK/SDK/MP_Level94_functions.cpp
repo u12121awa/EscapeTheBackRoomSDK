@@ -36,20 +36,6 @@ void AMP_Level94_C::ExecuteUbergraph_MP_Level94(int32 EntryPoint)
 }
 
 
-// Function MP_Level94.MP_Level94_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AMP_Level94_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MP_Level94_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function MP_Level94.MP_Level94_C.RemoveAnimations
 // (BlueprintCallable, BlueprintEvent)
 
@@ -100,6 +86,48 @@ void AMP_Level94_C::SpawnAnimations()
 }
 
 
+// Function MP_Level94.MP_Level94_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void AMP_Level94_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MP_Level94_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MP_Level94.MP_Level94_C.LoadCheckpoints
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AMP_Level94_C::LoadCheckpoints()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MP_Level94_C", "LoadCheckpoints");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MP_Level94.MP_Level94_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AMP_Level94_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MP_Level94_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function MP_Level94.MP_Level94_C.OnPlayerSpawn
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -117,20 +145,6 @@ void AMP_Level94_C::OnPlayerSpawn(class ABPCharacter_Demo_C* Player)
 	Parms.Player = Player;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MP_Level94.MP_Level94_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void AMP_Level94_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MP_Level94_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -154,20 +168,6 @@ class AActor* AMP_Level94_C::ChoosePlayerStart(class AController* Player)
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-}
-
-
-// Function MP_Level94.MP_Level94_C.LoadCheckpoints
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AMP_Level94_C::LoadCheckpoints()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MP_Level94_C", "LoadCheckpoints");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

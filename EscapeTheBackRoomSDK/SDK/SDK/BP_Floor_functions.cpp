@@ -6,12 +6,12 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: BP_Floor_0
+// Package: BP_Floor
 
 #include "Basic.hpp"
 
-#include "BP_Floor_0_classes.hpp"
-#include "BP_Floor_0_parameters.hpp"
+#include "BP_Floor_classes.hpp"
+#include "BP_Floor_parameters.hpp"
 
 
 SDK_NAMESPACE_START
@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 // Function BP_Floor.BP_Floor_C.UserConstructionScript
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void BP_Floor_0::ABP_Floor_C::UserConstructionScript()
+void BP_Floor::ABP_Floor_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 

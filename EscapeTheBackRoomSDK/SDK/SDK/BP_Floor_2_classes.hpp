@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 #include "E_Floors_structs.hpp"
-#include "E_Ceiling_3x3_broken_1_structs.hpp"
-#include "E_Ceiling_6x6_broken_1_structs.hpp"
+#include "E_Ceiling_3x3_broken_0_structs.hpp"
+#include "E_Ceiling_6x6_broken_0_structs.hpp"
 #include "Engine_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass /BP_Floor.BP_Floor_C
-// 0x0040 (0x0260 - 0x0220)
+// 0x0020 (0x0240 - 0x0220)
 class BP_Floor_2::ABP_Floor_C final : public AActor
 {
 public:
@@ -30,12 +30,9 @@ public:
 	E_Floors::E_Floors                            Floors;                                            // 0x0239(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Add_Ceiling;                                       // 0x023A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Ceiling_Broken_;                                   // 0x023B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	E_Ceiling_3x3_broken_1::E_Ceiling_3x3_broken  Ceiling_3x3_Broken;                                // 0x023C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	E_Ceiling_6x6_broken_1::E_Ceiling_6x6_broken  Ceiling_6x6_Broken;                                // 0x023D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_Ceiling_3x3_broken_0::E_Ceiling_3x3_broken  Ceiling_3x3_Broken;                                // 0x023C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_Ceiling_6x6_broken_0::E_Ceiling_6x6_broken  Ceiling_6x6_Broken;                                // 0x023D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Revert_Default_Materials;                          // 0x023E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23F[0x1];                                      // 0x023F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UStaticMesh*>                    Floor_Meshes;                                      // 0x0240(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class UStaticMesh*>                    Ceiling_Meshes;                                    // 0x0250(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void UserConstructionScript();

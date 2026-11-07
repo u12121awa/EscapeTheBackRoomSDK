@@ -43,11 +43,11 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_Fusebox_4B(int32 EntryPoint);
-	void InitializeSwitchArray();
 	void ReceiveTick(float DeltaSeconds);
 	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
 	void UserConstructionScript();
+	void InitializeSwitchArray();
 	void OpenDoor(bool Open_0);
 
 public:

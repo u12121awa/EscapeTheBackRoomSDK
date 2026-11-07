@@ -9,11 +9,186 @@
   <component name="ChangeListManager">
     <list default="true" id="c46a22a3-2369-49c6-9d74-6e46f4ad5cec" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EscapeTheBackRoomSDK/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EscapeTheBackRoomSDK/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/CoreUObject_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/CoreUObject_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/NameCollisions.inl" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/NameCollisions.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_0_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_0_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_3999_Elevator_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_3999_Elevator_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Bookshelf_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Bookshelf_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Bookshelf_1_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Bookshelf_1_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Bunker_Elevator_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Bunker_Elevator_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Chair_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Chair_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Chair_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Chair_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Checkpoint_Trigger_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Checkpoint_Trigger_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Checkpoint_Trigger_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Checkpoint_Trigger_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Diving_Helmet_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Diving_Helmet_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Diving_Helmet_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Diving_Helmet_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_A_L_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_A_L_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_A_R_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_A_R_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_B_L_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_B_L_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_B_R_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_B_R_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_C_L_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_C_L_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_C_R_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_C_R_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_0_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_0_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_0_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_0_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_1_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_1_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_1_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_1_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_1_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_1_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_Master_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_sliding_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Door_sliding_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_EnergyBar_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_EnergyBar_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_EnergyBar_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_EnergyBar_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FallBox_0_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FallBox_0_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FallBox_0_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FallBox_0_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FallBox_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FallBox_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FallBox_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FallBox_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FlareGun_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FlareGun_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FlareGun_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FlareGun_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_0_functions.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_0_parameters.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_1_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_1_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_1_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_1_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_2_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_2_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_2_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_2_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_3_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_3_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floor_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floors_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Floors_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_2_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_2_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_2_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_2_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_3_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_3_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_3_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_3_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4A_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4A_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4A_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4A_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4B_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4B_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4B_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4B_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4C_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4C_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4C_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4C_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4D_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4D_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4D_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_4D_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5A_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5A_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5A_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5A_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5B_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5B_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5B_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5B_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5C_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5C_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5C_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_5C_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Glowstick_Tubes_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Glowstick_Tubes_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_AlmondWater_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_AlmondWater_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_AlmondWater_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_AlmondWater_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_AlmondWater_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_AlmondWater_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_BugSpray_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_BugSpray_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_BugSpray_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_BugSpray_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Camera_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Camera_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Camera_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Camera_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Chainsaw_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Chainsaw_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Chainsaw_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Chainsaw_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Crowbar_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Crowbar_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Crowbar_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Crowbar_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Firework_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Firework_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Firework_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Firework_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Flashlight_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Flashlight_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Flashlight_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Flashlight_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Flashlight_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Flashlight_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Knife_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Knife_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Knife_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Knife_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_PlasticBall_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_PlasticBall_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_PlasticBall_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_PlasticBall_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Toy_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Toy_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Toy_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Item_Toy_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Juice_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Juice_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Juice_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Juice_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_0_functions.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_0_parameters.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_1_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_1_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Latch_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Latch_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_LightManager_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_LightManager_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_LightManager_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_LightManager_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Liquid_Pain_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Liquid_Pain_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Liquid_Pain_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Liquid_Pain_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_LockedDoor_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_LockedDoor_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_LockedDoor_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_LockedDoor_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_LockedDoor_functions.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_LockedDoor_parameters.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_MothJelly_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_MothJelly_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_MothJelly_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_MothJelly_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_MothJelly_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_MothJelly_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NPC_Type02_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NPC_Type02_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NPC_Type02_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NPC_Type02_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_0_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_0_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_0_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_0_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_NoClip_Zone_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_OpenDoor_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_OpenDoor_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_RollingDoor_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_RollingDoor_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_RollingDoor_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_RollingDoor_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_RollingDoor_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_RollingDoor_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Rope_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Rope_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Rope_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Rope_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Scanner_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Scanner_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Scanner_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Scanner_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_0_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_0_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_0_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_0_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_SpawnTrigger_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Stack_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Stack_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Stairs_main_R_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Stairs_main_R_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Stairs_main_R_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Stairs_main_R_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_TV_Puzzle_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_TV_Puzzle_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Thermometer_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Thermometer_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Thermometer_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Thermometer_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Thermometer_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Thermometer_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_UnloadVolume_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_UnloadVolume_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_WalkieTalkie_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_WalkieTalkie_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_WalkieTalkie_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_WalkieTalkie_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_WalkieTalkie_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_WalkieTalkie_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_WallOut_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_WallOut_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_WallOut_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_WallOut_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wall_Rectangle_2m_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wall_Rectangle_2m_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wall_Rectangle_2m_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wall_Rectangle_2m_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wardrobe_0_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wardrobe_0_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wardrobe_0_functions.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wardrobe_0_parameters.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wardrobe_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wardrobe_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wretch_House_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wretch_House_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wretch_House_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Wretch_House_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BTDecorator_ShouldMove_0_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BTDecorator_ShouldMove_0_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BTDecorator_ShouldMove_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BTDecorator_ShouldMove_parameters.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Basic.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Basic.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Ceiling_3x3_broken_0_structs.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Ceiling_3x3_broken_0_structs.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Ceiling_3x3_broken_structs.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Ceiling_3x3_broken_structs.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Floors_1_structs.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Floors_1_structs.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Floors_2_structs.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Floors_2_structs.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Floors_structs.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Floors_structs.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_Nebula_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_Nebula_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_Nebula_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_Nebula_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/MP_Level94_classes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/MP_Level94_classes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/MP_Level94_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/MP_Level94_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/MP_Level94_parameters.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/MP_Level94_parameters.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/UnrealContainers.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/UnrealContainers.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/CL.10344.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/CL.10344.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/a.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/CL.10344.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/CL.command.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/Lib-link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/Cl.items.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/Cl.items.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/Lib-link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/Lib-link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/Lib.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/Lib.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTh.2e4210e1.tlog/Lib.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTheBackRoomSDK.Build.CppClean.log" beforeDir="false" afterPath="$PROJECT_DIR$/EscapeTheBackRoomSDK/x64/Release/EscapeTheBackRoomSDK.Build.CppClean.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +215,109 @@
     <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um/WinUser.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um/winnt.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/include/xutility" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/AdvancedSteamSessions_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/NameCollisions.inl" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/AdvancedSteamSessions_classes.hpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/AdvancedSteamSessions_structs.hpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/ArcadeEnding_functions.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_0_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_0_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/AnimBP_Fun_Gate_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/ArcadeEnding_functions.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BPCharacter_Demo_classes.hpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BPCharacter_Demo_functions.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_ActorCard_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Alternate_Endings_Arcade_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Animation_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_ArcadeChunk_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_ArcadeChunk_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_BallPit_Circle_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_BallPit_Circle_classes.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_BallPit_Square_Static_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_BallPit_Square_Static_classes.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Balloon_Puzzle_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Balloon_Puzzle_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Ballpit_Hex_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_BasePlayerController_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Bookshelf_0_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Bookshelf_1_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Bunker_Elevator_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_CableGrab_2_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_CardReaderFunc_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_CardReader_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Cave_Moth_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Ceiling_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Chair_0_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Chair_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_CheatParty_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Checkpoint_Trigger_0_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Checkpoint_Trigger_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Clump_Poolrooms_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Clump_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_ColorPicker_PlasticMariana_classes.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_ColorPicker_PlasticMariana_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_ColorPicker_PlasticMariana_parameters.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_ColorPicker_PlasticMariana_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_ColorPicker_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_ColorPicker_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_ControlPanel_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_DarkPartyGoer_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_DeathSlide_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Diving_Helmet_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Diving_Helmet_functions.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_FlowerPuzzleManager_classes.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Fusebox_2_classes.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_1_functions.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Lamp_1_parameters.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_Plank_Door_0_functions.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Wardrobe_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BP_Wretch_House_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/BP_door_garage_classes.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BTDecorator_ShouldMove_0_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/BTDecorator_ShouldMove_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Backrooms_classes.hpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Backrooms_functions.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Backrooms_parameters.hpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Basic.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Basic.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Basic.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Blockout_Stairs_Curved_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Blockout_Stairs_Linear_Manual_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Blockout_Stairs_Linear_Manual_classes.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Blockout_Stairs_Linear_classes.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Blockout_Stairs_Linear_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/E_Ceiling_3x3_broken_0_structs.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/E_Ceiling_3x3_broken_structs.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/E_Floors_1_structs.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/E_Floors_2_structs.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/E_Floors_2_structs.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/E_Floors_structs.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Lobby_MapSelection_2_classes.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Lobby_MapSelection_2_parameters.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_Nebula_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_Nebula_functions.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Lobby_PlayerController_functions.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/MP_Level94_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/SDK/Scratcher_BP_PM_parameters.hpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/VineGrow_BP_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/WB_ChatMessage_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/WB_Chat_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/WB_FOV_Theme2_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/WB_FOV_Theme2_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/WB_Gamma_Theme2_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/WB_Gamma_Theme2_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/W_Confirmation_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/W_Confirmation_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/W_ErrorModal_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/W_ErrorModal_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/W_Error_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/W_Error_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/W_Kicked_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/W_Kicked_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/W_LoadingScreen_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/W_MainMenu_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Weather_Mask_Brush_classes.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Weather_Mask_Brush_parameters.hpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/source/EscapeTheBackRoomSDK/EscapeTheBackRoomSDK/SDK/SDK/Weather_Override_Volume_classes.hpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EscapeTheBackRoomSDK/SDK/UnrealContainers.hpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -70,6 +338,7 @@
     &quot;C/C++ 项目.EscapeTheBackRoomSDK.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -343,6 +612,9 @@
       <workItem from="1793351876972" duration="2188000" />
       <workItem from="1793357205408" duration="922000" />
       <workItem from="1793440704222" duration="1737000" />
+      <workItem from="1793640660115" duration="218000" />
+      <workItem from="1793641080345" duration="1343000" />
+      <workItem from="1794021203515" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />

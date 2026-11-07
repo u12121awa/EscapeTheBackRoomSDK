@@ -18,7 +18,7 @@
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass /AnimBP_Fun_Gate.AnimBP_Fun_Gate_C
-// 0x0410 (0x06D0 - 0x02C0)
+// 0x0530 (0x07F0 - 0x02C0)
 class AnimBP_Fun_Gate::UAnimBP_Fun_Gate_C final : public UAnimInstance
 {
 public:
@@ -30,17 +30,19 @@ public:
 	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_2;                  // 0x0348(0x0028)()
 	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult_1;                  // 0x0370(0x0028)()
 	struct FAnimNode_TransitionResult             AnimGraphNode_TransitionResult;                    // 0x0398(0x0028)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_2;                    // 0x03C0(0x0080)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_3;                    // 0x03C0(0x0080)()
 	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_3;                       // 0x0440(0x0030)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x0470(0x0080)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_2;                    // 0x0470(0x0080)()
 	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_2;                       // 0x04F0(0x0030)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0520(0x0080)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x0520(0x0080)()
 	struct FAnimNode_StateResult                  AnimGraphNode_StateResult_1;                       // 0x05A0(0x0030)()
 	struct FAnimNode_RefPose                      AnimGraphNode_LocalRefPose;                        // 0x05D0(0x0018)()
 	struct FAnimNode_StateResult                  AnimGraphNode_StateResult;                         // 0x05E8(0x0030)()
 	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x0618(0x00B0)()
-	bool                                          Open;                                              // 0x06C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          Close;                                             // 0x06C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FAnimNode_BlendListByBool              AnimGraphNode_BlendListByBool;                     // 0x06C8(0x00A0)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0768(0x0080)()
+	bool                                          Open;                                              // 0x07E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          Close;                                             // 0x07E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_AnimBP_Fun_Gate(int32 EntryPoint);
